@@ -1,0 +1,34 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="1139" measuredH="564" mockupW="906" mockupH="562">
+  <controls>
+    <control controlID="1" controlTypeID="com.balsamiq.mockups::Title" x="470" y="97" w="-1" h="-1" measuredW="339" measuredH="43" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Algebra%20Relacional</text>
+      </controlProperties>
+    </control>
+    <control controlID="10" controlTypeID="com.balsamiq.mockups::Menu" x="248" y="155" w="203" h="-1" measuredW="150" measuredH="209" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <hrefs>%2Cgestionar%20cuenta%26bm%3Bgestionar%20cuenta.bmml%26bm%3Bgestionar%20cuenta.bmml%26bm%3Bgestionar%20cuenta.bmml%2Cgestionar%20bd%26bm%3Bgestionar%20bd.bmml%26bm%3Bgestionar%20bd.bmml%26bm%3Bgestionar%20bd.bmml%2C%2C%2C%2C%2C%2Cmodificar%20cuenta%20usuario%20-%20cuenta%26bm%3Bmodificar%20cuenta%20usuario%20-%20cuenta.bmml%26bm%3Bmodificar%20cuenta%20usuario%20-%20cuenta.bmml%26bm%3Bmodificar%20cuenta%20usuario%20-%20cuenta.bmml%2C%2Cinicio%26bm%3Binicio.bmml%26bm%3Binicio.bmml%26bm%3Binicio.bmml</hrefs>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%2215%2C179%2C218%2C200%22%20href%3D%22gestionar%2520cuenta.bmml%22%20alt%3D%22gestionar%20cuenta%22%20id%3D%2210%22/%3E%0A%3Carea%20shape%3D%22rect%22%20coords%3D%2215%2C200%2C218%2C221%22%20href%3D%22gestionar%2520bd.bmml%22%20alt%3D%22gestionar%20bd%22%20id%3D%2210%22/%3E%0A%3Carea%20shape%3D%22rect%22%20coords%3D%2215%2C310%2C218%2C331%22%20href%3D%22modificar%2520cuenta%2520usuario%2520-%2520cuenta.bmml%22%20alt%3D%22modificar%20cuenta%20usuario%20-%20cuenta%22%20id%3D%2210%22/%3E%0A%3Carea%20shape%3D%22rect%22%20coords%3D%2215%2C336%2C218%2C357%22%20href%3D%22inicio.bmml%22%20alt%3D%22inicio%22%20id%3D%2210%22/%3E%0A</map>
+        <text>Home%0AGestionar%20Cuentas%20%3E%0AGestionar%20BD%20%3E%0AGestionar%20Relaciones%20%3E%0AGestionar%20Ejercicios%20%3E%0AHacer%20Consulta%0AVer%20Estad%EDsticas%0A---%0AModificar%20Cuenta%20%0A%3D%0ADesconectar</text>
+      </controlProperties>
+    </control>
+    <control controlID="11" controlTypeID="com.balsamiq.mockups::Image" x="466" y="155" w="640" h="358" measuredW="77" measuredH="79" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="12" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="233" y="2" w="906" h="562" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>16777215</color>
+        <text>UV%20Algebra%20Relacional%0Ahttp%3A//www.algebrarelacional.uv.cl</text>
+        <value>0</value>
+        <verticalScrollbar>true</verticalScrollbar>
+      </controlProperties>
+    </control>
+    <control controlID="14" controlTypeID="com.balsamiq.mockups::Image" x="248" y="86" w="203" h="65" measuredW="77" measuredH="79" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Logo%20UV</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>

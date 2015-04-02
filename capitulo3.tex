@@ -1,0 +1,61 @@
+\chapter{Problema}
+\label{problema}
+
+\section{Definición del Problema}
+\label{defproblema}
+
+En esta sección se presenta el problema que se tratará en el presente Trabajo de Título, la solución propuesta para resolver el problema, finalizando con la importancia de éste. \\
+
+\subsection{Problema}
+\label{subproblema}
+
+La Escuela de Ingeniaría Civil Informática de la Universidad de Valparaíso dentro de su malla curricular contiene una asignatura que se especializa en el conocimiento de las Bases de Datos Relacionales, llamado INC402 - Modelo de Datos. En esta asignatura se enseña los distintos enfoques de modelos de bases de datos, centrándose principalmente en el modelo relacional, cómo generar modelos relacionales y comprender el tratamiento de consultas mediante el Álgebra Relacional. Es un curso totalmente teórico y es la base para entender los Sistemas Gestores de Bases de Datos que utilizan Base de Datos Relacionales. Si bien el curso presenta un temario suficiente para comenzar a trabajar directamente con Bases de Datos Relacionales, presenta falencias importantísimas a la hora de enseñar y medir el conocimiento de los alumnos, sobretodo en Álgebra Relacional. \\
+
+Tal como el pseudo-código nos ayuda a entender como trabajar con distintos lenguajes de programación, el Álgebra Relacional es la base de todo Lenguaje Estructurado de Consultas (SQL) y su comprensión es de suma importancia al momento de realizar consultas en cualquier Sistema Gestor de Base de Datos. \\
+
+La metodología utilizada para enseñar el lenguaje se centra en clases presenciales donde se explica qué es el Álgebra Relacional y cómo trabajar con él, ejemplos hechos desde el pizarrón y guías en papel con ejercicios para practicarlo. Esto acarrea una serie de problemas tanto para los alumnos como para el profesor. Uno de ellos es que cuando se realizan ejercicios en papel los alumnos no tienen forma de saber si sus consultas funcionan correctamente, es decir, no saben si su resultado es el deseado o si la sintaxis utilizada es la correcta, obligándolos a esperar hasta encontrarse con algún Sistema Gestor de Base de Datos para recién probar sus consultas. El profesor por su parte puede formular muchos problemas, guiar el trabajo en clases y entregar una manera correcta de resolverlo, pero los ejercicios realizados por los alumnos fuera de la clase no pueden ser revisados en su totalidad. Herramientas automáticas para trabajar con Álgebra Relacional ya están implementadas, pero ninguna se adecua a las necesidades de la asignatura, por ende no son utilizadas. Junto con esto, y dado la situación anterior, no existe forma de saber cómo y en qué se equivocan los alumnos a la hora de enfrentarse a un problema donde se utilice el Álgebra Relacional fuera del aula. Además, no existe un registro de los errores más cometidos ni la frecuencia de los mismos. \\
+
+%\subsection{Enfoque}
+
+\subsection{Solución Propuesta}
+\label{solprop}
+
+Este Trabajo de Título tiene como objetivo crear una aplicación que permita trabajar directamente con consultas en Álgebra Relacional, de tal manera que los alumnos de Modelo de Datos de la Escuela de Ingeniería Civil Informática puedan aprender y ejercitar de forma didáctica sus consultas en Bases de Datos Relacionales. Junto con ésto, se implementará un módulo de extracción de datos con el fin de recopilar información de entrada ingresada por los alumnos que utilicen la aplicación para así obtener un feedback más representativo y directo a través de alguna técnica de Minería de Datos. Ésta información tendrá todo tipo de datos del alumno y acciones que ejecute en el programa como errores de consulta, tiempos entre consultas, errores en respuestas de ejercicios, entre otros. Finalmente, por medio de alguna técnica de Minaría de Datos, obtener datos descriptivos de cómo trabajan los alumnos y cuales son sus errores. \\
+
+\subsection{Importancia del trabajo}
+\label{impotrabajo}
+
+Gracias a esto, el alumno podrá detectar de manera inmediata y automática si sus consultas tienen una sintaxis adecuada o si estas entregan los resultados esperados. De esta forma, el alumno se enfocará directamente en trabajar con Álgebra Relacional y no tendrá la necesidad de enfrentarse directamente con un Sistema Gestor de Base de Datos, evitando la tarea de aprender la sintaxis en lenguaje SQL. \\
+
+Por otra parte, y gracias al sistema de extracción de datos, se podrá hacer un seguimiento del trabajo de cada alumno al momento de realizar sus consultas. De esta forma el profesor tendrá la posibilidad de realizar un análisis sobre los datos obtenidos con el fin de saber, por ejemplo, cuáles son los errores más comunes, la frecuencia de ellos o la cantidad de alumnos que no comenten ningún error. Esto resulta de mucha ayuda para el profesor, ya que el feedback obtenido gracias al estudio de estos datos puede ser utilizado para reforzar las áreas donde los alumnos presenten más problemas, personalizando aún más el aprendizaje de los alumnos. \\
+
+\section{Objetivos}
+\label{obj}
+
+En esta sección se da a conocer el Objetivo General del Trabajo de Título, junto con los Objetivos Específicos que se desprenden de él. \\
+
+\subsection{Objetivo General}
+\label{objgeneral}
+
+El objetivo principal de este Trabajo de Título es desarrollar una aplicación que ejecute consultas de Álgebra Relacional con el fin de entregar una herramienta didáctica para fomentar el aprendizaje de este lenguaje, además de construir un módulo de extracción de datos para el posterior estudio del comportamiento de los alumnos mientras usan la aplicación, mediante alguna técnica de Minería de Datos, con la finalidad ser un apoyo en la enseñanza del Álgebra Relacional. \\
+
+\subsection{Objetivos Específicos}
+\label{objesp}
+
+\begin{itemize}
+
+\item Realizar una toma de requerimientos con el fin de establecer el dominio de trabajo, delimitar la frontera y analizar las necesidades fundamentales que la aplicación debe satisfacer. \\
+
+\item Diseñar, codificar y testear la aplicación para consultas de Álgebra Relacional. \\
+
+\item Desarrollar una Base de Datos que recopile los datos de las consultas realizadas y conductas de los sujetos de prueba en tiempo de ejecución. \\
+
+\item Crear distintas Bases de Datos de ejemplo para importar a la aplicación a desarrollar. \\
+
+\item Desarrollar un set de ejercicios de ejemplos para cada base de datos de ejemplo. \\
+
+\item Diseñar, codificar y testear un módulo para la captura de datos de las consultas realizadas de los sujetos de prueba en tiempo de ejecución, es decir, errores cometidos, sintaxis, entre otros. \\
+
+\item Utilizando técnicas de Minería de Datos, analizar e interpretar los datos obtenidos de las pruebas desde la Base de Datos de recolección de información. \\
+
+\end{itemize}

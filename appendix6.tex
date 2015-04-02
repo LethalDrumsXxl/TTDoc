@@ -1,0 +1,1016 @@
+\chapter{Pruebas}
+\label{ap-pruebas}
+
+En el presente apéndice se muestra el detalle de todas las pruebas explicadas en el Capítulo \ref{pruebas} de Pruebas.
+
+\section{Pruebas Unitarias}
+\label{ap-pruebasunitarias}
+
+Este capítulo contiene las tablas de la ejecución de las Pruebas Unitarias. Desde las Tablas \ref{tab:pucrearalumnodesdeinicio} al \ref{tab:puverestadisticas}, se puede observar la especificación de la ejecución de las Pruebas Unitarias. \\
+
+\begin{table}[h!]
+\footnotesize
+\centering
+\begin{tabular}{|p{3.5cm}|p{9cm}|p{2cm}|}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+\multicolumn{2}{|p{12.5cm}|}{\cellcolor[HTML]{C0C0C0}\textbf{Prueba Unitaria}}                                                                                           & \textbf{Id: PU01}                                                                                         \\ \hline
+Nombre                                      & \multicolumn{2}{p{11cm}|}{Crear Usuario desde Inicio}                                                                                                                                                                                \\ \hline
+Referencias                                 & \multicolumn{2}{p{11cm}|}{CUR01}                                                                                                                                                                                                     \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{3}{|l|}{\cellcolor[HTML]{EFEFEF}\textit{Caso de Prueba}}                                                                                                                                                                                                        \\ \hline
+Entrada Válida                              & \multicolumn{2}{p{11cm}|}{Rut="12345678", Primer Nombre="nombre", Segundo Nombre="nombre", Paterno="paterno", Materno="materno", Mail="usuario@mail.com", Año Ingreso="2011", Vez Cursando="1", Edad="21"}                           \\ \hline
+Salida Esperada                             & \multicolumn{2}{p{11cm}|}{El sistema debe crear la cuenta, dar aviso de la creación e iniciar la sesión de la nueva cuenta}                                                                                                          \\ \hline
+Entrada Inválida                            & \multicolumn{2}{p{11cm}|}{Rut="123456789", Primer Nombre="nombre1", Segundo Nombre="nombre2", Paterno="paterno1", Materno="materno1", Mail="usuario@mail@.com", Año Ingreso="Dos mill once", Vez Cursando="una vez", Edad="21 años"} \\ \hline
+Salida Esperada                             & \multicolumn{2}{p{11cm}|}{El sistema debe impedir el avance del formulario cada vez que se encuentra con alguna entrada inválida, evitando la creación de la cuenta}                                                                 \\ \hline
+Entrada Vacía                               & \multicolumn{2}{p{11cm}|}{Campos Rut, Primer Nombre, Segundo Nombre, Paterno, Materno, Mail, Año Ingreso y Vez Cursando vacíos}                                                                                                      \\ \hline
+Salida Esperada                             & \multicolumn{2}{p{11cm}|}{El sistema debe impedir el avance del formulario cada vez que se encuentra con alguna entrada vacía, evitando la creación de la cuenta}                                                                    \\ \hline
+\textbf{Resultado}                          & \multicolumn{2}{p{11cm}|}{\textit{El sistema se comporta debidamente en todos los casos de prueba}}                                                                                                                                  \\ \hline
+\end{tabular}
+\caption{Pruebas Unitarias - Crear Alumno desde Inicio}
+\label{tab:pucrearalumnodesdeinicio}
+\end{table}
+
+\begin{table}[h!]
+\footnotesize
+\centering
+\begin{tabular}{|p{3.5cm}|p{9cm}|p{2cm}|}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+\multicolumn{2}{|p{12.5cm}|}{\cellcolor[HTML]{C0C0C0}\textbf{Prueba Unitaria}} & \textbf{Id: PU02} \\ \hline
+Nombre                                      & \multicolumn{2}{p{11cm}|}{Iniciar Sesión}                                                                                                                                                                                \\ \hline
+Referencias                                 & \multicolumn{2}{p{11cm}|}{CUR02}                                                                                                                                                                                                     \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{3}{|l|}{\cellcolor[HTML]{EFEFEF}\textit{Caso de Prueba}}                                                                                                                                                                                                        \\ \hline
+Entrada Válida                              & \multicolumn{2}{p{11cm}|}{Rut="12345678", Contraseña="pass123" } \\ \hline
+Salida Esperada                             & \multicolumn{2}{p{11cm}|}{El sistema debe iniciar la sesión de la cuenta ingresada} \\ \hline
+Entrada Inválida                            & \multicolumn{2}{p{11cm}|}{Rut="123456789", Contraseña="pass123"} \\ \hline
+Salida Esperada                             & \multicolumn{2}{p{11cm}|}{El sistema debe indicar que los datos ingresados son incorrectos} \\ \hline
+Entrada Vacía                               & \multicolumn{2}{p{11cm}|}{Campos Rut y Contraseña vacíos} \\ \hline
+Salida Esperada                             & \multicolumn{2}{p{11cm}|}{El sistema debe indicar que los datos ingresados son incorrectos} \\ \hline
+\textbf{Resultado}                          & \multicolumn{2}{p{11cm}|}{\textit{El sistema se comporta debidamente en todos los casos de prueba}}                                                                                                                                  \\ \hline
+\end{tabular}
+\caption{Pruebas Unitarias - Iniciar Sesión}
+\label{tab:puiniciarsesion}
+\end{table}
+
+\clearpage
+\newpage
+\begin{table}[h!]
+\footnotesize
+\centering
+\begin{tabular}{|p{3.5cm}|p{9cm}|p{2cm}|}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+\multicolumn{2}{|p{12.5cm}|}{\cellcolor[HTML]{C0C0C0}\textbf{Prueba Unitaria}} & \textbf{Id: PU03} \\ \hline
+Nombre                                      & \multicolumn{2}{p{11cm}|}{Eliminar Cuenta}                                                                                                                                                                                \\ \hline
+Referencias                                 & \multicolumn{2}{p{11cm}|}{CUR07}                                                                                                                                                                                                     \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{3}{|l|}{\cellcolor[HTML]{EFEFEF}\textit{Caso de Prueba}}                                                                                                                                                                                                        \\ \hline
+Entrada Válida                              & \multicolumn{2}{p{11cm}|}{Seleccionar de una lista la cuenta a eliminar y apretar el botón eliminar que se muestra en la ventana desplegada} \\ \hline
+Salida Esperada                             & \multicolumn{2}{p{11cm}|}{El sistema elimina la cuenta seleccionada y da aviso de la eliminación} \\ \hline
+Entrada Inválida                            & \multicolumn{2}{p{11cm}|}{Seleccionar de una lista la cuenta a eliminar y luego seleccionar otra cuenta, anulando la selección anterior} \\ \hline
+Salida Esperada                             & \multicolumn{2}{p{11cm}|}{El sistema debe ser capaz de cambiar los datos de la ventana desplegada al momento de cambiar la selección de la cuenta} \\ \hline
+Entrada Vacía                               & \multicolumn{2}{p{11cm}|}{Apretar ENTER sin seleccionar ninguna cuenta} \\ \hline
+Salida Esperada                             & \multicolumn{2}{p{11cm}|}{El sistema no debe hacer nada y sólamente debe esperar seleccionar una cuenta} \\ \hline
+\textbf{Resultado}                          & \multicolumn{2}{p{11cm}|}{\textit{El sistema se comporta debidamente en todos los casos de prueba}}                                                                                                                                  \\ \hline
+\end{tabular}
+\caption{Pruebas Unitarias - Eliminar Cuenta}
+\label{tab:pueliminarcuenta}
+\end{table}
+
+\begin{table}[h!]
+\footnotesize
+\centering
+\begin{tabular}{|p{3.5cm}|p{9cm}|p{2cm}|}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+\multicolumn{2}{|p{12.5cm}|}{\cellcolor[HTML]{C0C0C0}\textbf{Prueba Unitaria}} & \textbf{Id: PU04} \\ \hline
+Nombre                                      & \multicolumn{2}{p{11cm}|}{Modificar Cuenta}                                                                                                                                                                                \\ \hline
+Referencias                                 & \multicolumn{2}{p{11cm}|}{CUR08}                                                                                                                                                                                                     \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{3}{|l|}{\cellcolor[HTML]{EFEFEF}\textit{Caso de Prueba}}                                                                                                                                                                                                        \\ \hline
+Entrada Válida                              & \multicolumn{2}{p{11cm}|}{Seleccionar de una lista la cuenta a modificar, modificar el campo Mail="usuario\_alumno@mail.com" y confirmar apretando el botón modificar} \\ \hline
+Salida Esperada                             & \multicolumn{2}{p{11cm}|}{El sistema modificar la cuenta seleccionada y da abiso de la modificación} \\ \hline
+Entrada Inválida                            & \multicolumn{2}{p{11cm}|}{Seleccionar de una lista la cuenta a modificar, modificar el campo Mail="usuario\_alumno@3@mail.com" y confirmar apretando el botón modificar} \\ \hline
+Salida Esperada                             & \multicolumn{2}{p{11cm}|}{El sistema debe impedir la modificación de la cuenta cada vez que se encuentra con alguna entrada inválida} \\ \hline
+Entrada Vacía                               & \multicolumn{2}{p{11cm}|}{Seleccionar de una lista la cuenta a modificar, y modificar el campo Mail dejándolo como vacío} \\ \hline
+Salida Esperada                             & \multicolumn{2}{p{11cm}|}{El sistema debe impedir la modificación de la cuenta cada vez que se encuentra con alguna entrada vacía} \\ \hline
+\textbf{Resultado}                          & \multicolumn{2}{p{11cm}|}{\textit{El sistema se comporta debidamente en todos los casos de prueba}}                                                                                                                                  \\ \hline
+\end{tabular}
+\caption{Pruebas Unitarias - Modificar Cuenta}
+\label{tab:pumodificarcuenta}
+\end{table}
+
+\clearpage
+\newpage
+\begin{table}[h!]
+\footnotesize
+\centering
+\begin{tabular}{|p{3.5cm}|p{9cm}|p{2cm}|}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+\multicolumn{2}{|p{12.5cm}|}{\cellcolor[HTML]{C0C0C0}\textbf{Prueba Unitaria}} & \textbf{Id: PU05} \\ \hline
+Nombre                                      & \multicolumn{2}{p{11cm}|}{Crear BD}                                                                                                                                                                                \\ \hline
+Referencias                                 & \multicolumn{2}{p{11cm}|}{CUR10}                                                                                                                                                                                                     \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{3}{|l|}{\cellcolor[HTML]{EFEFEF}\textit{Caso de Prueba}}                                                                                                                                                                                                        \\ \hline
+Entrada Válida                              & \multicolumn{2}{p{11cm}|}{Nombre="ejemplo", Dejar Visible a los Alumnos="False"} \\ \hline
+Salida Esperada                             & \multicolumn{2}{p{11cm}|}{El sistema crea la nueva base de datos y da aviso de la creación} \\ \hline
+Entrada Inválida                            & \multicolumn{2}{p{11cm}|}{Nombre="12345678", Dejar Visible a los Alumnos="False"} \\ \hline
+Salida Esperada                             & \multicolumn{2}{p{11cm}|}{El sistema debe impedir la creación de la base de datos cada vez que se encuentra en el nombre con algún caracter que no sea alfanumérico} \\ \hline
+Entrada Vacía                               & \multicolumn{2}{p{11cm}|}{Capos Nombre como vacío} \\ \hline
+Salida Esperada                             & \multicolumn{2}{p{11cm}|}{El sistema debe impedir la creación de la base de datos cada vez que se encuentra con un campo vacío} \\ \hline
+\textbf{Resultado}                          & \multicolumn{2}{p{11cm}|}{\textit{El sistema se comporta debidamente en todos los casos de prueba}}                                                                                                                                  \\ \hline
+\end{tabular}
+\caption{Pruebas Unitarias - Crear BD}
+\label{tab:pucrearbd}
+\end{table}
+
+\begin{table}[h!]
+\footnotesize
+\centering
+\begin{tabular}{|p{3.5cm}|p{9cm}|p{2cm}|}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+\multicolumn{2}{|p{12.5cm}|}{\cellcolor[HTML]{C0C0C0}\textbf{Prueba Unitaria}} & \textbf{Id: PU06} \\ \hline
+Nombre                                      & \multicolumn{2}{p{11cm}|}{Eliminar BD}                                                                                                                                                                                \\ \hline
+Referencias                                 & \multicolumn{2}{p{11cm}|}{CUR11}                                                                                                                                                                                                     \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{3}{|l|}{\cellcolor[HTML]{EFEFEF}\textit{Caso de Prueba}}                                                                                                                                                                                                        \\ \hline
+Entrada Válida                              & \multicolumn{2}{p{11cm}|}{Seleccionar de una lista la base de datos a eliminar y confirmar la eliminación apretando el botón Eliminar que se muestra en la ventana desplegada} \\ \hline
+Salida Esperada                             & \multicolumn{2}{p{11cm}|}{El sistema elimina la base de datos y da aviso de la eliminación} \\ \hline
+Entrada Inválida                            & \multicolumn{2}{p{11cm}|}{Seleccionar de una lista la base de datos a eliminar y luego seleccionar otra base de datos mientras la ventana esta desplegada} \\ \hline
+Salida Esperada                             & \multicolumn{2}{p{11cm}|}{El sistema debe mostrar los campos de la nueva base de datos seleccionada en la ventana desplegada} \\ \hline
+Entrada Vacía                               & \multicolumn{2}{p{11cm}|}{Apretar el botón ENTER sin seleccionar ninguna base de datos} \\ \hline
+Salida Esperada                             & \multicolumn{2}{p{11cm}|}{El sistema no debe hacer nada y solamente debe esperar a seleccionar una base de datos} \\ \hline
+\textbf{Resultado}                          & \multicolumn{2}{p{11cm}|}{\textit{El sistema se comporta debidamente en todos los casos de prueba}}                                                                                                                                  \\ \hline
+\end{tabular}
+\caption{Pruebas Unitarias - Eliminar BD}
+\label{tab:pueliminarbd}
+\end{table}
+
+\clearpage
+\newpage
+\begin{table}[h!]
+\footnotesize
+\centering
+\begin{tabular}{|p{3.5cm}|p{9cm}|p{2cm}|}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+\multicolumn{2}{|p{12.5cm}|}{\cellcolor[HTML]{C0C0C0}\textbf{Prueba Unitaria}} & \textbf{Id: PU07} \\ \hline
+Nombre                                      & \multicolumn{2}{p{11cm}|}{Modificar BD}                                                                                                                                                                                \\ \hline
+Referencias                                 & \multicolumn{2}{p{11cm}|}{CUR12}                                                                                                                                                                                                     \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{3}{|l|}{\cellcolor[HTML]{EFEFEF}\textit{Caso de Prueba}}                                                                                                                                                                                                        \\ \hline
+Entrada Válida                              & \multicolumn{2}{p{11cm}|}{Seleccionar de una lista la base de datos a modificar, desde la ventana emergente modificar el campo Nombre="testing" y confirmar apretando el botón Modificar} \\ \hline
+Salida Esperada                             & \multicolumn{2}{p{11cm}|}{El sistema modifica la base de datos seleccionada y da aviso de la modificación} \\ \hline
+Entrada Inválida                            & \multicolumn{2}{p{11cm}|}{Seleccionar de una lista la base de datos a modificar, desde la ventena emergente modificar el campo Nombre="123test" y confirmar apretando el botón Modificar} \\ \hline
+Salida Esperada                             & \multicolumn{2}{p{11cm}|}{El sistema debe impedir la modificación de la base de datos cada vez que se encuentra con un nombre que no empieze con un cacracter alfabético} \\ \hline
+Entrada Vacía                               & \multicolumn{2}{p{11cm}|}{Seleccionar de una lista la base de datos a modificar, desde la ventana emergente modificar el campo Nombre dejándolo vacío y confirmar apretando Modificar} \\ \hline
+Salida Esperada                             & \multicolumn{2}{p{11cm}|}{El sistema debe impedir la modificación de la base de datos cada vez que se encuentra con un nombre vacío} \\ \hline
+\textbf{Resultado}                          & \multicolumn{2}{p{11cm}|}{\textit{El sistema se comporta debidamente en todos los casos de prueba}}                                                                                                                                  \\ \hline
+\end{tabular}
+\caption{Pruebas Unitarias - Modificar BD}
+\label{tab:pumodificarbd}
+\end{table}
+
+\begin{table}[h!]
+\footnotesize
+\centering
+\begin{tabular}{|p{3.5cm}|p{9cm}|p{2cm}|}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+\multicolumn{2}{|p{12.5cm}|}{\cellcolor[HTML]{C0C0C0}\textbf{Prueba Unitaria}} & \textbf{Id: PU08} \\ \hline
+Nombre                                      & \multicolumn{2}{p{11cm}|}{Cargar BD}                                                                                                                                                                                \\ \hline
+Referencias                                 & \multicolumn{2}{p{11cm}|}{CUR13}                                                                                                                                                                                                     \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{3}{|l|}{\cellcolor[HTML]{EFEFEF}\textit{Caso de Prueba}}                                                                                                                                                                                                        \\ \hline
+Entrada Válida                              & \multicolumn{2}{p{11cm}|}{Seleccionar de una lista la base de datos a cargar, desde la ventana emergente confimar apretando el botón Cargar} \\ \hline
+Salida Esperada                             & \multicolumn{2}{p{11cm}|}{El sistema carga la base de datos seleccinada y da aviso de la carga} \\ \hline
+Entrada Inválida                            & \multicolumn{2}{p{11cm}|}{Seleccionar de una lista la base de datos a cargar, luego seleccionar otra base de datos mientras esté abierta la ventana emergente} \\ \hline
+Salida Esperada                             & \multicolumn{2}{p{11cm}|}{El sistema debe ser capaz de cambiar la base de datos seleccionada y mostrar los datos de la nueva base de datos seleccionada a cargar} \\ \hline
+Entrada Vacía                               & \multicolumn{2}{p{11cm}|}{Apretar el botón ENTER sin seleccionar ninguna base de datos} \\ \hline
+Salida Esperada                             & \multicolumn{2}{p{11cm}|}{El sistema no debe hacer nada y solamente debe esperar a seleccionar una base de datos} \\ \hline
+\textbf{Resultado}                          & \multicolumn{2}{p{11cm}|}{\textit{El sistema se comporta debidamente en todos los casos de prueba}}                                                                                                                                  \\ \hline
+\end{tabular}
+\caption{Pruebas Unitarias - cargar BD}
+\label{tab:pucargarbd}
+\end{table}
+
+\clearpage
+\newpage
+\begin{table}[h!]
+\footnotesize
+\centering
+\begin{tabular}{|p{3.5cm}|p{9cm}|p{2cm}|}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+\multicolumn{2}{|p{12.5cm}|}{\cellcolor[HTML]{C0C0C0}\textbf{Prueba Unitaria}} & \textbf{Id: PU09} \\ \hline
+Nombre                                      & \multicolumn{2}{p{11cm}|}{Gestionar Ejercicios}                                                                                                                                                                                \\ \hline
+Referencias                                 & \multicolumn{2}{p{11cm}|}{CUR15}                                                                                                                                                                                                     \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{3}{|l|}{\cellcolor[HTML]{EFEFEF}\textit{Caso de Prueba}}                                                                                                                                                                                                        \\ \hline
+Entrada Válida                              & \multicolumn{2}{p{11cm}|}{Seleccionar de una lista de ejercicios un ejercicio a eliminar, apretar el botón Editar, seleccionar borrar, confiar la eliminación y finalmente apretar el botón Guardar Cambios} \\ \hline
+Salida Esperada                             & \multicolumn{2}{p{11cm}|}{El sistema guarda los cambios realizados y da aviso de los cambios} \\ \hline
+Entrada Inválida                            & \multicolumn{2}{p{11cm}|}{-} \\ \hline
+Salida Esperada                             & \multicolumn{2}{p{11cm}|}{-} \\ \hline
+Entrada Vacía                               & \multicolumn{2}{p{11cm}|}{-} \\ \hline
+Salida Esperada                             & \multicolumn{2}{p{11cm}|}{-} \\ \hline
+\textbf{Resultado}                          & \multicolumn{2}{p{11cm}|}{\textit{El sistema se comporta debidamente en todos los casos de prueba}}                                                                                                                                  \\ \hline
+\end{tabular}
+\caption{Pruebas Unitarias - Gestionar Ejercicios (Eliminar Ejercicio)}
+\label{tab:pugestionarejercicio-eliminar}
+\end{table}
+
+\begin{table}[h!]
+\footnotesize
+\centering
+\begin{tabular}{|p{3.5cm}|p{9cm}|p{2cm}|}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+\multicolumn{2}{|p{12.5cm}|}{\cellcolor[HTML]{C0C0C0}\textbf{Prueba Unitaria}} & \textbf{Id: PU10} \\ \hline
+Nombre                                      & \multicolumn{2}{p{11cm}|}{Gestionar Ejercicios}                                                                                                                                                                                \\ \hline
+Referencias                                 & \multicolumn{2}{p{11cm}|}{CUR15}                                                                                                                                                                                                     \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{3}{|l|}{\cellcolor[HTML]{EFEFEF}\textit{Caso de Prueba}}                                                                                                                                                                                                        \\ \hline
+Entrada Válida                              & \multicolumn{2}{p{11cm}|}{Seleccionar de una lista un ejercicio a modificar, modificar los campos Pregunta="Mostrar todos los trabajadores que son administradores y productores", ejecutar la consulta "resp := empleados\_adm inter empleados\_prod" y agregarla al campo Consultas, Nombre Relación Resultante="resp"} \\ \hline
+Salida Esperada                             & \multicolumn{2}{p{11cm}|}{El sistema debe guardar los cambios realizados y da aviso de los cambios} \\ \hline
+Entrada Inválida                            & \multicolumn{2}{p{11cm}|}{Seleccionar de una lista un ejercicio a modificar, modificar los campos Pregunta="Mostrar todos los trabajadores que son administradores y productores", agregar al campo Consultas="resp := empleados\_adm inter empleados\_prod" son haber ejecutado esta consulta, Nombre Relación Resultante="resp} \\ \hline
+Salida Esperada                             & \multicolumn{2}{p{11cm}|}{El sistema debe impedir la creación del ejercicio si la relación resultante no existe en la base de datos} \\ \hline
+Entrada Vacía                               & \multicolumn{2}{p{11cm}|}{Seleccionar de una lista un ejercicio a modificar y dejar todos los campos vacíos} \\ \hline
+Salida Esperada                             & \multicolumn{2}{p{11cm}|}{El sistema debe evitar que el usuario genere ejercicios con algún campo vacío} \\ \hline
+\textbf{Resultado}                          & \multicolumn{2}{p{11cm}|}{\textit{El sistema se comporta debidamente en todos los casos de prueba}}                                                                                                                                  \\ \hline
+\end{tabular}
+\caption{Pruebas Unitarias - Gestionar Ejercicios (Modificar Ejercicio)}
+\label{tab:pugestionarejercicio-modificar}
+\end{table}
+
+\clearpage
+\newpage
+\begin{table}[h!]
+\footnotesize
+\centering
+\begin{tabular}{|p{3.5cm}|p{9cm}|p{2cm}|}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+\multicolumn{2}{|p{12.5cm}|}{\cellcolor[HTML]{C0C0C0}\textbf{Prueba Unitaria}} & \textbf{Id: PU11} \\ \hline
+Nombre                                      & \multicolumn{2}{p{11cm}|}{Gestionar Ejercicios}                                                                                                                                                                                \\ \hline
+Referencias                                 & \multicolumn{2}{p{11cm}|}{CUR15}                                                                                                                                                                                                     \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{3}{|l|}{\cellcolor[HTML]{EFEFEF}\textit{Caso de Prueba}}                                                                                                                                                                                                        \\ \hline
+Entrada Válida                              & \multicolumn{2}{p{11cm}|}{Agregar un ejercicio con campos Pregunta="Mostrar todos los trabajadores que son administradores o productores", ejecutar la consulta "resp := empleados\_adm union empleados\_prod" y agregarla al campo Consultas, Nombre Relación Resultante="resp", finalmente guardar los cambios} \\ \hline
+Salida Esperada                             & \multicolumn{2}{p{11cm}|}{El sistema guarda los cambios y da aviso de los cambios} \\ \hline
+Entrada Inválida                            & \multicolumn{2}{p{11cm}|}{Agregar un ejercicio con campos Pregunta="Mostrar todos los trabajadores que son administradores y productores", agregar al campo Consultas="resp := empleados\_adm inter empleados\_prod" son haber ejecutado esta consulta, Nombre Relación Resultante="resp} \\ \hline
+Salida Esperada                             & \multicolumn{2}{p{11cm}|}{El sistema debe impedir la creación del ejercicio si la relación resultante no existe en la base de datos} \\ \hline
+Entrada Vacía                               & \multicolumn{2}{p{11cm}|}{Crear un ejercicio dejando campos vacíos} \\ \hline
+Salida Esperada                             & \multicolumn{2}{p{11cm}|}{El sistema debe evitar que el usuario cree ejercicios dejando algún campo vacío} \\ \hline
+\textbf{Resultado}                          & \multicolumn{2}{p{11cm}|}{\textit{El sistema se comporta debidamente en todos los casos de prueba}}                                                                                                                                  \\ \hline
+\end{tabular}
+\caption{Pruebas Unitarias - Gestionar Ejercicios (Crear Ejercicio)}
+\label{tab:pugestionarejercicio-crear}
+\end{table}
+
+\begin{table}[h!]
+\footnotesize
+\centering
+\begin{tabular}{|p{3.5cm}|p{9cm}|p{2cm}|}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+\multicolumn{2}{|p{12.5cm}|}{\cellcolor[HTML]{C0C0C0}\textbf{Prueba Unitaria}} & \textbf{Id: PU12} \\ \hline
+Nombre                                      & \multicolumn{2}{p{11cm}|}{Responder Ejercicio}                                                                                                                                                                                \\ \hline
+Referencias                                 & \multicolumn{2}{p{11cm}|}{CUR16}                                                                                                                                                                                                     \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{3}{|l|}{\cellcolor[HTML]{EFEFEF}\textit{Caso de Prueba}}                                                                                                                                                                                                        \\ \hline
+Entrada Válida                              & \multicolumn{2}{p{11cm}|}{Responder cada ejercicio ejecutando las consultas pertinente y repondiendo correctamente todas las preguntas en Relación Resultante cada relación generada para cada ejercicio, luego apretar Enviar Respuestas} \\ \hline
+Salida Esperada                             & \multicolumn{2}{p{11cm}|}{El sistema debe redireccionar a una página de resultados mostrando el resultado final de todo el cuestionario} \\ \hline
+Entrada Inválida                            & \multicolumn{2}{p{11cm}|}{Responder en algún ejercicio en el campo Relación Resultante, cualquier valor que no exista en la base de datos y luego apretar Enviar Respuestas} \\ \hline
+Salida Esperada                             & \multicolumn{2}{p{11cm}|}{El sistema debe redireccionar a la página de resultados mostrando el resultado incorrecto en la pregunta mal respondida} \\ \hline
+Entrada Vacía                               & \multicolumn{2}{p{11cm}|}{Responder cada ejercicio dejando el campo Relación Resultante vacía} \\ \hline
+Salida Esperada                             & \multicolumn{2}{p{11cm}|}{El sistema debe redireccionar a la página de resultados mostrando los resultados incorrectos en las preguntas con respuestas vacías} \\ \hline
+\textbf{Resultado}                          & \multicolumn{2}{p{11cm}|}{\textit{El sistema se comporta debidamente en todos los casos de prueba}}                                                                                                                                  \\ \hline
+\end{tabular}
+\caption{Pruebas Unitarias - Responder Ejercicio}
+\label{tab:puresponderejercicio}
+\end{table}
+
+\clearpage
+\newpage
+\begin{table}[h!]
+\footnotesize
+\centering
+\begin{tabular}{|p{3.5cm}|p{9cm}|p{2cm}|}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+\multicolumn{2}{|p{12.5cm}|}{\cellcolor[HTML]{C0C0C0}\textbf{Prueba Unitaria}} & \textbf{Id: PU13} \\ \hline
+Nombre                                      & \multicolumn{2}{p{11cm}|}{Agregar Relación}                                                                                                                                                                                \\ \hline
+Referencias                                 & \multicolumn{2}{p{11cm}|}{CUR18}                                                                                                                                                                                                     \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{3}{|l|}{\cellcolor[HTML]{EFEFEF}\textit{Caso de Prueba}}                                                                                                                                                                                                        \\ \hline
+Entrada Válida                              & \multicolumn{2}{p{11cm}|}{Agregar una nueva relación ingresando el nombre de la relación, la cantidad de atributos y completar cada atributo, para finalmente confirmar aprentando Aceptar} \\ \hline
+Salida Esperada                             & \multicolumn{2}{p{11cm}|}{El sistema genera la nueva relación y manda un mensaje de aviso al usuario} \\ \hline
+Entrada Inválida                            & \multicolumn{2}{p{11cm}|}{Agregar una nueva relación rellenando los campos nombre de relación y cantidad de atributos con valores inválidos, además de ingresar nombre de atributos inválidos.} \\ \hline
+Salida Esperada                             & \multicolumn{2}{p{11cm}|}{El sistema debe impedir la creación de la relaciónque tenga campos inválidos} \\ \hline
+Entrada Vacía                               & \multicolumn{2}{p{11cm}|}{Agregar una nueva relación dejando los campos nombre de relación y cantidad de atributos como vacíos, ademñas de dejar los campos nombre de atributo vacíos} \\ \hline
+Salida Esperada                             & \multicolumn{2}{p{11cm}|}{El sistema debe impedir la creación de la relación que tenga campos vacíos} \\ \hline
+\textbf{Resultado}                          & \multicolumn{2}{p{11cm}|}{\textit{El sistema se comporta debidamente en todos los casos de prueba}}                                                                                                                                  \\ \hline
+\end{tabular}
+\caption{Pruebas Unitarias - Agregar Relación}
+\label{tab:puagregarrelacion}
+\end{table}
+
+\begin{table}[h!]
+\footnotesize
+\centering
+\begin{tabular}{|p{3.5cm}|p{9cm}|p{2cm}|}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+\multicolumn{2}{|p{12.5cm}|}{\cellcolor[HTML]{C0C0C0}\textbf{Prueba Unitaria}} & \textbf{Id: PU14} \\ \hline
+Nombre                                      & \multicolumn{2}{p{11cm}|}{Eliminar Relación}                                                                                                                                                                                \\ \hline
+Referencias                                 & \multicolumn{2}{p{11cm}|}{CUR19}                                                                                                                                                                                                     \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{3}{|l|}{\cellcolor[HTML]{EFEFEF}\textit{Caso de Prueba}}                                                                                                                                                                                                        \\ \hline
+Entrada Válida                              & \multicolumn{2}{p{11cm}|}{Seleccionar de la lista la relación a eliminar y confirmar apretando Eliminar} \\ \hline
+Salida Esperada                             & \multicolumn{2}{p{11cm}|}{El sistema elimina la relación seleciconada y da aviso de dicha eliminación} \\ \hline
+Entrada Inválida                            & \multicolumn{2}{p{11cm}|}{Seleccionar de una lista la relación a eliminar y luego seleccionar otra relación, anulando la selección anterior} \\ \hline
+Salida Esperada                             & \multicolumn{2}{p{11cm}|}{El sistema debe ser capaz de cambiar la relación seleccionada y mostrar los datos de la nueva relación seleccionada a eliminar} \\ \hline
+Entrada Vacía                               & \multicolumn{2}{p{11cm}|}{Apretar el botón ENTER sin seleccionar ninguna base de datos} \\ \hline
+Salida Esperada                             & \multicolumn{2}{p{11cm}|}{El sistema no debe hacer nada y solamente debe esperar a seleccionar una base de datos} \\ \hline
+\textbf{Resultado}                          & \multicolumn{2}{p{11cm}|}{\textit{El sistema se comporta debidamente en todos los casos de prueba}}                                                                                                                                  \\ \hline
+\end{tabular}
+\caption{Pruebas Unitarias - Eliminar Relación }
+\label{tab:pueliminarrelacion}
+\end{table}
+
+\clearpage
+\newpage
+\begin{table}[h!]
+\footnotesize
+\centering
+\begin{tabular}{|p{3.5cm}|p{9cm}|p{2cm}|}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+\multicolumn{2}{|p{12.5cm}|}{\cellcolor[HTML]{C0C0C0}\textbf{Prueba Unitaria}} & \textbf{Id: PU15} \\ \hline
+Nombre                                      & \multicolumn{2}{p{11cm}|}{Modificar Relación}                                                                                                                                                                                \\ \hline
+Referencias                                 & \multicolumn{2}{p{11cm}|}{CUR20}                                                                                                                                                                                                     \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{3}{|l|}{\cellcolor[HTML]{EFEFEF}\textit{Caso de Prueba}}                                                                                                                                                                                                        \\ \hline
+Entrada Válida                              & \multicolumn{2}{p{11cm}|}{Seleccionar de la lista la relación a modificar, modificando todos los campos de la relación y luego confirmar apretando el botón Modificar} \\ \hline
+Salida Esperada                             & \multicolumn{2}{p{11cm}|}{El sistema modifica la relación seleccionada y da aviso de dicha modificación} \\ \hline
+Entrada Inválida                            & \multicolumn{2}{p{11cm}|}{Seleccionar una relación y rellenar el formulario con valores inválidos y luego Modificar} \\ \hline
+Salida Esperada                             & \multicolumn{2}{p{11cm}|}{El sistema debe impedir la modificación de la relación cuando hay valores inválidos} \\ \hline
+Entrada Vacía                               & \multicolumn{2}{p{11cm}|}{Seleccionar una relación y modificar algún campo dejándolo vacío} \\ \hline
+Salida Esperada                             & \multicolumn{2}{p{11cm}|}{El sistema debe impedir la modificación de la relación cuando hay valores vacíos} \\ \hline
+\textbf{Resultado}                          & \multicolumn{2}{p{11cm}|}{\textit{El sistema se comporta debidamente en todos los casos de prueba}}                                                                                                                                  \\ \hline
+\end{tabular}
+\caption{Pruebas Unitarias - Modificar Relación}
+\label{tab:pumodificarrelacion}
+\end{table}
+
+\begin{table}[h!]
+\footnotesize
+\centering
+\begin{tabular}{|p{3.5cm}|p{9cm}|p{2cm}|}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+\multicolumn{2}{|p{12.5cm}|}{\cellcolor[HTML]{C0C0C0}\textbf{Prueba Unitaria}} & \textbf{Id: PU16} \\ \hline
+Nombre                                      & \multicolumn{2}{p{11cm}|}{Ver Relación}                                                                                                                                                                                \\ \hline
+Referencias                                 & \multicolumn{2}{p{11cm}|}{CUR21}                                                                                                                                                                                                     \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{3}{|l|}{\cellcolor[HTML]{EFEFEF}\textit{Caso de Prueba}}                                                                                                                                                                                                        \\ \hline
+Entrada Válida                              & \multicolumn{2}{p{11cm}|}{Seleccionar de la lista la relación a ver y luego confirmar apretando el botón Ver Relación} \\ \hline
+Salida Esperada                             & \multicolumn{2}{p{11cm}|}{El sistema muestra las tuplas de la relación seleccionada} \\ \hline
+Entrada Inválida                            & \multicolumn{2}{p{11cm}|}{-} \\ \hline
+Salida Esperada                             & \multicolumn{2}{p{11cm}|}{-} \\ \hline
+Entrada Vacía                               & \multicolumn{2}{p{11cm}|}{No seleccionar ninguna relación y luego apretar el botón Ver Relación} \\ \hline
+Salida Esperada                             & \multicolumn{2}{p{11cm}|}{El sistema avisa que debe seleccionar una relación para visualizarla} \\ \hline
+\textbf{Resultado}                          & \multicolumn{2}{p{11cm}|}{\textit{El sistema se comporta debidamente en todos los casos de prueba}}                                                                                                                                  \\ \hline
+\end{tabular}
+\caption{Pruebas Unitarias - Ver Relación}
+\label{tab:puverrelacion}
+\end{table}
+
+\clearpage
+\newpage
+\begin{table}[h!]
+\footnotesize
+\centering
+\begin{tabular}{|p{3.5cm}|p{9cm}|p{2cm}|}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+\multicolumn{2}{|p{12.5cm}|}{\cellcolor[HTML]{C0C0C0}\textbf{Prueba Unitaria}} & \textbf{Id: PU17} \\ \hline
+Nombre                                      & \multicolumn{2}{p{11cm}|}{Ingresar Tupla}                                                                                                                                                                                \\ \hline
+Referencias                                 & \multicolumn{2}{p{11cm}|}{CUR23}                                                                                                                                                                                                     \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{3}{|l|}{\cellcolor[HTML]{EFEFEF}\textit{Caso de Prueba}}                                                                                                                                                                                                        \\ \hline
+Entrada Válida                              & \multicolumn{2}{p{11cm}|}{Ingresar los campos necesarios para la creación de la tupla y aceptar el botón Aceptar} \\ \hline
+Salida Esperada                             & \multicolumn{2}{p{11cm}|}{El sistema agrega la nueva tupla y manda un mensaje de aviso al usuario	} \\ \hline
+Entrada Inválida                            & \multicolumn{2}{p{11cm}|}{Ingresar una nueva tupla rellenando los campos con valores inválidos, es decir, agregar caractéres alfabéticos donde deben ir caracteres numéricos} \\ \hline
+Salida Esperada                             & \multicolumn{2}{p{11cm}|}{El sistema debe impedir la creación de la tupla con valores inválidos} \\ \hline
+Entrada Vacía                               & \multicolumn{2}{p{11cm}|}{Ingresar una nueva tupla dejando los campos de clave primaria vacíos} \\ \hline
+Salida Esperada                             & \multicolumn{2}{p{11cm}|}{El sistema debe impedir la creación de la tupla que tenga su clave primaria vacía} \\ \hline
+\textbf{Resultado}                          & \multicolumn{2}{p{11cm}|}{\textit{El sistema se comporta debidamente en todos los casos de prueba}}                                                                                                                                  \\ \hline
+\end{tabular}
+\caption{Pruebas Unitarias - Ingresar Tupla}
+\label{tab:puingresartupla}
+\end{table}
+
+\begin{table}[h!]
+\footnotesize
+\centering
+\begin{tabular}{|p{3.5cm}|p{9cm}|p{2cm}|}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+\multicolumn{2}{|p{12.5cm}|}{\cellcolor[HTML]{C0C0C0}\textbf{Prueba Unitaria}} & \textbf{Id: PU18} \\ \hline
+Nombre                                      & \multicolumn{2}{p{11cm}|}{Eliminar Tupla}                                                                                                                                                                                \\ \hline
+Referencias                                 & \multicolumn{2}{p{11cm}|}{CUR24}                                                                                                                                                                                                     \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{3}{|l|}{\cellcolor[HTML]{EFEFEF}\textit{Caso de Prueba}}                                                                                                                                                                                                        \\ \hline
+Entrada Válida                              & \multicolumn{2}{p{11cm}|}{Seleccionar de una lista, una tupla a eliminar, apretar el botón eliminar y confirmar apretando el botón Aceptar} \\ \hline
+Salida Esperada                             & \multicolumn{2}{p{11cm}|}{El sistema elimina la tupla y manda un mensaje de aviso al usuario} \\ \hline
+Entrada Inválida                            & \multicolumn{2}{p{11cm}|}{-} \\ \hline
+Salida Esperada                             & \multicolumn{2}{p{11cm}|}{-} \\ \hline
+Entrada Vacía                               & \multicolumn{2}{p{11cm}|}{No seleccionar ningúna tupla y apretar el botón Eliminar} \\ \hline
+Salida Esperada                             & \multicolumn{2}{p{11cm}|}{El sistema debe indicar que se debe seleccionar una tupla para poder eliminarla} \\ \hline
+\textbf{Resultado}                          & \multicolumn{2}{p{11cm}|}{\textit{El sistema se comporta debidamente en todos los casos de prueba}}                                                                                                                                  \\ \hline
+\end{tabular}
+\caption{Pruebas Unitarias - Eliminar Tupla}
+\label{tab:pueliminartupla}
+\end{table}
+
+\clearpage
+\newpage
+\begin{table}[h!]
+\footnotesize
+\centering
+\begin{tabular}{|p{3.5cm}|p{9cm}|p{2cm}|}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+\multicolumn{2}{|p{12.5cm}|}{\cellcolor[HTML]{C0C0C0}\textbf{Prueba Unitaria}} & \textbf{Id: PU19} \\ \hline
+Nombre                                      & \multicolumn{2}{p{11cm}|}{Modificar Tupla}                                                                                                                                                                                \\ \hline
+Referencias                                 & \multicolumn{2}{p{11cm}|}{CUR25}                                                                                                                                                                                                     \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{3}{|l|}{\cellcolor[HTML]{EFEFEF}\textit{Caso de Prueba}}                                                                                                                                                                                                        \\ \hline
+Entrada Válida                              & \multicolumn{2}{p{11cm}|}{Seleccionar una tupla a modificar, cambiar los campos de la tupla seleccionada y confirmar la modificación apretando Aceptar} \\ \hline
+Salida Esperada                             & \multicolumn{2}{p{11cm}|}{El sistema modifica la tupla seleccionada y da aviso de la modificación} \\ \hline
+Entrada Inválida                            & \multicolumn{2}{p{11cm}|}{Seleccionar una nueva tupla rellenando los campos con valores inválidos, es decir, agregar caractéres alfabéticos donde deben ir caracteres numéricos} \\ \hline
+Salida Esperada                             & \multicolumn{2}{p{11cm}|}{El sistema debe impedir la modificación de la tupla con valores inválidos} \\ \hline
+Entrada Vacía                               & \multicolumn{2}{p{11cm}|}{Seleccionar una nueva tupla dejando los campos de clave primaria vacíos} \\ \hline
+Salida Esperada                             & \multicolumn{2}{p{11cm}|}{El sistema debe impedir la modificación de la tupla con su clave primaria vacía} \\ \hline
+\textbf{Resultado}                          & \multicolumn{2}{p{11cm}|}{\textit{El sistema se comporta debidamente en todos los casos de prueba}}                                                                                                                                  \\ \hline
+\end{tabular}
+\caption{Pruebas Unitarias - Modificar Tupla}
+\label{tab:pumodificartupla}
+\end{table}
+
+\begin{table}[h!]
+\footnotesize
+\centering
+\begin{tabular}{|p{3.5cm}|p{9cm}|p{2cm}|}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+\multicolumn{2}{|p{12.5cm}|}{\cellcolor[HTML]{C0C0C0}\textbf{Prueba Unitaria}} & \textbf{Id: PU20} \\ \hline
+Nombre                                      & \multicolumn{2}{p{11cm}|}{Hacer Consulta}                                                                                                                                                                                \\ \hline
+Referencias                                 & \multicolumn{2}{p{11cm}|}{CUR27}                                                                                                                                                                                                     \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{3}{|l|}{\cellcolor[HTML]{EFEFEF}\textit{Caso de Prueba}}                                                                                                                                                                                                        \\ \hline
+Entrada Válida                              & \multicolumn{2}{p{11cm}|}{Ingresar una consulta válida para la base de datos cargada y apretar el botón Ejecutar} \\ \hline
+Salida Esperada                             & \multicolumn{2}{p{11cm}|}{El sistema ejecuta la consulta y muestra por pantalla la tabla resultante} \\ \hline
+Entrada Inválida                            & \multicolumn{2}{p{11cm}|}{Ingresar una consulta con errores sintácticos o con atributos y/o relaciones inexistentes} \\ \hline
+Salida Esperada                             & \multicolumn{2}{p{11cm}|}{El sistema debe impedir la ejecución, avisando que hay errores en la consulta} \\ \hline
+Entrada Vacía                               & \multicolumn{2}{p{11cm}|}{Hacer una consulta vacía apretando el botón Ejecutar} \\ \hline
+Salida Esperada                             & \multicolumn{2}{p{11cm}|}{El sistema debe impedir la ejecución, avisando que hay errores en la consulta} \\ \hline
+\textbf{Resultado}                          & \multicolumn{2}{p{11cm}|}{\textit{El sistema se comporta debidamente en todos los casos de prueba}}                                                                                                                                  \\ \hline
+\end{tabular}
+\caption{Pruebas Unitarias - Hacer Consulta}
+\label{tab:puhacerconsulta}
+\end{table}
+
+\clearpage
+\newpage
+\begin{table}[h!]
+\footnotesize
+\centering
+\begin{tabular}{|p{3.5cm}|p{9cm}|p{2cm}|}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+\multicolumn{2}{|p{12.5cm}|}{\cellcolor[HTML]{C0C0C0}\textbf{Prueba Unitaria}} & \textbf{Id: PU21} \\ \hline
+Nombre                                      & \multicolumn{2}{p{11cm}|}{Ver Estadísticas}                                                                                                                                                                                \\ \hline
+Referencias                                 & \multicolumn{2}{p{11cm}|}{CUR29}                                                                                                                                                                                                     \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{3}{|l|}{\cellcolor[HTML]{EFEFEF}\textit{Caso de Prueba}}                                                                                                                                                                                                        \\ \hline
+Entrada Válida                              & \multicolumn{2}{p{11cm}|}{Seleccionar una base de datos de una lista, seleccionar una fecha de una lista y apretar el botón Ver Estadísticas	} \\ \hline
+Salida Esperada                             & \multicolumn{2}{p{11cm}|}{El sistema muestra por pantalla gráficos y estadísticas de la base de datos seleccionada} \\ \hline
+Entrada Inválida                            & \multicolumn{2}{p{11cm}|}{-} \\ \hline
+Salida Esperada                             & \multicolumn{2}{p{11cm}|}{-} \\ \hline
+Entrada Vacía                               & \multicolumn{2}{p{11cm}|}{No seleccionar ningún campo y apretar el botón Ver Estadísticas} \\ \hline
+Salida Esperada                             & \multicolumn{2}{p{11cm}|}{El sistema no debe permitir cargar estadísticas sin haber seleccionado una base de datos y su fecha} \\ \hline
+\textbf{Resultado}                          & \multicolumn{2}{p{11cm}|}{\textit{El sistema se comporta debidamente en todos los casos de prueba}}                                                                                                                                  \\ \hline
+\end{tabular}
+\caption{Pruebas Unitarias - Ver Estadísticas}
+\label{tab:puverestadisticas}
+\end{table}
+
+\section{Pruebas de Integración}
+\label{ap-pruebasdeintegracion}
+
+Esta sección muestra las tablas de resultado pertenecientes a las Pruebas de Integración. Desde las Tablas \ref{tab:piprimeraiteracion} al \ref{tab:pisextaiteracion}, se puede observar la especificación de la ejecución de las Pruebas de Integración. \\
+
+\begin{table}[h!]
+\footnotesize
+\centering
+\begin{tabular}{|p{3.5cm}|p{9cm}|p{2cm}|}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+\multicolumn{2}{p{12.5cm}|}{\cellcolor[HTML]{C0C0C0}\textbf{Prueba de Integración}}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     & \textbf{Id: PI01}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 \\ \hline
+Componentes                                    & \multicolumn{2}{p{11cm}|}{Gestión de Usuarios y Sesión}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   \\ \hline
+Referencias                                    & \multicolumn{2}{p{11cm}|}{CUR02, CUR03, CUR06, CUR07, CUR08}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{3}{|l|}{\cellcolor[HTML]{EFEFEF}\textit{Caso de Prueba}}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                \\ \hline
+Estado Inicial                                 & \multicolumn{2}{p{11cm}|}{El sistema se encuentra sin usuarioss de tipo alumno y solamente con un profesor ingresado}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     \\ \hline
+Estado Final                                   & \multicolumn{2}{p{11cm}|}{El sistema contiene 2 cuentas de alumnos y una de profesor, todos reflejando los cambios realizados}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            \\ \hline
+Procedimiento                                  & \multicolumn{2}{p{11cm}|}{\begin{tabular}[c]{@{}p{11cm}@{}}
+1. Se crea una cuenta de alumno desde incio, se rellena el formulario y se acepta la creación para ingresar al sistema como alumno\\ 2. Se finaliza la sesión para ahora ingresar como profesor\\ 3. En la sesión de profesor, se procede a crear 3 alumnos distintos desde la opción "Crear Cuenta"\\ 4. Se finaliza la sesin del preofesor para hacer ingreso por separado a cada una de las cuentas creadas de alumno para verificar datos\\ 5. Luego de cada ingreso, se finalizan las sesiones y se hace ingreso al sistema como profesor\\ 6. Una de las cuentas creadas es modificada desde la opción "Modificar Cuenta", cambiando su Año de Ingreso\\ 7. Otra de las cuentas creadas es eliminada desde la opción "Eliminar Cuenta"\\ 8. Se finaliza la sesión de profesor para volver a ingresar a las cuentas modificadas para verificar datos.\\ 9. Se finalizan las sesiones iniciadas y se intenta ingresar al sistema por la cuenta eliminada en el paso 6\\ 10. El sistema no deja iniciar sesión con los datos de la cuenta eliminada, dando por finalizada la prueba
+\end{tabular}} \\ \hline
+Resultado Esperado                             & \multicolumn{2}{p{11cm}|}{El sistema debe tener 3 alumnos ingresados más el profesor, todos con sus respectivos datos y reflejando los cambios efecuados durante la ejecución del testing, además debe evitar el inicio de sesión con alguna cuenta eliminada.}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           \\ \hline
+\textbf{Resultado}                             & \multicolumn{2}{p{11cm}|}{\textit{El sistema se comporta debidamente en todos los procedimientos}}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        \\ \hline
+\end{tabular}
+\caption{Pruebas de Integración - Primera Iteración}
+\label{tab:piprimeraiteracion}
+\end{table}
+
+\clearpage
+\newpage
+\begin{table}[h!]
+\footnotesize
+\centering
+\begin{tabular}{|p{3.5cm}|p{9cm}|p{2cm}|}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+\multicolumn{2}{|p{12.5cm}|}{\cellcolor[HTML]{C0C0C0}\textbf{Prueba de Integración}}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         & \textbf{Id: PI02}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      \\ \hline
+Componentes                                    & \multicolumn{2}{p{11cm}|}{Gestión de Usuarios y Sesión, Gestión de BD}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             \\ \hline
+Referencias                                    & \multicolumn{2}{p{11cm}|}{CUR02, CUR10, CUR11, CUR12, CUR13}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{3}{|l|}{\cellcolor[HTML]{EFEFEF}\textit{Caso de Prueba}}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         \\ \hline
+Estado Inicial                                 & \multicolumn{2}{p{11cm}|}{El sistema contiene 2 cuentas de alumnos y una de profesor, además no tiene ingresada ninguna Base de Datos}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             \\ \hline
+Estado Final                                   & \multicolumn{2}{p{11cm}|}{El sistema contiene 2 cuentas de alumnos y una de profesor, además contiene 2 Bases de Datos creadas por el profesor}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    \\ \hline
+Procedimiento                                  & \multicolumn{2}{p{11cm}|}{\begin{tabular}[c]{@{}p{11cm}@{}}1. Se ingresa al sistema con alguna cuenta de alumno y se crea una base de datos\\ 2. Se finaliza la sesión actual y se ingresa al sistema como profesor\\ 3. Se verifican los datos de la nueva base de datos creada por el alumno\\ 4. Se crean 2 base de datos, una que tenga el atributo Visible="true" y otra que tenga el atributo Visible="false"\\ 5. Se finaliza la sesión y se ingrea con cada alumno para verificar la creación de las base de datos\\ 6. Una vez dentro, para la sesión del alumno que creó la base de datos en el Paso 1, el sistema muestra 2 bases de datos, la creada por el usuario y la creada por el profesor. En el caso de la otra sesión, el sistema muestra solamente la base de datos creada por el profesor.\\ 7. Se finalizan las sesiones de alumno y se ingresa al sistema como profesor\\ 8. Se modifica la base de datos no visible creada por el profesor dejándola visible y se elimina la base de datos creada por el alumno\\ 9. Se finaliza la sesión del profesor y se ingresa al sistema con cada sesión de alumno para verificar los cambios. Ambas cuentas muestran las 2 bases de datos creadas por el profesor, finalizando el testing\end{tabular}} \\ \hline
+Resultado Esperado                             & \multicolumn{2}{p{11cm}|}{El sistema debe tener 2 alumnos ingresados más el profesor, todos con sus respectivos datos y reflejando los cambios efecuados durante la ejecución del testing, además debe evitar la carga de bases de datos creadas por el profesor que no sean visibles, y en el caso de los alumnos, solo mostrar las bases de datos creadas por el profesor y por ellos mismos}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    \\ \hline
+\textbf{Resultado}                             & \multicolumn{2}{p{11cm}|}{\textit{El sistema se comporta debidamente en todos los procedimientos}}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 \\ \hline
+\end{tabular}
+\caption{Pruebas de Integración - Segunda Iteración}
+\label{tab:pisegundaiteracion}
+\end{table}
+
+\clearpage
+\newpage
+\begin{table}[h!]
+\footnotesize
+\centering
+\begin{tabular}{|p{3.5cm}|p{9cm}|p{2cm}|}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+\multicolumn{2}{|p{12.5cm}|}{\cellcolor[HTML]{C0C0C0}\textbf{Prueba de Integración}}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  & \textbf{Id: PI03}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 \\ \hline
+Componentes                                    & \multicolumn{2}{p{11cm}|}{Gestión de Usuarios y Sesión, Gestión de BD, Gestión de Relaciones y Tuplas}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 \\ \hline
+Referencias                                    & \multicolumn{2}{p{11cm}|}{CUR02, CUR13, CUR18, CUR19, CUR20, CUR21, CUR23, CUR24, CUR25}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{3}{|l|}{\cellcolor[HTML]{EFEFEF}\textit{Caso de Prueba}}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             \\ \hline
+Estado Inicial                                 & \multicolumn{2}{p{11cm}|}{El sistema contiene una cuenta de alumno y una de profesor. Además de dos bases de datos, una creada por el profesor que contiene 2 relaciones con 3 tuplas cada una y otra creada por el alumno que esta vacía}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             \\ \hline
+Estado Final                                   & \multicolumn{2}{p{11cm}|}{El sistema contiene una cuenta de alumno y otra de profesor. Además contiene dos bases de datos, una creada por el profesor que contiene una relación con 4 tuplas y otra creada por el alumno que contiene una relación con 3 tuplas}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       \\ \hline
+Procedimiento                                  & \multicolumn{2}{p{11cm}|}{\begin{tabular}[c]{@{}p{11cm}@{}}1. Se ingresa al sistema con la cuenta de usuario y se carga la base de datos creada por el profesor\\ 2. Se intenta agregar, modificar o eliminar tablas de esta relación, pero resulta imposible ya que solamente el alumno puede modificar sus propias bases de datos\\ 3. De igual modo, se intenta agregar, modificar o eliminar tuplas de cada tabla, pero resulta imposible ya que el alumno solo puede modificar sus propias bases de datos\\ 4. El alumno carga su base de datos y crea una relación con dos atributos\\ 5. Se agregan 3 tuplas a esta relación y se guardan los cambios\\ 6. Se cierra la sesión del alumno y se ingresa al sistema como profesor\\ 7. Se verifican los cambios realizados por el alumno en su base de datos desde la cuenta del profesor\\ 8. El profesor elimina una de las relaciones y modifica el nombre de la otra relación de la base de datos perteneciente al profesor\\ 9. El profesor modifica la relación modificada en el Paso 8: elimina una tupla, modifica otra y agrega 2 tuplas más. Luego guarda los cambios\\ 10. Se cierra la sesión del profesor y se ingresa al sistema como alumno\\ 11. Se verifican los cambios hechos en la base de datos del profesor, finalizando el testing\end{tabular}} \\ \hline
+Resultado Esperado                             & \multicolumn{2}{p{11cm}|}{El sistema debe tener 2 alumnos ingresados más el profesor, todos con sus respectivos datos y reflejando los cambios efecuados durante la ejecución del testing, además debe evitar la carga de bases de datos creadas por el profesor que no sean visibles, y en el caso de los alumnos, solo mostrar las bases de datos creadas por el profesor y por ellos mismos}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        \\ \hline
+\textbf{Resultado}                             & \multicolumn{2}{p{11cm}|}{\textit{El sistema se comporta debidamente en todos los procedimientos}}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     \\ \hline
+\end{tabular}
+\caption{Pruebas de Integración - Tercera Iteración}
+\label{tab:piterceraiteracion}
+\end{table}
+
+\clearpage
+\newpage
+\begin{table}[h!]
+\footnotesize
+\centering
+\begin{tabular}{|p{3.5cm}|p{9cm}|p{2cm}|}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+\multicolumn{2}{|p{12.5cm}|}{\cellcolor[HTML]{C0C0C0}\textbf{Prueba de Integración}}                                                                                                                                                                                                                                                                                                                     & \textbf{Id: PI04}                                                                                                                                                                                                                                                                                                                     \\ \hline
+Componentes                                    & \multicolumn{2}{p{11cm}|}{Gestión de Usuarios y Sesión, Gestión de BD, Gestión de Relaciones y Tuplas, Gestión de Cosultas}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   \\ \hline
+Referencias                                    & \multicolumn{2}{p{11cm}|}{CUR02, CUR13, CUR27}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{3}{|l|}{\cellcolor[HTML]{EFEFEF}\textit{Caso de Prueba}}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    \\ \hline
+Estado Inicial                                 & \multicolumn{2}{p{11cm}|}{El sistema contiene una cuenta de alumno y una de profesor. Además de una base de datos con 4 relaciones, todas con sus respectivas tuplas}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         \\ \hline
+Estado Final                                   & \multicolumn{2}{p{11cm}|}{El sistema contiene una cuenta de alumno y otra de profesor, una base de datos con sus 4 relaciones y sus respectivas tuplas}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       \\ \hline
+Procedimiento                                  & \multicolumn{2}{p{11cm}|}{\begin{tabular}[c]{@{}p{11cm}@{}}1. Se ingresa al sistema con la cuenta de alumno\\ 2. Se carga la base de datos existente y se ingresa a la funcionalidad "Hacer Consulas"\\ 3. Se hacen 3 consultas a la base de datos: una de tipo "Reunión Natural", otra de "Producto Cruz" y otra de "Intersección". La consulta de "Intersección" se asigna a una variable para ser utilizada en otra consulta de tipo "Proyectar"\\ 4. Se finaliza la sesión del alumno y se ingresa al sistema como profesor\\ 5. Se carga la base de datos existente y se verifica si las consultas realizadas en el Paso 3 han cambiado la base de datos, finalizando el testing\end{tabular}} \\ \hline
+Resultado Esperado                             & \multicolumn{2}{p{11cm}|}{El sistema debe tener una cuenta de alumno y otra de profesor. Al realizar las consultas en una cuenta, no debe cambiar la base de datos orginal, por lo que al cargar esta base de datos en otra cuenta, debe mantenerse como estaba originalmente}                                                                                                                                                                                                                                                                                                                                                                                                                \\ \hline
+\textbf{Resultado}                             & \multicolumn{2}{p{11cm}|}{\textit{El sistema se comporta debidamente en todos los procedimientos}}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            \\ \hline
+\end{tabular}
+\caption{Prueba de Integración - Cuarta Iteración}
+\label{tab:picuartaiteracion}
+\end{table}
+
+\clearpage
+\newpage
+\begin{table}[h!]
+\footnotesize
+\centering
+\begin{tabular}{|p{3.5cm}|p{9cm}|p{2cm}|}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+\multicolumn{2}{|p{12.5cm}|}{\cellcolor[HTML]{C0C0C0}\textbf{Prueba de Integración}}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          & \textbf{Id: PI05}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        \\ \hline
+Componentes                                    & \multicolumn{2}{p{11cm}|}{Gestión de Usuarios y Sesión, Gestión de BD, Gestión de Relaciones y Tuplas, Gestión de Cosultas, Gestión de Ejercicios}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    \\ \hline
+Referencias                                    & \multicolumn{2}{p{11cm}|}{CUR02, CUR13, CUR15, CUR16, CUR27}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{3}{|l|}{\cellcolor[HTML]{EFEFEF}\textit{Caso de Prueba}}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            \\ \hline
+Estado Inicial                                 & \multicolumn{2}{p{11cm}|}{El sistema consta de una cuenta de alumno y otra de profesor, además de una base de datos creada por el profesor con 4 relaciones con sus respectivas tuplas}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               \\ \hline
+Estado Final                                   & \multicolumn{2}{p{11cm}|}{El sistema mantiene las cuenta de alumno y profesor, además de la base de datos con sus respectivas relaciones y tuplas. Además se agrega los ejercicios generados}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         \\ \hline
+Procedimiento                                  & \multicolumn{2}{p{11cm}|}{\begin{tabular}[c]{@{}p{11cm}@{}}1. Se ingresa al sistema como profesor\\ 2. Se carga la base de datos existente y se ingresa a la opción "Gestión de Ejercicios"\\ 3. Se agregan 2 ejercicios a la base de datos y se guardan los cambios\\ 4. Se cierra la sesión del profesor y se ingresa al sistema como alumno\\ 5. Se carga la base de datos existente y se ingresa a la opción "Responder Ejercicios"\\ 6. Se verigica la creación de los 2 ejercicios y se responde cada uno, una de forma correcta y otro de forma incorrecta\\ 7. El sistema redirecciona a una página de resultados y muestra los resultados de los ejercicios. Indica que se obtiene un 50\% de los ejercicios correctos.\\ 8. Se cierra la sesión del alumno y se ingrea al sistema como profesor\\ 9. Se carga la base de datos y se modifican los 2 ejercicios, cambiando la pegunta del primero y eliminando el otro. Finalmente se guardan los cambios\\ 10. En la misma sesión de profesor se ingresa a la opción "Responder Ejercicios" y se verifican los cambios en los ejercicios, terminando con el testing\end{tabular}} \\ \hline
+Resultado Esperado                             & \multicolumn{2}{p{11cm}|}{El sistema debe mantener las cuentas de alumno y profesor. Además no debe nunca cambiar la base de datos, exceptuando los ejercicios que esta contenga. El sistema debe ser capaz de modificar ejercicios, responderlos y entregar resultados de esas respuestas}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           \\ \hline
+\textbf{Resultado}                             & \multicolumn{2}{p{11cm}|}{\textit{El sistema se comporta debidamente en todos los procedimientos}}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    \\ \hline
+\end{tabular}
+\caption{Prueba de Integración - Quinta Iteración}
+\label{tab:piquintaiteracion}
+\end{table}
+
+\clearpage
+\newpage
+\begin{table}[h!]
+\footnotesize
+\centering
+\begin{tabular}{|p{3.5cm}|p{9cm}|p{2cm}|}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+\multicolumn{2}{|p{12.5cm}|}{\cellcolor[HTML]{C0C0C0}\textbf{Prueba de Integración}}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        & \textbf{Id: PI05}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     \\ \hline
+Componentes                                    & \multicolumn{2}{p{11cm}|}{Gestión de Usuarios y Sesión, Gestión de BD, Gestión de Relaciones y Tuplas, Gestión de Cosultas, Gestión de Ejercicios, Gestión de Reportes y Estadísticas}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           \\ \hline
+Referencias                                    & \multicolumn{2}{p{11cm}|}{}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{3}{|l|}{\cellcolor[HTML]{EFEFEF}\textit{Caso de Prueba}}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       \\ \hline
+Estado Inicial                                 & \multicolumn{2}{p{11cm}|}{El sistema consta de una cuenta de alumno y otra de profesor, además de una base de datos creada por el profesor con 4 relaciones con sus respectivas tuplas, con una lista de 3 ejercicios}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           \\ \hline
+Estado Final                                   & \multicolumn{2}{p{11cm}|}{El sistema mantiene las cuenta de alumno y profesor, además de la base de datos con sus respectivas relaciones, tuplas y ejercicios. El sistema guardar y muestra las estadisticas de la base de datos existente}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      \\ \hline
+Procedimiento                                  & \multicolumn{2}{p{11cm}|}{\begin{tabular}[c]{@{}p{11cm}@{}}1. Se ingresa al sistema como alumno\\ 2. Se carga la base de datos existente y se ingresa a la opción "Responder Ejercicios"\\ 3. Se responde cada ejercicio. El primer ejercicio debe tener 3 intentos (2 fallidos y uno correcto), el segundo ejercicio se debe responder correctamente inmediatamente y el tercer ejercicio debe tener 4 intentos fallidos.\\ 4. Se envia las respuestas y se observan los resultados obtenidos, mostrando que se ha tenido 2 preguntas correctas y una fallida\\ 5. Se cierra la sesión del alumno y se ingresa al sistema como profesor\\ 6. Se carga la base de datos existente y se ingresa a la opciób "Ver Estadísticas"\\ 7. Se selecciona la base de datos existente y la última fecha de modificación de esa base de datos\\ 8. Se muestran medidas de estadísticas tales como promedios de intentos, correctas, incorrectas, tiempo en responder un ejercicio, entre otros. Además se muesstra un gráfico de respuestas obtenidas por cada ejercicio, terminando con el testing\end{tabular}} \\ \hline
+Resultado Esperado                             & \multicolumn{2}{p{11cm}|}{El sistema debe mantener las cuentas de alumno y profesor, además de la base de datos que contenga con sus relaciones, tuplas y ejercicios. El sistema debe guardar y mostrar las estadisticas de la base de datos respecto a las respuestas de sus ejercicios}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        \\ \hline
+\textbf{Resultado}                             & \multicolumn{2}{p{11cm}|}{\textit{El sistema se comporta debidamente en todos los procedimientos}}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               \\ \hline
+\end{tabular}
+\caption{Pruebas de Integración - Sexta Iteración}
+\label{tab:pisextaiteracion}
+\end{table}
+
+\section{Pruebas de Sistemas}
+\label{ap-pruebasdesistemas}
+
+En esta sección se muestra el detalle del resultado de la ejecución de las Pruebas de Sistemas explicado en la Sección \ref{ejecpruebasdesistema}. Además, se detalla la evaluación de los requerimientos evaluados como Completo con Modificaciones y No Completo. \\
+
+De 14 requerimientos, 1 de ellos fue evaluados como Completo con Modificaciones y otro como No Complejo. A continuación se muestra en detalle el por qué de estos resultados. \\ 
+
+\begin{itemize}
+
+\item El requerimiento RF12 - La aplicación debe poder guardar la sesión en la que trabaja un alumno - no fue programado. Esto debido a la problemática de guardar valores, ya sea del trabajo que estaba haciendo el usuario o de la página donde estaba antes de cerrar la sesión. En general, implementar este requerimiento implicaba un uso excesivo de tablas de base de datos, haciendo que la solución sea poco escalable. Aún así, este requerimiento era totalmente prescindible, por lo que no realización de éste no implicaba ningún problema para la lógica del negocio. Este requerimiento fue evaluado como No Completo. \\
+
+\item El requerimiento RF14 - El programa debe permitir mostrar resultados del trabajo realizado por los alumnos utilizando algún algoritmo de Minería de Datos - no fue implementado como tal. La idea era que el sistema fuese capaz de ejecutar algoritmos de Minería de Datos autónomamente, pero resolver este problema aumentaba el tiempo programación, atrasando el trabajo de título en su totalidad. Todo lo que hace un usuario al momento de resolver ejercicios es guardado en una base de datos, por lo que para suplir este requerimiento, se optó por generar documentos que sirvan de entrada para otros programas que sí sean capaces de ejecutar algoritmos de Minería de Datos. De esta manera, aún es posible analizar el comportamiento de los usuarios a la hora de resolver ejercicios. Finalmente este requerimiento fue evaluado como Completo con Modificaciones.  \\
+
+\end{itemize} 
+
+\newpage
+\clearpage
+\begin{table}[h!]
+\footnotesize
+\centering
+\begin{tabular}{|p{1cm}|p{9.5cm}|p{0.5cm}|p{0.5cm}|p{0.5cm}|}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+\multicolumn{2}{|l|}{\cellcolor[HTML]{C0C0C0}\textbf{Pruebas de Sistemas}}                                                                                                                         & \multicolumn{3}{l|}{\cellcolor[HTML]{C0C0C0}\textbf{Id: PS01}} \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\textit{Id} & \textit{Requerimientos}                                                                                                                                                              & \textit{C}          & \textit{CM}         & \textit{NC}        \\ \hline
+RF01        & El Programa debe permitir realizar consultas en Álgebra Relacional, es decir, utilizando operadores básicos y funciones agregadas                                                    & X                   &                     &                    \\ \hline
+RF02        & La aplicación debe contar con un set de Base de Datos que sirvan de ejemplo para los alumnos                                                                                         & X                   &                     &                    \\ \hline
+RF03        & La aplicación debe tener un set de preguntas relacionadas a cada Base de Datos de ejemplo                                                                                            & X                   &                     &                    \\ \hline
+RF04        & El alumno debe tener la posibilidad de generar relaciones e insertar tuplas en ellas                                                                                                 & X                   &                     &                    \\ \hline
+RF05        & El alumno puede insertar funciones de consultas en Álgebra Relacional vía botones presentados en la interfaz gráfica del programa o directamente desde teclado                       & X                   &                     &                    \\ \hline
+RF06        & El alumno debe ser capaz de observar gráficamente por medio de una tabla el resultado de sus consultas                                                                               & X                   &                     &                    \\ \hline
+RF07        & El programa debe identificar e informar los errores ocurridos a la hora de ejecutar las consultas ingresadas                                                                         & X                   &                     &                    \\ \hline
+RF08        & La aplicación debe tener un manual de usuario que explique cómo utilizar la herramienta                                                                                              & X                    &                    &                    \\ \hline
+RF09        & La aplicación debe poder guardar alumnos, además de un login para poder ingresar a él                                                                                                & X                   &                     &                    \\ \hline
+RF10        & El programa debe ser capaz de guardar y exportar los datos de ingreso y salida de datos de cada consulta realizada al responder ejercicios, es decir, todo lo que realiza el usuario & X                   &                     &                    \\ \hline
+RF11        & El programa debe poder transformar las consultas en Álgebra Relacional a Lenguaje SQL                                                                                                & X                   &                     &                    \\ \hline
+RF12        & La aplicación debe poder guardar la sesión en la que trabaja un alumno                                                                                                               &                     &                     & X                  \\ \hline
+RF13        & El alumno puede crear sus propias Bases de Datos                                                                                                                                     & X                   &                     &                    \\ \hline
+RF14        & El programa debe permitir mostrar resultados del trabajo realizado por los alumnos utilizando algún algoritmo de Minería de Datos                                                    &                     & X                   &                    \\ \hline
+\multicolumn{2}{|l|}{\textbf{Resultados}}                                                                                                                                                          & \textbf{12}         & \textbf{1}          & \textbf{1}         \\ \hline
+\end{tabular}
+\caption{Resultado Pruebas de Sistemas.}
+\label{tab:resultadopruebasdesistema}
+\end{table}
+
+\section{Pruebas de Aceptación}
+\label{ap-pruebasdeaceptacion}
+
+El presente apéndice contiene las tablas y gráficos pertenecientes al resultado de las pruebas de aceptación ejecutadas en la Sección \ref{ejecpruebasdeaceptacion}. El detalle de los tiempos promedios y esperados de las tareas del perfil Alumno se muestran en la Tabla \ref{tab:resultadoaceptacionalumno}, mientras que las tareas del perfil de Profesor se muestran en la Tabla \ref{tab:resultadoaceptacionprofesor}. \\
+
+\newpage
+\clearpage
+\begin{table}[h!]
+\footnotesize
+\centering
+\begin{tabular}{|p{9.5cm}|p{2.5cm}|p{2.5cm}|}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+\multicolumn{3}{|l|}{\cellcolor[HTML]{C0C0C0}\textbf{Resultados Tareas Alumnos}}                                                                                                                                                                                                                   \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\textit{Tarea}                                                                                                                                                                                                                               & \textit{Tiempo Promedio} & \textit{Tiempo Esperado} \\ \hline
+1) Usted desea ingresar al sistema como alumno, pero no tiene cuenta. Para ello, cree su propia cuenta e ingrese al Sistema                                                                                                                  & 0:01:23                  & 0:05:00                  \\ \hline
+2) Usted desea crear una nueva base de datos llamada "univ"                                                                                                                                                                                  & 0:00:16                  & 0:02:00                  \\ \hline
+3) Usted desea modificar la base de datos "univ" y llamarla "universidad"                                                                                                                                                                    & 0:00:38                  & 0:02:00                  \\ \hline
+4) Usted desea cargar la base de datos "universidad"                                                                                                                                                                                         & 0:00:13                  & 0:01:00                  \\ \hline
+5) Usted desea crear una relación llamada "alumnos" con 3 atributos: un atributo de tipo "Entero" llamado "id" de tipo primario y 2 atributos de tipo "Cadena" llamados "nombre" y "apellido"                                                & 0:01:08                  & 0:05:00                  \\ \hline
+6) Usted desea modificar la relación "alumnos" y renombrarla como "personas"                                                                                                                                                                 & 0:00:22                  & 0:02:00                  \\ \hline
+7) Usted desea agregar 3 tuplas a la relación "personas": uno con id=1, nombre="nombre1", apellido="apellido1"; otro con id=2, nombre="nombre2", apellido="apellido2" y otro con id=3, nombre="nombre3", apellido="apellido3" \& Crear Tupla & 0:02:07                  & 0:05:00                  \\ \hline
+8) Usted desea hacer una consulta de tipo "proyectar" que retorne todos los nombres de la relación "personas". Para ello usted debe hacer la consulta "proyectar(nombre)(personas)"                                                          & 0:00:44                  & 0:05:00                  \\ \hline
+9) Usted desea eliminar la relación "personas"                                                                                                                                                                                               & 0:00:09                  & 0:02:00                  \\ \hline
+10) Usted,desea eliminar la base de datos "universidad"                                                                                                                                                                                      & 0:01:02                  & 0:02:00                  \\ \hline
+11) Usted,desea cargar la base de datos "ejemplo" y responder los ejercicios,de esta base de datos                                                                                                                                           & 0:03:58                  & 0:10:00                  \\ \hline
+\end{tabular}
+\caption{Resultados Tareas Alumnos.}
+\label{tab:resultadoaceptacionalumno}
+\end{table}
+
+\newpage
+\clearpage
+\begin{table}[h!]
+\footnotesize
+\centering
+\begin{tabular}{|p{9.5cm}|p{2.5cm}|p{2.5cm}|}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+\multicolumn{3}{|l|}{\cellcolor[HTML]{C0C0C0}\textbf{Resultados Tareas Alumnos}}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\textit{Tarea}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            & \textit{Tiempo Promedio} & \textit{Tiempo Esperado} \\ \hline
+1) Usted desea ingresar al sistema como profesor, ingrese al sistema como rut="12345678" y contraseña="admin"                                                                                                                                                                                                                                                                                                                                                                                                                                                             & 0:00:12                  & 0:05:00                  \\ \hline
+2) Usted desea ingresar un nuevo alumno al sistema. Para ello, utilize sus propios datos como el nuevo alumno a agregar                                                                                                                                                                                                                                                                                                                                                                                                                                                   & 0:01:52                  & 0:02:00                  \\ \hline
+3) Usted desea modificar al nuevo alumno ingresado y desea cambiar su mail por "usuario@mail.com"                                                                                                                                                                                                                                                                                                                                                                                                                                                                         & 0:00:49                  & 0:02:00                  \\ \hline
+4) Usted desea eliminar al nuevo alumno                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   & 0:00:23                  & 0:01:00                  \\ \hline
+5) Usted desea cargar la base de datos "ejemplos" y generar un nuevo ejercicio. Para ello usted deberá crear el ejercicio como pregunta="Mostrar todos los datos de los trabajadores que son de administración y producción". Además, deberá ejecutar la consulta="resp := empleados\_adm inter empleados\_prod" y agregar la relación generada "resp" en el campo Nombre Relación Resultante. En consultas, deberá agregar la consulta ingresada para generar la relación resultante. Finalmente Acepta y Guarda los Cambios & 0:03:39                  & 0:05:00                  \\ \hline
+6) Usted desea ver las estadísticas de la base de datos "ejemplo\_17134298" con fecha "2014-10-01". \& Ver Estadísticas                                                                                                                                                                                                                                                                                                                                                                                                                                                   & 0:00:52                  & 0:02:00                  \\ \hline
+\end{tabular}
+\caption{Resultados Tareas Profesor.}
+\label{tab:resultadoaceptacionprofesor}
+\end{table}
+
+El Gráfico \ref{fig:resultadoaceptacionalumno} muestra el tiempo promedio y el tiempo esperado de las tareas del perfil Alumno, mientras que el Gráfico \ref{fig:resultadoaceptacionprofesor} muestra el tiempo promedio y esperado de las tareas del perfil Profesor. Como se puede apreciar, el tiempo en promedio que tomó a cada usuario en ambos perfiles, es menor al tiempo esperado de cada tarea. Esto indica que, a pesar de ser usuarios que utilizaron el software por primera vez, fueron capaces de realizar las tareas dadas. \\
+
+\newpage
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=13cm]{imagenes/tareas_aceptacion_alumno.png}
+\caption{Resultados Tareas Alumnos}
+\label{fig:resultadoaceptacionalumno}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=13cm]{imagenes/tareas_aceptacion_profesor.png}
+\caption{Resultados Tareas Profesor}
+\label{fig:resultadoaceptacionprofesor}
+\end{figure}
+
+\newpage
+
+En la Tabla \ref{tab:resultadoformularioaceptacion} se muestran las evaluaciones promedio y la desviación estándar de cada pregunta del formulario de aceptación. Además en la Figura \ref{fig:resultadoformularioaceptacion} se muestra el resultado gráfico del testing.  \\
+
+\begin{table}[h!]
+\footnotesize
+\centering
+\begin{tabular}{|p{9.5cm}|p{2.5cm}|p{2.5cm}|}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+\multicolumn{3}{|l|}{\cellcolor[HTML]{C0C0C0}\textbf{Resultados Formulario de Aceptación}}                                                \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\textit{Preguntas}                                                                     & \textit{Promedio} & \textit{Desviación Estándar} \\ \hline
+1) ¿El sistema funciona eficazmente?                                                   & 3,70              & 0,48                         \\ \hline
+2) ¿El sistema arroja los resultados que esperaba?                                     & 3,70              & 0,48                         \\ \hline
+3) ¿La información entregada por el sistema es la adecuada?                            & 3,50              & 0,53                         \\ \hline
+4) ¿Recibe retroalimentación durante la ejecución de alguna funcionalidad del sistema? & 3,70              & 0,48                         \\ \hline
+5) ¿Consideró el sistema amigable para su funcionamiento?                              & 3,00              & 0,00                         \\ \hline
+6) ¿Considero el tiempo que demoro responder el sistema es el adecuado?                & 3,80              & 0,42                         \\ \hline
+\end{tabular}
+\caption{Resultados Formulario de Aceptación.}
+\label{tab:resultadoformularioaceptacion}
+\end{table}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=14cm]{imagenes/resultado_form_acept.png}
+\caption{Resultados Formulario de Aceptación.}
+\label{fig:resultadoformularioaceptacion}
+\end{figure}
+
+En los siguientes gráficos se muestran los resultados de las preguntas del formulario de aceptación. Estos resultados son separados por cada pregunta, para tener un mayor detalle de los mismos:
+
+\begin{enumerate}
+
+\item \textit{¿El sistema funciona eficazmente?} En la Figura \ref{fig:aceptacion1} se muestra el nivel de aceptación la pregunta 1. \\
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=11cm]{imagenes/form_acept_1.png}
+\caption{Nivel de Aceptación para Pregunta 1.}
+\label{fig:aceptacion1}
+\end{figure}
+
+\item \textit{¿El sistema arroja los resultados que esperaba?} En la Figura \ref{fig:aceptacion2} se muestra el nivel de aceptación la pregunta 2. \\
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=11cm]{imagenes/form_acept_2.png}
+\caption{Nivel de Aceptación para Pregunta 2.}
+\label{fig:aceptacion2}
+\end{figure}
+
+\item \textit{¿La información entregada por el sistema es la adecuada?} En la Figura \ref{fig:aceptacion3} se muestra el nivel de aceptación la pregunta 3. \\
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=11cm]{imagenes/form_acept_3.png}
+\caption{Nivel de Aceptación para Pregunta 3.}
+\label{fig:aceptacion3}
+\end{figure}
+
+\item \textit{¿Recibe retroalimentación durante la ejecución de alguna funcionalidad del sistema?} En la Figura \ref{fig:aceptacion4} se muestra el nivel de aceptación la pregunta 4. \\
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=11cm]{imagenes/form_acept_4.png}
+\caption{Nivel de Aceptación para Pregunta 4.}
+\label{fig:aceptacion4}
+\end{figure}
+
+\item \textit{¿Consideró el sistema amigable en su funcionamiento?} En la Figura \ref{fig:aceptacion5} se muestra el nivel de aceptación la pregunta 5. \\
+
+\newpage
+\begin{figure}[h!]
+\centering
+\includegraphics[width=11cm]{imagenes/form_acept_5.png}
+\caption{Nivel de Aceptación para Pregunta 5.}
+\label{fig:aceptacion5}
+\end{figure}
+
+\item \textit{¿Consideró el tiempo que demoró el sistema es el adecuado?} En la Figura \ref{fig:aceptacion6} se muestra el nivel de aceptación la pregunta 6. \\
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=11cm]{imagenes/form_acept_6.png}
+\caption{Nivel de Aceptación para Pregunta 6.}
+\label{fig:aceptacion6}
+\end{figure}
+
+\item \textit{¿La retroalimentación entregada por el sistema es útil?} En la Figura \ref{fig:aceptacion7} se muestra el nivel de aceptación la pregunta 7. \\
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=11cm]{imagenes/form_acept_7.png}
+\caption{Nivel de Aceptación para Pregunta 7.}
+\label{fig:aceptacion7}
+\end{figure}
+
+\item \textit{¿Cómo evalúa usted el funcionamiento del sistema?} En la Figura \ref{fig:aceptacion8} se muestra el nivel de aceptación la pregunta 8. \\
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=11cm]{imagenes/form_acept_8.png}
+\caption{Nivel de Aceptación para Pregunta 8.}
+\label{fig:aceptacion8}
+\end{figure}
+
+\end{enumerate}
+
+\section{Pruebas de Usabilidad}
+\label{ap-ejecpruebasusabilidad}
+
+El presente apéndice contiene las tablas y gráficos pertenecientes al resultado de las pruebas de usabilidad ejecutadas en la Sección \ref{ejecpruebasdeusabilidad}. La Tabla \ref{tab:resultadoformulariousabilidad} contiene el resultado final de todas los cuestionarios de usabilidad realizados por los sujetos de pruebas. \\ \\
+
+\begin{table}[h!]
+\footnotesize
+\centering
+\begin{tabular}{|p{3cm}|p{1.5cm}|p{0.05cm}|p{1.5cm}|p{0.05cm}|p{1.5cm}|p{0.05cm}|p{1.5cm}|p{0.05cm}|p{1.5cm}|p{0.05cm}|}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+\multicolumn{11}{|l|}{\cellcolor[HTML]{C0C0C0}\textbf{Resultados Formulario Usabilidad}}                                                                                                       \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\textit{Preguntas}                                                                           & \multicolumn{10}{l|}{\cellcolor[HTML]{EFEFEF}\textit{Resultados}}                               \\ \hline
+1) ¿Cómo encuentra la estructura de menus y organización de las funciones del sistema?       & Muy Mala    & 0 & Mala      & 0 & Regular           & 2 & Buena          & 4 & Muy Buena    & 4 \\ \hline
+2) ¿Los iconos del sistema son representativos respecto a las funcionalidades que presentan? & Muy Malos   & 0 & Malos     & 0 & Regulares         & 4 & Buenos         & 1 & Muy Buenos   & 5 \\ \hline
+3) ¿Encontro fácil la navegación del sistema y obtener la información deseada?               & Muy Difícil & 0 & Difícil   & 0 & Regular           & 5 & Fácil          & 2 & Muy Fácil    & 3 \\ \hline
+4) ¿De que forma el sistema permite realizar las tareas solicitadas?                         & Muy Confusa & 0 & Confusa   & 0 & Levemente Confusa & 1 & Clara          & 6 & Muy Clara    & 3 \\ \hline
+5) En general ¿Fue fácil realizar las tareas solicitadas?                                    & Muy Difícil & 0 & Difícil   & 0 & Regular           & 2 & Fácil          & 3 & Muy Fácil    & 5 \\ \hline
+6) ¿Usted cree que necesitara ayuda para utilizar el sistema?                                & Mucha Ayuda & 0 & Con Ayuda & 0 & Poca Ayuda        & 2 & Muy Poca Ayuda & 5 & Para Nada    & 3 \\ \hline
+7) ¿Usted piensa que aprenderá rápidamente a usar el sistema?                                & Muy Difícil & 0 & Difícil   & 0 & Tal Vez           & 0 & Casi Seguro    & 1 & Por Supuesto & 9 \\ \hline
+\end{tabular}
+\caption{Resultado Formulario de Usabilidad.}
+\label{tab:resultadoformulariousabilidad}
+\end{table}
+
+En los siguientes gráficos se muestran los resultados de las preguntas del formulario de usabilidad. Estos resultados son separados por cada pregunta, para tener un mayor detalle de los mismos:
+
+\begin{enumerate}
+
+\item \textit{¿Cómo encuentra la estructura de menús y organización de las funciones del sistema?} La Figura \ref{fig:usabilidad1} muestra gráficamente el resultado de la pregunta 1. \\
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=11cm]{imagenes/usabilidad1.png}
+\caption{Resultado Cuestionario de Aceptación - Pregunta 1.}
+\label{fig:usabilidad1}
+\end{figure}
+
+\item \textit{¿Los íconos del sistema son representativos respecto a las funcionalidades que presentan?} La Figura \ref{fig:usabilidad2} muestra gráficamente el resultado de la pregunta 2. \\
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=11cm]{imagenes/usabilidad2.png}
+\caption{Resultado Cuestionario de Aceptación - Pregunta 2.}
+\label{fig:usabilidad2}
+\end{figure}
+
+\item \textit{¿Encontró fácil la navegación del sistema y obtener la información deseada?} La Figura \ref{fig:usabilidad3} muestra gráficamente el resultado de la pregunta 3. \\
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=11cm]{imagenes/usabilidad3.png}
+\caption{Resultado Cuestionario de Aceptación - Pregunta 3.}
+\label{fig:usabilidad3}
+\end{figure}
+
+\item \textit{¿De qué forma el sistema permite realizar las tareas solicitadas?} La Figura \ref{fig:usabilidad4} muestra gráficamente el resultado de la pregunta 4. \\
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=11cm]{imagenes/usabilidad4.png}
+\caption{Resultado Cuestionario de Aceptación - Pregunta 4.}
+\label{fig:usabilidad4}
+\end{figure}
+
+\item \textit{En general ¿Fue fácil realizar las tareas solicitadas?} La Figura \ref{fig:usabilidad5} muestra gráficamente el resultado de la pregunta 5. \\
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=11cm]{imagenes/usabilidad5.png}
+\caption{Resultado Cuestionario de Aceptación - Pregunta 5.}
+\label{fig:usabilidad5}
+\end{figure}
+
+\item \textit{¿Usted cree que necesitará ayuda para utilizar el sistema?} La Figura \ref{fig:usabilidad6} muestra gráficamente el resultado de la pregunta 6. \\
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=11cm]{imagenes/usabilidad6.png}
+\caption{Resultado Cuestionario de Aceptación - Pregunta 6.}
+\label{fig:usabilidad6}
+\end{figure}
+
+\item \textit{¿Usted piensa que aprenderá rápidamente a usar el sistema?} La Figura \ref{fig:usabilidad7} muestra gráficamente el resultado de la pregunta 7. \\
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=11cm]{imagenes/usabilidad7.png}
+\caption{Resultado Cuestionario de Aceptación - Pregunta 7.}
+\label{fig:usabilidad7}
+\end{figure}
+
+\end{enumerate}
+
+\section{Pruebas de Estrés}
+\label{ap-pruebasdeestres}
+
+Esta sección contiene la tabla de resultados de las pruebas de estrés ejecutadas en la Sección \ref{ejecpruebasdeestres}. La Tabla \ref{tab:resultadopruebasdeestres} presenta el resultado de las pruebas en función de la cantidad de usuarios conectados, número de muestras y porcentaje de error. \\
+
+\begin{table}[h!]
+\footnotesize
+\centering
+\begin{tabular}{|l|l|l|}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+\multicolumn{3}{|l|}{\cellcolor[HTML]{C0C0C0}{\color[HTML]{333333} \textbf{Resultados Pruebas de Estrés}}} \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\textit{Cantidad de Usuarios}       & \textit{Número de Muestras}      & \textit{Porcentaje de Error}      \\ \hline
+10                                  & 20                               & 0,00\%                            \\ \hline
+20                                  & 40                               & 0,00\%                            \\ \hline
+30                                  & 60                               & 0,00\%                            \\ \hline
+40                                  & 80                               & 0,00\%                            \\ \hline
+50                                  & 100                              & 0,00\%                            \\ \hline
+60                                  & 120                              & 0,00\%                            \\ \hline
+70                                  & 140                              & 0,00\%                            \\ \hline
+80                                  & 160                              & 0,00\%                            \\ \hline
+90                                  & 180                              & 0,00\%                            \\ \hline
+100                                 & 200                              & 0,00\%                            \\ \hline
+200                                 & 400                              & 0,00\%                            \\ \hline
+300                                 & 600                              & 0,00\%                            \\ \hline
+400                                 & 800                              & 0,00\%                            \\ \hline
+500                                 & 1000                             & 0,00\%                            \\ \hline
+600                                 & 1200                             & 0,00\%                            \\ \hline
+700                                 & 1400                             & 0,00\%                            \\ \hline
+800                                 & 1600                             & 6,25\%                            \\ \hline
+900                                 & 1800                             & 5,94\%                            \\ \hline
+1000                                & 2000                             & 47,50\%                           \\ \hline
+\end{tabular}
+\caption{Resultado Pruebas de Estrés.}
+\label{tab:resultadopruebasdeestres}
+\end{table}

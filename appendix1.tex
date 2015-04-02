@@ -1,0 +1,1246 @@
+\chapter{Casos de Usos Extendidos}
+\label{casosdeusosextendidos}
+
+En este apéndice se muestran todos y cada uno de los Casos de Usos pertenecientes a la aplicación a desarrollar. La Tabla \ref{tab:casosdeusos} contiene una lista de todos los Casos de Usos, cada uno con un identificador, el nombre del caso de uso, la referencia a la tabla que contiene el Caso de Uso Extendido, la referencia a la figura que contiene el diagrama de secuencia y la referencia a la figura que contiene el diagrama de estados. \\
+
+% Please add the following required packages to your document preamble:
+% \usepackage[table,xcdraw]{xcolor}
+% If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
+\begin{table}[h!]
+\footnotesize
+\centering
+\begin{tabular}{|p{1cm}|p{3.5cm}|p{3.5cm}|p{3.5cm}|p{3.5cm}|}
+\hline
+\rowcolor[HTML]{9B9B9B} 
+\multicolumn{5}{|l|}{\cellcolor[HTML]{9B9B9B}\textbf{Lista de Casos de Usos.}}                                                               \\ \hline
+\rowcolor[HTML]{C0C0C0} 
+\textit{Id} & \textit{Nombre}      & \textit{Caso de Uso Extendido} & \textit{Diagrama de Secuencia} & \textit{Diagrama de Estados} \\ \hline
+CU01        & Ir Inicio            & Tabla \ref{tab:cuirinicio}                        & Figura \ref{fig:secirinicio}                       & Figura \ref{fig:estirinicio}                     \\ \hline
+CU02        & Iniciar Sesión       & Tabla \ref{tab:cuiniciarsesion}                        & Figura \ref{fig:seciniciarsesion}                       & Figura \ref{fig:estiniciarsesion}                     \\ \hline
+CU03        & Sesión Profesor      & Tabla \ref{tab:cusesionprofesor}                        & Figura \ref{fig:secsesionprofesor}                       & Figura \ref{fig:estsesionprofesor}                     \\ \hline
+CU04        & Gestionar Cuentas   & Tabla \ref{tab:cugestionarcuentas}                        & Figura \ref{fig:secgestionarcuentas}                       & Figura \ref{fig:estgestionarcuentas}                     \\ \hline
+CU05        & Crear Cuenta Alumno         & Tabla \ref{tab:cucrearcuenta}                        & Figura \ref{fig:seccrearcuenta}                       & Figura \ref{fig:estcrearcuenta}                     \\ \hline
+CU06        & Eliminar Cuenta      & Tabla \ref{tab:cueliminarcuenta}                        & Figura \ref{fig:seceliminarcuenta}                       & Figura \ref{fig:esteliminarcuenta}                     \\ \hline
+CU07        & Modificar Cuenta     & Tabla \ref{tab:cumodificarcuenta}                        & Figura \ref{fig:secmodificarcuenta}                       & Figura \ref{fig:secmodificarcuenta}                     \\ \hline
+CU08        & Gestionar BD         & Tabla \ref{tab:cugestionarbd}                        & Figura \ref{fig:secgestionarbd}                       & Figura \ref{fig:estgestionarbd}                     \\ \hline
+CU09        & Crear BD             & Tabla \ref{tab:cucrearbd}                        & Figura \ref{fig:seccrearbd}                       & Figura \ref{fig:estcrearbd}                     \\ \hline
+CU10        & Eliminar BD          & Tabla \ref{tab:cueliminarbd}                        & Figura \ref{fig:seceliminarbd}                       & Figura \ref{fig:esteliminarbd}                     \\ \hline
+CU11        & Modificar BD         & Tabla \ref{tab:cumodificarbd}                        & Figura \ref{fig:secmodificarbd}                       & Figura \ref{fig:estmodificarbd}                     \\ \hline
+%CU12        & Guardar BD           & Tabla \ref{tab:cuguardarbd}                        & Figura \ref{fig:secguardarbd}                       & Figura \ref{fig:estguardarbd}                     \\ \hline
+CU12        & Cargar BD            & Tabla \ref{tab:cucargarbd}                        & Figura \ref{fig:seccargarbd}                       & Figura \ref{fig:estcargarbd}                     \\ \hline
+CU13        & Gestionar Ejercicios & Tabla \ref{tab:cugestionarejercicios}                        & Figura \ref{fig:secgestionarejercicios}                       & Figura \ref{fig:estgestionarejercicios}                     \\ \hline
+CU14        & Crear Ejercicios     & Tabla \ref{tab:cucrearejercicios}                        & Figura \ref{fig:secgestionarejercicios}                       & Figura \ref{fig:estgestionarejercicios}                     \\ \hline
+CU15        & Eliminar Ejercicios  & Tabla \ref{tab:cueliminarejercicios}                        & Figura \ref{fig:seceliminarejercicios}                       & Figura \ref{fig:esteliminarejercicios}                     \\ \hline
+CU16        & Modificar Ejercicios & Tabla \ref{tab:cueliminarejercicios}                        & Figura \ref{fig:seceliminarejercicios}                       & Figura \ref{fig:esteliminarejercicios}                     \\ \hline
+CU17        & Responder Ejercicios & Tabla \ref{tab:curesponderejercicios}                        & Figura \ref{fig:secresponderejercicios}                       & Figura \ref{fig:estresponderejercicios}                     \\ \hline
+CU18        & Gestionar Relación   & Tabla \ref{tab:cugestionarrelacion}                        & Figura \ref{fig:secgestionarrelacion}                       & Figura \ref{fig:estgestionarrelacion}                     \\ \hline
+CU19        & Agregar Relación     & Tabla \ref{tab:cuagregarrelacion}                        & Figura \ref{fig:secagregarrelacion}                       & Figura \ref{fig:estagregarrelacion}                     \\ \hline
+CU20        & Eliminar Relación    & Tabla \ref{tab:cueliminarrelacion}                        & Figura \ref{fig:seceliminarrelacion}                       & Figura \ref{fig:esteliminarrelacion}                     \\ \hline
+CU21        & Modificar Relación   & Tabla \ref{tab:cumodificarrelacion}                        & Figura \ref{fig:secmodificarrelacion}                       & Figura \ref{fig:estmodificarrelacion}                     \\ \hline
+CU22        & Ver Relación         & Tabla \ref{tab:cuverrelacion}                        & Figura \ref{fig:secverrelacion}                       & Figura \ref{fig:estverrelacion}                     \\ \hline
+CU23        & Gestionar Tupla      & Tabla \ref{tab:cugestionartupla}                        & Figura \ref{fig:secgestionartupla}                       & Figura \ref{fig:estgestionartupla}                     \\ \hline
+CU24        & Ingresar Tupla        & Tabla \ref{tab:cuagregartupla}                        & Figura \ref{fig:secagregartupla}                       & Figura \ref{fig:estagregartupla}                     \\ \hline
+CU25        & Eliminar Tupla       & Tabla \ref{tab:cueliminartupla}                        & Figura \ref{fig:seceliminartupla}                       & Figura \ref{fig:esteliminartupla}                     \\ \hline
+CU26        & Modificar Tupla      & Tabla \ref{tab:cumodificartupla}                        & Figura \ref{fig:secmodificartupla}                       & Figura \ref{fig:estmodificartupla}                     \\ \hline
+CU27        & Sesión Alumno        & Tabla \ref{tab:cusesionalumno}                        & Figura \ref{fig:secsesionalumno}                       & Figura \ref{fig:estsesionalumno}                     \\ \hline
+CU28        & Hacer Consulta       & Tabla \ref{tab:cuhacerconsulta}                        & Figura \ref{fig:sechacerconsulta}                      & Figura \ref{fig:esthacerconsulta}                     \\ \hline
+CU29        & Ver Estadísticas     & Tabla \ref{tab:cuverestadisticas}                        & Figura \ref{fig:secverestadisticas}                       & Figura \ref{fig:estverestadisticas}                     \\ \hline
+\end{tabular}
+\caption{Lista de Casos de Usos.}
+\label{tab:casosdeusos}
+\end{table}
+
+% Ir Inicio
+\clearpage
+\begin{table}[h!]
+\footnotesize
+\centering
+\begin{tabular}{|p{7.5cm}|p{7.5cm}|}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+\textbf{Caso de Uso}                                                                                                                  & \textbf{ID: CU01}                                                               \\ \hline
+\textbf{Nombre}                                                                                                                       & Ir Inicio                                                                       \\ \hline
+\textbf{Actores}                                                                                                                      & Usuario (Alumno y Profesor)                                                               \\ \hline
+\textbf{Propósito}                                                                                                                    & Crear cuenta de alumno e iniciar sesión desde la página de inicio                         \\ \hline
+\textbf{Resumen}                                                                                                                      & El alumno o el profesor elige una opción que se muestra en la pagina de inicio \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\textbf{Curso Normal (Usuario)}                                                                                                       & \textbf{Curso Normal (Sistema)}                                                 \\ \hline
+1. El usuario ingresa a la página de inicio                                                                                       &                                                                                 \\ \hline
+2. El usuario puede seleccionar entre Crear Cuenta Alumno (ver Tabla \ref{tab:cucrearcuenta}); b. Iniciar Sesión (ver Tabla \ref{tab:cuiniciarsesion}) &                                                                                 \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\textbf{Curso Alternativo (Usuario)}                                                                                                  & \textbf{Curso Alternativo (Sistema)}                                            \\ \hline
+                                                                                                                                      & Paso 1: Si el sistema no muestra la pagina de inicio, arrojará un mensaje de error.                        \\ \hline
+\end{tabular}
+\caption{Caso de Uso Extendido - Ir Inicio.}
+\label{tab:cuirinicio}
+\end{table}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=10cm]{imagenes/secuencia_ir_inicio.png}
+\caption{Diagrama de Secuencia - Ir Inicio.}
+\label{fig:secirinicio}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=7cm]{imagenes/estado_ir_inicio.png}
+\caption{Diagrama de Estados - Ir Inicio.}
+\label{fig:estirinicio}
+\end{figure}
+
+% Iniciar Sesión
+\clearpage
+\begin{table}[h!]
+\footnotesize
+\centering
+\begin{tabular}{|p{7.5cm}|p{7.5cm}|}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+\textbf{Sección Iniciar Sesión}                    & \textbf{ID: CU02}                                                                                                                                                                                              \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\textbf{Curso Normal (Usuario)}                    & \textbf{Curso Normal (Sistema)}                                                                                                                                                                                  \\ \hline
+1. El usuario ingresa su correo y contraseña       &                                                                                                                                                                                                                  \\ \hline
+                                                   & 2. El sistema valida los datos del usuario y carga la sesión                                                                                                                                                     \\ \hline
+                                                   & 3. El sistema redirecciona dependiendo del usuario que ingrese: a. Sesión Profesor, si el usuario corresponde a un profesor (ver Tabla \ref{tab:cusesionprofesor}); b. Sesión Alumno, si el usuario corresponde a un alumno (ver Tabla \ref{tab:cusesionalumno}) \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\textbf{Curso Alternativo (Usuario)}               & \textbf{Curso Alternativo (Sistema)}                                                                                                                                                                             \\ \hline
+                                                   & Paso 2: Si los datos ingresados no son los correctos, el sistema indica dicho acontecimiento y vuelve al paso 1                                                                                                  \\ \hline
+                                                   & Paso 3: Si el sistema no logra redireccionar, manda un mensaje de error                                                                                                                                          \\ \hline
+\end{tabular}
+\caption{Caso de Uso Extendido - Iniciar Sesión.}
+\label{tab:cuiniciarsesion}
+\end{table}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=10cm]{imagenes/secuencia_iniciar_sesion.png}
+\caption{Diagrama de Secuencia - Iniciar Sesión.}
+\label{fig:seciniciarsesion}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=15cm]{imagenes/estado_iniciar_sesion.png}
+\caption{Diagrama de Estados - Iniciar Sesión.}
+\label{fig:estiniciarsesion}
+\end{figure}
+
+% Sesion Profesor
+\clearpage
+\begin{table}[h!]
+\footnotesize
+\centering
+\begin{tabular}{|p{7.5cm}|p{7.5cm}|}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+\textbf{Caso de Uso}                                                                                                                                                                                                                                                                                                                & \textbf{ID: CU03}                                                                                                                                                 \\ \hline
+\textbf{Nombre}                                                                                                                                                                                                                                                                                                                     & Sesión Profesor                                                                                                                                                   \\ \hline
+\textbf{Actores}                                                                                                                                                                                                                                                                                                                    & Profesor                                                                                                                                                          \\ \hline
+\textbf{Propósito}                                                                                                                                                                                                                                                                                                                  & Mostrar al Profesor todas las opciones que tiene disponibles \\ \hline
+\textbf{Resumen}                                                                                                                                                                                                                                                                                                                    & El Profesor elige una opción que se muestra en el menú de sesión de profesor                                                                                      \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\textbf{Curso Normal (Usuario)}                                                                                                                                                                                                                                                                                                     & \textbf{Curso Normal (Sistema)}                                                                                                                                   \\ \hline
+1. El profesor ingresa al sistema desde el Caso de Uso \ref{tab:cuiniciarsesion} Iniciar Sesión                                                                                                                                                                                                                                                             &                                                                                                                                                                   \\ \hline
+2. El profesor selecciona alguna opción: a. Gestionar Cuentas (ver Tabla \ref{tab:cugestionarcuentas}); b. Modificar Cuenta(ver Tabla \ref{tab:cumodificarcuenta}); c. Gestionar BD (ver Tabla \ref{tab:cugestionarbd}); d. Gestionar Relaciones (ver Tabla \ref{tab:cugestionarrelacion}); e. Gestionar Tuplas (ver Tabla \ref{tab:cugestionartupla}); f: Gestionar Ejercicios (var Tabla \ref{tab:cugestionarejercicios}); g. Hacer Consulta (ver Tabla \ref{tab:cuhacerconsulta}); h. Ver Estadísticas (ver Tabla \ref{tab:cuverestadisticas}) &                                                                                                                                                                   \\ \hline
+                                                                                                                                                                                                                                                                                                                                    & 3. El sistema direcciona a la opción correspondiente                                                                                                           \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\textbf{Curso Alternativo (Usuario)}                                                                                                                                                                                                                                                                                                & \textbf{Curso Alternativo (Sistema)}                                                                                                                              \\ \hline
+                                                                                                                                                                                                                                                                                                                                    & Paso 3: si no se puede direccionar, se muestra un error                                                                                                          \\ \hline
+\end{tabular}
+\caption{Caso de Uso Extendido - Sesión Profesor.}
+\label{tab:cusesionprofesor}
+\end{table}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=10cm]{imagenes/secuencia_sesion_profesor.png}
+\caption{Diagrama de Secuencia - Sesión Profesor.}
+\label{fig:secsesionprofesor}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=7cm]{imagenes/estado_sesion_profesor.png}
+\caption{Diagrama de Estados - Sesión Profesor.}
+\label{fig:estsesionprofesor}
+\end{figure}
+
+% Gestionar Cuentas
+\clearpage
+\begin{table}[h!]
+\footnotesize
+\centering
+\begin{tabular}{|p{7.5cm}|p{7.5cm}|}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+\textbf{Caso de Uso}                                                                                                                                          & \textbf{ID: CU04}                                                                                               \\ \hline
+\textbf{Nombre}                                                                                                                                               & Gestionar Usuario                                                                                               \\ \hline
+\textbf{Actores}                                                                                                                                              & Profesor                                                                                                        \\ \hline
+\textbf{Propósito}                                                                                                                                            & Mostrar al Profesor todas las opciones de Gestión de Usuarios: Crear Cuenta, Eliminar Cuenta, Modificar Cuenta \\ \hline
+\textbf{Resumen}                                                                                                                                              & El Profesor elige una opción que se muestra en el menú de gestión de usuarios                                  \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\textbf{Curso Normal (Usuario)}                                                                                                                               & \textbf{Curso Normal (Sistema)}                                                                                 \\ \hline
+1. El profesor ingresa al menú Gestionar Cuentas &                                                                                                                 \\ \hline
+2. El profesor selecciona alguna opción: a. Crear Cuenta (ver Tabla \ref{tab:cucrearcuenta}); b. Eliminar Cuenta (ver Tabla \ref{tab:cueliminarcuenta}); c. Modificar Cuenta (ver Tabla \ref{tab:cumodificarcuenta}) &                                                                                                                 \\ \hline
+                                                                                                                                                              & 3. El sistema direcciona a la opción correspondiente                                                           \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\textbf{Curso Alternativo (Usuario)}                                                                                                                          & \textbf{Curso Alternativo (Sistema)}                                                                            \\ \hline
+                                                                                                                                                              & Paso 3: Si el sistema no logra direccionar, se muestra un error                                                        \\ \hline
+\end{tabular}
+\caption{Caso de Uso Extendido - Gestionar Cuentas.}
+\label{tab:cugestionarcuentas}
+\end{table}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=10cm]{imagenes/secuencia_gestionar_usuarios.png}
+\caption{Diagrama de Secuencia - Gestionar Cuentas.}
+\label{fig:secgestionarcuentas}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=7cm]{imagenes/estado_gestionar_usuarios.png}
+\caption{Diagrama de Estados - Gestionar Cuentas.}
+\label{fig:estgestionarcuentas}
+\end{figure}
+
+% Crear Cuenta
+\clearpage
+\begin{table}[h!]
+\footnotesize
+\centering
+\begin{tabular}{|p{7.5cm}|p{7.5cm}|}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+\textbf{Sección Crear Cuenta Alumno}                      & \textbf{ID: CU05}                                                                                                                                                                                                                                                                                                     \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\textbf{Curso Normal (Usuario)}                    & \textbf{Curso Normal (Sistema)}                                                                                                                                                                                                                                                                                       \\ \hline
+1. El usuario selecciona la opción Crear Cuenta Alumno    &                                                                                                                                                                                                                                                                                                                       \\ \hline
+2. El usuario ingresa los datos de la nueva cuenta &                                                                                                                                                                                                                                                                                                                       \\ \hline
+                                                   & 3. El sistema valida los datos del usuario y se registra la nueva cuenta                                                                                                                                                                                                                                              \\ \hline
+                                                   & 4. El sistema muestra un mensaje al usuario indicando que se ha creado la nueva cuenta y redirecciona dependiendo del usuario que ingrese: a. Ir Inicio, si el usuario llegó por el menú inicial (ver Tabla \ref{tab:cuirinicio}); b. Gestionar Cuentas, si el usuario llegó desde el menú Gestionar Cuentas (ver Tabla \ref{tab:cugestionarcuentas}) \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\textbf{Curso Alternativo (Usuario)}               & \textbf{Curso Alternativo (Sistema)}                                                                                                                                                                                                                                                                                  \\ \hline
+                                                   & Paso 3: Si los datos ingresados no son los correctos, el sistema indica dicho acontecimiento y vuelve al paso 1                                                                                                                                                                                                       \\ \hline
+                                                   & Paso 4: Si el sistema no logra redireccionar, manda un mensaje de error                                                                                                                                                                                                                                               \\ \hline
+\end{tabular}
+\caption{Caso de Uso Extendido - Crear Cuenta Alumno.}
+\label{tab:cucrearcuenta}
+\end{table}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=10cm]{imagenes/secuencia_crear_cuenta.png}
+\caption{Diagrama de Secuencia - Crear Cuenta Alumno.}
+\label{fig:seccrearcuenta}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=15cm]{imagenes/estado_crear_cuenta.png}
+\caption{Diagrama de Estados - Crear Cuenta Alumno.}
+\label{fig:estcrearcuenta}
+\end{figure}
+
+%Eliminar Cuenta
+\clearpage
+\begin{table}[h!]
+\footnotesize
+\centering
+\begin{tabular}{|p{7.5cm}|p{7.5cm}|}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+\textbf{Sección Eliminar Cuenta}                                                              & \textbf{ID: CU06}                                                                                                                                                                           \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\textbf{Curso Normal (Usuario)}                                                               & \textbf{Curso Normal (Sistema)}                                                                                                                                                             \\ \hline
+1. El usuario selecciona la opción Eliminar Cuenta                                            &                                                                                                                                                                                             \\ \hline
+2. El usuario selecciona la cuenta a eliminar                                                 &                                                                                                                                                                                             \\ \hline
+                                                                                              & 3. El sistema solicita la confirmación de la eliminación                                                                                                                                    \\ \hline
+4. El usuario confirma y acepta la eliminación                                                &                                                                                                                                                                                             \\ \hline
+                                                                                              & 5. El sistema elimina la cuenta seleccionada                                                                                                                                                \\ \hline
+                                                                                              & 6. El sistema muestra un mensaje al usuario indicando que se ha eliminado la cuenta y redirecciona a la Sesión Profesor (ver Tabla \ref{tab:cusesionprofesor})                                                 \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\textbf{Curso Alternativo (Usuario)}                                                          & \textbf{Curso Alternativo (Sistema)}                                                                                                                                                        \\ \hline
+Paso 4: El usuario no acepta la confirmación, se termina dicho proceso y se vuelve al paso 1 &                                                                                                                                                                                             \\ \hline
+                                                                                              & Paso 5: Si el sistema no logra eliminar la cuenta, indica dicho acontecimiento y vuelve al paso 1                                                                                          \\ \hline
+                                                                                              & Paso 6: Si el sistema no logra redireccionar, manda un mensaje de error                                                                                                                     \\ \hline
+\end{tabular}
+\caption{Caso de Uso Extendido - Eliminar Cuenta.}
+\label{tab:cueliminarcuenta}
+\end{table}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=10cm]{imagenes/secuencia_eliminar_cuenta.png}
+\caption{Diagrama de Secuencia - Eliminar Cuenta.}
+\label{fig:seceliminarcuenta}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=15cm]{imagenes/estado_eliminar_cuenta.png}
+\caption{Diagrama de Estados - Eliminar Cuenta.}
+\label{fig:esteliminarcuenta}
+\end{figure}
+
+% Modificar Cuenta
+\clearpage
+\begin{table}[h!]
+\footnotesize
+\centering
+\begin{tabular}{|p{7.5cm}|p{7.5cm}|}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+\textbf{Sección Modificar Cuenta}                                                              & \textbf{ID: CU07}                                                                                                                            \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\textbf{Curso Normal (Usuario)}                                                               & \textbf{Curso Normal (Sistema)}                                                                                                              \\ \hline
+1. El usuario selecciona la opción Modificar Cuenta                                           &                                                                                                                                              \\ \hline
+2. El usuario selecciona la cuenta a modificar                                                &                                                                                                                                              \\ \hline
+                                                                                              & 3. El sistema muestra por pantalla los datos de la cuenta seleccionada                                                              \\ \hline
+4. El usuario modifica los campos de dicha cuenta y acepta los cambios                        &                                                                                                                                              \\ \hline
+                                                                                              & 5. El sistema valida los nuevos datos y solicita confirmación para ejecutar la modificación                                                  \\ \hline
+6. El usuario confirma y acepta la modificación                                               &                                                                                                                                              \\ \hline
+                                                                                              & 7. El sistema modifica la cuenta seleccionada                                                                                                \\ \hline
+                                                                                              & 8. El sistema muestra un mensaje al usuario indicando que se ha modificado la cuenta y redirecciona a la Sesión Profesor (ver Tabla \ref{tab:cusesionprofesor}) \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\textbf{Curso Alternativo (Usuario)}                                                          & \textbf{Curso Alternativo (Sistema)}                                                                                                         \\ \hline
+                                                                                              & Paso 5: Si los datos ingresados no son los correctos o inválidos, el sistema indica dicho acontecimiento y vuelve al paso 1                             \\ \hline
+Paso 6: El usuario no acepta la confirmación, se termina dicho proceso y se vuelve al paso 1 &                                                                                                                                              \\ \hline
+                                                                                              & Paso 7: Si el sistema no logra modificar la cuenta, indica dicho acontecimiento y vuelve al paso 1                                          \\ \hline
+                                                                                              & Paso 8: Si el sistema no logra redireccionar, manda un mensaje de error                                                                      \\ \hline
+\end{tabular}
+\caption{Caso de Uso Extendido - Modificar Cuenta.}
+\label{tab:cumodificarcuenta}
+\end{table}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=10cm]{imagenes/secuencia_modificar_cuenta.png}
+\caption{Diagrama de Secuencia - Modificar Cuenta.}
+\label{fig:secmodificarcuenta}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=15cm]{imagenes/estado_modificar_cuenta.png}
+\caption{Diagrama de Estados - Modificar Cuenta.}
+\label{fig:estmodificarcuenta}
+\end{figure}
+
+% Gestionar BD
+\clearpage
+\begin{table}[h!]
+\footnotesize
+\centering
+\begin{tabular}{|p{7.5cm}|p{7.5cm}|}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+\textbf{Caso de Uso}                                                                                                                                                                                                                                                & \textbf{ID: CU08}                                                                                                                         \\ \hline
+\textbf{Nombre}                                                                                                                                                                                                                                                     & Gestionar BD                                                                                                                              \\ \hline
+\textbf{Actores}                                                                                                                                                                                                                                                    & Profesor \\ \hline
+\textbf{Propósito}                                                                                                                                                                                                                                                  & Mostrar al Profesor todas las opciones de Gestión de BD: Crear BD, Eliminar BD, Modificar BD y Cargar BD \\ \hline
+\textbf{Resumen}                                                                                                                                                                                                                                                    & El Profesor elige una opción que se muestra en el menú de gestión de base de datos                                                        \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\textbf{Curso Normal (Usuario)}                                                                                                                                                                                                                                     & \textbf{Curso Normal (Sistema)}                                                                                                           \\ \hline
+1. El profesor ingresa al menú Gestionar BD desde el Caso de Uso \ref{tab:cusesionprofesor} Sesión Profesor &                                                                                                                                           \\ \hline
+2. El usuario selecciona alguna opción: a. Crear BD (ver Tabla \ref{tab:cucrearbd}); b. Eliminar BD (ver Tabla \ref{tab:cueliminarbd}); c. Modificar BD (ver Tabla \ref{tab:cumodificarbd}); d. Cargar BD (ver Tabla \ref{tab:cucargarbd}) &                                                                                                                                           \\ \hline
+                                                                                                                                                                                                                                                                    & 3. El sistema direcciona a la opción correspondiente                                                                                     \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\textbf{Curso Alternativo (Usuario)}                                                                                                                                                                                                                                & \textbf{Curso Alternativo (Sistema)}                                                                                                      \\ \hline
+                                                                                                                                                                                                                                                                    & Paso 3: Si el sistema no logra direccionar, muestra un mensaje de error                                                                                  \\ \hline
+\end{tabular}
+\caption{Caso de Uso Extendido - Gestionar BD.}
+\label{tab:cugestionarbd}
+\end{table}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=10cm]{imagenes/secuencia_gestionar_bd.png}
+\caption{Diagrama de Secuencia - Gestionar BD.}
+\label{fig:secgestionarbd}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=7cm]{imagenes/estado_gestionar_bd.png}
+\caption{Diagrama de Estados - Gestionar BD.}
+\label{fig:estgestionarbd}
+\end{figure}
+
+% Crear BD
+\clearpage
+\begin{table}[h!]
+\footnotesize
+\centering
+\begin{tabular}{|p{7.5cm}|p{7.5cm}|}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+\textbf{Sección Crear BD}                                 & \textbf{ID: CU09}                                                                                                                                                                                                             \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\textbf{Curso Normal (Usuario)}                           & \textbf{Curso Normal (Sistema)}                                                                                                                                                                                               \\ \hline
+1. El usuario selecciona la opción Crear BD               &                                                                                                                                                                                                                               \\ \hline
+2. El usuario ingresa los datos de la nueva base de datos &                                                                                                                                                                                                                               \\ \hline
+                                                          & 3. El sistema valida los datos y genera una nueva base de datos vacía, luego redirecciona al menú Gestionar BD (ver Tabla \ref{tab:cugestionarbd})                                                                                            \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\textbf{Curso Alternativo (Usuario)}                      & \textbf{Curso Alternativo (Sistema)}                                                                                                                                                                                          \\ \hline
+                                                          & Paso 3: Si los datos ingresados no son los correctos o inválidos, o no puede generar la nueva base de datos, el sistema indica dicho acontecimiento y vuelve al paso 1. Si el sistema no puede redireccionar, muestra un mensaje de error \\ \hline
+\end{tabular}
+\caption{Caso de Uso Extendido - Crear BD.}
+\label{tab:cucrearbd}
+\end{table}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=10cm]{imagenes/secuencia_crear_bd.png}
+\caption{Diagrama de Secuencia - Crear BD.}
+\label{fig:seccrearbd}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=15cm]{imagenes/estado_crear_bd.png}
+\caption{Diagrama de Estados - Crear BD.}
+\label{fig:estcrearbd}
+\end{figure}
+
+% Eliminar BD
+\clearpage
+\begin{table}[h!]
+\footnotesize
+\centering
+\begin{tabular}{|p{7.5cm}|p{7.5cm}|}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+\textbf{Sección Eliminar BD}                                                                 & \textbf{ID: CU10}                                                                                                                                                                                                             \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\textbf{Curso Normal (Usuario)}                                                              & \textbf{Curso Normal (Sistema)}                                                                                                                                                                                               \\ \hline
+1. El usuario selecciona la opción Eliminar BD                                               &                                                                                                                                                                                                                               \\ \hline
+2. El usuario selecciona la base de datos a eliminar                                         &                                                                                                                                                                                                                               \\ \hline
+                                                                                             & 3. El sistema solicita la confirmación de la eliminación                                                                                                                                                                      \\ \hline
+4. El usuario confirma y acepta la eliminación                                               &                                                                                                                                                                                                                               \\ \hline
+                                                                                             & 5. El sistema elimina la base de datos seleccionada                                                                                                                                                                           \\ \hline
+                                                                                             & 6. El sistema muestra un mensaje al usuario indicando que ha eliminado la base de datos y redirecciona al menú Gestionar BD (ver Tabla \ref{tab:cugestionarbd})                                                                                  \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\textbf{Curso Alternativo (Usuario)}                                                         & \textbf{Curso Alternativo (Sistema)}                                                                                                                                                                                          \\ \hline
+Paso 4: El usuario no acepta la confirmación, se termina dicho proceso y se vuelve al paso 1 &                                                                                                                                                                                                                               \\ \hline
+                                                                                             & Paso 5: Si el sistema no logra eliminar la base de datos, indica dicho acontecimiento y vuelve al paso 1                                                                                                                      \\ \hline
+                                                                                             & Paso 6: Si el sistema no logra redireccionar, manda un mensaje de error                                                                                                                                                       \\ \hline
+\end{tabular}
+\caption{Caso de Uso Extendido - Eliminar BD.}
+\label{tab:cueliminarbd}
+\end{table}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=10cm]{imagenes/secuencia_eliminar_bd.png}
+\caption{Diagrama de Secuencia - Eliminar BD.}
+\label{fig:seceliminarbd}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=15cm]{imagenes/estado_eliminar_bd.png}
+\caption{Diagrama de Estados - Eliminar BD.}
+\label{fig:esteliminarbd}
+\end{figure}
+
+% Modificar BD
+\clearpage
+\begin{table}[h!]
+\footnotesize
+\centering
+\begin{tabular}{|p{7.5cm}|p{7.5cm}|}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+\textbf{Sección Modificar BD}                                                                & \textbf{ID: CU11}                                                                                                                                 \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\textbf{Curso Normal (Usuario)}                                                              & \textbf{Curso Normal (Sistema)}                                                                                                                   \\ \hline
+1. El usuario selecciona la opción Modificar BD                                              &                                                                                                                                                   \\ \hline
+2. El usuario selecciona la base de datos a modificar                                        &                                                                                                                                                   \\ \hline
+                                                                                             & 3. El sistema muestra por pantalla los datos de la base de datos seleccionada                                                                     \\ \hline
+4. El usuario modifica los campos de dicha base de datos y acepta los cambios                &                                                                                                                                                   \\ \hline
+                                                                                             & 5. El sistema valida los nuevos datos y solicita confirmación para ejecutar la modificación                                                       \\ \hline
+6. El usuario confirma y acepta la modificación                                              &                                                                                                                                                   \\ \hline
+                                                                                             & 7. El sistema modifica la base de datos seleccionada                                                                                              \\ \hline
+                                                                                             & 8. El sistema manda un mensaje al usuario indicando que se ha modificado la base de datos y redirecciona al menú Gestionar BD (ver Tabla \ref{tab:cugestionarbd}) \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\textbf{Curso Alternativo (Usuario)}                                                         & \textbf{Curso Alternativo (Sistema)}                                                                                                              \\ \hline
+                                                                                             & Paso 5: Si los datos ingresados no son los correctos, el sistema indica dicho acontecimiento y vuelve al paso 1                                   \\ \hline
+Paso 6: El usuario no acepta la confirmación, se termina dicho proceso y se vuelve al paso 1 &                                                                                                                                                   \\ \hline
+                                                                                             & Paso 7: Si el sistema no logra modificar la base de datos, indica dicho acontecimiento y vuelve al paso 1                                         \\ \hline
+                                                                                             & Paso 8: Si el sistema no logra redireccionar, manda un mensaje de error                                                                           \\ \hline
+\end{tabular}
+\caption{Caso de Uso Extendido - Modificar BD.}
+\label{tab:cumodificarbd}
+\end{table}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=10cm]{imagenes/secuencia_modificar_bd.png}
+\caption{Diagrama de Secuencia - Modificar BD.}
+\label{fig:secmodificarbd}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=15cm]{imagenes/estado_modificar_bd.png}
+\caption{Diagrama de Estados - Modificar BD.}
+\label{fig:estmodificarbd}
+\end{figure}
+
+%% Guardar BD
+%\clearpage
+%\begin{table}[h!]
+%\footnotesize
+%\centering
+%\begin{tabular}{|p{7.5cm}|p{7.5cm}|}
+%\hline
+%\rowcolor[HTML]{C0C0C0} 
+%\textbf{Sección Guardar BD}                         & \textbf{ID: CU12}                                                                                                                                                     \\ \hline
+%\rowcolor[HTML]{EFEFEF} 
+%\textbf{Curso Normal (Usuario)}                     & \textbf{Curso Normal (Sistema)}                                                                                                                                       \\ \hline
+%1. El usuario selecciona la opción Guardar BD       &                                                                                                                                                                       \\ \hline
+%2. El usuario selecciona la base de datos a guardar &                                                                                                                                                                       \\ \hline
+%                                                    & 3. El sistema manda un mensaje al usuario indicando que se ha guardado la base de datos y redirecciona al menú Gestionar BD (ver Tabla \ref{tab:cugestionarbd})                       \\ \hline
+%\rowcolor[HTML]{EFEFEF} 
+%\textbf{Curso Alternativo (Usuario)}                & \textbf{Curso Alternativo (Sistema)}                                                                                                                                  \\ \hline
+%                                                    & Paso 3: Si el sistema no logra guardar la base de datos, envía un mensaje de error y vuelve al paso 1.Si el sistema no logra redireccionar, manda un mensaje de error \\ \hline
+%\end{tabular}
+%\caption{Caso de Uso Extendido - Guardar BD.}
+%\label{tab:cuguardarbd}
+%\end{table}
+%
+%\begin{figure}[h!]
+%\centering
+%\includegraphics[width=10cm]{imagenes/secuencia_guardar_bd.png}
+%\caption{Diagrama de Secuencia - Guardar BD.}
+%\label{fig:secguardarbd}
+%\end{figure}
+%
+%\begin{figure}[h!]
+%\centering
+%\includegraphics[width=12cm]{imagenes/estado_guardar_bd.png}
+%\caption{Diagrama de Estados - Guardar BD.}
+%\label{fig:estguardarbd}
+%\end{figure}
+
+% Cargar BD
+\clearpage
+\begin{table}[h!]
+\footnotesize
+\centering
+\begin{tabular}{|p{7.5cm}|p{7.5cm}|}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+\textbf{Sección Cargar BD}                                 & \textbf{ID: CU12}                                                                                                                                                             \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\textbf{Curso Normal (Usuario)}                            & \textbf{Curso Normal (Sistema)}                                                                                                                                               \\ \hline
+1. El usuario selecciona la opción Cargar BD               &                                                                                                                                                                               \\ \hline
+2. El usuario selecciona la base de datos que desea cargar &                                                                                                                                                                               \\ \hline
+                                                           & 3. El sistema carga la base de datos seleccionada, muestra un mensaje confirmando la carga y redirecciona al menú Gestionar BD (ver Tabla \ref{tab:cugestionarbd})                            \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\textbf{Curso Alternativo (Usuario)}                       & \textbf{Curso Alternativo (Sistema)}                                                                                                                                          \\ \hline
+                                                           & Paso 3: Si no puede cargar la base de datos, el sistema indica dicho acontecimiento y vuelve al paso 1. Si el sistema no puede redireccionar, muestra un mensaje de error \\ \hline
+\end{tabular}
+\caption{Caso de Uso Extendido - Cargar BD.}
+\label{tab:cucargarbd}
+\end{table}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=10cm]{imagenes/secuencia_cargar_bd.png}
+\caption{Diagrama de Secuencia - Cargar BD.}
+\label{fig:seccargarbd}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=12cm]{imagenes/estado_cargar_bd.png}
+\caption{Diagrama de Estados - Cargar BD.}
+\label{fig:estcargarbd}
+\end{figure}
+
+% Gestionar Ejercicios
+\clearpage
+\begin{table}[h!]
+\footnotesize
+\centering
+\begin{tabular}{|p{7.5cm}|p{7.5cm}|}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+\textbf{Caso de Uso}                                                                                                                                                                                               & \textbf{ID: CU13}                                                                                                                                  \\ \hline
+\textbf{Nombre}                                                                                                                                                                                                    & Gestionar Ejercicios                                                                                                                               \\ \hline
+\textbf{Actores}                                                                                                                                                                                                   & Profesor                                                                                                                                           \\ \hline
+\textbf{Propósito}                                                                                                                                                                                                 & Mostrar al Profesor todas las opciones de Gestión de Ejercicios: Crear Ejercicios, Eliminar Ejercicios, Modificar Ejercicios, Responder Ejercicios \\ \hline
+\textbf{Resumen}                                                                                                                                                                                                   & El Profesor elige una opción que se muestra en el menú de gestión de ejercicios                                                                    \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\textbf{Curso Normal (Usuario)}                                                                                                                                                                                    & \textbf{Curso Normal (Sistema)}                                                                                                                    \\ \hline
+1. El profesor ingresa al menú Gestionar Ejercicios desde el Caso de Uso \ref{tab:cugestionarbd} Gestionar BD                                                                                                                            &                                                                                                                                                    \\ \hline
+2. El profesor selecciona alguna opción: a. Crear Ejercicios (ver Tabla \ref{tab:cucrearejercicios}); b. Eliminar Ejercicios (ver Tabla \ref{tab:cueliminarejercicios}); c. Modificar Ejercicios (ver Tabla \ref{tab:cumodificarejercicios}); d. Responder Ejercicios (ver Tabla \ref{tab:curesponderejercicios}) &                                                                                                                                                    \\ \hline
+                                                                                                                                                                                                                   & 3. El sistema direcciona a la opción correspondiente                                                                                              \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\textbf{Curso Alternativo (Usuario)}                                                                                                                                                                               & \textbf{Curso Alternativo (Sistema)}                                                                                                               \\ \hline
+                                                                                                                                                                                                                   & Paso 3: si no se puede direccionar, se muestra un error                                                                                           \\ \hline
+\end{tabular}
+\caption{Caso de Uso Extendido - Gestionar Ejercicios.}
+\label{tab:cugestionarejercicios}
+\end{table}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=10cm]{imagenes/secuencia_gestionar_ejercicios.png}
+\caption{Diagrama de Secuencia - Gestionar Ejercicios.}
+\label{fig:secgestionarejercicios}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=7cm]{imagenes/estado_gestionar_ejercicios.png}
+\caption{Diagrama de Estados - Gestionar Ejercicios.}
+\label{fig:estgestionarejercicios}
+\end{figure}
+
+% Crear Ejercicios
+\clearpage
+\begin{table}[h!]
+\footnotesize
+\centering
+\begin{tabular}{|p{7.5cm}|p{7.5cm}|}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+\textbf{Sección Crear Ejercicios}                                                                                     & \textbf{ID: CU14}                                                                                                                                                                                                             \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\textbf{Curso Normal (Usuario)}                                                                                       & \textbf{Curso Normal (Sistema)}                                                                                                                                                                                               \\ \hline
+1. El usuario selecciona la opción Crear Ejercicios                                                             &                                                                                                                                                                                                                               \\ \hline
+2. El usuario ingresa los datos de los nuevos ejercicios, agregando para cada uno la pregunta y la respuesta esperada &                                                                                                                                                                                                                               \\ \hline
+                                                                                                                      & 3. El sistema valida los datos y genera una nueva lista de ejercicios, luego redirecciona al menú Gestionar Ejercicios (ver Tabla \ref{tab:cugestionarejercicios})                                                                                    \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\textbf{Curso Alternativo (Usuario)}                                                                                  & \textbf{Curso Alternativo (Sistema)}                                                                                                                                                                                          \\ \hline
+                                                                                                                      & Paso 3: Si los datos ingresados no son los correctos, o no puede generar la nueva base de datos, el sistema indica dicho acontecimiento y vuelve al paso 1. Si el sistema no puede redireccionar, muestra un mensaje de error \\ \hline
+\end{tabular}
+\caption{Caso de Uso Extendido - Crear Ejercicios.}
+\label{tab:cucrearejercicios}
+\end{table}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=10cm]{imagenes/secuencia_crear_ejercicios.png}
+\caption{Diagrama de Secuencia - Crear Ejercicios.}
+\label{fig:seccrearejercicios}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=7cm]{imagenes/estado_crear_ejercicios.png}
+\caption{Diagrama de Estados - Crear Ejercicios.}
+\label{fig:estcrearejercicios}
+\end{figure}
+
+% Eliminar Ejercicios
+\clearpage
+\begin{table}[h!]
+\footnotesize
+\centering
+\begin{tabular}{|p{7.5cm}|p{7.5cm}|}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+\textbf{Sección Eliminar Ejercicios}                                                         & \textbf{ID: CU15}                                                                                                                                       \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\textbf{Curso Normal (Usuario)}                                                              & \textbf{Curso Normal (Sistema)}                                                                                                                         \\ \hline
+1. El usuario selecciona la opción Eliminar Ejercicios                                       &                                                                                                                                                         \\ \hline
+2. El usuario selecciona los ejercicios que desea eliminar                                   &                                                                                                                                                         \\ \hline
+                                                                                             & 3. El sistema solicita la confirmación de la eliminación                                                                                                \\ \hline
+4. El usuario confirma y acepta la eliminación                                               &                                                                                                                                                         \\ \hline
+                                                                                             & 5. El sistema elimina los ejercicios seleccionados                                                                                                      \\ \hline
+                                                                                             & 6. El sistema muestra un mensaje al usuario indicando que ha eliminado los ejercicios y redirecciona al menú Gestionar Ejercicios (ver Tabla \ref{tab:cugestionarejercicios}) \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\textbf{Curso Alternativo (Usuario)}                                                         & \textbf{Curso Alternativo (Sistema)}                                                                                                                    \\ \hline
+Paso 4: El usuario no acepta la confirmación, se termina dicho proceso y se vuelve al paso 1 &                                                                                                                                                         \\ \hline
+                                                                                             & Paso 5: Si el sistema no logra eliminar los ejercicios, indica dicho acontecimiento y vuelve al paso 1                                                  \\ \hline
+                                                                                             & Paso 6: Si el sistema no logra redireccionar, manda un mensaje de error                                                                                 \\ \hline
+\end{tabular}
+\caption{Caso de Uso Extendido - Eliminar Ejercicios.}
+\label{tab:cueliminarejercicios}
+\end{table}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=10cm]{imagenes/secuencia_eliminar_ejercicios.png}
+\caption{Diagrama de Secuencia - Eliminar Ejercicios.}
+\label{fig:seceliminarejercicios}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=15cm]{imagenes/estado_eliminar_ejercicios.png}
+\caption{Diagrama de Estados - Eliminar Ejercicios.}
+\label{fig:esteliminarejercicios}
+\end{figure}
+
+% Modificar Ejercicios
+\clearpage
+\begin{table}[h!]
+\footnotesize
+\centering
+\begin{tabular}{|p{7.5cm}|p{7.5cm}|}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+\textbf{Sección Modificar Ejercicios}                                                        & \textbf{ID: CU16}                                                                                                                                       \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\textbf{Curso Normal (Usuario)}                                                              & \textbf{Curso Normal (Sistema)}                                                                                                                         \\ \hline
+1. El usuario selecciona la opción Modificar Ejercicios                                      &                                                                                                                                                         \\ \hline
+2. El usuario selecciona los ejercicios a modificar                                          &                                                                                                                                                         \\ \hline
+                                                                                             & 3. El sistema muestra por pantalla los ejercicios selecionados                                                                                          \\ \hline
+4. El usuario modifica los campos de cada ejercicio y acepta los cambios                     &                                                                                                                                                         \\ \hline
+                                                                                             & 5. El sistema valida los nuevos ejercicios y solicita confirmación para ejecutar la modificación                                                        \\ \hline
+6. El usuario confirma y acepta la modificación                                              &                                                                                                                                                         \\ \hline
+                                                                                             & 7. El sistema modifica los ejercicios seleccionados                                                                                                     \\ \hline
+                                                                                             & 8. El sistema manda un mensaje al usuario indicando que se ha modificado los ejercicios y redirecciona al menú Gestionar Ejercicios (ver Tabla \ref{tab:cugestionarejercicios}) \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\textbf{Curso Alternativo (Usuario)}                                                         & \textbf{Curso Alternativo (Sistema)}                                                                                                                    \\ \hline
+                                                                                             & Paso 5: Si los datos ingresados no son los correctos, el sistema indica dicho acontecimiento y vuelve al paso 1                                         \\ \hline
+Paso 6: El usuario no acepta la confirmación, se termina dicho proceso y se vuelve al paso 1 &                                                                                                                                                         \\ \hline
+                                                                                             & Paso 7: Si el sistema no logra modificar los ejercicios, indica dicho acontecimiento y vuelve al paso 1                                                 \\ \hline
+                                                                                             & Paso 8: Si el sistema no logra redireccionar, manda un mensaje de error                                                                                 \\ \hline
+\end{tabular}
+\caption{Caso de Uso Extendido - Modificar Ejercicios.}
+\label{tab:cumodificarejercicios}
+\end{table}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=10cm]{imagenes/secuencia_modificar_ejercicios.png}
+\caption{Diagrama de Secuencia - Modificar Ejercicios.}
+\label{fig:secmodificarejercicios}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=15cm]{imagenes/estado_modificar_ejercicios.png}
+\caption{Diagrama de Estados - Modificar Ejercicios.}
+\label{fig:estmodificarejercicios}
+\end{figure}
+
+% Responder Ejercicios
+\clearpage
+\begin{table}[h!]
+\footnotesize
+\centering
+\begin{tabular}{|p{7.5cm}|p{7.5cm}|}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+\textbf{Sección Responder Ejercicios}                                                                               & \textbf{ID: CU17}                                                                                                                                                                                                                                                    \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\textbf{Curso Normal (Usuario)}                                                                                     & \textbf{Curso Normal (Sistema)}                                                                                                                                                                                                                                      \\ \hline
+1. El usuario selecciona la opción Responder Ejercicios                                                             &                                                                                                                                                                                                                                                                      \\ \hline
+2. El usuario responde el ejercicio que sale en pantalla vía una consulta en Álgebra Relacional (ver Tabla \ref{tab:cuhacerconsulta}) &                                                                                                                                                                                                                                                                      \\ \hline
+                                                                                                                    & 3. El sistema verifica la sintaxis y semántica de la respuesta, ejecuta la consulta y compara con la respuesta esperada                                                                                                                                             \\ \hline
+                                                                                                                    & 4. El sistema muestra el resultado de la consulta y carga la siguiente consulta volviendo al paso 2, hasta que ya no hay más ejercicios                                                                                                                             \\ \hline
+                                                                                                                    & 5. Cuando no hay más ejercicios, el sistema muestra el resultado global de todos los ejercicios y redirecciona a: menú Gestionar Ejercicios si el usuario es un Profesor (ver Tabla \ref{tab:cugestionarejercicios}), o al menú Sesión Alumno si el usuario es un Alumno (ver Tabla \ref{tab:cusesionalumno}) \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\textbf{Curso Alternativo (Usuario)}                                                                                & \textbf{Curso Alternativo (Sistema)}                                                                                                                                                                                                                                 \\ \hline
+                                                                                                                    & Paso 3: Si el sistema encuentra un error de sintaxis o semántica, muestra un mensaje de error y vuelve al paso 2. Si el sistema no logra ejecutar la respuesta, muestra un mensaje de error y vuelve al paso 2                                                       \\ \hline
+                                                                                                                    & Paso 4: Si el sistema no logra cargar la siguiente pregunta, muestra un mensaje de error y vuelve al paso 1                                                                                                                                                          \\ \hline
+                                                                                                                    & Paso 5: Si el sistema no logra redireccionar, se muestra un mensaje de error                                                                                                                                                                                         \\ \hline
+\end{tabular}
+\caption{Caso de Uso Extendido - Responder Ejercicios.}
+\label{tab:curesponderejercicios}
+\end{table}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=10cm]{imagenes/secuencia_responder_ejercicios.png}
+\caption{Diagrama de Secuencia - Responder Ejercicios.}
+\label{fig:secresponderejercicios}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=15cm]{imagenes/estado_responder_ejercicios.png}
+\caption{Diagrama de Estados - Responder Ejercicios.}
+\label{fig:estresponderejercicios}
+\end{figure}
+
+% Gestionar Relación
+\clearpage
+\begin{table}[h!]
+\footnotesize
+\centering
+\begin{tabular}{|p{7.5cm}|p{7.5cm}|}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+\textbf{Caso de Uso}                                                                                                                                                                                      & \textbf{ID: CU18}                                                                                                                   \\ \hline
+\textbf{Nombre}                                                                                                                                                                                           & Gestionar Relación                                                                                                                  \\ \hline
+\textbf{Actores}                                                                                                                                                                                          & Usuario (Alumno, Profesor)                                                                                                          \\ \hline
+\textbf{Propósito}                                                                                                                                                                                        & Mostrar al Usuario todas las opciones de Gestión de Relación: Agregar Relación, Eliminar Relación, Modificar Relación, Ver Relación \\ \hline
+\textbf{Resumen}                                                                                                                                                                                          & El Usuario elige una opción que se muestra en el menú de gestión de relaciones                                                      \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\textbf{Curso Normal (Usuario)}                                                                                                                                                                           & \textbf{Curso Normal (Sistema)}                                                                                                     \\ \hline
+1. El usuario ingresa al menú Gestionar Relación desde el menú Gestionar BD si es un profesor (ver Tabla \ref{tab:cugestionarbd}) o desde el menú Sesión Alumno si es un alumno (ver Tabla \ref{tab:cusesionalumno})                    &                                                                                                                                     \\ \hline
+2. El usuario selecciona alguna opción: a. Agregar Relación (ver Tabla \ref{tab:cuagregarrelacion}); b. Eliminar Relación (ver Tabla \ref{tab:cueliminarrelacion}); c. Modificar Relación (ver Tabla \ref{tab:cumodificarrelacion}); d. Ver Relación (ver Tabla \ref{tab:cuverrelacion}) &                                                                                                                                     \\ \hline
+                                                                                                                                                                                                          & 3. El sistema direcciona a la opción correspondiente                                                                             \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\textbf{Curso Alternativo (Usuario)}                                                                                                                                                                      & \textbf{Curso Alternativo (Sistema)}                                                                                                \\ \hline
+                                                                                                                                                                                                          & Paso 3: si no se puede direccionar, se muestra un error                                                                           \\ \hline
+\end{tabular}
+\caption{Caso de Uso Extendido - Gestionar Relación.}
+\label{tab:cugestionarrelacion}
+\end{table}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=10cm]{imagenes/secuencia_gestionar_relacion.png}
+\caption{Diagrama de Secuencia - Gestionar Relación.}
+\label{fig:secgestionarrelacion}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=7cm]{imagenes/estado_gestionar_relacion.png}
+\caption{Diagrama de Estados - Gestionar Relación.}
+\label{fig:estgestionarrelacion}
+\end{figure}
+
+% Agregar Relación
+\clearpage
+\begin{table}[h!]
+\footnotesize
+\centering
+\begin{tabular}{|p{7.5cm}|p{7.5cm}|}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+\textbf{Sección Agregar Relación}                    & \textbf{ID: CU19}                                                                                                                                                                                                                   \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\textbf{Curso Normal (Usuario)}                      & \textbf{Curso Normal (Sistema)}                                                                                                                                                                                                     \\ \hline
+1. El usuario selecciona la opción Agregar Relación  &                                                                                                                                                                                                                                     \\ \hline
+2. El usuario ingresa los datos de la nueva relación &                                                                                                                                                                                                                                     \\ \hline
+                                                     & 3. El sistema valida los datos y genera una nueva relación, luego redirecciona al menú Gestionar Relación (ver Tabla \ref{tab:cugestionarrelacion})                                                                                                       \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\textbf{Curso Alternativo (Usuario)}                 & \textbf{Curso Alternativo (Sistema)}                                                                                                                                                                                                \\ \hline
+                                                     & Paso 3: Si no puede generar la nueva relación, el sistema indica dicho acontecimiento y vuelve al paso 1. Si el sistema no puede redireccionar, muestra un mensaje de error \\ \hline
+\end{tabular}
+\caption{Caso de Uso Extendido - Agregar Relación.}
+\label{tab:cuagregarrelacion}
+\end{table}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=10cm]{imagenes/secuencia_agregar_relacion.png}
+\caption{Diagrama de Secuencia - Agregar Relación.}
+\label{fig:secagregarrelacion}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=12cm]{imagenes/estado_agregar_relacion.png}
+\caption{Diagrama de Estados - Agregar Relación.}
+\label{fig:estagregarrelacion}
+\end{figure}
+
+% Eliminar Relación
+\clearpage
+\begin{table}[h!]
+\footnotesize
+\centering
+\begin{tabular}{|p{7.5cm}|p{7.5cm}|}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+\textbf{Sección Eliminar Relación}                                                           & \textbf{ID: CU20}                                                                                                                                \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\textbf{Curso Normal (Usuario)}                                                              & \textbf{Curso Normal (Sistema)}                                                                                                                  \\ \hline
+1. El usuario selecciona la opción Eliminar Relación                                         &                                                                                                                                                  \\ \hline
+2. El usuario selecciona la relación que desea eliminar                                      &                                                                                                                                                  \\ \hline
+                                                                                             & 3. El sistema solicita la confirmación de la eliminación                                                                                         \\ \hline
+4. El usuario confirma y acepta la eliminación                                               &                                                                                                                                                  \\ \hline
+                                                                                             & 5. El sistema elimina la relación seleccionada                                                                                                   \\ \hline
+                                                                                             & 6. El sistema muestra un mensaje al usuario indicando que ha eliminado la relación y redirecciona al menú Gestionar Relación (ver Tabla \ref{tab:cugestionarrelacion}) \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\textbf{Curso Alternativo (Usuario)}                                                         & \textbf{Curso Alternativo (Sistema)}                                                                                                             \\ \hline
+Paso 4: El usuario no acepta la confirmación, se termina dicho proceso y se vuelve al paso 1 &                                                                                                                                                  \\ \hline
+                                                                                             & Paso 5: Si el sistema no logra eliminar la relación, indica dicho acontecimiento y vuelve al paso 1                                              \\ \hline
+                                                                                             & Paso 6: Si el sistema no logra redireccionar, manda un mensaje de error                                                                          \\ \hline
+\end{tabular}
+\caption{Caso de Uso Extendido - Eliminar Relación.}
+\label{tab:cueliminarrelacion}
+\end{table}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=10cm]{imagenes/secuencia_eliminar_relacion.png}
+\caption{Diagrama de Secuencia - Eliminar Relación.}
+\label{fig:seceliminarrelacion}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=15cm]{imagenes/estado_eliminar_relacion.png}
+\caption{Diagrama de Estados - Eliminar Relación.}
+\label{fig:esteliminarrelacion}
+\end{figure}
+
+% Modificar Relación
+\clearpage
+\begin{table}[h!]
+\footnotesize
+\centering
+\begin{tabular}{|p{7.5cm}|p{7.5cm}|}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+\textbf{Sección Modificar Relación}                                                          & \textbf{ID: CU21}                                                                                                                                  \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\textbf{Curso Normal (Usuario)}                                                              & \textbf{Curso Normal (Sistema)}                                                                                                                    \\ \hline
+1. El usuario selecciona la opción Modificar Relación                                        &                                                                                                                                                    \\ \hline
+2. El usuario selecciona la relación a modificar                                             &                                                                                                                                                    \\ \hline
+                                                                                             & 3. El sistema muestra por pantalla la relación seleccionada                                                                                        \\ \hline
+4. El usuario modifica los campos de la relación                                             &                                                                                                                                                    \\ \hline
+                                                                                             & 5. El sistema valida los nuevos campos de la relación y solicita confirmación para ejecutar la modificación                                        \\ \hline
+6. El usuario confirma y acepta la modificación                                              &                                                                                                                                                    \\ \hline
+                                                                                             & 7. El sistema modifica la relación seleccionada                                                                                                    \\ \hline
+                                                                                             & 8. El sistema manda un mensaje al usuario indicando que se ha modificado la relación y redirecciona al menú Gestionar Relación (ver Tabla \ref{tab:cugestionarrelacion}) \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\textbf{Curso Alternativo (Usuario)}                                                         & \textbf{Curso Alternativo (Sistema)}                                                                                                               \\ \hline
+Paso 6: El usuario no acepta la confirmación, se termina dicho proceso y se vuelve al paso 1 &                                                                                                                                                    \\ \hline
+                                                                                             & Paso 7: Si el sistema no logra modificar la relación, indica dicho acontecimiento y vuelve al paso 1                                               \\ \hline
+                                                                                             & Paso 8: Si el sistema no logra redireccionar, manda un mensaje de error                                                                            \\ \hline
+\end{tabular}
+\caption{Caso de Uso Extendido - Modificar Relación}
+\label{tab:cumodificarrelacion}
+\end{table}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=10cm]{imagenes/secuencia_modificar_relacion.png}
+\caption{Diagrama de Secuencia - Modificar Relación.}
+\label{fig:secmodificarrelacion}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=15cm]{imagenes/estado_modificar_relacion.png}
+\caption{Diagrama de Estados - Modificar Relación.}
+\label{fig:estmodificarrelacion}
+\end{figure}
+
+% Ver Relación
+\clearpage
+\begin{table}[h!]
+\footnotesize
+\centering
+\begin{tabular}{|p{7.5cm}|p{7.5cm}|}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+\textbf{Sección Ver Relación}                         & \textbf{ID: CU22}                                                                                                    \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\textbf{Curso Normal (Usuario)}                       & \textbf{Curso Normal (Sistema)}                                                                                      \\ \hline
+1. El usuario selecciona la opción Ver Relación                               &                                                                                                                      \\ \hline
+2. El usuario selecciona una relación desde una lista                         &                                                                                                                      \\ \hline
+                                                                              & 3. El sistema muestra por pantalla la relación seleccionada                                                          \\ \hline
+4. El usuario puede seleccionar la opción Gestionar Tupla (ver Tabla \ref{tab:cugestionartupla}) &                                                                                                                      \\ \hline
+                                                                              & 5. El sistema direcciona a Gestionar Tupla (ver Tabla \ref{tab:cugestionartupla}) si es que el usuario lo ha decidido                   \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\textbf{Curso Alternativo (Usuario)}                                          & \textbf{Curso Alternativo (Sistema)}                                                                                 \\ \hline
+                                                                              & Paso 3: Si el sistema no logra cargar la relación seleccionada, se muestra un mensaje de error y se vuelve al paso 1 \\ \hline
+                                                                              & Paso 5: Si el sistema no logra direccionar, se muestra un mensaje de error                                           \\ \hline
+
+\end{tabular}
+\caption{Caso de Uso Extendido - Ver Relación.}
+\label{tab:cuverrelacion}
+\end{table}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=10cm]{imagenes/secuencia_ver_relacion.png}
+\caption{Diagrama de Secuencia - Ver Relación.}
+\label{fig:secverrelacion}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=10cm]{imagenes/estado_ver_relacion.png}
+\caption{Diagrama de Estados - Ver Relación.}
+\label{fig:estverrelacion}
+\end{figure}
+
+% Gestionar Tuplas
+\clearpage
+\begin{table}[h!]
+\footnotesize
+\centering
+\begin{tabular}{|p{7.5cm}|p{7.5cm}|}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+\textbf{Caso de Uso}                                                                                                                                        & \textbf{ID: CU23}                                                                                         \\ \hline
+\textbf{Nombre}                                                                                                                                             & Gestionar Tupla                                                                                           \\ \hline
+\textbf{Actores}                                                                                                                                            & Usuario (Alumno, Profesor)                                                                                \\ \hline
+\textbf{Propósito}                                                                                                                                          & Mostrar al Usuario todas las opciones de Gestión de Tupla: Ingresar Tupla, Eliminar Tupla, Modificar Tupla \\ \hline
+\textbf{Resumen}                                                                                                                                            & El Usuario elige una opción que se muestra en el menú de gestión de tuplas                                \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\textbf{Curso Normal (Usuario)}                                                                                                                             & \textbf{Curso Normal (Sistema)}                                                                           \\ \hline
+1. El usuario ingresa al menú Gestionar Tupla desde la opción Ver Relación (ver Tabla \ref{tab:cuverrelacion})                                                              &                                                                                                           \\ \hline
+2. El usuario selecciona alguna opción: a. Ingresar Tupla (ver Tabla \ref{tab:cuagregartupla}); b. Eliminar Tupla (ver Tabla \ref{tab:cueliminartupla}); c. Modificar Tupla (ver Tabla \ref{tab:cumodificartupla}) &                                                                                                           \\ \hline
+                                                                                                                                                            & 3. El sistema direcciona a la opción correspondiente                                                     \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\textbf{Curso Alternativo (Usuario)}                                                                                                                        & \textbf{Curso Alternativo (Sistema)}                                                                      \\ \hline
+                                                                                                                                                            & Paso 3: si no se puede direccionar, se muestra un error                                                 \\ \hline
+\end{tabular}
+\caption{Caso de Uso Extendido - Gestionar Tupla.}
+\label{tab:cugestionartupla}
+\end{table}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=10cm]{imagenes/secuencia_gestionar_tupla.png}
+\caption{Diagrama de Secuencia - Gestionar Tupla.}
+\label{fig:secgestionartupla}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=7cm]{imagenes/estado_gestionar_tupla.png}
+\caption{Diagrama de Estados - Gestionar Tupla.}
+\label{fig:estgestionartupla}
+\end{figure}
+
+% Ingresar Tupla
+\clearpage
+\begin{table}[h!]
+\footnotesize
+\centering
+\begin{tabular}{|p{7.5cm}|p{7.5cm}|}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+\textbf{Sección Ingresar Tupla}                    & \textbf{ID: CU24}                                                                                                                                                                                                     \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\textbf{Curso Normal (Usuario)}                   & \textbf{Curso Normal (Sistema)}                                                                                                                                                                                       \\ \hline
+1. El usuario selecciona la opción Ingresar Tupla  &                                                                                                                                                                                                                       \\ \hline
+2. El usuario ingresa los datos de la nueva tupla &                                                                                                                                                                                                                       \\ \hline
+                                                  & 3. El sistema valida los datos y genera una nueva tupla, luego redirecciona al menú Gestionar Tupla (ver Tabla \ref{tab:cugestionartupla})                                                                                               \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\textbf{Curso Alternativo (Usuario)}              & \textbf{Curso Alternativo (Sistema)}                                                                                                                                                                                  \\ \hline
+                                                  & Paso 3: Si los tipos datos ingresados no son los correctos, o no puede generar la nueva tupla, el sistema indica dicho acontecimiento y vuelve al paso 1. Si el sistema no puede redireccionar, muestra un mensaje de error \\ \hline
+\end{tabular}
+\caption{Caso de Uso Extendido - Ingresar Tupla.}
+\label{tab:cuagregartupla}
+\end{table}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=10cm]{imagenes/secuencia_agregar_tupla.png}
+\caption{Diagrama de Secuencia - Ingresar Tupla.}
+\label{fig:secagregartupla}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=12cm]{imagenes/estado_agregar_tupla.png}
+\caption{Diagrama de Estados - Ingresar Tupla.}
+\label{fig:estagregartupla}
+\end{figure}
+
+% Eliminar Tupla
+\clearpage
+\begin{table}[h!]
+\footnotesize
+\centering
+\begin{tabular}{|p{7.5cm}|p{7.5cm}|}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+\textbf{Sección Eliminar Tupla}                                                              & \textbf{ID: CU25}                                                                                                                          \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\textbf{Curso Normal (Usuario)}                                                              & \textbf{Curso Normal (Sistema)}                                                                                                            \\ \hline
+1. El usuario selecciona la opción Eliminar Tupla                                            &                                                                                                                                            \\ \hline
+2. El usuario selecciona la tupla que desea eliminar                                         &                                                                                                                                            \\ \hline
+                                                                                             & 3. El sistema solicita la confirmación de la eliminación                                                                                   \\ \hline
+4. El usuario confirma y acepta la eliminación                                               &                                                                                                                                            \\ \hline
+                                                                                             & 5. El sistema elimina la tupla seleccionada                                                                                                \\ \hline
+                                                                                             & 6. El sistema muestra un mensaje al usuario indicando que ha eliminado la tupla y redirecciona al menú Gestionar Tupla (ver Tabla \ref{tab:cugestionartupla}) \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\textbf{Curso Alternativo (Usuario)}                                                         & \textbf{Curso Alternativo (Sistema)}                                                                                                       \\ \hline
+Paso 4: El usuario no acepta la confirmación, se termina dicho proceso y se vuelve al paso 1 &                                                                                                                                            \\ \hline
+                                                                                             & Paso 5: Si el sistema no logra eliminar la tupla, indica dicho acontecimiento y vuelve al paso 1                                           \\ \hline
+                                                                                             & Paso 6: Si el sistema no logra redireccionar, manda un mensaje de error                                                                    \\ \hline
+\end{tabular}
+\caption{Caso de Uso Extendido - Eliminar Tupla.}
+\label{tab:cueliminartupla}
+\end{table}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=10cm]{imagenes/secuencia_eliminar_tupla.png}
+\caption{Diagrama de Secuencia - Eliminar Tupla.}
+\label{fig:seceliminartupla}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=15cm]{imagenes/estado_eliminar_tupla.png}
+\caption{Diagrama de Estados - Eliminar Tupla.}
+\label{fig:esteliminartupla}
+\end{figure}
+
+% Modificar Tupla
+\clearpage
+\begin{table}[h!]
+\footnotesize
+\centering
+\begin{tabular}{|p{7.5cm}|p{7.5cm}|}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+\textbf{Sección Modificar Tupla}                                                             & \textbf{ID: CU26}                                                                                                                               \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\textbf{Curso Normal (Usuario)}                                                              & \textbf{Curso Normal (Sistema)}                                                                                                                 \\ \hline
+1. El usuario selecciona la opción Modificar Tupla                                           &                                                                                                                                                 \\ \hline
+2. El usuario selecciona la tupla a modificar                                                &                                                                                                                                                 \\ \hline
+                                                                                             & 3. El sistema muestra por pantalla la tupla seleccionada                                                                                        \\ \hline
+4. El usuario modifica los campos de la tupla                                                &                                                                                                                                                 \\ \hline
+                                                                                             & 5. El sistema valida los nuevos campos de la tupla y solicita confirmación para ejecutar la modificación                                        \\ \hline
+6. El usuario confirma y acepta la modificación                                              &                                                                                                                                                 \\ \hline
+                                                                                             & 7. El sistema modifica la tupla seleccionada                                                                                                    \\ \hline
+                                                                                             & 8. El sistema manda un mensaje al usuario indicando que se ha modificado la tupla y redirecciona al menú Gestionar Tupla (ver Tabla \ref{tab:cugestionartupla}) \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\textbf{Curso Alternativo (Usuario)}                                                         & \textbf{Curso Alternativo (Sistema)}                                                                                                            \\ \hline
+                                                                                             & Paso 5: Si los tipos de datos ingresados no son los correctos, el sistema indica dicho acontecimiento y vuelve al paso 1                                 \\ \hline
+Paso 6: El usuario no acepta la confirmación, se termina dicho proceso y se vuelve al paso 1 &                                                                                                                                                 \\ \hline
+                                                                                             & Paso 7: Si el sistema no logra modificar la tupla, indica dicho acontecimiento y vuelve al paso 1                                               \\ \hline
+                                                                                             & Paso 8: Si el sistema no logra redireccionar, manda un mensaje de error                                                                         \\ \hline
+\end{tabular}
+\caption{Caso de Uso Extendido - Modificar Tupla.}
+\label{tab:cumodificartupla}
+\end{table}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=10cm]{imagenes/secuencia_modificar_tupla.png}
+\caption{Diagrama de Secuencia - Modificar Tupla.}
+\label{fig:secmodificartupla}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=15cm]{imagenes/estado_modificar_tupla.png}
+\caption{Diagrama de Estados - Modificar Tupla.}
+\label{fig:estmodificartupla}
+\end{figure}
+
+% Sesión Alumno
+\clearpage
+\begin{table}[h!]
+\footnotesize
+\centering
+\begin{tabular}{|p{7.5cm}|p{7.5cm}|}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+\textbf{Caso de Uso}                                                                                                                                                                                    & \textbf{ID: CU27}                                                                                                                                                \\ \hline
+\textbf{Nombre}                                                                                                                                                                                         & Sesión Alumno                                                                                                                                                    \\ \hline
+\textbf{Actores}                                                                                                                                                                                        & Alumno                                                                                                                                                           \\ \hline
+\textbf{Propósito}                                                                                                                                                                                      & Mostrar al Alumno todas las opciones relacionadas con la Gestión de Bases de Datos, Relaciones, Tuplas, Hacer Consultas y Responder Ejercicios \\ \hline
+\textbf{Resumen}                                                                                                                                                                                        & El Usuario elige una opción que se muestra en el menú: Gestión de tuplas, Gestionar Relación, Modificar Cuenta, Gestión BD, Responder Ejercicios, Hacer Consulta \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\textbf{Curso Normal (Usuario)}                                                                                                                                                                         & \textbf{Curso Normal (Sistema)}                                                                                                                                  \\ \hline
+1. El usuario ingresa al sistema desde el Caso de Uso \ref{tab:cuiniciarsesion} Iniciar Sesión                                                                                                                                  &                                                                                                                                                                  \\ \hline
+2. El usuario selecciona alguna opción: a. Crear BD (ver Tabla \ref{tab:cucrearbd}); b. Eliminar BD (ver Tabla \ref{tab:cueliminarbd}); c. Modificar BD (ver Tabla \ref{tab:cumodificarbd}); d. Cargar BD (ver Tabla \ref{tab:cucargarbd}); e. Gestionar Relaciones (ver Tabla \ref{tab:cugestionarrelacion}); f. Responder Ejercicios (ver Tabla \ref{tab:curesponderejercicios}); g. Hacer Consulta (ver Tabla \ref{tab:cuhacerconsulta}); h. Modificar Cuenta (ver Tabla \ref{tab:cumodificarcuenta}) &  \\ \hline
+                                                                                                                                                                                                        & 3. El sistema direcciona a la opción correspondiente                                                                                                            \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\textbf{Curso Alternativo (Usuario)}                                                                                                                                                                    & \textbf{Curso Alternativo (Sistema)}                                                                                                                             \\ \hline
+                                                                                                                                                                                                        & Paso 3: si no se puede direccionar, se muestra un error                                                                                                         \\ \hline
+\end{tabular}
+\caption{Caso de Uso Extendido - Sesión Alumno.}
+\label{tab:cusesionalumno}
+\end{table}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=10cm]{imagenes/secuencia_sesion_alumno.png}
+\caption{Diagrama de Secuencia - Sesión Alumno}
+\label{fig:secsesionalumno}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=7cm]{imagenes/estado_sesion_alumno.png}
+\caption{Diagrama de Estados - Sesión Alumno.}
+\label{fig:estsesionalumno}
+\end{figure}
+
+% Hacer Consulta
+\clearpage
+\begin{table}[h!]
+\footnotesize
+\centering
+\begin{tabular}{|p{7.5cm}|p{7.5cm}|}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+\textbf{Caso de Uso}                                                                                                                                                                            & \textbf{ID: CU28}                                                                                                                                                                                                                                                        \\ \hline
+\textbf{Nombre}                                                                                                                                                                                 & Hacer Consulta                                                                                                                                                                                                                                                           \\ \hline
+\textbf{Actores}                                                                                                                                                                                & Usuario (Alumno, Profesor)                                                                                                                                                                                                                                               \\ \hline
+\textbf{Propósito}                                                                                                                                                                              & Entregar herramientas para la ejecución de consultas en Álgebra Relacional                                                                                                                                                                                               \\ \hline
+\textbf{Resumen}                                                                                                                                                                                & El Usuario escribe manualmente o selecciona algún botón para ejecutar una consulta en Álgebra Relacional                                                                                                                                                                 \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\textbf{Curso Normal (Usuario)}                                                                                                                                                                 & \textbf{Curso Normal (Sistema)}                                                                                                                                                                                                                                          \\ \hline
+1. El usuario escribe en el campo para hacer consultas desde la Sesión Profesor, si es un profesor (ver Tabla \ref{tab:cusesionprofesor}); o desde la Sesión Alumno, si es un alumno (ver Tabla \ref{tab:cusesionalumno}) &                                                                                                                                                                                                                                                                          \\ \hline
+2. El usuario vía teclado o por medio de botones gráficos, y a base de las relaciones cargadas; formula una consulta en Álgebra Relacional y la ejecuta                                         &                                                                                                                                                                                                                                                                          \\ \hline
+                                                                                                                                                                                                & 3. El sistema revisa sintaxis y semántica de la consulta realizada y genera la relación resultante                                                                                                                                                                      \\ \hline
+                                                                                                                                                                                                & 4. El sistema permite generar otra consulta si es que el usuario lo desea, volviendo al paso 2                                                                                                                                                                           \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\textbf{Curso Alternativo (Usuario)}                                                                                                                                                            & \textbf{Curso Alternativo (Sistema)}                                                                                                                                                                                                                                     \\ \hline
+                                                                                                                                                                                                & Paso 3: Si el sistema encuentra un error de sintaxis, no logra revisar la consulta o no puede generar la nueva relación, muestra un aviso de error y vuelve al paso 1                                                                                                                                   \\ \hline
+                                                                                                                                                                                                & Paso 4: Si el sistema no puede ofrecer al usuario hacer otra consulta, muestra un mensaje y vuelve al menú Sesión Profesor si es que el usuario es un profesor (ver Tabla \ref{tab:cusesionprofesor}), o vuelve al menú Sesión Alumno si es que el usuario es un alumno (ver Tabla \ref{tab:cusesionalumno}) \\ \hline
+\end{tabular}
+\caption{Caso de Uso Extendido - Hacer Consulta.}
+\label{tab:cuhacerconsulta}
+\end{table}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=10cm]{imagenes/secuencia_hacer_consulta.png}
+\caption{Diagrama de Secuencia - Hacer Consulta.}
+\label{fig:sechacerconsulta}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=15cm]{imagenes/estado_hacer_consulta.png}
+\caption{Diagrama de Estados - Hacer Consulta.}
+\label{fig:esthacerconsulta}
+\end{figure}
+
+% Ver Estadísticas
+\clearpage
+\begin{table}[h!]
+\footnotesize
+\centering
+\begin{tabular}{|p{7.5cm}|p{7.5cm}|}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+\textbf{Caso de Uso}                                                                                  & \textbf{ID: CU29}                                                                                                                              \\ \hline
+\textbf{Nombre}                                                                                       & Ver Estadísticas                                                                                                                               \\ \hline
+\textbf{Actores}                                                                                      & Profesor                                                                                                                                       \\ \hline
+\textbf{Propósito}                                                                                    & Obtener feedback mediante estadísticas y datos de todos los alumnos que han utilizado la herramienta                                           \\ \hline
+\textbf{Resumen}                                                                                      & El Profesor observa tablas y resultados obtenidos por algún algoritmo de Minería de Datos                                                      \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\textbf{Curso Normal (Usuario)}                                                                       & \textbf{Curso Normal (Sistema)}                                                                                                                \\ \hline
+1. El usuario selecciona la opción Ver Estadísticas desde el menú Sesión Profesor (ver Tabla \ref{tab:cusesionprofesor}) &                                                                                                                                                \\ \hline
+                                                                                                      & 2. El sistema muestra estadísticas de la base de datos, además de un gráfico de resultado de ejercicios                              \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\textbf{Curso Alternativo (Usuario)}                                                                  & \textbf{Curso Alternativo (Sistema)}                                                                                                           \\ \hline
+                                                                                                      & Paso 2: Si el sistema no logra cargar los resultados o no puede mostrar por pantalla, muestra un aviso de error y vuelve al paso 1             \\ \hline
+\end{tabular}
+\caption{Caso de Uso Extendido - Ver Estadísticas}
+\label{tab:cuverestadisticas}
+\end{table}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=10cm]{imagenes/secuencia_ver_estadisticas.png}
+\caption{Diagrama de Secuencia - Ver Estadísticas.}
+\label{fig:secverestadisticas}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=12cm]{imagenes/estado_ver_estadisticas.png}
+\caption{Diagrama de Estados - Ver Estadísticas.}
+\label{fig:estverestadisticas}
+\end{figure}

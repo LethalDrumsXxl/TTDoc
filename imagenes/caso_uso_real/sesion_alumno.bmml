@@ -1,0 +1,79 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="1139" measuredH="564" mockupW="906" mockupH="562">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="233" y="2" w="906" h="562" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>16777215</color>
+        <text>UV%20Algebra%20Relacional%0Ahttp%3A//www.algebrarelacional.uv.cl</text>
+        <value>0</value>
+        <verticalScrollbar>true</verticalScrollbar>
+      </controlProperties>
+    </control>
+    <control controlID="1" controlTypeID="com.balsamiq.mockups::Title" x="470" y="97" w="-1" h="-1" measuredW="339" measuredH="43" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Algebra%20Relacional</text>
+      </controlProperties>
+    </control>
+    <control controlID="3" controlTypeID="com.balsamiq.mockups::Image" x="466" y="155" w="640" h="358" measuredW="77" measuredH="79" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="4" controlTypeID="com.balsamiq.mockups::Image" x="248" y="86" w="203" h="65" measuredW="77" measuredH="79" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Logo%20UV</text>
+      </controlProperties>
+    </control>
+    <control controlID="5" controlTypeID="com.balsamiq.mockups::Menu" x="248" y="157" w="215" h="-1" measuredW="150" measuredH="214" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <hrefs>crear%20bd%20-%20base%20de%20datos%26bm%3Bcrear%20bd%20-%20base%20de%20datos.bmml%26bm%3Bcrear%20bd%20-%20base%20de%20datos.bmml%26bm%3Bcrear%20bd%20-%20base%20de%20datos.bmml%2Celiminar%20bd%20-%20seleccionar%26bm%3Beliminar%20bd%20-%20seleccionar.bmml%26bm%3Beliminar%20bd%20-%20seleccionar.bmml%26bm%3Beliminar%20bd%20-%20seleccionar.bmml%2Cmodificar_bd_seleccionar%26bm%3Bmodificar_bd_seleccionar.bmml%26bm%3Bmodificar_bd_seleccionar.bmml%26bm%3Bmodificar_bd_seleccionar.bmml%2C%2Ccargar%20bd%20-%20seleccionar%26bm%3Bcargar%20bd%20-%20seleccionar.bmml%26bm%3Bcargar%20bd%20-%20seleccionar.bmml%26bm%3Bcargar%20bd%20-%20seleccionar.bmml%2Cgestionar%20relaci%F3n%26bm%3Bgestionar%20relaci%F3n.bmml%26bm%3Bgestionar%20relaci%F3n.bmml%26bm%3Bgestionar%20relaci%F3n.bmml%2Cresponder_ejercicios_consulta%26bm%3Bresponder_ejercicios_consulta.bmml%26bm%3Bresponder_ejercicios_consulta.bmml%26bm%3Bresponder_ejercicios_consulta.bmml%2Chacer%20consulta%20-%20consulta%26bm%3Bhacer%20consulta%20-%20consulta.bmml%26bm%3Bhacer%20consulta%20-%20consulta.bmml%26bm%3Bhacer%20consulta%20-%20consulta.bmml%2C%2Cmodificar%20cuenta%20usuario%20-%20cuenta%26bm%3Bmodificar%20cuenta%20usuario%20-%20cuenta.bmml%26bm%3Bmodificar%20cuenta%20usuario%20-%20cuenta.bmml%26bm%3Bmodificar%20cuenta%20usuario%20-%20cuenta.bmml%2C%2Cinicio%26bm%3Binicio.bmml%26bm%3Binicio.bmml%26bm%3Binicio.bmml%2C%2C</hrefs>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%2215%2C160%2C230%2C181%22%20href%3D%22crear%2520bd%2520-%2520base%2520de%2520datos.bmml%22%20alt%3D%22crear%20bd%20-%20base%20de%20datos%22%20id%3D%225%22/%3E%0A%3Carea%20shape%3D%22rect%22%20coords%3D%2215%2C181%2C230%2C202%22%20href%3D%22eliminar%2520bd%2520-%2520seleccionar.bmml%22%20alt%3D%22eliminar%20bd%20-%20seleccionar%22%20id%3D%225%22/%3E%0A%3Carea%20shape%3D%22rect%22%20coords%3D%2215%2C202%2C230%2C223%22%20href%3D%22modificar_bd_seleccionar.bmml%22%20alt%3D%22modificar_bd_seleccionar%22%20id%3D%225%22/%3E%0A%3Carea%20shape%3D%22rect%22%20coords%3D%2215%2C228%2C230%2C249%22%20href%3D%22cargar%2520bd%2520-%2520seleccionar.bmml%22%20alt%3D%22cargar%20bd%20-%20seleccionar%22%20id%3D%225%22/%3E%0A%3Carea%20shape%3D%22rect%22%20coords%3D%2215%2C249%2C230%2C270%22%20href%3D%22gestionar%2520relaci%25C3%25B3n.bmml%22%20alt%3D%22gestionar%20relaci%F3n%22%20id%3D%225%22/%3E%0A%3Carea%20shape%3D%22rect%22%20coords%3D%2215%2C270%2C230%2C291%22%20href%3D%22responder_ejercicios_consulta.bmml%22%20alt%3D%22responder_ejercicios_consulta%22%20id%3D%225%22/%3E%0A%3Carea%20shape%3D%22rect%22%20coords%3D%2215%2C291%2C230%2C312%22%20href%3D%22hacer%2520consulta%2520-%2520consulta.bmml%22%20alt%3D%22hacer%20consulta%20-%20consulta%22%20id%3D%225%22/%3E%0A%3Carea%20shape%3D%22rect%22%20coords%3D%2215%2C317%2C230%2C338%22%20href%3D%22modificar%2520cuenta%2520usuario%2520-%2520cuenta.bmml%22%20alt%3D%22modificar%20cuenta%20usuario%20-%20cuenta%22%20id%3D%225%22/%3E%0A%3Carea%20shape%3D%22rect%22%20coords%3D%2215%2C343%2C230%2C364%22%20href%3D%22inicio.bmml%22%20alt%3D%22inicio%22%20id%3D%225%22/%3E%0A</map>
+        <text>Crear%20BD%0AEliminar%20BD%0AModificar%20BD%0A--%0ACargar%20BD%0AGestionar%20Relaciones%20%3E%0AResponder%20Ejercicios%0AHacer%20Consulta%0A--%0AModificar%20Cuenta%0A--%0ADesconectar</text>
+      </controlProperties>
+    </control>
+    <control controlID="6" controlTypeID="com.balsamiq.mockups::CallOut" x="407" y="293" w="41" h="25" measuredW="36" measuredH="37" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>G</text>
+      </controlProperties>
+    </control>
+    <control controlID="7" controlTypeID="com.balsamiq.mockups::CallOut" x="407" y="268" w="41" h="30" measuredW="36" measuredH="39" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>F</text>
+      </controlProperties>
+    </control>
+    <control controlID="8" controlTypeID="com.balsamiq.mockups::CallOut" x="407" y="253" w="41" h="25" measuredW="39" measuredH="39" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>E</text>
+      </controlProperties>
+    </control>
+    <control controlID="9" controlTypeID="com.balsamiq.mockups::CallOut" x="407" y="228" w="41" h="25" measuredW="36" measuredH="37" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>D</text>
+      </controlProperties>
+    </control>
+    <control controlID="10" controlTypeID="com.balsamiq.mockups::CallOut" x="407" y="155" w="41" h="25" measuredW="36" measuredH="43" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>A</text>
+      </controlProperties>
+    </control>
+    <control controlID="11" controlTypeID="com.balsamiq.mockups::CallOut" x="407" y="180" w="41" h="33" measuredW="38" measuredH="40" zOrder="10" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>B</text>
+      </controlProperties>
+    </control>
+    <control controlID="12" controlTypeID="com.balsamiq.mockups::CallOut" x="407" y="205" w="41" h="25" measuredW="45" measuredH="40" zOrder="11" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>C</text>
+      </controlProperties>
+    </control>
+    <control controlID="13" controlTypeID="com.balsamiq.mockups::CallOut" x="407" y="315" w="41" h="31" measuredW="36" measuredH="43" zOrder="12" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>H</text>
+      </controlProperties>
+    </control>
+    <control controlID="14" controlTypeID="com.balsamiq.mockups::CallOut" x="407" y="340" w="41" h="31" measuredW="38" measuredH="40" zOrder="13" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>I</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>

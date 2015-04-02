@@ -1,0 +1,148 @@
+\chapter{Diccionario de Datos}
+\label{app-diccionariodedatos}
+
+En este apéndice se explica en detalle las entidades que se presentan en la Figura \ref{fig:modelodedatos} de la Sección \ref{modelodedatos} Modelo de Datos. La Tabla \ref{tab:diccionariodedatos-usuario} muestra el diccionario de datos para la entidad Usuarios, la Tabla \ref{tab:diccionariodedatos-alumnos} explica el diccionario de datos para la entidad Alumnos, la Tabla \ref{tab:diccionariodedatos-profesores} describe el diccionario de datos para la entidad Profesores, la Tabla \ref{tab:diccionariodedatos-bd} muestra el diccionario de datos para la entidad Esquemas, la Tabla \ref{tab:diccionariodedatos-resultados} explica el diccionario de datos para la entidad Resultados, la Tabla \ref{tab:diccionariodedatos-respuestas} describe el diccionario de datos para la entidad Respuestas y finalmente la Tabla \ref{tab:diccionariodedatos-consultas} muestra el diccionario de datos para la entidad Consultas. \\
+
+\begin{table}[h!]
+\footnotesize
+\centering
+\begin{tabular}{|p{2cm}|p{5cm}|p{2.5cm}|p{0.5cm}|p{1.5cm}|p{1.5cm}|}
+\hline
+\rowcolor[HTML]{9B9B9B} 
+\multicolumn{5}{|l|}{\cellcolor[HTML]{9B9B9B}\textbf{Entidad: Usuarios}}                                                   & \textbf{ID:DIC01} \\ \hline
+\rowcolor[HTML]{C0C0C0} 
+\textit{Atributo} & \textit{Descripción}                                     & \textit{Tipo} & \textit{PK} & \textit{NULL}                   & \textit{FK}                   \\ \hline
+Rut               & Número único e identificador de usuario                  & INT           & Sí          & Not Null                        &                               \\ \hline
+Pass              & Contraseña que tiene el usuario para ingresar al sistema & VARCHAR(45)   &             &                                 &                               \\ \hline
+Nombre1           & Primer nombre del usuario                                & VARCHAR(45)   &             &                                 &                               \\ \hline
+Nombre2           & Segundo nombre del usuario                               & VARCHAR(45)   &             &                                 &                               \\ \hline
+Apellido1         & Primero apellido del usuario                             & VARCHAR(45)   &             &                                 &                               \\ \hline
+Apellido2         & Segundo apellido del usuario                             & VARCHAR(45)   &             &                                 &                               \\ \hline
+Mail              & Correo electrónico que tiene el usuario                  & VARCHAR(45)   &             &                                 &                               \\ \hline
+Tipo              & Número que indica que tipo de usuario es                  & INT   &             &                                 &                               \\ \hline
+\end{tabular}
+\caption{Diccionario de Datos - Usuario.}
+\label{tab:diccionariodedatos-usuario}
+\end{table}
+
+\begin{table}[h!]
+\footnotesize
+\centering
+\begin{tabular}{|p{2cm}|p{5cm}|p{2.5cm}|p{0.5cm}|p{1.5cm}|p{1.5cm}|}
+\hline
+\rowcolor[HTML]{9B9B9B} 
+\multicolumn{5}{|l|}{\cellcolor[HTML]{9B9B9B}\textbf{Entidad: Alumnos}}                                                   & \textbf{ID:DIC02} \\ \hline
+\rowcolor[HTML]{C0C0C0} 
+\textit{Atributo} & \textit{Descripción}                                      & \textit{Tipo} & \textit{PK} & \textit{NULL}                   & \textit{FK}                   \\ \hline
+Rut               & Número único e identificador del Alumno                   & INT           & Sí          & Not Null                        & Usuario                       \\ \hline
+Año\_ingreso      & Año de ingreso del alumno a la universidad                & INT           &             &                                 &                               \\ \hline
+Vez\_cursado      & Número de veces que ha cursado el ramo el Modelo de Datos & INT           &             &                                 &                               \\ \hline
+Edad      & Edad del Alumno & INT           &             &                                 &                               \\ \hline
+\end{tabular}
+\caption{Diccionario de Datos - Alumnos.}
+\label{tab:diccionariodedatos-alumnos}
+\end{table}
+
+\newpage
+\clearpage
+\begin{table}[h!]
+\footnotesize
+\centering
+\begin{tabular}{|p{2cm}|p{5cm}|p{2.5cm}|p{0.5cm}|p{1.5cm}|p{1.5cm}|}
+\hline
+\rowcolor[HTML]{9B9B9B} 
+\multicolumn{5}{|l|}{\cellcolor[HTML]{9B9B9B}\textbf{Entidad: Profesores}}                                                   & \textbf{ID:DIC03} \\ \hline
+\rowcolor[HTML]{C0C0C0} 
+\textit{Atributo} & \textit{Descripción}                                       & \textit{Tipo} & \textit{PK} & \textit{NULL} & \textit{FK}       \\ \hline
+Rut               & Número único e identificador del Alumno                    & INT           & Sí          & Not Null      & Usuario           \\ \hline
+Año\_curso        & Año que el que el profesor imparte el ramo Modelo de Datos & INT           &             &               &                   \\ \hline
+\end{tabular}
+\caption{Diccionario de Datos - Profesores.}
+\label{tab:diccionariodedatos-profesores}
+\end{table}
+
+
+\begin{table}[h!]
+\footnotesize
+\centering
+\begin{tabular}{|p{2cm}|p{5cm}|p{2.5cm}|p{0.5cm}|p{1.5cm}|p{1.5cm}|}
+\hline
+\rowcolor[HTML]{9B9B9B} 
+\multicolumn{5}{|l|}{\cellcolor[HTML]{9B9B9B}\textbf{Entidad: Esquemas}}                                                    & \textbf{ID:DIC04} \\ \hline
+\rowcolor[HTML]{C0C0C0} 
+\textit{Atributo} & \textit{Descripción}                                & \textit{Tipo} & \textit{PK} & \textit{NULL} & \textit{FK}       \\ \hline
+Nombre            & Nombre de la Base de Datos                          & VARCHAR(45)   & Sí          & Not Null              &                   \\ \hline
+Rut               & Identificador del usuario que creó la Base de Datos & INT           &             &               & Usuarios          \\ \hline
+Visible            & Visibilidad de la Base de Datos                       & BOOLEAN  &          &               &                   \\ \hline
+\end{tabular}
+\caption{Diccionario de Datos - Esquemas.}
+\label{tab:diccionariodedatos-bd}
+\end{table}
+
+
+\begin{table}[h!]
+\footnotesize
+\centering
+\begin{tabular}{|p{2cm}|p{5cm}|p{2.5cm}|p{0.5cm}|p{1.5cm}|p{1.5cm}|}
+\hline
+\rowcolor[HTML]{9B9B9B} 
+\multicolumn{5}{|l|}{\cellcolor[HTML]{9B9B9B}\textbf{Entidad: Resultados}}                                                      & \textbf{ID:DIC05} \\ \hline
+\rowcolor[HTML]{C0C0C0} 
+\textit{Atributo} & \textit{Descripción}                                          & \textit{Tipo} & \textit{PK} & \textit{NULL} & \textit{FK}       \\ \hline
+Id                & Número único e identificador del Resultado                   & INT           & Sí          & Not Null      &                   \\ \hline
+Bd            & Nombre de la Base de Datos que pertenece este resultado          & VARCHAR(45)   &             &               &  Esquemas          \\ \hline
+Cant\_ejercicios             & Cantidad de ejercicios del resultado                   & INT      &             &               &                   \\ \hline
+Cant\_correctas            & Cantidad de ejercicios correctos del resultado & INT           &             &               &               \\ \hline
+Cant\_errores 				& Cantidad de ejercicios erróneos del resultado & INT           &             &               &               \\ \hline
+Cant\_omitidas				& Cantidad de ejercicios omitidos del resultado & INT           &             &               &               \\ \hline
+Fecha            & Hora y Fecha del momento que se guarda el resultado & DATETIME &             &               &               \\ \hline
+
+\end{tabular}
+\caption{Diccionario de Datos - Resultados.}
+\label{tab:diccionariodedatos-resultados}
+\end{table}
+
+\newpage
+\clearpage
+\begin{table}[h!]
+\footnotesize
+\centering
+\begin{tabular}{|p{2cm}|p{5cm}|p{2.5cm}|p{0.5cm}|p{1.5cm}|p{1.5cm}|}
+\hline
+\rowcolor[HTML]{9B9B9B} 
+\multicolumn{5}{|l|}{\cellcolor[HTML]{9B9B9B}\textbf{Entidad: Respuestas}} & \textbf{ID:DIC06} \\ \hline
+\rowcolor[HTML]{C0C0C0} 
+\textit{Atributo} & \textit{Descripción} & \textit{Tipo} & \textit{PK} & \textit{NULL} & \textit{FK} \\ \hline
+Id & Identificador único de la respuesta & INT & Sí & Not Null &  \\ \hline
+Rut & Indetificador del Usuario que efectúa la respuesta & VARCHAR(45) &  &  & Usuarios \\ \hline
+Bd & Nombre del Esquema que se responde & VARCHAR(45) &  &  & Esquemas \\ \hline
+Ejercicio & Número del Ejercicio que se responde & INT &  &  &  \\ \hline
+Resultado & Indica si la respuesta es correcta o no & BOOLEAN &  &  &  \\ \hline
+Intento & Número del intento que se responde & INT &  &  &  \\ \hline
+Tiempo\_ejercicio & Tiempo que tomó responder el ejericicio & TIME &  &  &  \\ \hline
+Tiempo\_sesion & Tiempo desde que se inició la sesión en responder el ejerccio & TIME &  &  &  \\ \hline
+Fecha & Hora y Fecha del momento que se responde el ejercicio & DATETIME &  &  &  \\ \hline
+\end{tabular}
+\caption{Diccionario de Datos - Respuestas.}
+\label{tab:diccionariodedatos-respuestas}
+\end{table}
+
+\begin{table}[h!]
+\footnotesize
+\centering
+\begin{tabular}{|p{2cm}|p{5cm}|p{2.5cm}|p{0.5cm}|p{1.5cm}|p{1.5cm}|}
+\hline
+\rowcolor[HTML]{9B9B9B} 
+\multicolumn{5}{|l|}{\cellcolor[HTML]{9B9B9B}\textbf{Entidad: Consultas}} & \textbf{ID:DIC07} \\ \hline
+\rowcolor[HTML]{C0C0C0} 
+\textit{Atributo} & \textit{Descripción} & \textit{Tipo} & \textit{PK} & \textit{NULL} & \textit{FK} \\ \hline
+Id & Identificador único de la Consulta & INT & Sí & Not Null &  \\ \hline
+Id\_respuestas & Indetificador de la Respuesta que se usó la Consulta & INT &  &  & Respuestas \\ \hline
+Numero & Identificador local de la Consulta dentro del Ejercicio & INT &  &  &  \\ \hline
+Query & Detalle de la Consulta & TEXT &  &  &  \\ \hline
+Error & Detalle del Error & TEXT &  &  &  \\ \hline
+Fecha & Fecha y Hora del momento que se hace la Consulta & DATETIME &  &  &  \\ \hline
+\end{tabular}
+\caption{Diccionario de Datos - Consultas.}
+\label{tab:diccionariodedatos-consultas}
+\end{table}

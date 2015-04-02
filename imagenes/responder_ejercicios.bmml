@@ -1,0 +1,116 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="1139" measuredH="564" mockupW="906" mockupH="562">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="233" y="2" w="906" h="562" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>16777215</color>
+        <text>UV%20Algebra%20Relacional%0Ahttp%3A//www.algebrarelacional.uv.cl</text>
+        <value>0</value>
+        <verticalScrollbar>true</verticalScrollbar>
+      </controlProperties>
+    </control>
+    <control controlID="3" controlTypeID="com.balsamiq.mockups::FieldSet" x="956" y="155" w="153" h="378" measuredW="200" measuredH="170" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Database2</text>
+      </controlProperties>
+    </control>
+    <control controlID="4" controlTypeID="com.balsamiq.mockups::List" x="972" y="166" w="100" h="87" measuredW="100" measuredH="126" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderStyle>none</borderStyle>
+        <hasHeader>false</hasHeader>
+        <text>Relacion1%0ARelacion2%0ARelacion3%0ARelacion4</text>
+      </controlProperties>
+    </control>
+    <control controlID="5" controlTypeID="com.balsamiq.mockups::FieldSet" x="470" y="156" w="480" h="209" measuredW="200" measuredH="170" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Ejercicios</text>
+      </controlProperties>
+    </control>
+    <control controlID="24" controlTypeID="com.balsamiq.mockups::TabBar" x="479" y="207" w="451" h="143" measuredW="360" measuredH="100" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <selectedIndex>0</selectedIndex>
+        <text>Pregunta%201%2C%20Pregunta%202%2C%20Pregunta%203%2C%20Pregunta%204</text>
+      </controlProperties>
+    </control>
+    <control controlID="27" controlTypeID="com.balsamiq.mockups::TextArea" x="584" y="268" w="332" h="42" measuredW="200" measuredH="140" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Ac%E1%20las%20consultas%20a%20la%20pregunta%201</text>
+        <verticalScrollbar>true</verticalScrollbar>
+      </controlProperties>
+    </control>
+    <control controlID="28" controlTypeID="com.balsamiq.mockups::Label" x="584" y="240" w="-1" h="-1" measuredW="121" measuredH="21" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Ac%E1%20va%20la%20pregunta%201</text>
+      </controlProperties>
+    </control>
+    <control controlID="31" controlTypeID="com.balsamiq.mockups::Title" x="470" y="97" w="-1" h="-1" measuredW="339" measuredH="43" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Algebra%20Relacional</text>
+      </controlProperties>
+    </control>
+    <control controlID="32" controlTypeID="com.balsamiq.mockups::Image" x="248" y="86" w="203" h="65" measuredW="77" measuredH="79" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Logo%20UV</text>
+      </controlProperties>
+    </control>
+    <control controlID="34" controlTypeID="com.balsamiq.mockups::PointyButton" x="584" y="317" w="92" h="-1" measuredW="67" measuredH="27" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <direction>center</direction>
+        <href>responder%20ejercicios%20-%20consulta%204%26bm%3Bresponder%20ejercicios%20-%20consulta%204.bmml%26bm%3Bresponder%20ejercicios%20-%20consulta%204.bmml%26bm%3Bresponder%20ejercicios%20-%20consulta%204.bmml</href>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%22351%2C315%2C443%2C342%22%20href%3D%22responder%2520ejercicios%2520-%2520consulta%25204.bmml%22%20alt%3D%22responder%20ejercicios%20-%20consulta%204%22%20id%3D%2234%22/%3E</map>
+        <text>Aceptar</text>
+      </controlProperties>
+    </control>
+    <control controlID="35" controlTypeID="com.balsamiq.mockups::FieldSet" x="470" y="365" w="480" h="169" measuredW="200" measuredH="170" zOrder="10" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Query</text>
+      </controlProperties>
+    </control>
+    <control controlID="36" controlTypeID="com.balsamiq.mockups::ButtonBar" x="476" y="380" w="474" h="27" measuredW="426" measuredH="27" zOrder="11" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>%u03C3%2C%u03C0%2C%u03C1%2Cx%2C%u222A%2C%u2229%2C-%2C%u22C8%2C*%2C%5D%u22C8%2C%u22C8%5B%2C%5D%u22C8%5B%2C%u2190</text>
+      </controlProperties>
+    </control>
+    <control controlID="37" controlTypeID="com.balsamiq.mockups::TextInput" x="476" y="493" w="394" h="-1" measuredW="79" measuredH="26" zOrder="12" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="38" controlTypeID="com.balsamiq.mockups::Button" x="870" y="493" w="74" h="27" measuredW="73" measuredH="27" zOrder="13" locked="false" isInGroup="-1">
+      <controlProperties>
+        <href>hacer%20consulta%20-%20respuesta%26bm%3Bhacer%20consulta%20-%20respuesta.bmml%26bm%3Bhacer%20consulta%20-%20respuesta.bmml%26bm%3Bhacer%20consulta%20-%20respuesta.bmml</href>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%22637%2C491%2C711%2C518%22%20href%3D%22hacer%2520consulta%2520-%2520respuesta.bmml%22%20alt%3D%22hacer%20consulta%20-%20respuesta%22%20id%3D%2238%22/%3E</map>
+        <text>Ejecutar</text>
+      </controlProperties>
+    </control>
+    <control controlID="39" controlTypeID="com.balsamiq.mockups::TextArea" x="476" y="407" w="468" h="86" measuredW="200" measuredH="140" zOrder="14" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Aux1%20%3D%20select%28Atributo3%20%3D%20100%29%28Relacion1%29</text>
+        <verticalScrollbar>true</verticalScrollbar>
+      </controlProperties>
+    </control>
+    <control controlID="41" controlTypeID="com.balsamiq.mockups::PointyButton" x="501" y="174" w="143" h="-1" measuredW="140" measuredH="27" zOrder="15" locked="false" isInGroup="-1">
+      <controlProperties>
+        <direction>center</direction>
+        <href>responder%20ejercicios%20-%20consulta%204%26bm%3Bresponder%20ejercicios%20-%20consulta%204.bmml%26bm%3Bresponder%20ejercicios%20-%20consulta%204.bmml%26bm%3Bresponder%20ejercicios%20-%20consulta%204.bmml</href>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%22268%2C172%2C411%2C199%22%20href%3D%22responder%2520ejercicios%2520-%2520consulta%25204.bmml%22%20alt%3D%22responder%20ejercicios%20-%20consulta%204%22%20id%3D%2241%22/%3E</map>
+        <text>Obtener%20Calificaci%F3n</text>
+      </controlProperties>
+    </control>
+    <control controlID="42" controlTypeID="com.balsamiq.mockups::Label" x="509" y="240" w="-1" h="-1" measuredW="55" measuredH="21" zOrder="16" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Pregunta</text>
+      </controlProperties>
+    </control>
+    <control controlID="43" controlTypeID="com.balsamiq.mockups::Label" x="509" y="265" w="-1" h="-1" measuredW="65" measuredH="21" zOrder="17" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Respuesta</text>
+      </controlProperties>
+    </control>
+    <control controlID="44" controlTypeID="com.balsamiq.mockups::Menu" x="248" y="159" w="215" h="-1" measuredW="150" measuredH="57" zOrder="18" locked="false" isInGroup="-1">
+      <controlProperties>
+        <hrefs/>
+        <text>Home%0A--%0ADesconectar</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>

@@ -1,0 +1,54 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="1139" measuredH="564" mockupW="906" mockupH="562">
+  <controls>
+    <control controlID="5" controlTypeID="com.balsamiq.mockups::Menu" x="242" y="155" w="215" h="-1" measuredW="150" measuredH="99" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <hrefs>crear%20cuenta%20profesor%20-%20personal%26bm%3Bcrear%20cuenta%20profesor%20-%20personal.bmml%26bm%3Bcrear%20cuenta%20profesor%20-%20personal.bmml%26bm%3Bcrear%20cuenta%20profesor%20-%20personal.bmml%2Celiminar_cuenta_seleccionar%26bm%3Beliminar_cuenta_seleccionar.bmml%26bm%3Beliminar_cuenta_seleccionar.bmml%26bm%3Beliminar_cuenta_seleccionar.bmml%2Cmodificar_cuenta_seleccionar%26bm%3Bmodificar_cuenta_seleccionar.bmml%26bm%3Bmodificar_cuenta_seleccionar.bmml%26bm%3Bmodificar_cuenta_seleccionar.bmml%2C%2Csesi%F3n%20profesor%26bm%3Bsesi%F3n%20profesor.bmml%26bm%3Bsesi%F3n%20profesor.bmml%26bm%3Bsesi%F3n%20profesor.bmml%2C%2C%2C%2C%2C%2C%2C</hrefs>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%229%2C158%2C224%2C179%22%20href%3D%22crear%2520cuenta%2520profesor%2520-%2520personal.bmml%22%20alt%3D%22crear%20cuenta%20profesor%20-%20personal%22%20id%3D%225%22/%3E%0A%3Carea%20shape%3D%22rect%22%20coords%3D%229%2C179%2C224%2C200%22%20href%3D%22eliminar_cuenta_seleccionar.bmml%22%20alt%3D%22eliminar_cuenta_seleccionar%22%20id%3D%225%22/%3E%0A%3Carea%20shape%3D%22rect%22%20coords%3D%229%2C200%2C224%2C221%22%20href%3D%22modificar_cuenta_seleccionar.bmml%22%20alt%3D%22modificar_cuenta_seleccionar%22%20id%3D%225%22/%3E%0A%3Carea%20shape%3D%22rect%22%20coords%3D%229%2C226%2C224%2C247%22%20href%3D%22sesi%25C3%25B3n%2520profesor.bmml%22%20alt%3D%22sesi%F3n%20profesor%22%20id%3D%225%22/%3E%0A</map>
+        <text>Crear%20Cuenta%09%0AEliminar%20Cuenta%0AModificar%20Cuenta%0A---%0AAtr%E1s</text>
+      </controlProperties>
+    </control>
+    <control controlID="6" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="233" y="2" w="906" h="562" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>16777215</color>
+        <text>UV%20Algebra%20Relacional%0Ahttp%3A//www.algebrarelacional.uv.cl</text>
+        <value>0</value>
+        <verticalScrollbar>true</verticalScrollbar>
+      </controlProperties>
+    </control>
+    <control controlID="8" controlTypeID="com.balsamiq.mockups::Image" x="466" y="155" w="640" h="358" measuredW="77" measuredH="79" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="9" controlTypeID="com.balsamiq.mockups::Title" x="470" y="97" w="-1" h="-1" measuredW="339" measuredH="43" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Algebra%20Relacional</text>
+      </controlProperties>
+    </control>
+    <control controlID="10" controlTypeID="com.balsamiq.mockups::Image" x="248" y="86" w="203" h="65" measuredW="77" measuredH="79" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Logo%20UV</text>
+      </controlProperties>
+    </control>
+    <control controlID="11" controlTypeID="com.balsamiq.mockups::CallOut" x="368" y="155" w="38" h="30" measuredW="38" measuredH="40" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>A</text>
+      </controlProperties>
+    </control>
+    <control controlID="12" controlTypeID="com.balsamiq.mockups::CallOut" x="368" y="177" w="38" h="30" measuredW="37" measuredH="39" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>B</text>
+      </controlProperties>
+    </control>
+    <control controlID="13" controlTypeID="com.balsamiq.mockups::CallOut" x="368" y="197" w="38" h="30" measuredW="36" measuredH="39" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>C</text>
+      </controlProperties>
+    </control>
+    <control controlID="14" controlTypeID="com.balsamiq.mockups::CallOut" x="368" y="224" w="38" h="30" measuredW="36" measuredH="37" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>D</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>

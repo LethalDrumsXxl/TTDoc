@@ -1,0 +1,80 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="1139" measuredH="564" mockupW="906" mockupH="562">
+  <controls>
+    <control controlID="16" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="233" y="2" w="906" h="562" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>16777215</color>
+        <text>UV%20Algebra%20Relacional%0Ahttp%3A//www.algebrarelacional.uv.cl</text>
+        <value>0</value>
+        <verticalScrollbar>true</verticalScrollbar>
+      </controlProperties>
+    </control>
+    <control controlID="18" controlTypeID="com.balsamiq.mockups::FieldSet" x="478" y="159" w="624" h="360" measuredW="200" measuredH="170" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Eliminar%20Cuenta</text>
+      </controlProperties>
+    </control>
+    <control controlID="37" controlTypeID="com.balsamiq.mockups::Title" x="470" y="97" w="-1" h="-1" measuredW="339" measuredH="43" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Algebra%20Relacional</text>
+      </controlProperties>
+    </control>
+    <control controlID="38" controlTypeID="com.balsamiq.mockups::Image" x="248" y="86" w="203" h="65" measuredW="77" measuredH="79" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Logo%20UV</text>
+      </controlProperties>
+    </control>
+    <control controlID="39" controlTypeID="com.balsamiq.mockups::FieldSet" x="478" y="159" w="624" h="360" measuredW="200" measuredH="170" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Eliminar%20Cuenta</text>
+      </controlProperties>
+    </control>
+    <control controlID="40" controlTypeID="com.balsamiq.mockups::DataGrid" x="535" y="232" w="510" h="215" measuredW="245" measuredH="201" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <selectedIndex>0</selectedIndex>
+        <text>%2C%20Nombre%20%5Ev%2C%20Apellido%20%5Ev%2C%20Edad%20%5Ev%0A%5Bx%5D%2C%20Nombre1%2C%20Apellido1%2C%2023%0A%5B%5D%2C%20Nombre2%2C%20Apellido2%2C%2022%0A%5B%5D%2C%20Nombre3%2C%20Apellido3%2C%2021%0A%5B%5D%2C%20Nombre4%2C%20Apellido4%2C%2020%0A%5B%5D%2C%20Nombre5%2C%20Apellido5%2C%2023%0A%5B%5D%2C%20Nombre6%2C%20Apellido6%2C%2021</text>
+        <verticalScrollbar>true</verticalScrollbar>
+      </controlProperties>
+    </control>
+    <control controlID="41" controlTypeID="com.balsamiq.mockups::Menu" x="248" y="159" w="215" h="-1" measuredW="150" measuredH="57" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <hrefs/>
+        <text>Home%0A---%0ADesconectar</text>
+      </controlProperties>
+    </control>
+    <control controlID="42" controlTypeID="com.balsamiq.mockups::Label" x="693" y="193" w="-1" h="-1" measuredW="42" measuredH="21" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Buscar</text>
+      </controlProperties>
+    </control>
+    <control controlID="43" controlTypeID="com.balsamiq.mockups::SearchBox" x="741" y="191" w="-1" h="-1" measuredW="120" measuredH="24" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="44" controlTypeID="com.balsamiq.mockups::Alert" x="651" y="246" w="200" h="133" measuredW="200" measuredH="133" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Confirmar%0A%BFDesea%20eliminar%20la%20cuenta%20seleccionada%3F%0AAceptar</text>
+      </controlProperties>
+    </control>
+    <control controlID="45" controlTypeID="com.balsamiq.mockups::CallOut" x="425" y="159" w="-1" h="-1" measuredW="36" measuredH="37" zOrder="10" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>C</text>
+      </controlProperties>
+    </control>
+    <control controlID="46" controlTypeID="com.balsamiq.mockups::CallOut" x="794" y="328" w="-1" h="-1" measuredW="45" measuredH="40" zOrder="11" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>D</text>
+      </controlProperties>
+    </control>
+    <control controlID="47" controlTypeID="com.balsamiq.mockups::CallOut" x="830" y="246" w="-1" h="-1" measuredW="36" measuredH="43" zOrder="13" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>E</text>
+      </controlProperties>
+    </control>
+    <control controlID="48" controlTypeID="com.balsamiq.mockups::Button" x="809" y="252" w="-1" h="-1" measuredW="31" measuredH="27" zOrder="12" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>X</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>

@@ -1,0 +1,67 @@
+\chapter{Implantación}
+\label{implantacion}
+
+En el presenta capítulo, se describen las tecnologías y herramientas necesarias para la correcta implantación del sistema desarrollado. 
+
+\section{Infraestructura}
+\label{infraestructura}
+
+Para la implantación del sistema, se cuenta con un servidor facilitado por la Escuela de Ingeniería Civil Informática, el cual tiene las siguientes características y softwares necesarios para el correcto funcionamiento del sistema: \\
+
+\begin{itemize}
+
+\item \textbf{Procesador:} Intel Xeon de 2.00 GHz. \\
+\item \textbf{Memoria Ram:} 4GB. \\
+\item \textbf{Sistema Operativo:} Microsoft Windows Server 2008 Enterprise. \\
+\item \textbf{Servidor de Aplicación:} Apache Tomcat 7.0.55. \\
+\item \textbf{Motor de Base de Datos:} PostgreSQL 9.3. \\
+
+\end{itemize}
+
+\section{Actividades Previas a la Implantación}
+\label{actividadespreviasalaimplantacion}
+
+En esta sección se describe las configuraciones previas, hechas en el servidor, para el correcto funcionamiento del sistema. \\
+
+\subsection{Configuración del Motor de Base de Datos}
+\label{configuracionpsql}
+
+Antes de implantar el sistema, se hizo una previa configuración de PostgreSQL\footnote{\url{http://www.postgresql.org/}}, el cual ya estaba instalado en el servidor. Para ello se siguieron los siguientes pasos: \\ 
+
+\begin{enumerate}
+
+\item Se creó la base de datos \textit{GCAR}, que es la base de datos con la que trabaja el sistema. \\
+\item Se creó el usuario \textit{GCAR} y se le dieron los permisos necesarios para administrar la base de datos  del sistema construido. \\
+\item Utilizando el nuevo usuario creado, se crearon las tablas necesarias para el correcto funcionamiento del sistema. \\
+
+\end{enumerate}
+
+Luego de estos pasos, el servidor se encuentra listo para la implantación del sistema. \\
+
+\section{Actividades para la Implantación}
+\label{actividadesparalaimplantacion}
+
+En esta sección se describen los pasos de la instalación del sistema en el servidor de aplicaciones. \\
+
+\subsection{Instalación del Sistema en el Servidor de Aplicaciones}
+\label{instalacion}
+
+El servidor de aplicaciones utilizado es Apache Tomcat\footnote{\url{http://tomcat.apache.org/}}, el cual se encontraba previamente instalado en el servidor. A continuación, se listan los pasos realizados durante la implantación del sistema: \\
+
+\begin{enumerate}
+
+\item El archivo \textit{.war}, correspondiente al sistema completo, fue instalado en el directorio \texttt{C:/apache-tomcat-7.0.55/webapps}. Este directorio contiene todas las aplicaciones web que el servidor administra. \\
+\item Se ingreso al directorio \texttt{C:/apache-tomcat-7.0.55/bin} y se ejecutó el archivo \texttt{startup.bat}. De esta manera, el servidor compila el archivo \textit{.war}, crea las carpetas necesarias y ejecuta el sistema. \\
+
+\item Se ingresó a la página web \texttt{http://localhost:8090/GCAR} para revisar si el servidor está corriendo correctamente el sistema. \\
+
+\end{enumerate}
+
+Luego de esto, y con el servidor trabajado en perfectas condiciones, el sistema está implantado en el servidor. De este modo, ya es posible trabajar con \textit{GCAR} y probar todas sus funcionalidades. \\
+
+\section{Actividades Posteriores a la Implantación}
+\label{actividaesposterioresalaimlantacion}
+
+Ya con el sistema implantado, se hace entrega del Manual de Usuario al administrador del sistema. Así, el administrador podrá conocer todas y cada las funcionalidades del sistema y el correcto uso de ellas. \\
+
+El manual explica detalladamente los pasos a seguir para llevar a cabo alguna tarea específica. Además está separado por secciones, las cuales atienden por separado las funcionalidades de \textit{GCAR}. Cada explicación agrega una o más imágenes con el fin de que el aprendizaje sea más fácil para el usuario. El manual de usuario se presenta en el Apéndice \ref{manualdeusuario}. \\

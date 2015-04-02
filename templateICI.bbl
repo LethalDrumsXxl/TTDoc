@@ -1,0 +1,66 @@
+\begin{thebibliography}{10}
+
+\bibitem{yuspeirote}
+S.~Artigas and R.~Yus.
+\newblock Herramienta para el aprendizaje del álgebra relacional y optimización
+  de consultas.
+\newblock 2010.
+
+\bibitem{campus2006}
+R.~Campus, L.~Casillas, D.~Costal, M.~Gibert, Mart\'in C., and P\'erez O.
+\newblock {\em Bases de Datos}.
+\newblock Eureca Media, 2006.
+
+\bibitem{database2005}
+T.~Connolly and C.~Begg.
+\newblock {\em Database Systems, a Practical Aproach to Design, Implementation,
+  and Management}.
+\newblock Addison Wesley, 2005.
+
+\bibitem{elmasri2002fundamentos}
+R.~Elmasri, S.~Navathe, V.~Castillo, B.~Espiga, and G.~P{\'e}rez.
+\newblock {\em Fundamentos de sistemas de bases de datos}.
+\newblock 2002.
+
+\bibitem{hernandez2002herramienta}
+C.~Hern{\'a}ndez, Y.~Crespo, P.~Romay, and M.~Laguna.
+\newblock Una herramienta para el aprendizaje del {\'a}lgebra relacional.
+\newblock {\em VIII Jornadas de ense{\~n}anza Universitaria de la
+  Inform{\'a}tica (JENUI)}, 2002.
+
+\bibitem{valverde1994algebra}
+G.~Moreno, T.~Rojo, and González P.
+\newblock {\'A}lgebra relacional como lenguaje de acceso a bases de datos
+  relacionales.
+\newblock {\em Ensayos: Revista de la Facultad de Educaci{\'o}n de Albacete},
+  (9):309--326, 1994.
+
+\bibitem{javaserverfaces}
+Oracle.
+\newblock Java server faces technology.
+\newblock \url{http://docs.oracle.com/javaee/7/tutorial/doc/jsf-intro.htm}.
+\newblock \'Ultimo acceso 24-07-2014.
+
+\bibitem{parr2007antlr}
+T.~Parr.
+\newblock {\em The Definitive ANTLR Reference: Building Domain-Specific
+  Languages}.
+\newblock Pragmatic Bookshelf, 2007.
+
+\bibitem{velazquez2013herramienta}
+Y.~Perdomo.
+\newblock Herramienta para la creaci{\'o}n y ejecuci{\'o}n de consultas en
+  {\'a}lgebra relacional.
+\newblock {\em Serie Cient{\'\i}fica}, 6(3), 2013.
+
+\bibitem{ramos2006sistemas}
+M.~Ramos, A.~Ramos, and F.~Montero.
+\newblock {\em Sistemas Gestores de Base de Datos}.
+\newblock Mc Graw Hill, M{\'e}xico, 2006.
+
+\bibitem{sommerville2005ingenieria}
+I.~Sommerville.
+\newblock {\em Ingenier{\'\i}a del software}.
+\newblock Pearson Educaci{\'o}n, 2005.
+
+\end{thebibliography}

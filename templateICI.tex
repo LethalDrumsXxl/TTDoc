@@ -1,0 +1,132 @@
+\documentclass[12pt,letterpaper]{report}
+
+\marginparsep 0pt
+\textwidth 6in
+\topmargin 0pt
+\headsep .5in
+\textheight 9.2in
+\voffset = 0pt
+\hoffset = 0pt
+\marginparwidth = 0pt \oddsidemargin = 0pt \sloppy
+
+%Dimensiones de la página
+\usepackage[left=2.5cm,top=3cm,right=2.5cm,bottom=2.5cm]{geometry}
+%Sangría
+\setlength{\parindent}{1cm}
+
+%Numeracion
+\pagenumbering{arabic}
+
+\usepackage{templateICI}
+\usepackage{amsmath,amsfonts}
+\usepackage{graphicx}
+\usepackage{graphics}
+\usepackage[dvips]{epsfig}
+\usepackage{times}
+\usepackage[latin1]{inputenc}
+\usepackage[dvips]{graphicx}
+\usepackage[usenames]{color}
+\usepackage[spanish]{babel}
+\newcommand{\ie}{i.e.}
+\newcommand {\out}[1]{}
+\newtheorem{definicion}{Definicion}
+\usepackage[dvips]{epsfig}
+\usepackage{rotating}
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage[]{fontenc}
+\usepackage{hyperref}
+% mias :)
+\usepackage{url}
+\usepackage{epstopdf}
+\usepackage{float}
+\usepackage{multicol}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{booktabs} 
+\usepackage{tabulary}
+%\documentclass[xcolor=table]{beamer}
+
+%-------------------------------------
+% CS61 students begin copying here
+\usepackage{amssymb}
+
+\def\ojoin{\setbox0=\hbox{$\bowtie$}%
+  \rule[-.02ex]{.25em}{.4pt}\llap{\rule[\ht0]{.25em}{.4pt}}}
+\def\leftouterjoin{\mathbin{\ojoin\mkern-5.8mu\bowtie}}
+\def\rightouterjoin{\mathbin{\bowtie\mkern-5.8mu\ojoin}}
+\def\fullouterjoin{\mathbin{\ojoin\mkern-5.8mu\bowtie\mkern-5.8mu\ojoin}}
+
+% Relational algebra symbols from ftp://reports.stanford.edu/www/dbgroup_only/latex-macros.html
+\newcommand{\select}{\mbox{\Large$\sigma$}}
+\newcommand{\cross}{\mbox{$\times$}}
+\newcommand{\intersection}{\mbox{$\cap$}}
+\newcommand{\intersect}{\mbox{$\cap$}}
+\newcommand{\union}{\mbox{$\cup$}}
+\newcommand{\join}{\mbox{$\Join$}}
+\newcommand{\leftsemijoin}{\mbox{$\mathrel{\raise1pt\hbox{\vrule height5pt
+depth0pt width0.6pt\hskip-1.5pt$>$\hskip -2.5pt$<$}}$}}
+\newcommand{\rightsemijoin}{\mbox{$\mathrel{\raise1pt\hbox{\hskip-1.5pt$>$\hskip -2.5pt$<$\hskip -1.1pt\vrule height5pt
+depth0pt width0.6pt}}$}}
+\newcommand{\project}{\mbox{\Large$\pi$}}
+\newcommand{\Project}{\mbox{$\Pi$}}
+\newcommand{\aggregatefn}{\mbox{\Large$G$}}
+
+% CS61 students end copying here
+%-------------------------------------
+
+\renewcommand{\shorthandsspanish}{}
+
+\addto\captionsspanish{
+\def\listtablename{Índice de tablas}
+\def\tablename{Tabla}}
+
+\sloppy
+
+\begin{document}
+\title{\textbf{DESARROLLO DE UNA APLICACIÓN PARA REALIZAR CONSULTAS EN ÁLGEBRA RELACIONAL}}
+\author{\textbf{Sebastián Andrés Segovia Cordero}}
+\principaladviser{Eliana Paz Providel Godoy}
+%\coprincipaladviser{Nombre Profesor Correferente}
+%\firstreader{Nombre Profesor Informante 1}
+
+\beforepreface
+\prefacesection{Resumen}
+La Escuela de Ingeniería Civil Informática de la Universidad de Valparaíso cuenta dentro de su malla curricular con una asignatura llamada Modelo de Datos. Ahí se imparten los fundamentos necesarios para entender lo que es una Base de Datos y sus clasificaciones, centrándose en Bases de Datos Relacionales. Cada concepto relacionado es impartido y ejercitado sin mayor dificultad, pero hay uno que muestra una falencia a la hora de ser impartido y estudiado por el alumno, básicamente por ser algo totalmente teórico y su complejidad para medir el grado de avance en los alumnos, el Álgebra Relacional. \\
+
+En este Trabajo de Título se presenta un estudio a fondo de los conceptos relacionados al Modelo Relacional y al Álgebra Relacional, ambos necesarios para la formación de cualquier ingeniero en informática. Además se muestra el estado actual de las aplicaciones para trabajar y ejecutar consultas en Álgebra Relacional, los cuales presentan grandes falencias a la hora de ser utilizados, ya sea porque en su mayoría son aplicaciones de escritorio que dificultan el aprendizaje, por su bajo nivel de retroalimentación hacia el usuario, o simplemente porque el acceso a ellos se limita a tener la aplicación instalada en un computador. Bajo este escenario, se ha implementado una aplicación WEB capaz de ejecutar consultas en álgebra relacional, entregando una lista de bases de datos y ejercicios predefinidos con el fin de invitar a los alumnos a ejercitar sus conocimientos en Álgebra Relacional, y además permitiendo al profesor estudiar cómo se comportan los alumnos al resolver problemas de Álgebra Relacional. \\
+
+Cada objetivo definido y requerimiento analizado es en pos de mejorar el aprendizaje. Todos y cada uno de los objetivos y requerimientos son enfocados a las necesidades de la Escuela de Ingeniería Civil en Informática de la Universidad de Valparaíso. Se ha realizado un extenso trabajo de análisis y diseño para este sistema. Cada modelo y vista diseñada son herramientas necesarias para crear un sistema de calidad. Desde la interfaz gráfica hasta el acceso a la base de datos, incluyendo la etapa de testing, todo ha sido confeccionado e implementado para entregar una mejor experiencia educativa del alumno y al profesor. \\
+
+%\newpage
+%\prefacesection{Agradecimientos}
+%Aqui pueden colocar sus agradecimientos.
+%Si han estudiado con becas es recomendable colocar los agradecimientos a las instituciones que les otorgaron las becas.
+
+\afterpreface
+
+%Aqui deben incluir el fuente de cada capitulo, sin su encabezado.
+\include{capitulo1}
+\include{capitulo2}
+\include{capitulo3}
+\include{capitulo4}
+\include{capitulo5}
+\include{capitulo6}
+\include{capitulo7}
+\include{capitulo8}
+\include{capitulo9}
+
+\appendix
+
+\include{appendix1}
+\include{appendix2}
+\include{appendix3}
+\include{appendix4}
+\include{appendix5}
+\include{appendix6}
+\include{appendix7}
+
+\bibliographystyle{plain}
+\bibliography{template}
+
+\end{document} 

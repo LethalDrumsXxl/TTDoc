@@ -1,0 +1,185 @@
+\chapter{Pruebas}
+\label{pruebas}
+
+El presenta capítulo corresponde a la ejecución de las pruebas realizadas al sistema, las cuales fueron diseñada en el Capítulo \ref{diseno} de Diseño , en la Sección \ref{disenodepruebas} Diseño de Pruebas. En este capítulo se detalla cada procedimiento que se utilizó para llevar a cabo las pruebas, mostrando sus resultados y el análisis realizado. \\
+
+Este capítulo se divide de la siguiente forma: en la Sección \ref{ejecpruebasunitarias} se presenta la ejecución de las Pruebas Unitarias, en la Sección \ref{ejecpruebasintegracion} se muestra la ejecución de las Pruebas de Integración, en la Sección \ref{ejecpruebasdesistema} se muestra la ejecución de las Pruebas de Sistema, luego en la Sección \ref{ejecpruebasdeaceptacion} se presenta las Pruebas de Aceptación, en la Sección \ref{ejecpruebasusabilidad} se muestra la ejecución de las Pruebas de Usabilidad, después en la Sección \ref{ejecpruebasdeestres} se muestran los resultados de la ejecución de las Pruebas de Estrés y finalmente en la Sección \ref{ejecpruebasdeseguridad} se presentan los resultados de la ejecución de las Pruebas de Seguridad. \\
+
+\clearpage
+\newpage
+\section{Pruebas Unitarias}
+\label{ejecpruebasunitarias}
+
+A continuación se describen las pruebas unitarias implantadas a cada funcionalidad del sistema. La técnica utilizada es la de "Caja Negra", la cual fue descrita en el Capitulo \ref{diseno} de Diseño en la Sección \ref{pruebasunitarias} de Diseño de Pruebas Unitarias. Éstas fueron ejecutadas por el Grupo A de usuarios de prueba correspondiente al desarrollador del sistema.
+
+\subsection{Análisis de Resultados}
+\label{analisispruebasunitaras}
+
+El Grupo A realizó 21 pruebas unitarias, las cuales 8 de éstas obtuvieron resultados no esperados. Éstas fueron corregidas inmediatamente ejecutadas las pruebas, para luego ser testeadas nuevamente, logrando finalmente el 100\% de aprobación. \\
+
+Las pruebas unitarias que presentaron problemas, fueron las pruebas PU03 Eliminar Cuenta, PU04 Modificar Cuenta, PU05 Crear BD, PU06 Eliminar BD, PU07 Modificar BD, PU08 Cargar BD, PU14 Eliminar Relación y PU15 Modificar Relación. Éstas corresponden al 38,39\%. \\
+
+Todas pruebas unitarias PU03, PU04, PU06, PU07, PU08, PU14, PU15 tenían problemas al controlar la entrada vacía, ya que al presionar el botón ENTER sin haber seleccionado alguna entidad, en vez de no hacer nada, el sistema respondía ejecutando la acción correspondiente a ese caso de prueba. Además, el caso de prueba PU05 tenía problemas al crear base de datos con letras mayúsculas en el nombre. Sin embargo, una vez encontrado los problemas, éstos fueron solucionados dejando las pruebas unitarias con total aprobación. \\
+
+En el Apéndice \ref{ap-pruebas}, Sección \ref{ap-pruebasunitarias} se han anexado todas las tablas pertenecientes a la ejecución de las Pruebas Unitarias. \\
+
+\section{Pruebas Integración}
+\label{ejecpruebasintegracion}
+
+Una vez realizadas las pruebas por unidad, se comenzó con la ejecución de las pruebas de integración, el cual consiste en verificar que las distintas partes combinadas funcionen correctamente como un todo. \\
+
+Como se mencionó en el Capítulo \ref{diseno} de Diseño, en la Sección \ref{pruebasdeintegracion}, para la ejecución de este testing se siguió una estrategia incremental, es decir, cada vez que se implementó un módulo y fue integrado, el sistema fue testedo en su totalidad. Estas pruebas fueron ejecutadas por el Grupo A de usuarios de prueba correspondiente al desarrollador del sistema. \\
+
+\subsection{Análisis de Resultados}
+\label{analisispruebasdeintegracion}
+
+El Grupo A realizó 6 pruebas de integración cada vez que se terminaba un módulo, de los cuales uno tuvo los resultados esperado. Ésto fue corregido inmediatamente ejecutada la prueba, para después ser testeada nuevamente. De esta forma se logró el 100\% de aprobación. \\
+
+El testing que presentó problemas fue la prueba PI03, el cual agregaba el módulo de Gestión de Relaciones y Tuplas, lo que corresponde al 16.66\% de las pruebas. \\
+
+La prueba PI03 tenía problemas con la modificación y eliminación de tuplas y relaciones. La idea es que el profesor, siendo además el usuario administrador, sea capaz de modificar cualquier base de datos existente en el sistema, pero alumno solamente puede modificar las bases de datos que él genere. En ese escenario, los alumnos al cargar bases de datos ajenas, eran capaces de modificar y eliminar tuplas y relaciones. Una vez detectado este problema, se solucionó dejando las pruebas unitarias con total aprobación. \\
+
+El Apéndice \ref{ap-pruebas} contiene todas las tablas pertenecientes a la ejecución de las Pruebas de Integración. \\
+
+\section{Pruebas de Sistema}
+\label{ejecpruebasdesistema}
+
+Las pruebas de sistemas tienen como fin el análisis del sistema como un todo, englobando cada uno de os requerimientos funcionales. El Grupo B, perteneciente al Profesor de la Asignatura de Modelo de Datos, califica cada requerimiento como Completo, Completo con Modificaciones o No Completo, marcando con una \emph{X} en la tabla de evaluación. En la Sección \ref{pruebasdesistemas} se explica en detalle los criterios para las calificaciones expuestas. \\
+
+\subsection{Análisis de Resultados}
+\label{analisispruebasdesistemas}
+
+En el Apéndice \ref{ap-pruebas}, Sección \ref{ap-pruebasdesistemas} se presenta en resumen el resultado de las pruebas de sistemas. En total, hay 12 requerimientos evaluados como Completos, es decir, estos requerimientos están desarrollados en su totalidad y cumplen con los esperado; hay 1 requerimientos evaluados como Completo con Modificaciones, es decir, estos requerimientos están desarrollados, pero con modificaciones; y finalmente hay 1 requerimiento evaluado como No Completo, es decir, este requerimiento no está desarrollado. En el Apéndice \ref{ap-pruebasdesistemas} se explica en detalle la evaluación de los requerimientos evaluados como Complejo con Modificaciones y No Completo. \\
+
+A pesar de lo anterior un 78.57\% de los fueron evaluados como Completos, 14.29\% de los requerimientos fueron evaluados como Completo con Modificaciones, mientras que un 7.14\% de los requerimientos fueron evaluados como No Completos. De esta forma el testing está aprobado, ya que se esperaba un 70\% o más de requerimientos evaluados como completos y 30\% o menos de requerimientos evaluados como Completo con Modificaciones. El 7.14\% evaluado como No Completo, equivale a un requerimiento prescindible, por lo que no afecta el desempeño sistema ni la lógica de negocio. \\
+
+\section{Pruebas de Aceptación}
+\label{ejecpruebasdeaceptacion}
+
+Estas pruebas fueron ejecutadas por 5 usuarios del Grupo C que pertenece a los alumnos que hayan aprobado las asignaturas de Modelo de Datos y Sistemas de Bases de datos, y por 5 usuarios del Grupo D que pertenece a los alumnos que han aprobado la asignatura de Modelo de Datos durante el periodo 2014. Cada uno de estos usuarios tiene diferentes conocimientos, entregando distintas apreciaciones del sistema. \\
+
+Las pruebas de aceptación consistían en ejecutar distintas tareas, y luego responder un formulario de aceptación  con 8 preguntas enfocadas a la apreciación del usuario con respecto a la funcionalidad del sistema. Cada grupo ejecutaba distintas tareas debido a las diferencias en conocimientos que éstos tenían. Además, cada tarea tenía un estimado del tiempo que demoraría el usuario en ejecutarla. El Grupo C realizó tareas correspondientes al perfil de Profesor, mientras que el Grupo D ejecutó tareas correspondientes al perfil de Alumno. Las tareas de cada perfil de usuario, así como el formulario de aceptación y los parámetros de respuesta están definidos en el Capítulo \ref{diseno} de Diseño, en la Sección \ref{pruebasdeaceptacion} Pruebas de Aceptación. \\
+
+\subsection{Análisis de Resultados}
+\label{analisispruebasdeaceptacion}
+
+Por cada tarea ejecutada por los usuarios, se  midió el tiempo para luego calcular en promedio lo que demoró cada alumno en realizar cada tarea. Este resultado fue comparado con el tiempo esperado de la realización de la tarea. El detalle de los promedios esperados de las tareas de los perfiles de Alumnos y Profesor, las evaluaciones promedio y la desviación estándar de cada pregunta del formulario de aceptación  y el resultado gráfico del testing se adjuntan en el Apéndice \ref{ap-pruebasdeaceptacion}. \\
+
+Para el análisis de resultados, se optó por agrupar cada respuesta del formulario de aceptación, para así visualizar cuáles aspectos son los que fueron mejor o peor evaluados. A continuación se explican los resultados de cada pregunta realizada en el formulario de aceptación: \\
+
+\begin{enumerate}
+
+\item \textit{¿El sistema funciona eficazmente?} Los usuarios se presentan bastante cómodos con la funcionalidad del sistema. En este ámbito, un 30\% lo evalúa con parámetro 3 sintiéndose satisfechos y un 70\% lo evalúa con parámetro 4 catalogando de óptimo el funcionamiento del sistema. \\
+
+\item \textit{¿El sistema arroja los resultados que esperaba?} En esta pregunta los usuarios se sienten igual de cómodos que en la pregunta anterior. Un 30\% lo evalúa con parámetro 3 sintiéndose satisfechos y un 70\% lo evalúa con parámetro 4 catalogando de óptimo el funcionamiento del sistema. \\
+
+\item \textit{¿La información entregada por el sistema es la adecuada?} En esta pregunta los sujetos de pruebas sienten menos comodidad que en las preguntas anteriores. Un 10\% lo evalúa con parámetro 2 indicando que la información entregada es regular, un 40\% de los encuestados dice que se sienten satisfechos con la información entregada y un 50\% indica que la información entregada es óptima. \\
+
+\item \textit{¿Recibe retroalimentación durante la ejecución de alguna funcionalidad del sistema?} En esta pregunta los sujetos de pruebas sienten tan cómodos como las primeras 2 preguntas. Un 30\% de los encuestados dice que se sienten satisfechos y un 70\% indica que la retroalimentación es óptima. \\ 
+
+\item \textit{¿Consideró el sistema amigable para su funcionamiento?} En torno a esta pregunta, un 20\% de los usuarios indicó que el sistema era regularmente amigable y un 80\% se sintieron satisfechos. \\
+
+\item \textit{¿Considero el tiempo que demoro responder el sistema es el adecuado?} En esta pregunta los sujetos de pruebas en general no tienen problemas con el tiempo de respuesta del sistema. Un 20\% de los encuestados dice que se sienten satisfechos y un 80\% indica que el tiempo es el óptimo. \\
+
+\item \textit{¿La retroalimentación entregada por el sistema resulto útil?} En esta pregunta los usuarios indican que el sistema entrega una retroalimentación útil. Un 30\% de los encuestados dice que se sienten satisfechos y un 70\% indica que es óptima. \\
+
+\item \textit{¿Cómo evalúa usted el funcionamiento del sistema?} En esta pregunta los usuarios evalúan favorablemente el funcionamiento del sistema. Un 30\% de los encuestados dice que se sienten satisfechos y un 70\% indica que es óptimo. \\
+
+\end{enumerate}
+
+Finalmente se observa que todas las respuestas del formulario de aceptación tienen parámetro 3 o superior. De esta manera, se cumple con la validación aprobando las pruebas de aceptación. \\
+
+\section{Pruebas de Usabilidad}
+\label{ejecpruebasusabilidad}
+
+Luego de ejecutar las pruebas de aceptación, los 5 usuarios del Grupo C y los 5 usuarios del grupo D realizaron las pruebas de usabilidad, la cual consiste en el desarrollo de un cuestionario la cual contiene 7 preguntas cerradas enfocadas a la usabilidad y una pregunta dirigida a sugerencias a la plataforma. Las preguntas y la forma de responder este cuestionario se definieron en En la Sección \ref{pruebasdeusabilidad} de pruebas de usabilidad. \\
+
+\subsection{Análisis de Resultados}
+\label{analisispruebasdeusabilidad}
+
+Para el análisis de resultados, siguiendo el formato de las pruebas de aceptación, se optó por agrupar cada respuesta del formulario de usabilidad, para así visualizar cuáles aspectos son los que fueron mejor o peor evaluados. Las tablas y gráficos pertenecientes a estos resultados se adjuntan en el Apéndice \ref{ap-pruebasdeusabilidad}. A continuación se hace un análisis por separado de cada pregunta realizada en el cuestionario de usabilidad: \\
+
+\begin{itemize}
+
+\item \textit{¿Cómo encuentra la estructura de menús y organización de las funciones del sistema?} En esta pregunta un 20\% de los usuarios dicen que la estructura de menús y organización de funciones es regular, un 40\% dice que es buena y un 40\% indica que es Muy Buena.
+
+\item \textit{¿Los iconos del sistema son representativos respecto a las funcionalidades que presentan?} En esta pregunta un 40\% de los usuarios dicen que son regulares, un 10\% dice que son buenos y un 50\% indica que son Muy Buenos.
+
+\item \textit{¿Encontró fácil la navegación del sistema y obtener la información deseada?} En esta pregunta un 50\% de los usuarios dicen que la navegación es regular, un 20\% dice que es fácil y un 50\% indica que es Muy Fácil.
+
+\item \textit{¿De que forma el sistema permite realizar las tareas solicitadas?} En esta pregunta un 10\% de los usuarios dicen que el sistema permite realizar tareas de forma levemente confusa, un 60\% dice que es clara y un 30\% indica que es Muy Clara. 
+
+\item \textit{En general ¿Fue fácil realizar las tareas solicitadas?} En esta pregunta un 20\% de los usuarios dicen que fue regular, un 30\% dice que fue fácil y un 50\% indica que fue Muy Fácil.
+
+\item \textit{¿Usted cree que necesitará ayuda para utilizar el sistema?} En esta pregunta un 20\% de los usuarios dicen que necesitará poca ayuda, un 50\% dice que necesitará muy poca ayuda y un 30\% indica que no necesitará ayuda. 
+
+\item \textit{¿Usted piensa que aprenderá rápidamente a usar el sistema?} En esta pregunta un 10\% dice que está casi seguro de aprender y un 90\% indica que está completamente seguro de aprender a usar rápidamente el sistema. 
+
+\end{itemize}
+
+En la sección de comentarios del cuestionario de usabilidad, muchos de los usuarios hacían hincapié en la necesidad de tener botones de ayuda, ya que al ser una herramienta nueva para ellos, tendían a perderse un poco en la navegabilidad del sistema. Además, agregan que es de suma importancia agregar un manual de usuario para aprender a manejar las funcionalidades del sistema. Por último, recalcan la importancia de los colores en la aplicación, agregando también que es necesario tener botones y mensajes más coloridos para que resalten de la demás interfaz. Todos estos comentarios fueron atendidos e implementados en el sistema, agregando colores más fuertes para diferenciar botones, tablas y menús; ventanas de ayuda para guiar al usuario en las tareas que desee realizar; y la confección de un manual detallado para capacitar a los usuarios en el correcto uso del sistema. \\
+
+Finalmente, como se puede apreciar en cada pregunta del cuestionario de usabilidad, todas las respuestas fueron valoradas con parámetro 3 o superior. De esta forma, se aprueba el testing de usabilidad. \\
+
+\section{Pruebas de Estrés}
+\label{ejecpruebasdeestres}
+
+Las pruebas de estrés tienen como objetivo verificar la disponibilidad del sistema al momento que muchos usuarios lo estén usando paralelamente. \\
+
+Para esto se ha simulado una solicitud concurrente a la funcionalidad más utilizada del sistema, que en este caso es "Hacer consultas en Álgebra Relacional", y se verificó la disponibilidad del sistema con una cantidad de usuarios determinados, que para esta prueba son 50 usuarios, los cuales representan la cantidad máxima de alumnos que podrían utilizar el sistema concurrentemente. Es importante agregar que la herramienta utilizada para la ejecución de pruebas de estrés fue JMeter\footnote{\url{http://jmeter.apache.org/}}, ya que es una aplicación en JAVA y puede ser ejecutada desde cualquier equipo. \\
+
+En primera instancia se hizo una prueba con 10 usuarios concurrentes para ver cómo se comportaba el sistema, luego aumentando de 10 en 10 se va probando hasta llegar a los 100 usuarios concurrentes. Luego, probando de 100 en 100 se aumenta hasta llegar a 1000 usuarios concurrentes. Así sucesivamente hasta llegar a un punto donde se encuentren errores. Ademas, por cada escenario de prueba, los usuarios realizarán 2 peticiones para aumentar más la carga y ver el comportamiento del sistema. La petición será una consulta de tipo "despachos inter despachos" \\
+
+\subsection{Análisis de Resultados}
+\label{analisispruebasdeestres}
+
+Para el análisis de resultados, se observó el comportamiento del servidor por cada caso de prueba. Como se aprecia en la tabla indexada en el Apéndice \ref{ap-pruebasdeestres}, entre 10 y 700 usuarios concurrentes, el Sistema no presenta ningún problema, respondiendo a todas las peticiones hechas. Ya con 800 usuarios, el sistema empieza a comportarse erróneamente, generando un error del 6.25\% de las peticiones realizadas. Al momento de tener 1000 usuarios concurrentes, el sistema se comporta aún más erráticamente, generando un 47.50\% de error en las peticiones. A pesar de ésto, el sistema se comporta espléndidamente, ya que la cantidad de usuarios concurrentes esperada era de 50. Pensar en 700 usuarios concurrentes sin errores en el sistema es un número bastante grande. \\
+
+Es importante agregar que la simulación fue realizada en un entorno local. La máquina que ejecutó las pruebas y que además es donde reside la aplicación, tiene un procesador de Intel(R) Core(TM) 2 DUO de 2.00 GHz, con una memoria RAM de 3.00 GB. Esto es inferior al entorno del servidor, por lo que la cantidad de usuarios concurrentes es muy probable que pueda aumentar considerablemente. Los datos del servidor se encuentran en el Capítulo \ref{implantacion} de Implantación.  \\
+
+\section{Pruebas de Seguridad}
+\label{ejecpruebasdeseguridad}
+
+\subsection{SQL Inyection}
+\label{sqlinyection}
+
+Las pruebas de seguridad enfocadas a la inyección SQL, tienen como finalidad negar el acceso a información sensible que la base de datos del sistema contenga. Este tipo de ataque se hace mediante la concatenación de consultas SQL a campos donde posiblemente el sistema hagas consultas a una base de datos. De esta forma, el sistema piensa que es otra consulta. \\
+
+Las consultas más comunes y que fueron utilizadas en este testing fueron: \\
+
+\begin{itemize}
+
+\item \emph{' or '1'='1}: este tipo de consultas es utilizada para ingresar al sistema mediante un falso verdadero, ya que la sentencia \emph{'1'='1'} siempre será verdadera. De esta forma, el sistema podría creer que la cuenta ingresada es válida, dando acceso al sistema. \\
+
+\item \emph{' AND 0 UNION SELECT 1 AND '1'='}: esta consulta agrega una sentencia o consulta nueva para intentar el acceso ilegal a la plataforma o para obtener datos críticos del sistema. \\
+
+\end{itemize}
+
+Cada una de estas consultas fueron ejecutadas en el total de los campos de la aplicación, para verificar si hay alguna posibilidad de vulnerar el sistema. \\
+
+\subsubsection{Resultados SQL Inyection}
+
+Como resultado se encontró que el sistema tiene resistencia completa a este tipo de ataques. La arquitectura de ese sistema separa la capa de vista, con la capa de negocio, y a su vez, separa la capa de datos. Por ende, los campos que se ingresan en la capa de vista son validados ahí, impidiendo la entrada de datos no esperados, como por ejemplo, sentencias SQL. Así, el testing de SQL Inyection está aprobado. \\
+
+\subsection{Acceso por URL}
+\label{accesoporurl}
+
+Cada usuario debe identificarse para ingresar al sistema. De esta forma, el sistema sabe que interfaces debe mostrar al usuario. De esta forma si ingresa un usuario con el perfil de alumno, entonces el sistema muestra las interfaces que le corresponden al alumno, en caso contrario si el usuario es un profesor, entonces el sistema debe mostrar las interfaces que le corresponden al profesor. \\
+
+En este escenario, es posible que un usuario de tipo alumno a través de acceso por dirección URL, pueda acceder a las funcionalidades del profesor. Para esto se ha decidido hacer un testing, de esta forma se evita la suplantación de identidad. \\
+
+Para ello, se han identificado 3 casos:
+
+\begin{enumerate}
+
+\item Ingresado como alumno, acceder vía URL a funcionalidades que sólo le pertenezcan al profesor (Por ejemplo Gestionar Ejercicios, Modificar una Cuenta, Ver Estadísticas, entre otros). \\
+
+\item Ingresado como alumno, cargar una base de datos creada por el profesor y acceder vía URL a funcionalidades de edición de esa base de datos (Por ejemplo Modificar BD, Eliminar BD, Agregar Relación, Modificar Tupla, entre otros). \\
+
+\item Sin haber ingresado al sistema, acceder vía URL a funcionalidades de un usuario logeado. \\ 
+
+\end{enumerate}
+
+\subsubsection{Resultados Acceso por URL}
+
+Para el Caso 1 y Caso 2 de acceso por url, el sistema redirecciona a una página de error, indicandole al usuario que ha intentado un ingreso inválido a una página, dándole la posibilidad de volver a la página de inicio. En el Caso 3 el sistema redirecciona a la página de inicio de sesión, entregándole la posibilidad al usuario de crear una cuenta o de ingresar al sistema utilizando su propia cuenta. De esta manera, el sistema evita el ingreso a funcionalidades que no le pertenecen a ciertos usuarios. Finalmente, el testing de Acceso por URL es aprobado. \\

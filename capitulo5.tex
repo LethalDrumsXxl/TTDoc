@@ -1,0 +1,734 @@
+\chapter{Diseño}
+\label{diseno}
+
+El presente capítulo corresponde a la descripción de la estructura del sistema a desarrollar, el cual considera un conjunto de modelos en distintos niveles de abstracción. Estos modelos detallan cada subsistema que lo compone, los datos que manipula y las distintas interfaces que tiene \cite{sommerville2005ingenieria}. \\
+
+Este capítulo se divide de la siguiente forma: en la Sección \ref{disenoarq} se detalla el Diseño Arquitectónico, luego en la Sección \ref{disenointerfaz} se define el Diseño de la Interfaz del Sistema, después en la Sección \ref{disenologico} se define el Diseño Lógico, en la Sección \ref{disenodedatos} se muestra el Diseño de Datos y finalmente en la Sección \ref{disenodepruebas} se define el Diseño de Pruebas. \\
+
+\section{Diseño Arquitectónico}
+\label{disenoarq}
+
+El Diseño Arquitectónico es la primera etapa en el proceso de diseño de aplicación y \textit{``representa un enlace crítico entre los procesos de ingeniería de diseño y de requerimientos''} \cite{sommerville2005ingenieria}. \\
+
+La arquitectura presente en la aplicación de este Trabajo de Título es un modelo de 3 capas, debido a que \textit{``soporta el desarrollo incremental de sistemas''} \cite{sommerville2005ingenieria}. Ésto es de suma importancia, ya que en primera instancia se puede implementar funcionalidades básicas del sistema y luego ir agregando más servicios. Además esta arquitectura permite in mejor mantenimiento de la aplicación, gracias a que cada capa se preocupa de un trabajo en específico. También, esta arquitectura soporta muy bien los cambios ya que si hace alguna modificación en una capa, ésta impactará solamente en las capas adyacentes; e incluso si las interfaces de comunicación entre capas no presentan ningún cambio, una capa puede ser reemplazada por otra equivalente \cite{sommerville2005ingenieria}. \\
+
+\subsection{Modelo de Capas}
+\label{modelodecapas}
+
+El Modelo de Capas es una arquitectura que \textit{``organiza el sistema en capas, cada una de las cuales proporciona un conjunto de servicios''} \cite{sommerville2005ingenieria}. La arquitectura que se muestra en la Figura \ref{fig:arquitecturasistema} consta de 3 capas, cada una de ellas posee una responsabilidad dentro del sistema. \\
+
+\begin{itemize}
+
+\item \textbf{Capa Vista:} En esta capa se encuentran todas las interfaces que permiten interactuar con las funcionalidades de la aplicación. Las interfaces presentes en este sistema son: Interfaz de Profesor e Interfaz de Alumno. Esta capa solamente se comunica con la Capa Lógica. \\
+
+\item \textbf{Capa Lógica:} Contiene todas las funcionalidades, operaciones y servicios que ofrece el sistema. En ésta, se recibe y procesan todas las peticiones de usuario provenientes desde la Capa Vista. En caso de ser necesario, ésta se comunicará con la Capa de Datos para almacenar o recuperar datos. \\
+
+\item \textbf{Capa Datos:} Aquí se encuentran toda la información almacenada del sistema. Acá se almacena y administra los distintos datos de los alumnos, ejercicios, relaciones, entre otros. Esta capa recibe las consultas de recuperación o almacenamiento provenientes desde la Capa Lógica. \\
+
+\end{itemize}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=14.5cm]{imagenes/arquitectura_sistema.png}
+\caption{Arquitectura del Sistema.}
+\label{fig:arquitecturasistema}
+\end{figure}
+
+\subsection{Vista de Módulos}
+\label{vistademodulos}
+
+El programa a desarrollar se compone de distintos módulos que se muestran en la Figura \ref{fig:vistamodulos}. Cada uno de ellos agrupa una serie de funciones comunes entre sí, lo que permite visualizar todo el sistema modularmente. Los módulos que forman parte del sistema son: \\
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=14.5cm]{imagenes/vista_modulos.png}
+\caption{Vista de Módulos y dependencia entre ellos.}
+\label{fig:vistamodulos}
+\end{figure}
+
+\begin{itemize}
+
+\item \textbf{Módulo Interfaz:} Contiene todos los componentes y funcionalidades encargadas de la visualización de las diferentes interfaces para cada tipo de usuario. Éstas permiten mostrar al usuario las funcionalidades que tiene el sistema y el resultado de éstas al ser utilizadas. \\
+
+\item \textbf{Módulo Controlador:} Engloba todos los componentes controladores que reciben peticiones desde la vista y las redirecciona hacia algún componente en la capa lógica que sea capaz de realizar dicha petición. Además, este componente es capaz de recibir información desde la lógica y enviarla a la capa vista para que sea visualizada por el usuario. \\
+
+\item \textbf{Módulo Gestión de Sesión:} Módulo encargado de la carga y almacenamiento de las sesiones de cada usuario que ingresa al sistema. \\
+
+\item \textbf{Módulo Gestión de Usuarios:} Es el encargado de la creación, eliminación y actualización de los usuarios que ingresan al sistema. Es importante recalcar que el sistema sólo permite la gestión de alumnos, y la existencia de un único profesor admistrador del sistema. \\
+
+\item \textbf{Módulo Gestión de BD:} Módulo que reúne todas las funcionalidades que pertenecen a la gestión de bases de datos, por ende tiene una dependencia con los módulos de Gestión de Ejercicios y Gestión de Relaciones, debido a que tanto los ejercicios como las relaciones pertenecen a cada base de datos. \\
+
+\item \textbf{Módulo Gestión de Ejercicios:} Engloba todos los componentes relacionados a la creación, modificación y eliminación de ejercicios para cada base de datos en el sistema. \\
+
+\item \textbf{Módulo Gestión de Relaciones:} Contiene las funcionalidades que pertenecen a la creación, modificación y eliminación de relaciones en cada base de datos que está en el sistema. Debido a que este módulo administra las relaciones del sistema, tiene una dependencia con el módulo Gestión de Tuplas ya que cada tupla pertenece a una relación. \\
+
+\item \textbf{Módulo Gestión de Consultas:} Centraliza todos los componentes dirigidos a la gestión de consultas, es decir: ejecución  y verificación de consultas realizadas por usuarios. \\
+
+\item \textbf{Módulo Gestión de Tuplas:} Módulo que contiene todas las funcionalidades que respectan a la creación, eliminación y modificación de tuplas para cada relación. \\
+
+\item \textbf{Módulo Reportes y Estadísticas:} Módulo encargado de agrupar las funcionalidades que tratan la carga de datos de sesiones de los alumnos y su posterior análisis vía alguna técnica de minería de datos. \\
+
+\item \textbf{Módulo Gestión de Datos:} Integra las funcionalidades y componentes de la gestión de datos hacia la base de datos central del sistema, ya sea para su lectura o actualización. \\
+
+\end{itemize}
+
+
+
+\subsection{Vista de Componentes}
+\label{vistadecomponentes}
+
+En la Sección \ref{vistademodulos} se definieron y explicaron los módulos que componen el sistema. La Figura \ref{fig:vistacomponentes} contiene el modelo de Vista de Componentes del sistema, en él se aprecian todos los componentes, sus dependencias e interfaces. Cada módulo agrupan un conjunto de componentes, los cuáles serán descritos a continuación. 
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=17cm]{imagenes/vista_componentes.pdf}
+\caption{Vista de Componentes.}
+\label{fig:vistacomponentes}
+\end{figure}
+
+
+\begin{itemize}
+
+\item \textbf{Módulo Interfaz:} Este módulo contiene 3 componentes: \\
+
+	\begin{itemize}
+
+	\item \textbf{Componente Interfaz Inicio:} Este componente contiene la interfaz de inicio y el formulario para identificar a los usuarios, tanto alumno como profesor, que ingresan al sistema. Además, contiene la interfaz para la creación de cuentas, para que los alumnos que entren a la aplicación por primera vez puedan hacer uso de ella. \\
+	
+	\item \textbf{Componente Interfaz Alumno:} Componente que engloba todas las interfaces de las funcionalidades que un alumno puede utilizar en el sistema. Contiene menús y formularios, con el fin de acceder a estas funcionalidades de forma interactiva. \\
+	
+	\item \textbf{Componente Interfaz Profesor:} Componente que engloba todas las interfaces de las funcionalidades que el profesor puede utilizar en el sistema. Contiene menús y formularios, con el fin de acceder a estas funcionalidades de forma interactiva. \\
+		
+	\end{itemize}
+	
+\item \textbf{Módulo Controlador:} Este módulo contiene un componente: \\
+
+	\begin{itemize}
+
+	\item \textbf{Componente Controlador de Peticiones de Usuario:} Este componente contiene recibe las peticiones de los usuarios desde la Interfaz, las procesa y las redirecciona a los módulos correspondientes para resolver dicha tarea. \\
+		
+	\end{itemize}
+	
+\item \textbf{Módulo Gestión de Usuarios:} Este módulo contiene un componente: \\
+
+	\begin{itemize}
+	
+	\item \textbf{Componente Gestor de Usuarios:} Componente que contiene todas las funcionalidades para procesar los ingresos, modificaciones y eliminaciones de usuarios, específicamente de tipo alumno. Este componente depende del \textit{Actualizador BD} para poder ingresar a la base de datos y poder ejecutar sus funciones. \\	
+	
+	\end{itemize}
+	
+\item \textbf{Módulo Gestión de Sesión:} Este módulo contiene 2 componentes: \\
+
+	\begin{itemize}
+
+	\item \textbf{Componente Gestor de Sesión:} Componente encargado de cargar y guardar la sesión en la que trabaja el usuario, en específico, las bases de datos generadas por el alumno. Por esto último, tiene una dependencia al componente \textit{Gestor de BD}. \\
+	
+	\item \textbf{Componente Validador de Sesión:} Este componente se preocupa de la validación de la sesión cargada, en otras palabras, de que si los datos ingresados para iniciar la sesión son válidos. Este componente tiene una dependencia con el componente \textit{Actualizador BD}, ya que a través de él puede accesar a la base de datos para poder hacer la validación. \\
+	
+	\end{itemize}
+	
+\item \textbf{Módulo Gestión de Ejercicios:} Este módulo contiene 2 componentes: \\
+
+	\begin{itemize}
+
+	\item \textbf{Componente Gestor de Ejercicios:} Componente que contiene las funcionalidades de guardado, modificación, eliminación y carga de la lista de ejercicios que contiene cada base de datos, por ende tiene una dependencia al componente \textbf{Gestor de BD}. Además, para poder aplicar sus funcionalidades, debe hacer uso del componente \textit{Actualizador BD}. De esta forma, puede hacer uso de la base de datos del sistema. \\
+	
+	\item \textbf{Componente Validador de Ejercicios:} Componente que agrupa todas las funcionalidades de validación de ejercicios, es decir, que verifica si un ejercicio se responde correctamente o no. Éste tiene una dependencia al componente \textbf{Ejecutor de Consulta}, ya que por medio de una consulta en Álgebra Relacional, se responde un ejercicio. Además, tiene una dependencia con el componente \textit{Actualizador BD}, ya que debe hacer uso de la base de datos del sistema. \\
+	
+	\end{itemize}
+	
+\item \textbf{Módulo Gestión de BD:} Este módulo contiene un componente: \\
+
+	\begin{itemize}
+
+	\item \textbf{Componente Gestor de BD:} Componente encargado de la carga, guardado, modificación y eliminación de bases de datos de Álgebra Relacional. Este componente tiene una dependencia con el componente \textit{Actualizador BD}, ya que debe hacer uso de la base de datos del sistema para poder ejecutar sus funciones. \\
+			
+	\end{itemize}
+	
+\item \textbf{Módulo Gestión de Relaciones: }Este módulo contiene un componente: \\
+
+	\begin{itemize}
+
+	\item \textbf{Componente Gestor de Relaciones:} Este componente contiene funciones para guardado, modificación y eliminación de relaciones en una base de datos relacional. Éste componente tiene una dependencia con el componente \textit{Gestor de BD}, ya que a través de él identifica que relaciones utilizar. Además tiene una dependencia con el componente \textbf{Actualizador BD}, debido al acceso a la base de datos del sistema para poder guardar, modificar o eliminar relaciones. \\
+		
+	\end{itemize}
+
+\item \textbf{Módulo Gestión de Tuplas: }Este módulo contiene un componente: \\
+
+	\begin{itemize}
+
+	\item \textbf{Componente Gestor de Tuplas:} Componente que contiene todas las funciones de carga, ingreso, eliminación y modificación de tuplas en una relación. Este componente tiene una dependencia con el componente \textit{Gestor de Relaciones}, ya que para cada relación existe una lista de tuplas. Además, tiene una dependencia con el componente \textit{Actualizador BD}, ya que debe hacer ingreso a la base de datos del sistema para poder acceder a las tuplas. \\
+		
+	\end{itemize}
+	
+	
+\item \textbf{Módulo Gestión de Consultas: }Este módulo contiene 3 componentes: \\
+
+	\begin{itemize}
+
+	\item \textbf{Componente Analizador de Consultas:} Este componente contiene todas las funcionalidades que respectan a analizar consultas, es decir, la verificación de errores sintácticos. Dentro de éste, existe una librería llamada ANTLR\footnote{\url{http://www.antlr.org}}, una herramienta para el reconocimiento, elaboración, ejecución y traducción de lenguaje estructurado; que por medio de una gramática, genera un analizador que puede construir árboles de análisis sintáctico. \\
+	
+	\item \textbf{Componente Ejecutor de Consultas:} Componente que contiene las funcionalidades que respectan a la ejecución de consultas, es decir, la definición de las consultas en Álgebra Relacional. Tal como el componente \textit{Analizador de Consulta}, utiliza la librería ANTLR para la ejecución de las consultas en Álgebra Relacional. \\
+	
+	\item \textbf{Componente Almancenador de Consultas}	Éste alberga todas las funcionalidades para el almacenamiento de consultas, es decir, si el resultado es correcto en función de un ejercicio, que tipo de errores contiene la consulta, que bases de datos, relaciones o consultas afecta, entre otros. Éste es clave, ya que es el que permite el almacenamiento de datos para su posterior estudio por medio de alguna técnica de Minería de datos. El Almacenador de consultas depende del \textit{Analizador de Consultas}, ya que de ahí extrae los errores de la consulta, además de donde se ejecuta y del \textit{Ejecutor de Consultas}, ya que de ahí obtiene el resultado de la consulta. Además, tiene una dependencia con el componente \textit{Actualizador BD}, ya que debe hacer ingreso a la base de datos del sistema para poder guardar el resultado de la consulta. \\
+	
+	\end{itemize}
+	
+\item \textbf{Módulo Reportes y Estadísticas: }Este módulo contiene un componente: \\
+
+	\begin{itemize}
+
+	\item \textbf{Componente Resportes y Estadísticas:} Este componente es el encargado de revisar, verificar y encontrar patrones, por medio de alguna técnica de minería de datos, de todas las acciones ejecutadas en el sistema, específicamente: tipos de consultas, erroes de consultas, errores en ejercicios, tiempos de respuesta entre ejercicios, entre otros. Éste componente tiene una dependencia con el componente \textit{Actualizar BD}, ya que necesita hacer acceso a la base de datos del sistema, para cargar los datos generados desde el componente \textit{Almacenador de Consultas}. \\
+	
+	\end{itemize}
+	
+\item \textbf{Módulo Gestión de Datos: }Este módulo contiene 2 Componentes: \\
+
+	\begin{itemize}
+
+	\item \textbf{Componente Actualizador BD:} Componente que engloba todos los accesos a base de datos de todos los componentes del sistema. Éste tiene una dependencia con el componente \textit{Conector BD}, ya que el \textit{Actualizador BD} prepara las consultas y las ejecuta por medio del componente \textit{Conector BD}. \\
+	
+	\item \textbf{Componente Conector BD:} Este componente contiene la interfaz de acceso a la base de datos. Se encarga de ser el puente conector entre la capa lógica y la capa de datos, y es el que  tiene acceso directo con la base de datos. \\
+	
+	\end{itemize}
+
+\end{itemize}
+
+\section{Diseño Interfaz}
+\label{disenointerfaz}
+
+En la presente sección, se explicará como será la interfaz de la aplicación. Para ello, en la Sección \ref{interfacesdeusuario} se presentan las principales interfaces con la que el usuario trabajará y en la Sección \ref{esquemadenavegacion} se muestra un árbol de cómo es la navegación dentro del sistema para cualquier usuario. \\
+
+\subsection{Interfaces de Usuario}
+\label{interfacesdeusuario}
+
+En el Apéndice \ref{app-interfacesdeusuario} se presentan las principales interfaces del usuario, junto con una explicación de cada uno de ellos. \\
+
+\subsection{Esquema de Navegación}
+\label{esquemadenavegacion}
+
+El esquema de navegación presentado en la presente sección posee una topología jerárquica jerárquica, la que se visualiza al instante de ingresar ordenadamente a las funcionalidades a través de los elementos gráficos que contiene la interfaz. Las Figuras \ref{fig:navegacionprofesor} y \ref{fig:navegacionalumno} contienen el modelo de navegación de usuario para Profesor y Alumno respectivamente. \\
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=14.5cm]{imagenes/navegacion_profesor.pdf}
+\caption{Esquema de Navegación Profesor.}
+\label{fig:navegacionprofesor}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=14.5cm]{imagenes/navegacion_alumno.pdf}
+\caption{Esquema de Navegación Alumno.}
+\label{fig:navegacionalumno}
+\end{figure}
+
+\newpage
+\section{Diseño Lógico}
+\label{disenologico}
+
+La presente sección tiene como objetivo proporcionar la estructura para el desarrollo del sistema. En la Sección \ref{casosdeusosreales} se muestran los Casos de Usos Reales y en la Sección \ref{diagramadeclases} se define el Diagrama de Clases. \\
+
+\subsection{Casos de Usos Reales}
+\label{casosdeusosreales}
+
+En el Apéndice \ref{app-casosdeusosreales} se presentan los casos de usos reales de la aplicación, acompañados con figuras etiquetadas que explican donde se encuentran las funcionalidades explicada por cada caso de uso real. \\
+
+\subsection{Diagrama de Clases}
+\label{diagramadeclases}
+
+En la Figura \ref{fig:diagramadeclases} se presenta el diagrama de clases de la aplicación a desarrollar. Ahí se presentan cada una de las clases implicadas en la funcionalidad del sistema y como interactúan entre ellas. A continuación se muestra una breve explicación de cada clase: \\
+
+\begin{itemize}
+
+\item \textbf{CargarBDBean:} Es la clase controladora encargada de la comunicación entre la interfaz y la lógica para poder cargar una base de datos seleccionada por un usuario. \\
+
+\item \textbf{CrearCuentaBean:} Clase controladora preocupada de la comunicación entre la interfaz y la capa lógica para la creación de usuarios alumnos por medio de una sesión de profesor. \\
+
+\item \textbf{EliminarCuentaBean:} Clase controladora encargada de la comunicación entre la interfaz y la capa lógica para la eliminación de cuentas de alumnos por medio de una sesión de profesor. \\
+
+\item \textbf{EstadisticasView:} Clase encargada de procesar las estadísticas cargadas desde la base de datos y enviarlas a la interfaz para que sea visualizadas por el usuario. \\
+
+\item \textbf{GestionarEjerciciosBean:} Clase preocupada de controlar todas las funcionalidades que respectan a la gestión de Ejercicios en el sistema desde la capa vista a la capa de negocio. En ella se puede crear, modificar o eliminar distintos ejercicios para alguna base de datos cargada. \\
+
+\item \textbf{HacerConsultaBean:} Es la clase controladora encargada de procesar y comunicar las peticiones entre la interfaz y la capa lógica para las consultas en el lenguaje de Álgebra Relacional hechas por los usuarios. \\
+
+\item \textbf{LoginBean:} Clase controladora que se preocupa de gestionar, desde la interfaz a la lógica, las distintas funcionalidades para el inicio de sesión y para la creación de cuentas de alumnos. \\
+
+\item \textbf{MenuView:} Clase preocupada controlar los distintos menús que corresponden a cada usuario. De esta forma, un alumno no puede entrar vía menú a vistas que son exclusivamente del profesor. \\
+
+\item \textbf{ModificarCuentaBean:} Claase preocupada de controlar todas las funcionalidades que respectan a la eliminación de cuentas de alumno realizadas por un profesor. \\
+
+\item \textbf{ModificarCuentaAlumnoBean:} Clase encargada de todas las funcionalidades de modificación de cuenta del alumno. Ésta permite al alumno modificar sus propios atributos en el sistema. \\
+
+\item \textbf{ModificarCuentaProfesorBean:} Clase encargada de todas las funcionalidades de modificación de cuenta del profesor. Ésta permite al profesor modificar sus propios atributos en el sistema. \\
+
+\item \textbf{ObtenerCalificacionBean:} Clase controladora encargada de procesar los resultados del alumno y enviarlos a la capa vista para que sea visualizadas, además preparar estos datos para ser guardados en una base de datos. \\
+
+\item \textbf{ResponerEjerciciosBean:} Clase controladora encargada recibir y enviar a interfaz los distintos ejercicios que posee una base de datos. Además, esta clase envía estos resultados a la clase \textit{ObtenerCalificacionBean} para que sean procesados por éste. \\
+
+\item \textbf{Util:} Clase encargada de guardar funcionalidades que se constantemente utilizadas por otras clases, entre ellas, obtener las variables de sesión activas y recargar una base de datos. \\
+
+\item \textbf{User:} Clase que encapsula los datos del Usuario en el sistema. Ésta clase contiene todos los datos del usuario, además de las distintas bases de datos. \\
+
+\item \textbf{Atributo:} Clase que encapsula la información de los atributos de una relación. \\
+
+\item \textbf{Consulta:} Clase que contiene todos los datos de las consultas realizadas durante la resolución de un ejercicio de alguna base de datos. \\
+
+\item \textbf{Ejercicio:} Ésta clase contiene toda la información de cada ejercicio que contiene una base de datos. \\
+
+\item \textbf{Esquema:} Clase que contiene todos los datos de las bases de datos relacionales en el sistema. Esta clase además contiene todas sus relaciones. \\
+
+
+\item \textbf{Relacion:} Clase que contiene los datos de cada relación de cualquier base de datos del sistema. Esta clase contiene además una serie de atributos y tuplas que son los que describen cada columna y cada fila de una tabla. \\
+
+\item \textbf{Respuesta:} Ésta clase encapsula todos los datos de las respuestas hechas por cada usuario a la hora de responder una guía de ejercicios de alguna base de datos. \\
+
+\item \textbf{Resultado:} Clase que engloba todos los datos de las respuestas de cada guía de ejercicios de alguna base de datos en el sistema. \\
+
+\item \textbf{Tupla:} Clase que contiene todos los datos de las tuplas de una relación perteneciente a alguna base de datos del sistema. \\
+
+\item \textbf{AlgebraRelacionalLexer:} Clase que contiene los datos relativos a los componentes del lenguaje de Álgebra Relacional, como por ejemplo las palabras reservadas del lenguaje. \\
+
+\item \textbf{AlgebraRelacionalParser:} Clase que ejecuta una consulta y revisa sintácticamente una consulta realizada en el lenguaje de álgebra Relacional. Ésta indica si la consulta está válida o no. \\
+
+\item \textbf{Database:} Esta clase es la interfaz de conexión entre la lógica y la base de datos. Es de suma importancia, ya que gracias a ésta todas las clases de tipo DAO (Data Acces Object) pueden hacer ingreso a la base de datos del sistema. \\
+
+\item \textbf{ConsultaDAO}: Clase preocupada del almacenamiento de consulta realizadas durante la resolución de un ejercicio a la base de datos del sistema. Se encarga de dar comunicación entre la base de datos y la capa lógica. \\
+
+\item \textbf{EjercicioDAO:} Clase de acceso a la base de datos del sistema encargada del ingreso, modificación o eliminación de ejercicios de una base de datos. Ésta clase es la interfaz de comunicación entre la capa de datos y la capa lógica. \\
+
+\item \textbf{EsquemaDAO:} Esta clase es la interfaz de comunicación entre la capa de datos y la capa lógica para el almacenamiento, carga y modificación de esquemas o base de datos en la base de datos del sistema. \\
+
+\item \textbf{RelacionDAO:} Clase preocupada del acceso a base de datos para la recuperación, ingreso o actualización de relaciones de cada base de datos relacional. Se encarga de dar comunicación entre la base de datos y la capa lógica. \\
+
+\item \textbf{UserDAO:} Clase de acceso a la base de datos encargada del ingreso, modificación o eliminación de usuarios del sistema. Ésta clase es la interfaz de comunicación entre la capa de datos y la capa lógica. \\
+
+\end{itemize}
+
+\newpage
+\clearpage
+\begin{figure}[h!]
+\centering
+\includegraphics[width=21cm,angle=90]{imagenes/diagrama_clases.pdf}
+\caption{Diagrama de Clases.}
+\label{fig:diagramadeclases}
+\end{figure}
+
+%\subsection{Archivo de Registro}
+%\label{archivoderegistro}
+
+\newpage
+\clearpage
+\section{Diseño de Datos}
+\label{disenodedatos}
+
+En la presente sección se muestra el diseño del manejo de datos de la aplicación a desarrollar. En la Sección \ref{modeloer} se explica el Modelo Entidad/Relación, en la Sección \ref{modelodedatos} se muestra el Modelo interno de Datos y en la Sección \ref{diccionariodedatos} se muestra el Diccionario de Datos que explica en detalle el modelo presentado en la Sección \ref{modelodedatos} Modelo de Datos. \\
+
+\subsection{Modelo Entidad/Relación}
+\label{modeloer}
+
+En la Figura \ref{fig:modeloer} se presenta el Modelo Entidad/Relación de la aplicación a desarrollar. Ésta muestra las distintas entidades y las relaciones que hay entre ellas. A continuación se da una explicación de cada entidad:
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=14cm]{imagenes/modelo_er.pdf}
+\caption{Modelo Entidad/Relación.}
+\label{fig:modeloer}
+\end{figure}
+
+\begin{itemize}
+
+\item \textbf{Usuarios:} Entidad que refleja los usuarios que interactúan con el sistema, tanto profesores como alumnos.
+\item \textbf{Profesores:} Entidad débil que depende de la existencia de la entidad \textit{Usuarios}. Ésta indica el profesor que interactúa con el sistema.
+\item \textbf{Alumnos:} Entidad débil que depende de la existencia de la entidad \textit{Usuarios}. Ésta indica los alumnos que interactúan con el sistema.
+\item \textbf{Esquemas:} Entidad que refleja las bases de datos que son creadas por los usuarios en el sistema.
+\item \textbf{Resultados:} Entidad que guarda los resultados de los ejercicios que tiene cada base de datos.
+\item \textbf{Respuestas:} Entidad que refleja las respuestas que se hacen al completar cualquier ejercicio.
+\item \textbf{Consultas:} Entidad que refleja las consultas que se hacen al responder cualquier ejercicio.
+
+
+\end{itemize}
+
+\newpage
+\subsection{Modelo de Datos}
+\label{modelodedatos}
+
+En la Figura \ref{fig:modelodedatos} se muestra el Modelo de Datos de la aplicación a desarrollar. En él, se aprecian las distintas entidades obtenidas en la Sección \ref{modeloer}. La Sección \ref{diccionariodedatos} explica en detalle cada entidad y cómo se compone. \\
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=14cm]{imagenes/modelo_datos.png}
+\caption{Modelo de Datos.}
+\label{fig:modelodedatos}
+\end{figure}
+
+\newpage
+\subsection{Diccionario de Datos}
+\label{diccionariodedatos}
+
+En el Apéndice \ref{app-diccionariodedatos} se muestra en detalle el diccionario de datos que utilizará el sistema. \\
+
+\section{Diseño de Pruebas}
+\label{disenodepruebas}
+
+En esta sección se muestra la elaboración de distintas pruebas que tienen como objetivo principal la evaluación de la calidad del sistema, asegurando que éste cumpla con los requerimientos establecidos. En la Sección \ref{usuariosdepruebas} se definen los usuarios que participarán en las pruebas, en la Sección \ref{pruebasunitarias} se definen las Pruebas Unitarias, después en la Sección \ref{pruebasdeintegracion} se muestran las Pruebas de Integración, en la Sección \ref{pruebasdesistemas} se explican las Pruebas de sistemas, después en la Sección \ref{pruebasdeaceptacion} se definen las Pruebas de Aceptación, luego en la Sección \ref{pruebasdeusabilidad} se muestran las Pruebas de Usabilidad, en la Sección \ref{pruebasdeestres} se definen las Pruebas de Estrés y finalmente en la Sección \ref{pruebasdeseguridad} se describen las Pruebas de Seguridad. \\
+
+\subsection{Usuarios de Pruebas}
+\label{usuariosdepruebas}
+
+Para la realización de las pruebas, será imperioso contar con la ayuda de diferentes usuarios agrupados en 4 asociaciones, quienes tendrán como objetivo evaluar la funcionalidad del sistema. Estos usuarios están clasificados en función a su nivel de conocimiento en Modelo de Datos y Álgebra Relacional. A continuación se muestran los distintos grupos, especificando las distintas pruebas que tendrán que ejecutar. \\
+
+\begin{itemize}
+
+\item \textbf{Grupo A:} En este grupo se encuentra el desarrollador del presente Trabajo de Título, quien con conocimientos sobre el funcionamiento, estructura e interacción del sistema, ejecutará las pruebas unitarias e integración. \\
+
+\item \textbf{Grupo B:} En este grupo se encuentra el profesor de la asignatura Modelo de Datos. Al ser el cliente del sistema y conocer a cabalidad los requerimientos funcionales y no funcionales, será el encargado de realizar las Pruebas de Sistema, además de participar en las Pruebas de Aceptación y Usabilidad. \\
+
+\item \textbf{Grupo C:} En este grupo está los alumnos de la Universidad de Valparaíso de la Escuela de Ingeniaría Civil en Informática que hayan aprobado la asignatura de Modelo de Datos y Sistema de Base de Datos. Ésto debido a sus fuertes conocimientos en Modelo Relacional y Álgebra Relacional. Ellos participarán en las Pruebas de Aceptación y Usabilidad. \\
+
+\item \textbf{Grupo D:} En este grupo se encuentran los alumnos de la Universidad de Valparaíso de la Escuela de Ingeniería Civil Informática que hayan aprobado la Asignatura de Modelo de Datos durante el primer semestre del año 2014, ya que ellos tienen un grado de conocimiento Medio en Modelo Relacional y Álgebra Relacional. Este grupo participará de las Pruebas de Aceptación y Usabilidad. \\
+
+\end{itemize}
+
+\subsection{Pruebas Unitarias}
+\label{pruebasunitarias}
+
+Las pruebas unitarias tienen como fin probar el correcto funcionamiento de las funciones del sistema, asegurando que cada procedimiento actúe de forma correcta. Estas pruebas serán efectuadas por el desarrollador al terminar la implementación de cada funcionalidad mediante pruebas de Caja Negra. \\
+
+Para ejecutar este tipo de pruebas, es necesario analizar las funcionalidades del sistemas, las cuales son extraídas de la Sección \ref{casosdeusosreales} Casos de Usos Reales, luego se define la entrada específica y la salida esperada en función de dicha entrada.  Si el resultado de la prueba no es el esperado, entonces se ha encontrado un error. Las Tablas \ref{tab:pruebasunitarias-1/3}, \ref{tab:pruebasunitarias-2/3} y \ref{tab:pruebasunitarias-3/3} muestran la definición de todos los casos de pruebas. Para aprobar la evaluación, el comportamiento del sistema del 100\% de las pruebas realizadas, debe ser el esperado. En caso de que alguna funcionalidad no llegase a aprobar la evaluación, ésta se debe re-codificar y ser testeada nuevamente hasta ser aprobada.  \\
+
+\newpage
+\clearpage
+\begin{table}[h!]
+\footnotesize
+\centering
+\begin{tabular}{|p{1.5cm}|p{1.5cm}|p{2cm}|p{4.5cm}|p{4.5cm}|}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+\textbf{Id Prueba Unitaria} & \textbf{Id Caso de Uso Real} & \textbf{Nombre Caso de Uso Real} & \textbf{Entrada}                                                                                                                                                                                                                                          & \textbf{Salida Esperada}                                                                    \\ \hline
+PU01                        & CUR01                        & Crear Cuenta desde Inicio                    & Rellenar todos los campos pedidos para la creación de una cuenta de tipo Alumno (ingresando desde el menú inicial), apretar el botón Siguiente y seguir ingresando los datos del nuevo Alumno, hasta apretar el botón Acepetar para crear la nueva cuenta & El sistema da aviso de la creación de la cuenta y redirecciona al menú Inicio.              \\ \hline
+PU02                        & CUR02                        & Iniciar Sesión                   & Ingresar datos de Username y Password válidos la cuenta de Profesor, luego seleccionar el botón Ingresar                                                                                                                                                  & El sistema carga la sesión del alumno ingresado y redirecciona al menú principal            \\ \hline
+PU03                        & CUR07                        & Eliminar Cuenta                  & Seleccionar de la lista una cuenta a eliminar y confirmar la cuenta para eliminarla apretando el botón Aceptar                                                                                                                                            & El sistema da aviso de la eliminación de la cuenta y redirecciona al menú principal         \\ \hline
+PU04                        & CUR08                        & Modificar Cuenta                 & Seleccionar de la lista una cuenta a modificar, modificar el campo de Nombre de la cuenta, apretar el botón Siguiente y confirmar la modificación apretando el botón Aceptar                                                                              & El sistema da aviso de la modificación de la cuenta y redirecciona al menú principal        \\ \hline
+PU05                        & CUR10                        & Crear BD                         & Ingresar los campos para la creación de la BD, apretar Siguiente y apretar el botón Aceptar                                                                                                                                                               & El sistema da aviso de la base de datos creada y redirecciona al menú principal             \\ \hline
+PU06                        & CUR11                        & Eliminar BD                      & Seleccionar de la lista la base de datos a eliminar y confirmar la eliminación apretando el botón Aceptar                                                                                                                                                 & El sistema da aviso de la eliminación de la base de datos y redirecciona al menú principal  \\ \hline
+PU07                        & CUR12                        & ModificarBD                      & Seleccionar de la lista la base de datos a modificar, modificar el campo de Nombre de la base de datos, apretar el botón Siguiente y confirmar la modificación apretando el botón Aceptar                                                                 & El sistema da aviso de la modificación de la base de datos y redirecciona al menú principal \\ \hline
+PU08                        & CUR13                        & CargarBD                         & Seleccionar de la lista la base de datos a cargar y apretar el botón Aceptar                                                                                                                                                                              & El sistema da aviso de la carga de la base de datos y redirecciona al menú principal        \\ \hline
+PU09                        & CUR15                        & Gestión Ejercicios              & Seleccionar de la lista un ejercicio a eliminar y confirmar la eliminación & El sistema guarda los cambios y da aviso al usuario \\ \hline
+\end{tabular}
+\caption{Pruebas Unitarias (1/3).}
+\label{tab:pruebasunitarias-1/3}
+\end{table}
+
+\newpage
+\clearpage
+\begin{table}[h!]
+\footnotesize
+\centering
+\begin{tabular}{|p{1.5cm}|p{1.5cm}|p{2cm}|p{4.5cm}|p{4.5cm}|}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+\textbf{Id Prueba Unitaria} & \textbf{Id Caso de Uso Real} & \textbf{Nombre Caso de Uso Real} & \textbf{Entrada}                                                                                                                                                                                              & \textbf{Salida Esperada}                                                                                                                                                                         \\ \hline
+PU10                        & CUR15                        & Gestión Ejercicios              & Seleccionar de la lista un ejercicio a modificar, modificar los campos del ejercicio y confirmar la modificación & El sistema guarda los cambios y da aviso al usuario \\ \hline
+PU11                        & CUR15                        & Gestión Ejercicios              & Agregar un nuevo ejercicio y confirmar la acción & El sistema guarda los cambios y da aviso al usuario \\ \hline
+PU12                        & CUR16                        & Responder Ejercicios             & Para cada ejercicio hacer una serie de consultas, luego apretar el botón Responder, apretar el botón Siguiente para pasar a la siguiente pregunta hasta responderlas todas                                    & El sistema muestra una lista de los ejercicios correctos e incorrectos y el porcentaje de acetadas en función de las respustas dadas. El sistema entrega la opción para volver al menú principal \\ \hline
+PU13                        & CUR18                        & Agregar Relación                 & Agregar los campos necesarios para la creación de la relación, apretar Siguiente y apretar el botón Aceptar                                                                                                   & El sistema da aviso da la nueva relación y redirecciona al menú principal                                                                                                                        \\ \hline
+PU14                        & CUR29                        & Eliminar Relación                & Seleccionar de la lista la relación a eliminar y confirmar la eliminación apretando el botón Aceptar                                                                                                          & El sistema da aviso de la eliminación de la relación y redirecciona al menú principal                                                                                                            \\ \hline
+PU15                        & CUR20                        & Modificar Relación               & Seleccionar de la lista la relación a modificar, modificar el campo nombre de la relación, apretar el botón Siguiente y confirmar la modificación apretando el botón Aceptar                                  & El sistema da aviso de la modificación de la relación y redirecciona al menú principal                                                                                                           \\ \hline
+PU16                        & CUR21                        & Ver Relación                     & Seleccionar de la lisa la relación a ver y apretar el botón Siguiente                                                                                                                                         & El sistema muestra por pantalla la relación seleccionada y el menú gestionar tupla                                                                                                               \\ \hline
+PU17                        & CUR23                        & Ingresar Tupla                   & Agregar los campos necesarios para la creación de la tupla y apretar el botón Aceptar                                                                                                             & El sistema da aviso de la nueva tupla y redirecciona al menú gestionar tupla              \\ \hline
+PU18                        & CUR24                        & Eliminar Tupla                   & Seleccionar de la lista la tupla a eliminar y confirmar la eliminación apretando el botón Aceptar                                                                                                 & El sistema da aviso de la eliminación de la tupla y redirecciona al menú gestionar tupla  \\ \hline
+PU19                        & CUR25                        & Modificar Tupla                  & Seleccionar de la lista la tupla a modificar, modificar algún campo de la tupla (exceptuando la clave primaria), apretar el botón Siguiente y confirmar la eliminación apretando el botón Aceptar & El sistema da aviso de la modificación de la tupla y redirecciona al menú gestionar tupla \\ \hline
+\end{tabular}
+\caption{Pruebas Unitarias (2/3).}
+\label{tab:pruebasunitarias-2/3}
+\end{table}
+
+\newpage
+\clearpage
+\begin{table}[h!]
+\footnotesize
+\centering
+\begin{tabular}{|p{1.5cm}|p{1.5cm}|p{2cm}|p{4.5cm}|p{4.5cm}|}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+\textbf{Id Prueba Unitaria} & \textbf{Id Caso de Uso Real} & \textbf{Nombre Caso de Uso Real} & \textbf{Entrada}                                                                                                                                                                                  & \textbf{Salida Esperada}                                                                  \\ \hline
+PU20                        & CUR27                        & Hacer Consulta                   & Ingresar una consulta válida en una base de datos ya seleccionada y apretar el botón Ejecutar                                                                                                     & El sistema muestra por pantalla el resultado de la consulta                               \\ \hline
+PU21                        & CUR29                        & Ver Estadísticas                 & Seleccionar de la lista la base de datos a ver las estadísticas, apretar el botón Siguiente & El sistema muestra por pantalla las estadísticas básicas y permite al usuario descargar Reglas de Asociación o Gráficos detallados                              \\ \hline
+\end{tabular}
+\caption{Pruebas Unitarias (3/3).}
+\label{tab:pruebasunitarias-3/3}
+\end{table}
+
+Para la verificación de los datos de prueba, se debe completar la plantilla de registro de información que se presenta en la Tabla \ref{tab:plantilapruebasunitarias}. Ésta debe ser llenada con la información de la Prueba Unitaria, observaciones del comportamiento del sistema para cada testeo y el resultado indicando si es aceptado o no.\\
+
+\begin{table}[h!]
+\footnotesize
+\centering
+\begin{tabular}{|p{3.5cm}|p{9cm}|p{2cm}|}
+\hline
+\rowcolor[HTML]{9B9B9B} 
+\multicolumn{2}{|p{12.5cm}|}{\cellcolor[HTML]{9B9B9B}\textbf{Prueba Unitaria}} & \textbf{Id:} \\ \hline
+Nombre                                      & \multicolumn{2}{l|}{}                   \\ \hline
+Referencias                                 & \multicolumn{2}{l|}{}                   \\ \hline
+\rowcolor[HTML]{C0C0C0} 
+\multicolumn{3}{|l|}{\cellcolor[HTML]{C0C0C0}\textit{Caso de Prueba}}                 \\ \hline
+Entrada Válida                              & \multicolumn{2}{l|}{}                   \\ \hline
+Salida Esperada                             & \multicolumn{2}{l|}{}                   \\ \hline
+Entrada Inválida                            & \multicolumn{2}{l|}{}                   \\ \hline
+Salida Esperada                             & \multicolumn{2}{l|}{}                   \\ \hline
+Entrada Vacía                               & \multicolumn{2}{l|}{}                   \\ \hline
+Saluda Esperada                             & \multicolumn{2}{l|}{}                   \\ \hline
+\textbf{Resultado}                          & \multicolumn{2}{l|}{}                   \\ \hline
+\end{tabular}
+\caption{Plantilla Pruebas Unitarias.}
+\label{tab:plantilapruebasunitarias}
+\end{table}
+
+%\begin{table}[h!]
+%\footnotesize
+%\centering
+%\begin{tabular}{|p{4cm}|p{10.5cm}|}
+%\hline
+%\multicolumn{2}{|c|}{\cellcolor[HTML]{9B9B9B}\textbf{Nombre Caso de Pruebas}} \\ \hline
+%Propósito                                      &                              \\ \hline
+%Referencias                                    &                              \\ \hline
+%\multicolumn{2}{|c|}{\cellcolor[HTML]{C0C0C0}\textit{Caso de Prueba}}         \\ \hline
+%Entrada Válida                                 &                              \\ \hline
+%Salida Esperada                                &                              \\ \hline
+%Entrada Inválida                               &                              \\ \hline
+%Salida Esperada                                &                              \\ \hline
+%Entrada Vacía                                  &                              \\ \hline
+%Saluda Esperada                                &                              \\ \hline
+%\textbf{Resultado}                             &                              \\ \hline
+%\end{tabular}
+%\caption{Plantilla Pruebas Unitarias}
+%\label{tab:plantilapruebasunitarias}
+%\end{table}
+
+\subsection{Pruebas de Integración}
+\label{pruebasdeintegracion}
+
+Para revisar el correcto ensamblaje y funcionamiento entre los distintos componentes del sistema una vez que hayan sido probados como unidad, se realizarán pruebas de integración. Éstas corresponden a evaluaciones que permiten encontrar errores entre la interacción de los componentes. \\
+
+La realización de estas pruebas serán siguiendo la técnica de Pruebas de Caja Negra y estarán regidas por una estrategia incremental, es decir, cada vez que se implemente un módulo y sea integrado, el sistema será probado en su totalidad. De esta forma, se sigue paralelamente la estrategia de desarrollo. Además, para aprobar el testing, el 100\% de las pruebas deben tener resultados favorables, es decir, que cada salida sea la esperada. Si alguna prueba sale rechazada, ésta debe ser re-codificada y testeada nuevamente hasta que sea aprobada. \\
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=10cm]{imagenes/pruebas_integracion.pdf}
+\caption{Pruebas de Integración.}
+\label{fig:pruebasdeintegracion}
+\end{figure}
+
+\begin{table}[h!]
+\footnotesize
+\centering
+\begin{tabular}{|p{3.5cm}|p{9cm}|p{2cm}|}
+\hline
+\rowcolor[HTML]{9B9B9B} 
+\multicolumn{2}{|p{12.5cm}|}{\cellcolor[HTML]{9B9B9B}\textbf{Prueba de Integración}} & \textbf{Id:} \\ \hline
+Nombre                                         & \multicolumn{2}{l|}{}                      \\ \hline
+Componentes                                    & \multicolumn{2}{l|}{}                      \\ \hline
+Objetivo                                       & \multicolumn{2}{l|}{}                      \\ \hline
+\rowcolor[HTML]{C0C0C0} 
+\multicolumn{3}{|l|}{\cellcolor[HTML]{C0C0C0}\textit{Caso de Prueba}}                       \\ \hline
+Estado Inicial                                 & \multicolumn{2}{l|}{}                      \\ \hline
+Estado Final                                   & \multicolumn{2}{l|}{}                      \\ \hline
+Procedimiento                                  & \multicolumn{2}{l|}{}                      \\ \hline
+Resultado Esperado                             & \multicolumn{2}{l|}{}                      \\ \hline
+\textbf{Resultado}                             & \multicolumn{2}{l|}{}                      \\ \hline
+\end{tabular}
+\caption{Plantilla Pruebas de Integración.}
+\label{tab:pruebasdeintegracion}
+\end{table}
+
+
+La Figura \ref{fig:pruebasdeintegracion} muestra gráficamente la implementación de las pruebas de integración, partiendo desde las pruebas de los módulos de Gestión de Usuarios y Cuentas, para finalizar con el módulo de Gestión de Reportes y Estadísticas. Cada prueba debe ser ejecutada y registrada en el formulario que se muestra en la Tabla \ref{tab:pruebasdeintegracion} tal como se explico en la Sección \ref{pruebasunitarias} Pruebas Unitarias. \\
+
+\subsection{Pruebas de Sistema}
+\label{pruebasdesistemas}
+
+El grupo que participa en las Pruebas de Sistema se indica en la Sección \ref{usuariosdepruebas}. La idea de este tipo de pruebas es revisar el sistema como un todo, englobando todos los requerimientos presentados en el Capitulo \ref{analisis} de Análisis, en la Sección \ref{espreq} de Especificación de Requerimientos. Por ende, se considera que cada requerimiento será evaluado con una nota que estará en función de los siguientes parámetros: \\
+
+\begin{itemize}
+
+\item \textbf{Completo (C):} El requerimiento está desarrollado en su totalidad y cumple con lo esperado.
+\item \textbf{Completo con Modificaciones (CM):} El requerimiento está desarrollado, pero con modificaciones.
+\item \textbf{No Completo (NC):} El requerimiento no está desarrollado. \\
+
+\end{itemize}
+
+Finalmente es el profesor de Modelo de Datos quien está encargado de la implementación de las pruebas de sistema. Para ésto, el profesor debe rellenar con una $\emph{X}$ en la Tabla \ref{tab:prueebasdesistema} para especificar la calificación de cada requerimiento. Para aprobar el testing, el 30\% o menos de los requerimientos obligatorios  y deseables deben estar marcado como \textit{Completo con Modificaciones} y el 70\% o más como \textit{Completos}, los requerimientos prescindibles pueden estar marcados como \textit{No Completo}. Si el testing sale rechazado, se deberá volver a programar para volver a ser testeado hasta que éste salga aprobado. \\
+
+\begin{table}[h!]
+\footnotesize
+\centering
+\begin{tabular}{|p{0.5cm}|p{10cm}|p{0.5cm}|p{0.5cm}|p{0.5cm}|}
+\hline
+\rowcolor[HTML]{9B9B9B} 
+\multicolumn{2}{|l|}{\cellcolor[HTML]{9B9B9B}\textbf{Pruebas de Sistema}} & \multicolumn{3}{l|}{\cellcolor[HTML]{9B9B9B}\textbf{Id:}} \\ \hline
+\rowcolor[HTML]{C0C0C0} 
+\textit{Id}         & \textit{Requerimiento}         & \textit{C}         & \textit{CM}                 & \textit{NC}                 \\ \hline
+                    &                                &                    &                             &                             \\ \hline
+                    &                                &                    &                             &                             \\ \hline
+                    &                                &                    &                             &                             \\ \hline
+                    &                                &                    &                             &                             \\ \hline
+                    &                                &                    &                             &                             \\ \hline
+                    &                                &                    &                             &                             \\ \hline
+\multicolumn{2}{|l|}{\textbf{Resultados}}            &                    &                             &                             \\ \hline
+\end{tabular}
+\caption{Plantilla Pruebas de Sistema.}
+\label{tab:prueebasdesistema}
+\end{table}
+
+\subsection{Pruebas de Aceptación}
+\label{pruebasdeaceptacion}
+
+Para llevar a cabo las pruebas de aceptación, los usuarios de Grupos C y D definidos en la Sección \ref{usuariosdepruebas} deben realizar una serie de tareas. Los usuarios del Grupo C deben ejecutar las tareas que se muestran en la Tabla \ref{tab:tareasperfilprofesor} correspondiente al perfil de profesor y los usuarios del Grupo D deben ejecutar las tareas de la Tabla \ref{tab:tareasperfilusuario} correspondiente a las tareas del perfil de alumno. \\
+
+\begin{table}[h!]
+\footnotesize
+\centering
+\begin{tabular}{|p{7.5cm}|p{3.5cm}|p{2cm}|}
+\hline
+\rowcolor[HTML]{9B9B9B} 
+\multicolumn{2}{|l|}{\cellcolor[HTML]{9B9B9B}\textbf{Tareas Perfil Alumno}}                                                                                                                                                                                                                 & \textbf{Id:}              \\ \hline
+\rowcolor[HTML]{C0C0C0}  
+\textit{Tarea}                                                                                                                                                                                                               & \textit{Función(es)}                           & \textit{Tiempo Requerido} \\ \hline
+1) Usted desea ingresar al sistema como alumno, pero no tiene cuenta. Para ello, cree su propia cuenta e ingrese al Sistema                                                                                                  & Crear Cuenta, Iniciar Sesión, Modificar Cuenta & 5 minutos                 \\ \hline
+2) Usted desea crear una nueva base de datos llamada "univ"                                                                                                                                                                  & Crear BD                                       & 2 minutos                 \\ \hline
+3) Usted desea modificar la base de datos "univ" y llamarla "universidad"                                                                                                                                                    & Modificar BD                                   & 2 minutos                 \\ \hline
+4) Usted desea cargar la base de datos "universidad"                                                                                                                                                                         & Cargar BD                                      & 1 minuto                  \\ \hline
+5) Usted desea crear una relación llamada "alumnos" con 3 atributos: un atributo de tipo "Entero" llamado "id" de tipo primario y 2 atributos de tipo "Cadena" llamados "nombre" y "apellido"                                & Crear Relación                                 & 5 minutos                 \\ \hline
+6) Usted desea modificar la relación "alumnos" y renombrarla como "personas"                                                                                                                                                 & Modificar Relación                             & 2 minutos                 \\ \hline
+7) Usted desea agregar 3 tuplas a la relación "personas": uno con id=1, nombre="nombre1", apellido="apellido1"; otro con id=2, nombre="nombre2", apellido="apellido2" y otro con id=3, nombre="nombre3", apellido="apellido3" & Crear Tupla                                    & 5 minutos                 \\ \hline
+8) Usted desea hacer una consulta de tipo "proyectar" que retorne todos los nombres de la relación "personas". Para ello usted debe hacer la consulta "proyectar(nombre)(personas)"                                                                                                                 & Hacer Consulta                                 & 5 minutos                 \\ \hline
+9) Usted desea eliminar la relación "personas"                                                                                                                                                                                & Eliminar Relación                              & 2 minutos                 \\ \hline
+10) Usted desea eliminar la base de datos "universidad"                                                                                                                                                                      & Eliminar BD                                    & 2 minutos                 \\ \hline
+11) Usted desea cargar la base de datos "ejemplo" y responder los ejercicios de esta base de datos                                                                                                                           & Responder Ejercicios                           & 10 minutos                \\ \hline
+\end{tabular}
+\caption{Tareas Perfil Alumno}
+\label{tab:tareasperfilusuario}
+\end{table}
+
+\begin{table}[h!]
+\footnotesize
+\centering
+\begin{tabular}{|p{7.5cm}|p{3.5cm}|p{2cm}|}
+\hline
+\rowcolor[HTML]{9B9B9B} 
+\multicolumn{2}{|l|}{\cellcolor[HTML]{9B9B9B}\textbf{Tareas Perfil Profesor}}                                                                                                                                                                                                                 & \textbf{Id:}              \\ \hline
+\rowcolor[HTML]{C0C0C0} 
+\textit{Tarea}                                                                                                                                                                                                                                                         & \textit{Función(es)} & \textit{Tiempo Requerido} \\ \hline
+1) Usted desea ingresar al sistema como profesor, ingrese al sistema como rut="12345678" y contraseña="admin"                                                                                                                                                          & Iniciar Sesión       & 1 minuto                  \\ \hline
+2) Usted desea ingresar un nuevo alumno al sistema. Para ello, utilize sus propios datos como el nuevo alumno a agregar                                                                                                                                                & Crear Cuenta         & 5 minutos                 \\ \hline
+3) Usted desea modificar al nuevo alumno ingresado y desea cambiar su mail por "usuario@mail.com"                                                                                                                                                                      & Modificar Cuenta     & 2 minutos                 \\ \hline
+4) Usted desea eliminar al nuevo alumno                                                                                                                                                                                                                                & Eliminar Cuenta      & 1 minuto                  \\ \hline
+5) Usted desea cargar la base de datos "ejemplos" y generar un nuevo ejercicio. Para ello usted deberá crear el ejercicio como pregunta="Mostrar todos los datos de los trabajadores que son de administración y producción". Además, deberá ejecutar la consulta="resp := empleados\_adm inter empleados\_prod" y agregar la relación generada "resp" en el campo Nombre Relación Resultante. En consultas, deberá agregar la consulta ingresada para generar la relación resultante. Finalmente Acepta y Guarda los Cambios. & Agregar Ejercicio    & 10 minutos                 \\ \hline
+6) Usted desea ver las estadísticas de la base de datos "ejemplo\_17134298" con fecha "2014-10-01". & Ver Estadísticas & 2 minutos \\ \hline
+\end{tabular}
+\caption{Tareas Perfil Profesor}
+\label{tab:tareasperfilprofesor}
+\end{table}
+
+Posteriormente, los sujetos de pruebas deberán responder el formulario de aceptación que se muestra en la Tabla \ref{tab:formulariodeaceptacion}, el cual contiene preguntas enfocadas a cómo el usuario percibió la experiencia. Este formulario será respondido en función de los parámetros de evaluación que se muestran en la Tabla \ref{tab:listadeparametros}.
+
+\clearpage
+\begin{table}[h!]
+\footnotesize
+\centering
+\begin{tabular}{|l|l|l|}
+\hline
+\rowcolor[HTML]{9B9B9B} 
+\multicolumn{3}{|c|}{\cellcolor[HTML]{9B9B9B}\textbf{Parámetros de Evaluación}}           \\ \hline
+\rowcolor[HTML]{C0C0C0} 
+\textit{Parámetro} & \textit{Asignación} & \textit{Descripción}                           \\ \hline
+0                  & Malo                & Tarea con mal funcionamiento                   \\ \hline
+1                  & Deficiente          & Tarea con funcionamiento incompleto            \\ \hline
+2                  & Regular             & Tarea realizada con éxito, pero poco efectiva  \\ \hline
+3                  & Satisfecho          & Tarea realizada de manera efectiva             \\ \hline
+4                  & Óptimo              & Tarea realizada de manera eficiente y efectiva \\ \hline
+\end{tabular}
+\caption{Parámetros de Evaluación.}
+\label{tab:listadeparametros}
+\end{table}
+
+\begin{table}[h!]
+\footnotesize
+\centering
+\begin{tabular}{|p{10cm}|p{3cm}|}
+\hline
+\rowcolor[HTML]{9B9B9B} 
+\textbf{Prueba de Aceptación}                                                                       & \textbf{Id:}        \\ \hline
+\rowcolor[HTML]{C0C0C0} 
+\textit{Preguntas}                                                                                  & \textit{Evaluación [0 - 4]} \\ \hline
+\textbf{Funcionamiento del Sistema}                                                                 &                     \\ \hline
+1) ¿El sistema funciona eficazmente?                                                                &                     \\ \hline
+2) ¿El sistema arroja los resultados que esperaba?                                                 &                     \\ \hline
+3) ¿La información entregada por el sistema es la adecuada?                                        &                     \\ \hline
+4) ¿Recibe retroalimentación durante la ejecución de alguna funcionalidad del sistema?             &                     \\ \hline
+5) ¿Consideró el sistema amigable para su funcionamiento?                                          &                     \\ \hline
+6) ¿Consideró que el tiempo que demoró la búsqueda es el apropiado?                                &                     \\ \hline
+7) ¿La retroalimentación entregada por el sistema le resulto útil?                                 &                     \\ \hline
+8) ¿Cómo evalúa usted el funcionamiento del sistema?                                               &                     \\ \hline
+\end{tabular}
+\caption{Formulario de Aceptación.}
+\label{tab:formulariodeaceptacion}
+\end{table}
+
+Para validar completamente las pruebas de aceptación, las respuestas de cada pregunta de la Tabla \ref{tab:formulariodeaceptacion} deben estar valorizadas con parámetro 3 o superior. Si no aprueba, se deberá volver a implementar para ser testeado nuevamente hasta aprobar el testing. \\
+
+\subsection{Pruebas de Usabilidad}
+\label{pruebasdeusabilidad}
+
+Luego de ejecutar las Pruebas de Aceptación presentadas en la Sección \ref{pruebasdeaceptacion}, los sujetos de pruebas deberán ejecutar las Pruebas de Usabilidad, respondiendo el formulario de usabilidad que se presenta en la Tabla \ref{tab:formulariodeusabilidad}. \\
+
+\begin{table}[h!]
+\footnotesize
+\centering
+\begin{tabular}{|p{3cm}|p{1.5cm}|p{0.05cm}|p{1.5cm}|p{0.05cm}|p{1.5cm}|p{0.05cm}|p{1.5cm}|p{0.05cm}|p{1.5cm}|p{0.05cm}|}
+\hline
+\rowcolor[HTML]{9B9B9B} 
+\multicolumn{9}{|l|}{\cellcolor[HTML]{9B9B9B}\textbf{Formulario de Usabilidad}}                                                                                          & \multicolumn{2}{l|}{\cellcolor[HTML]{9B9B9B}\textbf{Id:}} \\ \hline
+\rowcolor[HTML]{C0C0C0} 
+\textit{Preguntas}                                                                             & \multicolumn{10}{l|}{\cellcolor[HTML]{C0C0C0}\textit{Evaluación (Marque con una X a la derecha de la casilla)}}                               \\ \hline
+1) ¿Cómo encuentra la estructura de menús y organización de las funciones del sistema?         & Muy Mala    &  & Mala      &  & Regular           &  & Buena         &  & Muy Buena                         &                       \\ \hline
+2) ¿Los íconos del sistema son representativos respecto a las funcionalidades que representan? & Muy Malos   &  & Malos     &  & Regulares         &  & Buenos        &  & Muy Buenos                        &                       \\ \hline
+3) ¿Encontró fácil la navegación del sistema y obtener la información deseada?                 & Muy Difícil &  & Difícil   &  & Regular           &  & Fácil         &  & Muy Fácil                         &                       \\ \hline
+4) ¿De qué forma el sistema permite realizar las tareas solicitadas?                           & Muy Confusa &  & Confusa   &  & Levemente Confusa &  & Clara         &  & Muy Clara                         &                       \\ \hline
+5) En general ¿Fue fácil realizar las tareas solicitadas?                                      & Muy Difícil &  & Difícil   &  & Regular           &  & Fácil         &  & Muy Fácil                         &                       \\ \hline
+6) ¿Usted cree que necesitará ayuda para utilizar el sistema?                                  & Mucha Ayuda &  & Con Ayuda &  & Poca Ayuda          &  & Muy Poca Ayuda &  & Para Nada                         &                       \\ \hline
+7) ¿Usted piensa que aprenderá rápidamente a usar el sistema?                                  & Muy Difícil &  & Difícil   &  & Tal Vez           &  & Casi Seguro   &  & Por Supuesto                      &                       \\ \hline
+Sugerencias                                                                                    & \multicolumn{10}{l|}{}                                                                                                              \\ \hline
+\end{tabular}
+\caption{Formulario de Usabilidad.}
+\label{tab:formulariodeusabilidad}
+\end{table}
+
+Para validar completamente las pruebas de usabilidad, el 100\% de las respuestas de la Tabla \ref{tab:formulariodeusabilidad} deben estar valorizadas con parámetro 2 o superior. Sino, se deberá programar la interfaz nuevamente y volver a ser testeado hasta aprobar el testing.
+
+\newpage
+\clearpage
+
+\subsection{Pruebas de Estrés}
+\label{pruebasdeestres}
+
+Las pruebas de estrés tienen como objetivo verificar la disponibilidad del sistema al momento que muchos usuarios lo estén usando paralelamente. Para ello se simulará una solicitud concurrente a la funcionalidad más utilizada del sistema, que en este caso es "Hacer consultas en Álgebra Relacional", y se verificará la disponibilidad del sistema con una cantidad de usuarios determinados, que para esta prueba son 50 usuarios, los cuales representan la cantidad máxima de alumnos que podrían utilizar el sistema concurrentemente. \\
+
+Para aprobar esta prueba, el sistema debe soportar por lo menos 50 usuarios concurrentes, sino se deberá recodificar el sistema y volver a ser testeado hasta aprobar las pruebas de estrés. \\ 
+
+\subsection{Pruebas de Seguridad}
+\label{pruebasdeseguridad}
+
+Las pruebas de seguridad tienen como fin garantizar que la aplicación no presente errores respecto a la seguridad del mismo. Los temas a considerar en estas pruebas son: \\
+
+\begin{itemize}
+
+\item \textbf{SQL Injection:} se agregarán comandos básicos de acceso a la base de datos. La idea es vulnerar la base de datos mediante comandos SQL. Los parámetros a evaluar sera la \textit{Presentación de Información Relevante}, en otras palabras, si sistema accede o no a las peticiones SQL. Para pasar esta prueba, el sistema debe evitar en un 100\% la presentación de información relevante de la base de datos. \\
+
+\item \textbf{Acceso por URL:} se tratará de acceder a los directorios de la aplicación mediante URL. La idea es evitar que un usuario de tipo Alumno ingrese a una funcionalidad de un usuario de tipo Profesor. Para aprobar el Testing, el sistema debe denegar en un 100\% el ingreso de funcionalidades especiales de un usuario Profesor a un usuario Alumno.
+
+\end{itemize}
+

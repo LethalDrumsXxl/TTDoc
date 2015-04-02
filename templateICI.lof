@@ -1,0 +1,365 @@
+\select@language {spanish}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Visualizaci\'on de una relaci\'on.}}{6}{figure.2.1}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Esquema y Extensi\'on de una Relaci\'on.}}{7}{figure.2.2}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Extensi\'on de la relaci\'on de un esquema.}}{7}{figure.2.3}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Ejemplo de clave for\'anea.}}{10}{figure.2.4}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Aplicaci\'on Relational.}}{34}{figure.2.5}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Aplicaci\'on Relational Algebra Translator (RAT).}}{35}{figure.2.6}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Aplicaci\'on WinRDBI.}}{36}{figure.2.7}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Diagrama de Casos de Usos.}}{52}{figure.4.1}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Modelo Conceptual.}}{53}{figure.4.2}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Arquitectura del Sistema.}}{56}{figure.5.1}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Vista de M\'odulos y dependencia entre ellos.}}{57}{figure.5.2}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Vista de Componentes.}}{59}{figure.5.3}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Esquema de Navegaci\'on Profesor.}}{64}{figure.5.4}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Esquema de Navegaci\'on Alumno.}}{64}{figure.5.5}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Diagrama de Clases.}}{69}{figure.5.6}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Modelo Entidad/Relaci\'on.}}{70}{figure.5.7}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Modelo de Datos.}}{72}{figure.5.8}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Pruebas de Integraci\'on.}}{78}{figure.5.9}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Diagrama de Secuencia - Ir Inicio.}}{107}{figure.Alph1.1}
+\contentsline {figure}{\numberline {A.2}{\ignorespaces Diagrama de Estados - Ir Inicio.}}{108}{figure.Alph1.2}
+\contentsline {figure}{\numberline {A.3}{\ignorespaces Diagrama de Secuencia - Iniciar Sesi\'on.}}{109}{figure.Alph1.3}
+\contentsline {figure}{\numberline {A.4}{\ignorespaces Diagrama de Estados - Iniciar Sesi\'on.}}{110}{figure.Alph1.4}
+\contentsline {figure}{\numberline {A.5}{\ignorespaces Diagrama de Secuencia - Sesi\'on Profesor.}}{112}{figure.Alph1.5}
+\contentsline {figure}{\numberline {A.6}{\ignorespaces Diagrama de Estados - Sesi\'on Profesor.}}{112}{figure.Alph1.6}
+\contentsline {figure}{\numberline {A.7}{\ignorespaces Diagrama de Secuencia - Gestionar Cuentas.}}{113}{figure.Alph1.7}
+\contentsline {figure}{\numberline {A.8}{\ignorespaces Diagrama de Estados - Gestionar Cuentas.}}{114}{figure.Alph1.8}
+\contentsline {figure}{\numberline {A.9}{\ignorespaces Diagrama de Secuencia - Crear Cuenta Alumno.}}{115}{figure.Alph1.9}
+\contentsline {figure}{\numberline {A.10}{\ignorespaces Diagrama de Estados - Crear Cuenta Alumno.}}{116}{figure.Alph1.10}
+\contentsline {figure}{\numberline {A.11}{\ignorespaces Diagrama de Secuencia - Eliminar Cuenta.}}{117}{figure.Alph1.11}
+\contentsline {figure}{\numberline {A.12}{\ignorespaces Diagrama de Estados - Eliminar Cuenta.}}{118}{figure.Alph1.12}
+\contentsline {figure}{\numberline {A.13}{\ignorespaces Diagrama de Secuencia - Modificar Cuenta.}}{120}{figure.Alph1.13}
+\contentsline {figure}{\numberline {A.14}{\ignorespaces Diagrama de Estados - Modificar Cuenta.}}{120}{figure.Alph1.14}
+\contentsline {figure}{\numberline {A.15}{\ignorespaces Diagrama de Secuencia - Gestionar BD.}}{121}{figure.Alph1.15}
+\contentsline {figure}{\numberline {A.16}{\ignorespaces Diagrama de Estados - Gestionar BD.}}{122}{figure.Alph1.16}
+\contentsline {figure}{\numberline {A.17}{\ignorespaces Diagrama de Secuencia - Crear BD.}}{123}{figure.Alph1.17}
+\contentsline {figure}{\numberline {A.18}{\ignorespaces Diagrama de Estados - Crear BD.}}{124}{figure.Alph1.18}
+\contentsline {figure}{\numberline {A.19}{\ignorespaces Diagrama de Secuencia - Eliminar BD.}}{125}{figure.Alph1.19}
+\contentsline {figure}{\numberline {A.20}{\ignorespaces Diagrama de Estados - Eliminar BD.}}{126}{figure.Alph1.20}
+\contentsline {figure}{\numberline {A.21}{\ignorespaces Diagrama de Secuencia - Modificar BD.}}{128}{figure.Alph1.21}
+\contentsline {figure}{\numberline {A.22}{\ignorespaces Diagrama de Estados - Modificar BD.}}{128}{figure.Alph1.22}
+\contentsline {figure}{\numberline {A.23}{\ignorespaces Diagrama de Secuencia - Cargar BD.}}{129}{figure.Alph1.23}
+\contentsline {figure}{\numberline {A.24}{\ignorespaces Diagrama de Estados - Cargar BD.}}{130}{figure.Alph1.24}
+\contentsline {figure}{\numberline {A.25}{\ignorespaces Diagrama de Secuencia - Gestionar Ejercicios.}}{131}{figure.Alph1.25}
+\contentsline {figure}{\numberline {A.26}{\ignorespaces Diagrama de Estados - Gestionar Ejercicios.}}{132}{figure.Alph1.26}
+\contentsline {figure}{\numberline {A.27}{\ignorespaces Diagrama de Secuencia - Crear Ejercicios.}}{133}{figure.Alph1.27}
+\contentsline {figure}{\numberline {A.28}{\ignorespaces Diagrama de Estados - Crear Ejercicios.}}{134}{figure.Alph1.28}
+\contentsline {figure}{\numberline {A.29}{\ignorespaces Diagrama de Secuencia - Eliminar Ejercicios.}}{135}{figure.Alph1.29}
+\contentsline {figure}{\numberline {A.30}{\ignorespaces Diagrama de Estados - Eliminar Ejercicios.}}{136}{figure.Alph1.30}
+\contentsline {figure}{\numberline {A.31}{\ignorespaces Diagrama de Secuencia - Modificar Ejercicios.}}{138}{figure.Alph1.31}
+\contentsline {figure}{\numberline {A.32}{\ignorespaces Diagrama de Estados - Modificar Ejercicios.}}{138}{figure.Alph1.32}
+\contentsline {figure}{\numberline {A.33}{\ignorespaces Diagrama de Secuencia - Responder Ejercicios.}}{140}{figure.Alph1.33}
+\contentsline {figure}{\numberline {A.34}{\ignorespaces Diagrama de Estados - Responder Ejercicios.}}{140}{figure.Alph1.34}
+\contentsline {figure}{\numberline {A.35}{\ignorespaces Diagrama de Secuencia - Gestionar Relaci\'on.}}{141}{figure.Alph1.35}
+\contentsline {figure}{\numberline {A.36}{\ignorespaces Diagrama de Estados - Gestionar Relaci\'on.}}{142}{figure.Alph1.36}
+\contentsline {figure}{\numberline {A.37}{\ignorespaces Diagrama de Secuencia - Agregar Relaci\'on.}}{143}{figure.Alph1.37}
+\contentsline {figure}{\numberline {A.38}{\ignorespaces Diagrama de Estados - Agregar Relaci\'on.}}{144}{figure.Alph1.38}
+\contentsline {figure}{\numberline {A.39}{\ignorespaces Diagrama de Secuencia - Eliminar Relaci\'on.}}{145}{figure.Alph1.39}
+\contentsline {figure}{\numberline {A.40}{\ignorespaces Diagrama de Estados - Eliminar Relaci\'on.}}{146}{figure.Alph1.40}
+\contentsline {figure}{\numberline {A.41}{\ignorespaces Diagrama de Secuencia - Modificar Relaci\'on.}}{147}{figure.Alph1.41}
+\contentsline {figure}{\numberline {A.42}{\ignorespaces Diagrama de Estados - Modificar Relaci\'on.}}{148}{figure.Alph1.42}
+\contentsline {figure}{\numberline {A.43}{\ignorespaces Diagrama de Secuencia - Ver Relaci\'on.}}{149}{figure.Alph1.43}
+\contentsline {figure}{\numberline {A.44}{\ignorespaces Diagrama de Estados - Ver Relaci\'on.}}{150}{figure.Alph1.44}
+\contentsline {figure}{\numberline {A.45}{\ignorespaces Diagrama de Secuencia - Gestionar Tupla.}}{151}{figure.Alph1.45}
+\contentsline {figure}{\numberline {A.46}{\ignorespaces Diagrama de Estados - Gestionar Tupla.}}{152}{figure.Alph1.46}
+\contentsline {figure}{\numberline {A.47}{\ignorespaces Diagrama de Secuencia - Ingresar Tupla.}}{153}{figure.Alph1.47}
+\contentsline {figure}{\numberline {A.48}{\ignorespaces Diagrama de Estados - Ingresar Tupla.}}{154}{figure.Alph1.48}
+\contentsline {figure}{\numberline {A.49}{\ignorespaces Diagrama de Secuencia - Eliminar Tupla.}}{155}{figure.Alph1.49}
+\contentsline {figure}{\numberline {A.50}{\ignorespaces Diagrama de Estados - Eliminar Tupla.}}{156}{figure.Alph1.50}
+\contentsline {figure}{\numberline {A.51}{\ignorespaces Diagrama de Secuencia - Modificar Tupla.}}{158}{figure.Alph1.51}
+\contentsline {figure}{\numberline {A.52}{\ignorespaces Diagrama de Estados - Modificar Tupla.}}{158}{figure.Alph1.52}
+\contentsline {figure}{\numberline {A.53}{\ignorespaces Diagrama de Secuencia - Sesi\'on Alumno}}{160}{figure.Alph1.53}
+\contentsline {figure}{\numberline {A.54}{\ignorespaces Diagrama de Estados - Sesi\'on Alumno.}}{160}{figure.Alph1.54}
+\contentsline {figure}{\numberline {A.55}{\ignorespaces Diagrama de Secuencia - Hacer Consulta.}}{162}{figure.Alph1.55}
+\contentsline {figure}{\numberline {A.56}{\ignorespaces Diagrama de Estados - Hacer Consulta.}}{162}{figure.Alph1.56}
+\contentsline {figure}{\numberline {A.57}{\ignorespaces Diagrama de Secuencia - Ver Estad\IeC {\'\i }sticas.}}{163}{figure.Alph1.57}
+\contentsline {figure}{\numberline {A.58}{\ignorespaces Diagrama de Estados - Ver Estad\IeC {\'\i }sticas.}}{164}{figure.Alph1.58}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {B.1}{\ignorespaces Interfaz Ventana Inicial.}}{167}{figure.Alph2.1}
+\contentsline {figure}{\numberline {B.2}{\ignorespaces Interfaz Inicial de Usuario Profesor.}}{167}{figure.Alph2.2}
+\contentsline {figure}{\numberline {B.3}{\ignorespaces Interfaz Inicial de Usuario Alumno.}}{168}{figure.Alph2.3}
+\contentsline {figure}{\numberline {B.4}{\ignorespaces Interfaz Crear Cuenta Alumno (Interfaz Profesor).}}{168}{figure.Alph2.4}
+\contentsline {figure}{\numberline {B.5}{\ignorespaces Interfaz Cargar BD.}}{169}{figure.Alph2.5}
+\contentsline {figure}{\numberline {B.6}{\ignorespaces Interfaz Hacer Consulta.}}{169}{figure.Alph2.6}
+\contentsline {figure}{\numberline {B.7}{\ignorespaces Interfaz Crear Ejercicios.}}{170}{figure.Alph2.7}
+\contentsline {figure}{\numberline {B.8}{\ignorespaces Interfaz Responder Ejercicios.}}{170}{figure.Alph2.8}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {C.1}{\ignorespaces Caso de Uso Real - Ir Inicio, Iniciar Sesi\'on y Crear Cuenta desde Inicio.}}{174}{figure.Alph3.1}
+\contentsline {figure}{\numberline {C.2}{\ignorespaces Caso de Uso Real - Sesi\'on Profesor.}}{176}{figure.Alph3.2}
+\contentsline {figure}{\numberline {C.3}{\ignorespaces Caso de Uso Real - Gestionar Cuenta.}}{177}{figure.Alph3.3}
+\contentsline {figure}{\numberline {C.4}{\ignorespaces Caso de Uso Real - Crear Cuenta.}}{179}{figure.Alph3.4}
+\contentsline {figure}{\numberline {C.5}{\ignorespaces Caso de Uso Real - Eliminar Cuenta (Seleccionar).}}{181}{figure.Alph3.5}
+\contentsline {figure}{\numberline {C.6}{\ignorespaces Caso de Uso Real - Eliminar Cuenta (Confirmar).}}{181}{figure.Alph3.6}
+\contentsline {figure}{\numberline {C.7}{\ignorespaces Caso de Uso Real - Modificar Cuenta (Seleccionar).}}{183}{figure.Alph3.7}
+\contentsline {figure}{\numberline {C.8}{\ignorespaces Caso de Uso Real - Modificar Cuenta (Confirmar).}}{183}{figure.Alph3.8}
+\contentsline {figure}{\numberline {C.9}{\ignorespaces Caso de Uso Real - Gestionar BD.}}{184}{figure.Alph3.9}
+\contentsline {figure}{\numberline {C.10}{\ignorespaces Caso de Uso Real - Crear BD.}}{186}{figure.Alph3.10}
+\contentsline {figure}{\numberline {C.11}{\ignorespaces Caso de Uso Real - Eliminar BD (Seleccionar).}}{188}{figure.Alph3.11}
+\contentsline {figure}{\numberline {C.12}{\ignorespaces Caso de Uso Real - Eliminar BD (Confirmar).}}{188}{figure.Alph3.12}
+\contentsline {figure}{\numberline {C.13}{\ignorespaces Caso de Uso Real - Modificar BD (Seleccionar).}}{190}{figure.Alph3.13}
+\contentsline {figure}{\numberline {C.14}{\ignorespaces Caso de Uso Real - Eliminar BD (Base de Datos).}}{190}{figure.Alph3.14}
+\contentsline {figure}{\numberline {C.15}{\ignorespaces Caso de Uso Real - Cargar BD.}}{191}{figure.Alph3.15}
+\contentsline {figure}{\numberline {C.16}{\ignorespaces Caso de Uso Real - Gestionar Ejercicios.}}{192}{figure.Alph3.16}
+\contentsline {figure}{\numberline {C.17}{\ignorespaces Caso de Uso Real - Gesti\'on de Ejercicios.}}{194}{figure.Alph3.17}
+\contentsline {figure}{\numberline {C.18}{\ignorespaces Caso de Uso Real - Responder Ejercicios (Consulta).}}{196}{figure.Alph3.18}
+\contentsline {figure}{\numberline {C.19}{\ignorespaces Caso de Uso Real - Responder Ejercicios (Resultados).}}{196}{figure.Alph3.19}
+\contentsline {figure}{\numberline {C.20}{\ignorespaces Caso de Uso Real - Gestionar Relaci\'on.}}{197}{figure.Alph3.20}
+\contentsline {figure}{\numberline {C.21}{\ignorespaces Caso de Uso Real - Agregar Relaci\'on.}}{198}{figure.Alph3.21}
+\contentsline {figure}{\numberline {C.22}{\ignorespaces Caso de Uso Real - Eliminar Relaci\'on (Seleccionar).}}{200}{figure.Alph3.22}
+\contentsline {figure}{\numberline {C.23}{\ignorespaces Caso de Uso Real - Eliminar Relaci\'on (Confirmar).}}{200}{figure.Alph3.23}
+\contentsline {figure}{\numberline {C.24}{\ignorespaces Caso de Uso Real - Modificar Relaci\'on (Seleccionar).}}{202}{figure.Alph3.24}
+\contentsline {figure}{\numberline {C.25}{\ignorespaces Caso de Uso Real - Modificar Relaci\'on (Modificar).}}{202}{figure.Alph3.25}
+\contentsline {figure}{\numberline {C.26}{\ignorespaces Caso de Uso Real - Ver Relaci\'on.}}{203}{figure.Alph3.26}
+\contentsline {figure}{\numberline {C.27}{\ignorespaces Caso de Uso Real - Gestionar Tupla.}}{204}{figure.Alph3.27}
+\contentsline {figure}{\numberline {C.28}{\ignorespaces Caso de Uso Real - Ingresar Tupla.}}{205}{figure.Alph3.28}
+\contentsline {figure}{\numberline {C.29}{\ignorespaces Caso de Uso Real - Eliminar Tupla (Seleccionar).}}{207}{figure.Alph3.29}
+\contentsline {figure}{\numberline {C.30}{\ignorespaces Caso de Uso Real - Eliminar Tupla (Confirmar).}}{207}{figure.Alph3.30}
+\contentsline {figure}{\numberline {C.31}{\ignorespaces Caso de Uso Real - Modificar Tupla (Seleccionar).}}{209}{figure.Alph3.31}
+\contentsline {figure}{\numberline {C.32}{\ignorespaces Caso de Uso Real - Modificar Tupla (Modificar).}}{209}{figure.Alph3.32}
+\contentsline {figure}{\numberline {C.33}{\ignorespaces Caso de Uso Real - Sesi\'on Alumno.}}{211}{figure.Alph3.33}
+\contentsline {figure}{\numberline {C.34}{\ignorespaces Caso de Uso Real - Hacer Consulta (Consulta).}}{213}{figure.Alph3.34}
+\contentsline {figure}{\numberline {C.35}{\ignorespaces Caso de Uso Real - Hacer Consulta (Respuesta).}}{213}{figure.Alph3.35}
+\contentsline {figure}{\numberline {C.36}{\ignorespaces Caso de Uso Real - Modificar Cuenta Usuario (Cuenta).}}{215}{figure.Alph3.36}
+\contentsline {figure}{\numberline {C.37}{\ignorespaces Caso de Uso Real - Modificar Cuenta Usuario (Confirmar).}}{215}{figure.Alph3.37}
+\contentsline {figure}{\numberline {C.38}{\ignorespaces Caso de Uso Real - Ver Estad\IeC {\'\i }sticas.}}{216}{figure.Alph3.38}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {E.1}{\ignorespaces Interfaz de Login y Registro.}}{221}{figure.Alph5.1}
+\contentsline {figure}{\numberline {E.2}{\ignorespaces Interfaz Crear Cuenta.}}{222}{figure.Alph5.2}
+\contentsline {figure}{\numberline {E.3}{\ignorespaces Interfaz Eliminar Cuenta.}}{223}{figure.Alph5.3}
+\contentsline {figure}{\numberline {E.4}{\ignorespaces Interfaz Modificar Cuenta.}}{224}{figure.Alph5.4}
+\contentsline {figure}{\numberline {E.5}{\ignorespaces Interfaz Cargar Base de Datos.}}{225}{figure.Alph5.5}
+\contentsline {figure}{\numberline {E.6}{\ignorespaces Interfaz Hacer Consultas.}}{226}{figure.Alph5.6}
+\contentsline {figure}{\numberline {E.7}{\ignorespaces Interfaz Gestionar Ejercicios.}}{227}{figure.Alph5.7}
+\contentsline {figure}{\numberline {E.8}{\ignorespaces Interfaz Responder Ejercicios.}}{228}{figure.Alph5.8}
+\contentsline {figure}{\numberline {E.9}{\ignorespaces Interfaz Obtener Calificaci\'on.}}{229}{figure.Alph5.9}
+\contentsline {figure}{\numberline {E.10}{\ignorespaces Interfaz Ver Estad\IeC {\'\i }sticas}}{230}{figure.Alph5.10}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {F.1}{\ignorespaces Resultados Tareas Alumnos}}{253}{figure.Alph6.1}
+\contentsline {figure}{\numberline {F.2}{\ignorespaces Resultados Tareas Profesor}}{253}{figure.Alph6.2}
+\contentsline {figure}{\numberline {F.3}{\ignorespaces Resultados Formulario de Aceptaci\'on.}}{254}{figure.Alph6.3}
+\contentsline {figure}{\numberline {F.4}{\ignorespaces Nivel de Aceptaci\'on para Pregunta 1.}}{255}{figure.Alph6.4}
+\contentsline {figure}{\numberline {F.5}{\ignorespaces Nivel de Aceptaci\'on para Pregunta 2.}}{255}{figure.Alph6.5}
+\contentsline {figure}{\numberline {F.6}{\ignorespaces Nivel de Aceptaci\'on para Pregunta 3.}}{256}{figure.Alph6.6}
+\contentsline {figure}{\numberline {F.7}{\ignorespaces Nivel de Aceptaci\'on para Pregunta 4.}}{256}{figure.Alph6.7}
+\contentsline {figure}{\numberline {F.8}{\ignorespaces Nivel de Aceptaci\'on para Pregunta 5.}}{258}{figure.Alph6.8}
+\contentsline {figure}{\numberline {F.9}{\ignorespaces Nivel de Aceptaci\'on para Pregunta 6.}}{258}{figure.Alph6.9}
+\contentsline {figure}{\numberline {F.10}{\ignorespaces Nivel de Aceptaci\'on para Pregunta 7.}}{259}{figure.Alph6.10}
+\contentsline {figure}{\numberline {F.11}{\ignorespaces Nivel de Aceptaci\'on para Pregunta 8.}}{259}{figure.Alph6.11}
+\contentsline {figure}{\numberline {F.12}{\ignorespaces Resultado Cuestionario de Aceptaci\'on - Pregunta 1.}}{261}{figure.Alph6.12}
+\contentsline {figure}{\numberline {F.13}{\ignorespaces Resultado Cuestionario de Aceptaci\'on - Pregunta 2.}}{261}{figure.Alph6.13}
+\contentsline {figure}{\numberline {F.14}{\ignorespaces Resultado Cuestionario de Aceptaci\'on - Pregunta 3.}}{262}{figure.Alph6.14}
+\contentsline {figure}{\numberline {F.15}{\ignorespaces Resultado Cuestionario de Aceptaci\'on - Pregunta 4.}}{262}{figure.Alph6.15}
+\contentsline {figure}{\numberline {F.16}{\ignorespaces Resultado Cuestionario de Aceptaci\'on - Pregunta 5.}}{263}{figure.Alph6.16}
+\contentsline {figure}{\numberline {F.17}{\ignorespaces Resultado Cuestionario de Aceptaci\'on - Pregunta 6.}}{263}{figure.Alph6.17}
+\contentsline {figure}{\numberline {F.18}{\ignorespaces Resultado Cuestionario de Aceptaci\'on - Pregunta 7.}}{264}{figure.Alph6.18}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {G.1}{\ignorespaces P\'agina de Inicio.}}{266}{figure.Alph7.1}
+\contentsline {figure}{\numberline {G.2}{\ignorespaces P\'agina de Inicio - Cree su Cuenta.}}{267}{figure.Alph7.2}
+\contentsline {figure}{\numberline {G.3}{\ignorespaces Registrarse.}}{267}{figure.Alph7.3}
+\contentsline {figure}{\numberline {G.4}{\ignorespaces Registrarse - Datos Personales.}}{268}{figure.Alph7.4}
+\contentsline {figure}{\numberline {G.5}{\ignorespaces Registrarse - Datos de la Cuenta.}}{268}{figure.Alph7.5}
+\contentsline {figure}{\numberline {G.6}{\ignorespaces Registrarse - Datos Acad\'emicos.}}{269}{figure.Alph7.6}
+\contentsline {figure}{\numberline {G.7}{\ignorespaces Registrarse - Verificar Datos.}}{269}{figure.Alph7.7}
+\contentsline {figure}{\numberline {G.8}{\ignorespaces Registrarse - Etiqueta de Ayuda.}}{270}{figure.Alph7.8}
+\contentsline {figure}{\numberline {G.9}{\ignorespaces Registrarse - Ventana de Ayuda.}}{270}{figure.Alph7.9}
+\contentsline {figure}{\numberline {G.10}{\ignorespaces Login.}}{271}{figure.Alph7.10}
+\contentsline {figure}{\numberline {G.11}{\ignorespaces Home - Vista de Profesor.}}{272}{figure.Alph7.11}
+\contentsline {figure}{\numberline {G.12}{\ignorespaces Home - Vista de Profesor - Men\'u.}}{273}{figure.Alph7.12}
+\contentsline {figure}{\numberline {G.13}{\ignorespaces Home - Vista de Profesor - Datos Usuario.}}{273}{figure.Alph7.13}
+\contentsline {figure}{\numberline {G.14}{\ignorespaces Home - Vista de Profesor - Bases de Datos Creadas.}}{273}{figure.Alph7.14}
+\contentsline {figure}{\numberline {G.15}{\ignorespaces Home - Vista de Profesor - \IeC {\textquestiondown }Qu\'e es GCAR?.}}{274}{figure.Alph7.15}
+\contentsline {figure}{\numberline {G.16}{\ignorespaces Home - Vista de Profesor - Datos de la Base de Dato Cargada.}}{274}{figure.Alph7.16}
+\contentsline {figure}{\numberline {G.17}{\ignorespaces Home - Vista de Alumno.}}{275}{figure.Alph7.17}
+\contentsline {figure}{\numberline {G.18}{\ignorespaces Home - Vista de Alumno - Men\'u.}}{275}{figure.Alph7.18}
+\contentsline {figure}{\numberline {G.19}{\ignorespaces Home - Vista de Alumno - Datos Usuario.}}{276}{figure.Alph7.19}
+\contentsline {figure}{\numberline {G.20}{\ignorespaces Home - Vista de Alumno - Bases de Datos Creadas.}}{276}{figure.Alph7.20}
+\contentsline {figure}{\numberline {G.21}{\ignorespaces Home - Vista de Alumno - \IeC {\textquestiondown }Qu\'e es GCAR?.}}{276}{figure.Alph7.21}
+\contentsline {figure}{\numberline {G.22}{\ignorespaces Home - Vista de Alumno - Datos de la Base de Dato Cargada.}}{277}{figure.Alph7.22}
+\contentsline {figure}{\numberline {G.23}{\ignorespaces Gestionar Usuarios.}}{278}{figure.Alph7.23}
+\contentsline {figure}{\numberline {G.24}{\ignorespaces Gestionar Usuarios - Crear Cuenta.}}{278}{figure.Alph7.24}
+\contentsline {figure}{\numberline {G.25}{\ignorespaces Crear Cuenta - Datos Personales.}}{279}{figure.Alph7.25}
+\contentsline {figure}{\numberline {G.26}{\ignorespaces Crear Cuenta - Datos de la Cuenta.}}{279}{figure.Alph7.26}
+\contentsline {figure}{\numberline {G.27}{\ignorespaces Crear Cuenta - Datos Acad\'emicos.}}{280}{figure.Alph7.27}
+\contentsline {figure}{\numberline {G.28}{\ignorespaces Crear Cuenta - Verificar Datos.}}{280}{figure.Alph7.28}
+\contentsline {figure}{\numberline {G.29}{\ignorespaces Crear Cuenta - Etiqueta de Ayuda.}}{280}{figure.Alph7.29}
+\contentsline {figure}{\numberline {G.30}{\ignorespaces Crear Cuenta - Ventana de Ayuda.}}{281}{figure.Alph7.30}
+\contentsline {figure}{\numberline {G.31}{\ignorespaces Gestionar Usuarios - Eliminar Cuenta.}}{281}{figure.Alph7.31}
+\contentsline {figure}{\numberline {G.32}{\ignorespaces Eliminar Cuenta - Tabla de Usuarios.}}{282}{figure.Alph7.32}
+\contentsline {figure}{\numberline {G.33}{\ignorespaces Eliminar Cuenta - Etiquetas de P\'agina.}}{282}{figure.Alph7.33}
+\contentsline {figure}{\numberline {G.34}{\ignorespaces Eliminar Cuenta - Buscar Alumno.}}{282}{figure.Alph7.34}
+\contentsline {figure}{\numberline {G.35}{\ignorespaces Eliminar Cuenta - Seleccionar Alumno.}}{283}{figure.Alph7.35}
+\contentsline {figure}{\numberline {G.36}{\ignorespaces Eliminar Cuenta - Ventana de Alumno.}}{283}{figure.Alph7.36}
+\contentsline {figure}{\numberline {G.37}{\ignorespaces Eliminar Cuenta - Etiqueta de Ayuda.}}{284}{figure.Alph7.37}
+\contentsline {figure}{\numberline {G.38}{\ignorespaces Eliminar Cuenta - Ventana de Ayuda.}}{284}{figure.Alph7.38}
+\contentsline {figure}{\numberline {G.39}{\ignorespaces Gestionar Usuarios - Modificar Cuenta.}}{285}{figure.Alph7.39}
+\contentsline {figure}{\numberline {G.40}{\ignorespaces Modificar Cuenta - Tabla de Usuarios.}}{286}{figure.Alph7.40}
+\contentsline {figure}{\numberline {G.41}{\ignorespaces Modificar Cuenta - Buscar Alumno.}}{286}{figure.Alph7.41}
+\contentsline {figure}{\numberline {G.42}{\ignorespaces Modificar Cuenta - Seleccionar Alumno.}}{286}{figure.Alph7.42}
+\contentsline {figure}{\numberline {G.43}{\ignorespaces Modificar Cuenta - Ventana de Alumno.}}{287}{figure.Alph7.43}
+\contentsline {figure}{\numberline {G.44}{\ignorespaces Modificar Cuenta - Modificar Alumno.}}{287}{figure.Alph7.44}
+\contentsline {figure}{\numberline {G.45}{\ignorespaces Modificar Cuenta - Etiqueta de Ayuda.}}{288}{figure.Alph7.45}
+\contentsline {figure}{\numberline {G.46}{\ignorespaces Modificar Cuenta - Ventana de Ayuda.}}{288}{figure.Alph7.46}
+\contentsline {figure}{\numberline {G.47}{\ignorespaces Gestionar Bases de Datos.}}{289}{figure.Alph7.47}
+\contentsline {figure}{\numberline {G.48}{\ignorespaces Gestionar Base de Datos - Crear Base de Datos.}}{290}{figure.Alph7.48}
+\contentsline {figure}{\numberline {G.49}{\ignorespaces Crear Base de Datos - Datos de la Base de Datos - Profesor.}}{290}{figure.Alph7.49}
+\contentsline {figure}{\numberline {G.50}{\ignorespaces Crear Base de Datos - Datos de la Base de datos - Alumno.}}{290}{figure.Alph7.50}
+\contentsline {figure}{\numberline {G.51}{\ignorespaces Crear Base de Datos - Verificar Datos - Profesor.}}{291}{figure.Alph7.51}
+\contentsline {figure}{\numberline {G.52}{\ignorespaces Crear Base de Datos - Verificar Datos - Alumno.}}{291}{figure.Alph7.52}
+\contentsline {figure}{\numberline {G.53}{\ignorespaces Crear Base de Datos - Etiqueta de Ayuda.}}{292}{figure.Alph7.53}
+\contentsline {figure}{\numberline {G.54}{\ignorespaces Crear Base de Datos - Ventana de Ayuda.}}{292}{figure.Alph7.54}
+\contentsline {figure}{\numberline {G.55}{\ignorespaces Gestionar Base de Datos - Eliminar Base de Datos.}}{293}{figure.Alph7.55}
+\contentsline {figure}{\numberline {G.56}{\ignorespaces Eliminar Base de Datos - Tabla de Bases de Datos.}}{293}{figure.Alph7.56}
+\contentsline {figure}{\numberline {G.57}{\ignorespaces Eliminar Base de Datos- Etiquetas de P\'agina.}}{293}{figure.Alph7.57}
+\contentsline {figure}{\numberline {G.58}{\ignorespaces Eliminar Base de Datos - Buscar Base de Datos.}}{294}{figure.Alph7.58}
+\contentsline {figure}{\numberline {G.59}{\ignorespaces Eliminar Base de Datos - Seleccionar Base de Datos.}}{294}{figure.Alph7.59}
+\contentsline {figure}{\numberline {G.60}{\ignorespaces Eliminar Base de Datos- Ventana de Base de Datos.}}{294}{figure.Alph7.60}
+\contentsline {figure}{\numberline {G.61}{\ignorespaces Eliminar Base de Datos - Etiqueta de Ayuda.}}{295}{figure.Alph7.61}
+\contentsline {figure}{\numberline {G.62}{\ignorespaces Eliminar Base de Datos - Ventana de Ayuda.}}{295}{figure.Alph7.62}
+\contentsline {figure}{\numberline {G.63}{\ignorespaces Gestionar Base de Datos - Modificar Base de Datos.}}{296}{figure.Alph7.63}
+\contentsline {figure}{\numberline {G.64}{\ignorespaces Modificar Base de Datos - Tabla de Base de Datos.}}{296}{figure.Alph7.64}
+\contentsline {figure}{\numberline {G.65}{\ignorespaces Modificar Base de Datos - Buscar Base de Datos.}}{296}{figure.Alph7.65}
+\contentsline {figure}{\numberline {G.66}{\ignorespaces Modificar Base de Datos - Seleccionar Base de Datos.}}{297}{figure.Alph7.66}
+\contentsline {figure}{\numberline {G.67}{\ignorespaces Modificar Base de Datos - Ventana de Base de Datos.}}{297}{figure.Alph7.67}
+\contentsline {figure}{\numberline {G.68}{\ignorespaces Modificar Base de Datos - Modificar.}}{298}{figure.Alph7.68}
+\contentsline {figure}{\numberline {G.69}{\ignorespaces Modificar Base de Datos - Etiqueta de Ayuda.}}{298}{figure.Alph7.69}
+\contentsline {figure}{\numberline {G.70}{\ignorespaces Modificar Base de Datos- Ventana de Ayuda.}}{298}{figure.Alph7.70}
+\contentsline {figure}{\numberline {G.71}{\ignorespaces Gestionar Base de Datos - Cargar Base de Datos.}}{299}{figure.Alph7.71}
+\contentsline {figure}{\numberline {G.72}{\ignorespaces Cargar Base de Datos - Tabla de Bases de Datos.}}{300}{figure.Alph7.72}
+\contentsline {figure}{\numberline {G.73}{\ignorespaces Cargar Base de Datos - Buscar Base de Datos.}}{300}{figure.Alph7.73}
+\contentsline {figure}{\numberline {G.74}{\ignorespaces Cargar Base de Datos - Seleccionar Base de Datos.}}{300}{figure.Alph7.74}
+\contentsline {figure}{\numberline {G.75}{\ignorespaces Cargar Base de Datos- Ventana de Base de Datos.}}{300}{figure.Alph7.75}
+\contentsline {figure}{\numberline {G.76}{\ignorespaces Home - Cargar Base de Datos - Datos de la Base de Dato Cargada.}}{301}{figure.Alph7.76}
+\contentsline {figure}{\numberline {G.77}{\ignorespaces Cargar Base de Datos - Etiqueta de Ayuda.}}{301}{figure.Alph7.77}
+\contentsline {figure}{\numberline {G.78}{\ignorespaces Eliminar Base de Datos - Ventana de Ayuda.}}{302}{figure.Alph7.78}
+\contentsline {figure}{\numberline {G.79}{\ignorespaces Gestionar Relaciones.}}{303}{figure.Alph7.79}
+\contentsline {figure}{\numberline {G.80}{\ignorespaces Gestionar Relaciones - Agregar Relaci\'on.}}{304}{figure.Alph7.80}
+\contentsline {figure}{\numberline {G.81}{\ignorespaces Agregar Relaci\'on - Datos de la Relaci\'on.}}{304}{figure.Alph7.81}
+\contentsline {figure}{\numberline {G.82}{\ignorespaces Agregar Relaci\'on - Cantidad de Atributos.}}{304}{figure.Alph7.82}
+\contentsline {figure}{\numberline {G.83}{\ignorespaces Agregar Relaci\'on - Seleccionar Atributos.}}{305}{figure.Alph7.83}
+\contentsline {figure}{\numberline {G.84}{\ignorespaces Agregar Relaci\'on - Ventana de Atributos.}}{305}{figure.Alph7.84}
+\contentsline {figure}{\numberline {G.85}{\ignorespaces Agregar Relaci\'on - agregar.}}{306}{figure.Alph7.85}
+\contentsline {figure}{\numberline {G.86}{\ignorespaces Agregar Relaci\'on - Etiqueta de Ayuda.}}{306}{figure.Alph7.86}
+\contentsline {figure}{\numberline {G.87}{\ignorespaces Agregar Relaci\'on - Ventana de Ayuda.}}{307}{figure.Alph7.87}
+\contentsline {figure}{\numberline {G.88}{\ignorespaces Gestionar Relaciones - Eliminar Relaci\'on.}}{307}{figure.Alph7.88}
+\contentsline {figure}{\numberline {G.89}{\ignorespaces Eliminar Relaci\'on - Tabla de Relaciones.}}{308}{figure.Alph7.89}
+\contentsline {figure}{\numberline {G.90}{\ignorespaces Eliminar Base de Datos - Seleccionar Base de Datos.}}{308}{figure.Alph7.90}
+\contentsline {figure}{\numberline {G.91}{\ignorespaces Eliminar Relaci\'on- Ventana de Relaci\'on.}}{309}{figure.Alph7.91}
+\contentsline {figure}{\numberline {G.92}{\ignorespaces Eliminar Relaci\'on - Etiqueta de Ayuda.}}{309}{figure.Alph7.92}
+\contentsline {figure}{\numberline {G.93}{\ignorespaces Eliminar Relaci\'on - Ventana de Ayuda.}}{310}{figure.Alph7.93}
+\contentsline {figure}{\numberline {G.94}{\ignorespaces Gestionar Relaciones - Modificar Relaci\'on.}}{310}{figure.Alph7.94}
+\contentsline {figure}{\numberline {G.95}{\ignorespaces Modificar Relaci\'on - Tabla de Relaciones.}}{311}{figure.Alph7.95}
+\contentsline {figure}{\numberline {G.96}{\ignorespaces Modificar Relaci\'on - Seleccionar Relaci\'on.}}{311}{figure.Alph7.96}
+\contentsline {figure}{\numberline {G.97}{\ignorespaces Modificar Relaci\'on - Ventana de Relaci\'on.}}{312}{figure.Alph7.97}
+\contentsline {figure}{\numberline {G.98}{\ignorespaces Modificar Relaci\'on - Datos de la Relaci\'on.}}{312}{figure.Alph7.98}
+\contentsline {figure}{\numberline {G.99}{\ignorespaces Modificar Relaci\'on - Cantidad de Atributos.}}{313}{figure.Alph7.99}
+\contentsline {figure}{\numberline {G.100}{\ignorespaces Modificar Relaci\'on - Seleccionar Atributos.}}{313}{figure.Alph7.100}
+\contentsline {figure}{\numberline {G.101}{\ignorespaces Modificar Relaci\'on - Modificar Atributo.}}{314}{figure.Alph7.101}
+\contentsline {figure}{\numberline {G.102}{\ignorespaces Modificar Relaci\'on - Aceptar o Cancelar Cambios.}}{314}{figure.Alph7.102}
+\contentsline {figure}{\numberline {G.103}{\ignorespaces Modificar Relaci\'on - Modificar.}}{314}{figure.Alph7.103}
+\contentsline {figure}{\numberline {G.104}{\ignorespaces Modificar Relaci\'on - Etiqueta de Ayuda.}}{315}{figure.Alph7.104}
+\contentsline {figure}{\numberline {G.105}{\ignorespaces Modificar Relaci\'on - Ventana de Ayuda.}}{315}{figure.Alph7.105}
+\contentsline {figure}{\numberline {G.106}{\ignorespaces Gestionar Tuplas.}}{316}{figure.Alph7.106}
+\contentsline {figure}{\numberline {G.107}{\ignorespaces Ver Relaci\'on - Tabla de Relaciones.}}{317}{figure.Alph7.107}
+\contentsline {figure}{\numberline {G.108}{\ignorespaces Ver Relaci\'on - Seleccionar Relaci\'on.}}{317}{figure.Alph7.108}
+\contentsline {figure}{\numberline {G.109}{\ignorespaces Ver Relaci\'on - Bot\'on Ver Relaci\'on.}}{318}{figure.Alph7.109}
+\contentsline {figure}{\numberline {G.110}{\ignorespaces Ver Relaci\'on - Tabla de Tuplas.}}{318}{figure.Alph7.110}
+\contentsline {figure}{\numberline {G.111}{\ignorespaces Ver Relaci\'on - Interfaz Profesor y Alumno due\~no de la Base de Datos Cargada.}}{319}{figure.Alph7.111}
+\contentsline {figure}{\numberline {G.112}{\ignorespaces Ver Relaci\'on - Interfaz Alumno no due\~no de la Base de Datos Cargada.}}{319}{figure.Alph7.112}
+\contentsline {figure}{\numberline {G.113}{\ignorespaces Ver Relaci\'on - Etiqueta de Ayuda.}}{320}{figure.Alph7.113}
+\contentsline {figure}{\numberline {G.114}{\ignorespaces Ver Relaci\'on - Ventana de Ayuda.}}{320}{figure.Alph7.114}
+\contentsline {figure}{\numberline {G.115}{\ignorespaces Gestionar Tuplas - Ver Tuplas.}}{321}{figure.Alph7.115}
+\contentsline {figure}{\numberline {G.116}{\ignorespaces Agregar Tuplas - Bot\'on Agregar Tupla.}}{321}{figure.Alph7.116}
+\contentsline {figure}{\numberline {G.117}{\ignorespaces Agregar Tuplas - Tabla de Tuplas.}}{322}{figure.Alph7.117}
+\contentsline {figure}{\numberline {G.118}{\ignorespaces Agregar Tuplas - Etiqueta de Clave Primaria (Primary Key) y Tipo de Dato.}}{322}{figure.Alph7.118}
+\contentsline {figure}{\numberline {G.119}{\ignorespaces Agregar Tupla - Etiqueta de Ayuda.}}{322}{figure.Alph7.119}
+\contentsline {figure}{\numberline {G.120}{\ignorespaces Agregar Tupla - Ventana de Ayuda.}}{323}{figure.Alph7.120}
+\contentsline {figure}{\numberline {G.121}{\ignorespaces Eliminar Tupla - Tabla de Tuplas.}}{324}{figure.Alph7.121}
+\contentsline {figure}{\numberline {G.122}{\ignorespaces Eliminar Tupla - Seleccionar Tupla.}}{324}{figure.Alph7.122}
+\contentsline {figure}{\numberline {G.123}{\ignorespaces Eliminar Tupla- Bot\'on Eliminar Tupla.}}{324}{figure.Alph7.123}
+\contentsline {figure}{\numberline {G.124}{\ignorespaces Eliminar Tuplas - Botones Aceptar y Cancelar.}}{325}{figure.Alph7.124}
+\contentsline {figure}{\numberline {G.125}{\ignorespaces Agregar Tuplas - Etiqueta de Clave Primaria (Primary Key) y Tipo de Dato.}}{325}{figure.Alph7.125}
+\contentsline {figure}{\numberline {G.126}{\ignorespaces Modificar Tupla - Tabla de Tuplas.}}{326}{figure.Alph7.126}
+\contentsline {figure}{\numberline {G.127}{\ignorespaces Modificar Tupla - Seleccionar Tupla.}}{326}{figure.Alph7.127}
+\contentsline {figure}{\numberline {G.128}{\ignorespaces Modificar Tupla- Bot\'on Editar Tupla.}}{326}{figure.Alph7.128}
+\contentsline {figure}{\numberline {G.129}{\ignorespaces Modificar Tupla - Ventana de Modificar.}}{327}{figure.Alph7.129}
+\contentsline {figure}{\numberline {G.130}{\ignorespaces Modificar Tupla - Editar Tupla Seleccionada.}}{327}{figure.Alph7.130}
+\contentsline {figure}{\numberline {G.131}{\ignorespaces Modificar Tupla - Editar Campos de la Tupla Seleccionada.}}{327}{figure.Alph7.131}
+\contentsline {figure}{\numberline {G.132}{\ignorespaces Modificar Tupla - Aceptar o Cancelar Cambios en la Tupla Seleccionada.}}{328}{figure.Alph7.132}
+\contentsline {figure}{\numberline {G.133}{\ignorespaces Modificar Relaci\'on - Modificar.}}{328}{figure.Alph7.133}
+\contentsline {figure}{\numberline {G.134}{\ignorespaces Gestionar Ejercicios - Interfaz Profesor.}}{329}{figure.Alph7.134}
+\contentsline {figure}{\numberline {G.135}{\ignorespaces Responder Ejercicios - Interfaz Alumno.}}{329}{figure.Alph7.135}
+\contentsline {figure}{\numberline {G.136}{\ignorespaces Gestionar Ejercicios - Gesti\'on de Ejercicios.}}{330}{figure.Alph7.136}
+\contentsline {figure}{\numberline {G.137}{\ignorespaces Gesti\'on de Ejercicios - Datos de la Base de Datos Cargada.}}{331}{figure.Alph7.137}
+\contentsline {figure}{\numberline {G.138}{\ignorespaces Gesti\'on de Ejercicios - Cantidad de Ejercicios.}}{331}{figure.Alph7.138}
+\contentsline {figure}{\numberline {G.139}{\ignorespaces Gesti\'on de Ejercicios - Ejercicios.}}{332}{figure.Alph7.139}
+\contentsline {figure}{\numberline {G.140}{\ignorespaces Gesti\'on de Ejercicios - Cantidad de Ejercicios - Modificado.}}{332}{figure.Alph7.140}
+\contentsline {figure}{\numberline {G.141}{\ignorespaces Gesti\'on de Ejercicios - Bot\'on Editar.}}{332}{figure.Alph7.141}
+\contentsline {figure}{\numberline {G.142}{\ignorespaces Gesti\'on de Ejercicios - Editar Ejercicio.}}{333}{figure.Alph7.142}
+\contentsline {figure}{\numberline {G.143}{\ignorespaces Gesti\'on de Ejercicios - Bot\'on Eliminar Ejercicio.}}{333}{figure.Alph7.143}
+\contentsline {figure}{\numberline {G.144}{\ignorespaces Gesti\'on de Ejercicios - Confirmaci\'on de Eliminaci\'on de Ejercicio.}}{334}{figure.Alph7.144}
+\contentsline {figure}{\numberline {G.145}{\ignorespaces Gesti\'on de Ejercicios - Bot\'on Ver Respuesta.}}{334}{figure.Alph7.145}
+\contentsline {figure}{\numberline {G.146}{\ignorespaces Gesti\'on de Ejercicios - Resultado de Ver Respuesta.}}{334}{figure.Alph7.146}
+\contentsline {figure}{\numberline {G.147}{\ignorespaces Gesti\'on de Ejercicios - Bot\'on Listo.}}{334}{figure.Alph7.147}
+\contentsline {figure}{\numberline {G.148}{\ignorespaces Gesti\'on de Ejercicios - Botones Guardar Cambios y Cancelar Cambios.}}{335}{figure.Alph7.148}
+\contentsline {figure}{\numberline {G.149}{\ignorespaces Gesti\'on de Ejercicios - Etiqueta de Ayuda.}}{335}{figure.Alph7.149}
+\contentsline {figure}{\numberline {G.150}{\ignorespaces Gesti\'on de Ejercicios - Ventana de Ayuda.}}{336}{figure.Alph7.150}
+\contentsline {figure}{\numberline {G.151}{\ignorespaces Gestionar Ejercicios - Responder Ejercicios.}}{337}{figure.Alph7.151}
+\contentsline {figure}{\numberline {G.152}{\ignorespaces Responder Ejercicios - Datos de la Base de Dato Cargada.}}{337}{figure.Alph7.152}
+\contentsline {figure}{\numberline {G.153}{\ignorespaces Responder Ejercicios - Ejercicios.}}{338}{figure.Alph7.153}
+\contentsline {figure}{\numberline {G.154}{\ignorespaces Responder Ejercicios - Bot\'on Responder.}}{338}{figure.Alph7.154}
+\contentsline {figure}{\numberline {G.155}{\ignorespaces Responder Ejercicios - Formulario de Ejercicio.}}{338}{figure.Alph7.155}
+\contentsline {figure}{\numberline {G.156}{\ignorespaces Responder Ejercicios - Herramienta de Consulta.}}{339}{figure.Alph7.156}
+\contentsline {figure}{\numberline {G.157}{\ignorespaces Responder Ejercicios - Bot\'on Aceptar.}}{339}{figure.Alph7.157}
+\contentsline {figure}{\numberline {G.158}{\ignorespaces Responder Ejercicios - Bot\'on Obtener Enviar Respuestas.}}{340}{figure.Alph7.158}
+\contentsline {figure}{\numberline {G.159}{\ignorespaces Responder Ejercicios - Etiqueta de Ayuda.}}{340}{figure.Alph7.159}
+\contentsline {figure}{\numberline {G.160}{\ignorespaces Responder Ejercicios - Ventana de Ayuda.}}{340}{figure.Alph7.160}
+\contentsline {figure}{\numberline {G.161}{\ignorespaces Gestionar Ejercicios - Obtener Calificaci\'on.}}{341}{figure.Alph7.161}
+\contentsline {figure}{\numberline {G.162}{\ignorespaces Obtener Calificaci\'on - Resultado por Ejercicio.}}{342}{figure.Alph7.162}
+\contentsline {figure}{\numberline {G.163}{\ignorespaces Obtener Calificaci\'on - Botones Ver tu Respuesta y Ver Respuesta Esperada.}}{342}{figure.Alph7.163}
+\contentsline {figure}{\numberline {G.164}{\ignorespaces Obtener Calificaci\'on - Resultados Globales.}}{342}{figure.Alph7.164}
+\contentsline {figure}{\numberline {G.165}{\ignorespaces Obtener Calificaci\'on - Volver al Inicio.}}{342}{figure.Alph7.165}
+\contentsline {figure}{\numberline {G.166}{\ignorespaces Obtener Calificaci\'on - Etiqueta de Ayuda.}}{343}{figure.Alph7.166}
+\contentsline {figure}{\numberline {G.167}{\ignorespaces Obtener Calificaci\'on - Ventana de Ayuda.}}{343}{figure.Alph7.167}
+\contentsline {figure}{\numberline {G.168}{\ignorespaces Hacer Consulta - Men\'u.}}{344}{figure.Alph7.168}
+\contentsline {figure}{\numberline {G.169}{\ignorespaces Hacer Consulta.}}{344}{figure.Alph7.169}
+\contentsline {figure}{\numberline {G.170}{\ignorespaces Hacer Consulta - Datos de la Base de Datos Cargada.}}{345}{figure.Alph7.170}
+\contentsline {figure}{\numberline {G.171}{\ignorespaces Hacer Consulta - Consultas.}}{346}{figure.Alph7.171}
+\contentsline {figure}{\numberline {G.172}{\ignorespaces Hacer Consulta - Herramienta de Consultas.}}{346}{figure.Alph7.172}
+\contentsline {figure}{\numberline {G.173}{\ignorespaces Hacer Consulta - Resultado de una Consulta.}}{346}{figure.Alph7.173}
+\contentsline {figure}{\numberline {G.174}{\ignorespaces Hacer Consulta - Botones de \'Algebra Relacional}}{347}{figure.Alph7.174}
+\contentsline {figure}{\numberline {G.175}{\ignorespaces Hacer Consulta - Historial de Consultas}}{347}{figure.Alph7.175}
+\contentsline {figure}{\numberline {G.176}{\ignorespaces Hacer Consulta - Etiqueta de Ayuda.}}{347}{figure.Alph7.176}
+\contentsline {figure}{\numberline {G.177}{\ignorespaces Hacer Consulta - Ventana de Ayuda.}}{348}{figure.Alph7.177}
+\contentsline {figure}{\numberline {G.178}{\ignorespaces Ver Estad\IeC {\'\i }sticas - Men\'u.}}{349}{figure.Alph7.178}
+\contentsline {figure}{\numberline {G.179}{\ignorespaces Ver Estad\IeC {\'\i }sticas.}}{349}{figure.Alph7.179}
+\contentsline {figure}{\numberline {G.180}{\ignorespaces Ver Estad\IeC {\'\i }sticas - Descargar.}}{350}{figure.Alph7.180}
+\contentsline {figure}{\numberline {G.181}{\ignorespaces Ver Estad\IeC {\'\i }sticas - Descargas Activadas.}}{350}{figure.Alph7.181}
+\contentsline {figure}{\numberline {G.182}{\ignorespaces Ver Estad\IeC {\'\i }sticas - Estad\IeC {\'\i }sticas.}}{351}{figure.Alph7.182}
+\contentsline {figure}{\numberline {G.183}{\ignorespaces Ver Estad\IeC {\'\i }sticas - Seleccionar una Base de Datos.}}{351}{figure.Alph7.183}
+\contentsline {figure}{\numberline {G.184}{\ignorespaces Ver Estad\IeC {\'\i }sticas - Estad\IeC {\'\i }sticas Descriptivas y Gr\'aficos de la Base de Datos.}}{352}{figure.Alph7.184}
+\contentsline {figure}{\numberline {G.185}{\ignorespaces Ver Estad\IeC {\'\i }sticas - Etiqueta de Ayuda.}}{352}{figure.Alph7.185}
+\contentsline {figure}{\numberline {G.186}{\ignorespaces Ver Estad\IeC {\'\i }sticas - Ventana de Ayuda.}}{353}{figure.Alph7.186}
+\contentsline {figure}{\numberline {G.187}{\ignorespaces Modificar Cuenta Propia.}}{354}{figure.Alph7.187}
+\contentsline {figure}{\numberline {G.188}{\ignorespaces Modificar Cuenta Propia - Interfaz Profesor.}}{354}{figure.Alph7.188}
+\contentsline {figure}{\numberline {G.189}{\ignorespaces Modificar Cuenta Propia - Interfaz Alumno.}}{355}{figure.Alph7.189}
+\contentsline {figure}{\numberline {G.190}{\ignorespaces Modificar Cuenta Propia - Interfaz Profesor - Datos Acad\'emicos.}}{355}{figure.Alph7.190}
+\contentsline {figure}{\numberline {G.191}{\ignorespaces Modificar Cuenta Propia - Interfaz Profesor - Datos de la Cuenta.}}{356}{figure.Alph7.191}
+\contentsline {figure}{\numberline {G.192}{\ignorespaces Modificar Cuenta Propia - Interfaz Profesor - Verificar Datos.}}{356}{figure.Alph7.192}
+\contentsline {figure}{\numberline {G.193}{\ignorespaces Modificar Cuenta Propia - Interfaz Alumno - Datos Acad\'emicos.}}{357}{figure.Alph7.193}
+\contentsline {figure}{\numberline {G.194}{\ignorespaces Modificar Cuenta Propia - Interfaz Alumno - Datos de la Cuenta.}}{357}{figure.Alph7.194}
+\contentsline {figure}{\numberline {G.195}{\ignorespaces Modificar Cuenta Propia - Interfaz Alumno - Datos Acad\'emicos.}}{358}{figure.Alph7.195}
+\contentsline {figure}{\numberline {G.196}{\ignorespaces Modificar Cuenta Propia - Interfaz Alumno - Verificar Datos.}}{358}{figure.Alph7.196}
+\contentsline {figure}{\numberline {G.197}{\ignorespaces Modificar Cuenta Propia - Etiqueta de Ayuda.}}{359}{figure.Alph7.197}
+\contentsline {figure}{\numberline {G.198}{\ignorespaces Modificar Cuenta Propia - Ventana de Ayuda.}}{359}{figure.Alph7.198}

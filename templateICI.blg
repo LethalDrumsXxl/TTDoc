@@ -1,0 +1,27 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: templateICI.aux
+A level-1 auxiliary file: capitulo1.aux
+A level-1 auxiliary file: capitulo2.aux
+A level-1 auxiliary file: capitulo3.aux
+A level-1 auxiliary file: capitulo4.aux
+A level-1 auxiliary file: capitulo5.aux
+A level-1 auxiliary file: capitulo6.aux
+A level-1 auxiliary file: capitulo7.aux
+A level-1 auxiliary file: capitulo8.aux
+A level-1 auxiliary file: capitulo9.aux
+A level-1 auxiliary file: appendix1.aux
+A level-1 auxiliary file: appendix2.aux
+A level-1 auxiliary file: appendix3.aux
+A level-1 auxiliary file: appendix4.aux
+A level-1 auxiliary file: appendix5.aux
+A level-1 auxiliary file: appendix6.aux
+A level-1 auxiliary file: appendix7.aux
+The style file: plain.bst
+Database file #1: template.bib
+Warning--I'm ignoring elmasri2002fundamentos's extra "publisher" field
+--line 96 of file template.bib
+Warning--entry type for "javaserverfaces" isn't style-file defined
+--line 172 of file template.bib
+Warning--empty booktitle in yuspeirote
+Warning--empty publisher in elmasri2002fundamentos
+Warning--there's a number but no volume in valverde1994algebra
+(There were 5 warnings)

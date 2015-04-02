@@ -1,0 +1,99 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="1139" measuredH="564" mockupW="906" mockupH="562">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="233" y="2" w="906" h="562" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>16777215</color>
+        <text>UV%20Algebra%20Relacional%0Ahttp%3A//www.algebrarelacional.uv.cl</text>
+        <value>0</value>
+        <verticalScrollbar>true</verticalScrollbar>
+      </controlProperties>
+    </control>
+    <control controlID="2" controlTypeID="com.balsamiq.mockups::FieldSet" x="478" y="159" w="459" h="360" measuredW="200" measuredH="170" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Eliminar%20Relaci%F3n</text>
+      </controlProperties>
+    </control>
+    <control controlID="3" controlTypeID="com.balsamiq.mockups::TabBar" x="510" y="186" w="393" h="271" measuredW="242" measuredH="100" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <selectedIndex>1</selectedIndex>
+        <text>Seleccionar%2C%20Confirmaci%F3n</text>
+      </controlProperties>
+    </control>
+    <control controlID="4" controlTypeID="com.balsamiq.mockups::PointyButton" x="836" y="477" w="-1" h="-1" measuredW="67" measuredH="27" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <direction>center</direction>
+        <href>gestionar%20relaci%F3n%26bm%3Bgestionar%20relaci%F3n.bmml%26bm%3Bgestionar%20relaci%F3n.bmml%26bm%3Bgestionar%20relaci%F3n.bmml</href>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%22603%2C475%2C670%2C502%22%20href%3D%22gestionar%2520relaci%25C3%25B3n.bmml%22%20alt%3D%22gestionar%20relaci%F3n%22%20id%3D%224%22/%3E</map>
+        <text>Aceptar</text>
+      </controlProperties>
+    </control>
+    <control controlID="6" controlTypeID="com.balsamiq.mockups::DataGrid" x="532" y="260" w="338" h="176" measuredW="200" measuredH="111" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderStyle>square</borderStyle>
+        <hasHeader>true</hasHeader>
+        <text>Atributo%2C%20Tipo%2C%20Primario%0AAtributo%201%2C%20Num%E9rico%2C%20S%ED%0AAtributo%202%2C%20Cadena%2C%20No%0AAtributo%203%2C%20Num%E9rico%2C%20No</text>
+      </controlProperties>
+    </control>
+    <control controlID="7" controlTypeID="com.balsamiq.mockups::PointyButton" x="510" y="477" w="-1" h="-1" measuredW="50" measuredH="27" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <direction>left</direction>
+        <href>eliminar%20relacion%20-%20seleccionar%26bm%3Beliminar%20relacion%20-%20seleccionar.bmml%26bm%3Beliminar%20relacion%20-%20seleccionar.bmml%26bm%3Beliminar%20relacion%20-%20seleccionar.bmml</href>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%22277%2C475%2C327%2C502%22%20href%3D%22eliminar%2520relacion%2520-%2520seleccionar.bmml%22%20alt%3D%22eliminar%20relacion%20-%20seleccionar%22%20id%3D%227%22/%3E</map>
+        <text>Atr%E1s</text>
+      </controlProperties>
+    </control>
+    <control controlID="8" controlTypeID="com.balsamiq.mockups::Label" x="532" y="230" w="-1" h="-1" measuredW="108" measuredH="21" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Nombre%3A%20Relacion1</text>
+      </controlProperties>
+    </control>
+    <control controlID="9" controlTypeID="com.balsamiq.mockups::FieldSet" x="956" y="159" w="153" h="358" measuredW="200" measuredH="170" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Database2</text>
+      </controlProperties>
+    </control>
+    <control controlID="10" controlTypeID="com.balsamiq.mockups::List" x="971" y="179" w="100" h="286" measuredW="100" measuredH="126" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderStyle>none</borderStyle>
+        <hasHeader>false</hasHeader>
+        <text>Relacion1%0ARelacion2%0ARelacion3%0ARelacion4</text>
+      </controlProperties>
+    </control>
+    <control controlID="11" controlTypeID="com.balsamiq.mockups::Title" x="470" y="97" w="-1" h="-1" measuredW="339" measuredH="43" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Algebra%20Relacional</text>
+      </controlProperties>
+    </control>
+    <control controlID="12" controlTypeID="com.balsamiq.mockups::Image" x="248" y="86" w="203" h="65" measuredW="77" measuredH="79" zOrder="10" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Logo%20UV</text>
+      </controlProperties>
+    </control>
+    <control controlID="13" controlTypeID="com.balsamiq.mockups::CallOut" x="849" y="221" w="-1" h="-1" measuredW="45" measuredH="40" zOrder="11" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>D</text>
+      </controlProperties>
+    </control>
+    <control controlID="14" controlTypeID="com.balsamiq.mockups::CallOut" x="791" y="470" w="-1" h="-1" measuredW="45" measuredH="40" zOrder="12" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>E</text>
+      </controlProperties>
+    </control>
+    <control controlID="15" controlTypeID="com.balsamiq.mockups::CallOut" x="560" y="472" w="-1" h="-1" measuredW="34" measuredH="39" zOrder="13" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>F</text>
+      </controlProperties>
+    </control>
+    <control controlID="16" controlTypeID="com.balsamiq.mockups::CallOut" x="418" y="159" w="45" h="31" measuredW="39" measuredH="39" zOrder="15" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>C</text>
+      </controlProperties>
+    </control>
+    <control controlID="17" controlTypeID="com.balsamiq.mockups::Menu" x="248" y="159" w="215" h="-1" measuredW="150" measuredH="57" zOrder="14" locked="false" isInGroup="-1">
+      <controlProperties>
+        <hrefs/>
+        <text>Home%0A--%0ADesconectar</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>

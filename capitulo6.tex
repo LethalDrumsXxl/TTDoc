@@ -1,0 +1,150 @@
+\chapter{Implementación}
+\label{implementacion}
+
+\section{Herramientas de Desarrollo}
+\label{herramientasDeDesarrollo}
+
+En esta sección se describen las herramientas orientadas al desarrollo del sistema. Éstas cubren tanto el hardware utilizado, como los distintos softwares orientados a la codificación, almacenamiento de datos y diseño. \\
+
+\subsection{Hardware de Desarrollo}
+\label{hardwareDeDesarrollo}
+
+Para el desarrollo de la aplicación y la ejecución de los distintos softwares de codificación, almacenamiento de datos y diseño, se utilizó un computador personal con una serie de características. \\
+
+\begin{itemize}
+
+\item \textbf{Procesador}: Intel Core 2 Duo Mobile T6400 / 2.00 GHz. \\
+\item \textbf{Memoria Ram}: 3 GB. \\
+\item \textbf{Disco Duro}: 320 GB. \\
+\item \textbf{Sistema Operativo}: Windows 7 Ultimate. \\
+
+\end{itemize}
+
+\subsection{Lenguajes de Programación}
+\label{lenguajesDeProgramacion}
+
+Para la codificación del sistema, se utilizaron dos lenguajes de programación orientados a distintos subsistemas de la aplicación:
+
+\begin{itemize}
+
+\item \textbf{Java}\footnote{\url{http://www.oracle.com/technetwork/java/index.html}}: Este es un lenguaje Orientado a Objetos basado en clases, diseñado para construir software independientes de las plataformas y de fácil uso. Además, posee una gran variedad de bibliotecas que permiten la reutilización de funcionalidades. Java se utilizó principalmente para la implementación de la capa de negocio del sistema. \\
+
+\item \textbf{ANTLR}\footnote{\url{http://www.antlr.org/}}: \textit{ANother Tool for Language Recognition} es una sofisticada herramienta que proporciona un marco de trabajo para la generación de analizadores utilizados para la implementación de intérpretes, compiladores y otros traductores \cite{parr2007antlr}. Para la generación del interprete se debe implementar una gramática que exprese todas las reglas permitidas para el lenguaje. Esta gramática se utiliza para generar las clases Java necesarias para la interpretación del nuevo lenguaje. La gramática construida se presenta en la Sección \ref{gramaticalenguajear}. \\
+
+\end{itemize}
+
+\subsection{Gramática del Lenguaje de Álgebra Relacional}
+\label{gramaticalenguajear}
+
+En la presente sección se muestra la gramática implementada para la ejecución del lenguaje de Álgebra Relacional. Ésta contiene todas las reglas sintácticas que debe seguir el lenguaje, es decir, cómo debe escribirse una consulta de Álgebra Relacional. 
+
+\footnotesize
+\begin{verbatim}
+st		:	( asg | con );
+
+asg		:	rel ":=" con;
+
+con		:	( bin | select | proy | renom1 | renom2 | renom3 | join);
+
+bin		:	rel ("UNION"|"union") rel
+		|	rel ("INTER"|"inter") rel
+		|	rel ("DIFERENCIA"|"diferencia") rel
+		|	rel ("CRUZ"|"cruz") rel
+		|	rel ("REUNION_NATURAL"|"reunion_natural") rel
+		|	rel ("division"|"DIVISION") rel
+		|	rel ("reunion_ext_izq"|"REUNION_EXT_IZQ") rel
+		|	rel ("reunion_ext_der"|"REUNION_EXT_DER") rel
+		|	rel ("reunion_ext_full"|"REUNION_EXT_FULL") rel;
+	
+select	:	("seleccionar"|"SELECCIONAR")"("conds1")""("rel")";
+proy	:	("proyectar"|"PROYECTAR")"("atts")""("rel")";
+renom1	:	("renombrar"|"RENOMBRAR") rel"("atts")""("rel")";
+renom2	:	("renombrar"|"RENOMBRAR") rel "("rel")";
+renom3	:	("renombrar"|"RENOMBRAR")"("atts")""("rel")";
+join	:	"("rel")"("reunion"|"REUNION")"("conds2")""("rel")";
+
+atts	:	att ("," att)*;
+
+conds1	:	cond1 (( "and" | "or" | "AND" | "OR" ) cond1)*;	
+conds2	:	cond2 (( "and" | "or" | "AND" | "OR" ) cond2)*;
+	
+cond1	:	( con1 );	
+cond2	:	( con2| con3 );	
+con1	:	att ( "=" |"<" | "<=" | ">" | ">= "| "!=" ) cons;
+con2	:	rel"."att ( "=" |"<" | "<=" | ">" | ">= "| "!=" ) rel"."att;
+con3	:	rel"."att ( "=" |"<" | "<=" | ">" | ">= "| "!=" ) cons;
+
+cons	:	( num | cad );	
+num		:	("-")?(NUM)+("."(NUM)+)?;
+
+cad		:	"\u0027"CAD"\u0027"; 	
+att		:	CAD;	
+rel		:	CAD;
+
+NUM		:	("0".."9")+;
+CAD 	:	(("a".."z")|("A".."Z")|("0".."9")|"_")+;
+WS  	:   ( " " | "\t" | "\r" | "\n" ) {$channel=HIDDEN;};
+\end{verbatim}
+ 
+\normalsize
+\subsection{Interfaz y Presentación}
+\label{interfazPresentacion}
+
+Teniendo en consideración que se utiliza Java para la implementación de la aplicación y que además debe ser una plataforma Web, se han utilizado 2 librerías que entregan una gran facilidad para el manejo de peticiones del usuario y la presentación de sus resultados:
+
+\begin{itemize}
+
+\item \textbf{JSF}\footnote{\url{https://javaserverfaces.java.net/}}:\textit{JavaServer Faces} es un framework de interfaces de usuario del lado del servidor para aplicaciones Web. Éste contiene una API\footnote{API: Application Programming Interface} y una implementación de referencia para la representación de componentes de interfaz de usuario y el manejo de sus estados, manejo de eventos, validaciones del lado del servidor y conversiones de datos; también permite definir las reglas de navegación entre páginas Web \cite{javaserverfaces}.
+
+\item \textbf{PrimeFaces}\footnote{\url{http://primefaces.org/}}: Es una librería de componentes para JSF, que facilita la creación de páginas Web gracias su simplicidad y rendimiento. Ésta consta de componentes visuales de fácil uso, tales como editores HTML\footnote{HTML: HyperText Markup Language}, gráficos, paneles, entre otros; además de soporte AJAX\footnote{AJAX:  Asynchronous JavaScript And XML} para el despliegue y actualización parcial de componentes en una página Web.
+
+\end{itemize}
+
+\subsection{Almacenamiento de Datos}
+\label{almacenamientoDeDatos}
+
+Seleccionar un buen Sistema Gestor de Base de Datos es un tema importante para esta aplicación, ya que en él radica uno de los objetivos principales del presente Trabajo de Título: \textit{la ejecución de consultas en Álgebra Relacional}. Por ello, se ha decidido tomar dos Sistemas Gestores de Base de Datos ampliamente utilizados y de libre acceso, MySQL\footnote{\url{http://www.mysql.com/}} y PostgreSQL\footnote{\url{http://www.postgresql.org/}}; y hacer una comparación entre ellos centrándose en 2 atributos que claves para su selección: el manejo de esquemas dentro de una base de datos y el mapeo directo de consultas de Álgebra Relacional en el Sistema Gestor de Base de Datos. \\
+
+\begin{enumerate}
+
+\item \textbf{Manejo de Esquemas}: El manejo de diferentes esquemas permite una diferenciación entre dos o más modelos relacionales distintos dentro de una misma Base de Datos. Para el sistema a desarrollar esto es de suma importancia, ya que permite la generación de distintos modelos relacionales los cuales representan las distintas bases de datos de los alumnos y el profesor. \\
+
+\item \textbf{Mapeo Directo a Consultas en Álgebra Relacional}: Esto es un tema importante, ya que delegar todas las consultas de Álgebra Relacional al Sistema Gestor de Base de Datos disminuye considerablemente la complejidad en la Capa Lógica, entregándole la responsabilidad a la Capa de Datos. De esta forma, sólo hay que entregarle los datos mapeados al Sistema Gestor de Base de Datos para que éste ejecute la consulta y entregue el resultado requerido. \\
+
+\end{enumerate}
+
+\begin{table}[h!]
+\footnotesize
+\centering
+\begin{tabular}{|l|l|l|}
+\hline
+\rowcolor[HTML]{9B9B9B} 
+\multicolumn{3}{|l|}{\cellcolor[HTML]{9B9B9B}\textbf{Tabla Comparativa entre Sistema Gestores de Bases de Datos}} \\ \hline
+\rowcolor[HTML]{C0C0C0} 
+\textit{Característica v/s Herramienta} & \textit{Mysql} & \textit{PostgreSQL} \\ \hline
+Manejo de Esquemas & No & Sí \\ \hline
+Mapeo Directo a Consultas en Álgebra Relacional & Algunas & Todas \\ \hline
+\end{tabular}
+\caption{Tabla comparativa entre Sistemas Gestores de Base de Datos.}
+\label{tab:comparativaMysqlPsql}
+\end{table}
+
+Como se aprecia en la Tabla \ref{tab:comparativaMysqlPsql} que muestra la comparación entre MySQL y PostgreSQL de acuerdo a los parámetros explicados, PostgreSQL contiene los atributos necesarios para la implementación de la aplicación, por lo tanto, es el elegido para administrar la Capa de Datos del Sistema. \\
+
+\section{Herramientas}
+\label{herramientas}
+
+Para la implementación del sistema se utilizaron distintas herramientas, las cuales son presentadas a continuación: \\
+
+\begin{itemize}
+
+\item \textbf{Eclipse}\footnote{\url{https://www.eclipse.org/}}: Entorno de desarrollo construido principalmente para la codificación de lenguaje de programación Java. Además, es un sistema de libre acceso y gratuito. \\
+
+\item \textbf{ANTLRWorks}\footnote{\url{http://tunnelvisionlabs.com/products/demo/antlrworks}}: Entorno de desarrollo diseñado para la codificación, testeo y generación de gramáticas de libre contexto para ANTLR. \\ 
+
+\end{itemize}
+
+\section{Interfaz del Sistema}
+\label{interfazdelsistema}
+
+En el Apéndice \ref{app-interfazdelsistema} se presentan las principales interfaces implementadas para el sistema de Gestión de Consultas en Álgebra Relacional. \\

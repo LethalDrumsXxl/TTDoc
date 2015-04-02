@@ -1,0 +1,173 @@
+\chapter{Análisis}
+\label{analisis}
+
+\section{Especificación de Requerimientos}
+\label{espreq}
+
+En esta sección se presenta los requerimientos que debe satisfacer la aplicación a desarrollar. Estos requerimientos serán diferenciados en dos tipos: los requerimientos funcionales que se muestran en la Sección \ref{rf} y los requerimientos no funcionales que están en la Sección \ref{rnf}. \\
+
+\subsection{Requerimientos Funcionales}
+\label{rf}
+
+La Tabla \ref{tab:rf} contiene los requerimientos funcionales del sistema. Cada uno contiene un identificador, una descripción y un atributo que describe si el requerimiento es obligatorio (O), deseable (D) o prescindible (P). \\
+
+\begin{table}[h!]
+\footnotesize
+\centering
+\begin{tabular}{|p{1cm}|p{13cm}|p{1cm}|}
+\hline
+\rowcolor[HTML]{9B9B9B} 
+\multicolumn{3}{|l|}{\cellcolor[HTML]{9B9B9B}\textbf{Requerimientos Funcionales}}                                                                                                                    \\ \hline
+\rowcolor[HTML]{C0C0C0} 
+\textit{Id} & \textit{Descripción}                                                                                                                                                   & \textit{Tipo} \\ \hline
+RF01        & El Programa debe permitir realizar consultas en Álgebra Relacional, es decir, utilizando operadores básicos y funciones agregadas.                                     & O             \\ \hline
+RF02        & La aplicación debe contar con un set de Base de Datos que sirvan de ejemplo para los alumnos.                                                                          & O             \\ \hline
+RF03        & La aplicación debe tener un set de preguntas relacionadas a cada Base de Datos de ejemplo.                                                                             & O             \\ \hline
+RF04        & El alumno debe tener la posibilidad de generar relaciones e insertar tuplas en ellas.                                                                                  & D             \\ \hline
+RF05        & El alumno puede insertar funciones de consultas en Álgebra Relacional vía botones presentados en la interfaz gráfica del programa o directamente desde teclado.        & O             \\ \hline
+RF06        & El alumno debe ser capaz de observar gráficamente por medio de una tabla el resultado de sus consultas.                                                                & O             \\ \hline
+RF07        & El programa debe identificar e informar los errores ocurridos a la hora de ejecutar las consultas ingresadas.                                                          & O             \\ \hline
+RF08        & La aplicación debe tener un manual de usuario que explique cómo utilizar la herramienta.                                                                               & O             \\ \hline
+RF09        & La aplicación debe poder guardar alumnos, además de un login para poder ingresar a él.                                                                                & O             \\ \hline
+RF10        & El programa debe ser capaz de guardar y exportar los datos de ingreso y salida de datos de cada consulta durante una sesión, es decir, todo lo que realiza el usuario. & O             \\ \hline
+RF11        & El programa debe poder transformar las consultas en Álgebra Relacional a Lenguaje SQL.                                                                                 & D             \\ \hline
+RF12        & La aplicación debe poder guardar la sesión en la que trabaja un alumno.                                                                                                & P             \\ \hline
+RF13        & El alumno puede crear sus propias Bases de Datos & D             \\ \hline
+RF14        & El programa debe permitir mostrar resultados del trabajo realizado por los alumnos utilizando algún algoritmo de Minería de Datos.                                     & O             \\ \hline
+\end{tabular}
+\caption{Requerimientos funcionales del sistema.}
+\label{tab:rf}
+\end{table}
+
+\subsection{Requerimientos No Funcionales}
+\label{rnf}
+
+La Tabla \ref{tab:rnf} contiene los requerimientos no funcionales del sistema. Cada uno contiene un identificador, el atributo de calidad que satisface dicho requerimiento, una descripción de él y un atributo que describe si el requerimiento es obligatorio (O), deseable (D) o prescindible (P). \\
+
+\begin{table}[h!]
+\footnotesize
+\centering
+\begin{tabular}{|p{1.5cm}|p{3cm}|p{9cm}|p{1cm}|}
+\hline
+\rowcolor[HTML]{9B9B9B} 
+\multicolumn{4}{|l|}{\cellcolor[HTML]{9B9B9B}\textbf{Requerimientos No Funcionales}}                                                                                                                                           \\ \hline
+\rowcolor[HTML]{C0C0C0} 
+\textit{Id} & \textit{Atributo de Calidad} & \textit{Descripción}                                                                                                                                              & \textit{Tipo} \\ \hline
+RNF 01      & Rendimiento                  & El programa debe tener un tiempo de respuesta no mayor a 5 segundos en carga y creación de relaciones y tuplas.                                                   & D             \\ \hline
+RNF 02      & Mantenibilidad               & La plataforma debe contener código debidamente comentado y programado en módulos para que se entienda y sea más fácil su mantención. & O             \\ \hline
+RNF 03      & Disponibilidad               & La aplicación debe ser una plataforma WEB, con la finalidad de que cualquier alumno o profesor con internet, pueda acceder a él.                                                                                                                         & O             \\ \hline
+RNF 04      & Usabilidad                   & Al usuario no le debe tomar más de 1 hora entender las funcionalidades básicas del sistema, específicamente: cargar relaciones, hacer consultas y ver resultados. & D             \\ \hline
+\end{tabular}
+\caption{Requerimientos no funcionales del sistema.}
+\label{tab:rnf}
+\end{table}
+
+\section{Actores del Sistema}
+\label{actores}
+
+Dentro de la aplicación que se desarrollará para este Trabajo de Título se pueden identificar distintos tipos de usuarios. La Tabla \ref{tab:conusuarios} muestra el nivel de conocimiento que tienen los usuarios que interactuan con la aplicación. \\
+
+\begin{table}[h!]
+\footnotesize
+\centering
+\begin{tabular}{|c|c|}
+\hline
+\rowcolor[HTML]{9B9B9B} 
+\textbf{Nivel de Conocimiento} & \textbf{Descripción}                                                       \\ \hline
+Experto                        & Usuario con conocimientos avanzados en Bases de Datos y Álgebra Relacional \\ \hline
+Básico                         & Usuario con conocimientos básicos en Base de Datos y Álgebra Relacional    \\ \hline
+\end{tabular}
+\caption{Nivel de conocimiento de los usuarios.}
+\label{tab:conusuarios}
+\end{table}
+
+La Tabla \ref{tab:usuariossist} contiene los usuarios del sistema, cada uno descrito por un identificador, el nombre de dicho usuario, su nivel de conocimiento y una breve descripción de él. \\
+
+\begin{table}[h!]
+\footnotesize
+\centering
+\begin{tabular}{|p{1.5cm}|p{1.5cm}|p{3cm}|p{7.5cm}|}
+\hline
+\rowcolor[HTML]{9B9B9B} 
+\textbf{Id} & \textbf{Nombre} & \textbf{Nivel de Conocimiento} & \textbf{Descripción}                                                                                                                                                                                                                                  \\ \hline
+USR 01      & Profesor        & Experto                        & Es el usuario que administra la plataforma. Principalmente es el encargado de permitir y denegar usuarios, generar las bases de datos de ejemplos y ejecutar los algoritmos necesarios para la extracción de datos del trabajo hecho por los alumnos. \\ \hline
+USR 02      & Alumno          & Básico                         & Usuario que está interesado en el estudio del Álgebra Relacional. Su principal tarea es  realizar consultas en Álgebra Relacional y obtener resultado de éstas.                                                                                       \\ \hline
+\end{tabular}
+\caption{Usuarios del sistema.}
+\label{tab:usuariossist}
+\end{table}
+
+\newpage
+
+\section{Funciones del Sistema}
+\label{funcionessistema}
+
+En esta sección se listan las Funciones del Sistema que debe tener las aplicación a desarrollar. Esta lista se muestra en la Tabla \ref{tab:funcionesdelsistema}, donde para cada función se tiene un identificador, una breve descripción y atributo que describe si el requerimiento es obligatorio (O), deseable (D) o prescindible (P). \\
+
+\begin{table}[h!]
+\footnotesize
+\centering
+\begin{tabular}{|p{1cm}|p{13cm}|p{1cm}|}
+\hline
+\rowcolor[HTML]{9B9B9B} 
+\multicolumn{3}{|l|}{\cellcolor[HTML]{9B9B9B}\textbf{Funciones del Sistema}}                                                                                    \\ \hline
+\rowcolor[HTML]{C0C0C0} 
+\textit{Id} & \textit{Descripción}                                                                                                              & \textit{Tipo} \\ \hline
+F01         & Autorizar las creaciones de cuentas de alumnos y profesores.                                                                      & O             \\ \hline
+F02         & Autorizar la modificaciones de cuenta personales de los alumnos y los profesores.                                                 & O             \\ \hline
+F03         & Autorizar al profesor la agregación, modificación y eliminación de datos de los alumnos.                                          & O             \\ \hline
+F04         & Permitir al profesor la creación, modificación y eliminación de bases de datos.                                                   & O             \\ \hline
+F05         & Permitir al profesor la creación, modificación y eliminación de relaciones para cada base de datos.                               & O             \\ \hline
+F06         & Permitir al profesor la creación, modificación y eliminación de tupla para cada relación.                                         & O             \\ \hline
+F07         & Permitir al profesor la creación, modificación y eliminación de ejercicios y su solución para cada base de datos.                 & O             \\ \hline
+F08         & Permitir al alumno la carga de bases de datos.                                                                                    & O             \\ \hline
+F09         & Permitir al alumno la creación, modificación y eliminación de sus propias relaciones.                                             & D             \\ \hline
+F10         & Permitir al alumno la creación, modificación y eliminación de sus propias tuplas.                                                 & D             \\ \hline
+F11         & Permitir al alumno cargar y responder ejercicios de cada base de datos.                                                           & O             \\ \hline
+F12         & Permitir a los usuarios ejecutar consultas en Álgebra Relacional, vía teclado o por medio de botones con cada operador relacional & O             \\ \hline
+F13         & Permitir la visualización del resultado de las consultas.                                                                         & O             \\ \hline
+F14         & Permitir la visualización de errores, si es que existen, para cada consulta.                                                      & O             \\ \hline
+F15         & Permitir el almacenamiento y carga de la sesión en la que trabaja un alumno.                                                      & D             \\ \hline
+F16         & Permitir el almacenamiento de datos de la sesión en la que trabaja cada alumno.                                                   & O             \\ \hline
+F17         & Permitir al profesor la ejecución de un algoritmo de Minería de Datos para el estudio de datos de la sesión de los alumnos.       & O             \\ \hline
+F18         & Permitir al alumno la creación de bases de datos propias     & D            \\ \hline
+\end{tabular}
+\caption{Funciones del Sistema.}
+\label{tab:funcionesdelsistema}
+\end{table}
+
+\section{Casos de Usos}
+\label{casosdeusos}
+
+Esta sección describe el comportamiento del sistema por medio de los Casos de Usos. La Sección \ref{modelocasodeusos} contiene el modelo de casos de usos y la Sección \ref{casosdeusosext} contiene el detalle de cada caso de uso. \\
+
+\subsection{Modelo de Casos de Usos}
+\label{modelocasodeusos}
+
+En la Figura \ref{fig:diagramacasouso} se presenta el Diagrama de Casos de Usos de la aplicación a generar. Éste cuenta con todas las funcionalidades necesarias para satisfacer los requerimientos descritos en la Sección \ref{espreq}. \\
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=16cm]{imagenes/diagrama_caso_de_uso.png}
+\caption{Diagrama de Casos de Usos.}
+\label{fig:diagramacasouso}
+\end{figure}
+
+\subsection{Casos de Usos Extendidos}
+\label{casosdeusosext}
+
+En el Apéndice \ref{casosdeusosextendidos} se presentan los casos de Usos Extendidos del Sistema, junto con un diagrama de secuencias y un diagrama de estados. \\
+
+\clearpage
+\newpage
+\section{Modelo Conceptual}
+\label{modeloconceptual}
+
+La Figura \ref{fig:modeloconceptual} muestra el Modelo Conceptual perteneciente a la Aplicación a Desarrollar. En él se muestran las principales entidades participantes, además de las relaciones que hay entre ellas. \\
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=15cm]{imagenes/modelo_conceptual.png}
+\caption{Modelo Conceptual.}
+\label{fig:modeloconceptual}
+\end{figure}

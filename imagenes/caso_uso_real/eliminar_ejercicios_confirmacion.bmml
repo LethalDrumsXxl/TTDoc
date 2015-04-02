@@ -1,0 +1,132 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="1139" measuredH="564" mockupW="906" mockupH="562">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="233" y="2" w="906" h="562" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>16777215</color>
+        <text>UV%20Algebra%20Relacional%0Ahttp%3A//www.algebrarelacional.uv.cl</text>
+        <value>0</value>
+        <verticalScrollbar>true</verticalScrollbar>
+      </controlProperties>
+    </control>
+    <control controlID="2" controlTypeID="com.balsamiq.mockups::FieldSet" x="470" y="155" w="476" h="359" measuredW="200" measuredH="170" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Eliminar%20Ejercicios</text>
+      </controlProperties>
+    </control>
+    <control controlID="4" controlTypeID="com.balsamiq.mockups::Label" x="534" y="240" w="-1" h="-1" measuredW="67" measuredH="21" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Pregunta%201%3A</text>
+      </controlProperties>
+    </control>
+    <control controlID="5" controlTypeID="com.balsamiq.mockups::Label" x="534" y="267" w="-1" h="-1" measuredW="70" measuredH="21" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Pregunta%203%3A</text>
+      </controlProperties>
+    </control>
+    <control controlID="6" controlTypeID="com.balsamiq.mockups::Label" x="534" y="295" w="-1" h="-1" measuredW="69" measuredH="21" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Pregunta%205%3A</text>
+      </controlProperties>
+    </control>
+    <control controlID="9" controlTypeID="com.balsamiq.mockups::Label" x="624" y="240" w="-1" h="-1" measuredW="121" measuredH="21" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Ac%E1%20va%20la%20pregunta%201</text>
+      </controlProperties>
+    </control>
+    <control controlID="10" controlTypeID="com.balsamiq.mockups::Label" x="624" y="267" w="-1" h="-1" measuredW="123" measuredH="21" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Ac%E1%20va%20la%20pregunta%203</text>
+      </controlProperties>
+    </control>
+    <control controlID="11" controlTypeID="com.balsamiq.mockups::Label" x="624" y="295" w="-1" h="-1" measuredW="123" measuredH="21" zOrder="10" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Ac%E1%20va%20la%20pregunta%205</text>
+      </controlProperties>
+    </control>
+    <control controlID="19" controlTypeID="com.balsamiq.mockups::PointyButton" x="851" y="472" w="-1" h="-1" measuredW="67" measuredH="27" zOrder="13" locked="false" isInGroup="-1">
+      <controlProperties>
+        <direction>center</direction>
+        <href>gestionar_ejercicios%26bm%3Bgestionar_ejercicios.bmml%26bm%3Bgestionar_ejercicios.bmml%26bm%3Bgestionar_ejercicios.bmml</href>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%22618%2C470%2C685%2C497%22%20href%3D%22gestionar_ejercicios.bmml%22%20alt%3D%22gestionar_ejercicios%22%20id%3D%2219%22/%3E</map>
+        <text>Aceptar</text>
+      </controlProperties>
+    </control>
+    <control controlID="20" controlTypeID="com.balsamiq.mockups::PointyButton" x="501" y="472" w="-1" h="-1" measuredW="50" measuredH="27" zOrder="14" locked="false" isInGroup="-1">
+      <controlProperties>
+        <direction>left</direction>
+        <href>eliminar%20ejercicios%20-%20seleccionar%26bm%3Beliminar%20ejercicios%20-%20seleccionar.bmml%26bm%3Beliminar%20ejercicios%20-%20seleccionar.bmml%26bm%3Beliminar%20ejercicios%20-%20seleccionar.bmml</href>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%22268%2C470%2C318%2C497%22%20href%3D%22eliminar%2520ejercicios%2520-%2520seleccionar.bmml%22%20alt%3D%22eliminar%20ejercicios%20-%20seleccionar%22%20id%3D%2220%22/%3E</map>
+        <text>Atr%E1s</text>
+      </controlProperties>
+    </control>
+    <control controlID="22" controlTypeID="com.balsamiq.mockups::Label" x="534" y="325" w="-1" h="-1" measuredW="70" measuredH="21" zOrder="11" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Pregunta%206%3A</text>
+      </controlProperties>
+    </control>
+    <control controlID="23" controlTypeID="com.balsamiq.mockups::Label" x="624" y="325" w="-1" h="-1" measuredW="123" measuredH="21" zOrder="12" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Ac%E1%20va%20la%20pregunta%206</text>
+      </controlProperties>
+    </control>
+    <control controlID="25" controlTypeID="com.balsamiq.mockups::FieldSet" x="956" y="155" w="153" h="358" measuredW="200" measuredH="170" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Database2</text>
+      </controlProperties>
+    </control>
+    <control controlID="26" controlTypeID="com.balsamiq.mockups::List" x="971" y="179" w="100" h="286" measuredW="100" measuredH="126" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderStyle>none</borderStyle>
+        <hasHeader>false</hasHeader>
+        <text>Relacion1%0ARelacion2%0ARelacion3%0ARelacion4</text>
+      </controlProperties>
+    </control>
+    <control controlID="27" controlTypeID="com.balsamiq.mockups::TabBar" x="501" y="187" w="417" h="271" measuredW="242" measuredH="100" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <selectedIndex>1</selectedIndex>
+        <text>Seleccionar%2C%20Confirmaci%F3n</text>
+      </controlProperties>
+    </control>
+    <control controlID="28" controlTypeID="com.balsamiq.mockups::Title" x="470" y="97" w="-1" h="-1" measuredW="339" measuredH="43" zOrder="15" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Algebra%20Relacional</text>
+      </controlProperties>
+    </control>
+    <control controlID="29" controlTypeID="com.balsamiq.mockups::Image" x="248" y="86" w="203" h="65" measuredW="77" measuredH="79" zOrder="16" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Logo%20UV</text>
+      </controlProperties>
+    </control>
+    <control controlID="30" controlTypeID="com.balsamiq.mockups::CallOut" x="422" y="164" w="41" h="31" measuredW="45" measuredH="40" zOrder="22" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>C</text>
+      </controlProperties>
+    </control>
+    <control controlID="31" controlTypeID="com.balsamiq.mockups::CallOut" x="843" y="295" w="-1" h="-1" measuredW="38" measuredH="40" zOrder="17" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>D</text>
+      </controlProperties>
+    </control>
+    <control controlID="32" controlTypeID="com.balsamiq.mockups::VCurly" x="802" y="244" w="34" h="140" measuredW="180" measuredH="140" zOrder="18" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="33" controlTypeID="com.balsamiq.mockups::CallOut" x="813" y="465" w="-1" h="-1" measuredW="36" measuredH="37" zOrder="19" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>E</text>
+      </controlProperties>
+    </control>
+    <control controlID="34" controlTypeID="com.balsamiq.mockups::CallOut" x="551" y="465" w="-1" h="-1" measuredW="45" measuredH="40" zOrder="20" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>F</text>
+      </controlProperties>
+    </control>
+    <control controlID="35" controlTypeID="com.balsamiq.mockups::Menu" x="248" y="159" w="215" h="-1" measuredW="150" measuredH="57" zOrder="21" locked="false" isInGroup="-1">
+      <controlProperties>
+        <hrefs/>
+        <text>Home%0A--%0ADesconectar</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>

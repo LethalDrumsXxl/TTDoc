@@ -1,0 +1,146 @@
+\BOOKMARK [0][-]{chapter*.1}{Resumen}{}% 1
+\BOOKMARK [0][-]{chapter.1}{Introducci\363n}{}% 2
+\BOOKMARK [0][-]{chapter.2}{Marco Conceptual}{}% 3
+\BOOKMARK [1][-]{section.2.1}{Terminolog\355a}{chapter.2}% 4
+\BOOKMARK [1][-]{section.2.2}{Modelo Relacional}{chapter.2}% 5
+\BOOKMARK [2][-]{subsection.2.2.1}{Definici\363n de Relaci\363n}{section.2.2}% 6
+\BOOKMARK [2][-]{subsection.2.2.2}{Relaciones v/s Archivos}{section.2.2}% 7
+\BOOKMARK [2][-]{subsection.2.2.3}{Claves en las Relaciones}{section.2.2}% 8
+\BOOKMARK [2][-]{subsection.2.2.4}{Claves For\341neas en las Relaciones}{section.2.2}% 9
+\BOOKMARK [2][-]{subsection.2.2.5}{Reglas de Integridad}{section.2.2}% 10
+\BOOKMARK [2][-]{subsection.2.2.6}{Operaciones de Actualizaci\363n}{section.2.2}% 11
+\BOOKMARK [1][-]{section.2.3}{\301lgebra Relacional}{chapter.2}% 12
+\BOOKMARK [2][-]{subsection.2.3.1}{Selecci\363n}{section.2.3}% 13
+\BOOKMARK [2][-]{subsection.2.3.2}{Proyecci\363n}{section.2.3}% 14
+\BOOKMARK [2][-]{subsection.2.3.3}{Renombrar y Asignaci\363n de Relaciones}{section.2.3}% 15
+\BOOKMARK [2][-]{subsection.2.3.4}{Operaciones de la Teor\355a de Conjuntos}{section.2.3}% 16
+\BOOKMARK [2][-]{subsection.2.3.5}{Reuni\363n}{section.2.3}% 17
+\BOOKMARK [2][-]{subsection.2.3.6}{Divisi\363n}{section.2.3}% 18
+\BOOKMARK [2][-]{subsection.2.3.7}{Funciones Agregadas y de Agrupaci\363n}{section.2.3}% 19
+\BOOKMARK [2][-]{subsection.2.3.8}{Reuni\363n Externa}{section.2.3}% 20
+\BOOKMARK [1][-]{section.2.4}{Traducci\363n de \301lgebra Relacional a SQL}{chapter.2}% 21
+\BOOKMARK [1][-]{section.2.5}{Aplicaciones Existentes}{chapter.2}% 22
+\BOOKMARK [2][-]{subsection.2.5.1}{Comparaci\363n entre Herramientas Existentes}{section.2.5}% 23
+\BOOKMARK [1][-]{section.2.6}{Trabajos Existentes}{chapter.2}% 24
+\BOOKMARK [1][-]{section.2.7}{\301lgebra Relacional en la Universidad de Valpara\355so}{chapter.2}% 25
+\BOOKMARK [0][-]{chapter.3}{Problema}{}% 26
+\BOOKMARK [1][-]{section.3.1}{Definici\363n del Problema}{chapter.3}% 27
+\BOOKMARK [2][-]{subsection.3.1.1}{Problema}{section.3.1}% 28
+\BOOKMARK [2][-]{subsection.3.1.2}{Soluci\363n Propuesta}{section.3.1}% 29
+\BOOKMARK [2][-]{subsection.3.1.3}{Importancia del trabajo}{section.3.1}% 30
+\BOOKMARK [1][-]{section.3.2}{Objetivos}{chapter.3}% 31
+\BOOKMARK [2][-]{subsection.3.2.1}{Objetivo General}{section.3.2}% 32
+\BOOKMARK [2][-]{subsection.3.2.2}{Objetivos Espec\355ficos}{section.3.2}% 33
+\BOOKMARK [0][-]{chapter.4}{An\341lisis}{}% 34
+\BOOKMARK [1][-]{section.4.1}{Especificaci\363n de Requerimientos}{chapter.4}% 35
+\BOOKMARK [2][-]{subsection.4.1.1}{Requerimientos Funcionales}{section.4.1}% 36
+\BOOKMARK [2][-]{subsection.4.1.2}{Requerimientos No Funcionales}{section.4.1}% 37
+\BOOKMARK [1][-]{section.4.2}{Actores del Sistema}{chapter.4}% 38
+\BOOKMARK [1][-]{section.4.3}{Funciones del Sistema}{chapter.4}% 39
+\BOOKMARK [1][-]{section.4.4}{Casos de Usos}{chapter.4}% 40
+\BOOKMARK [2][-]{subsection.4.4.1}{Modelo de Casos de Usos}{section.4.4}% 41
+\BOOKMARK [2][-]{subsection.4.4.2}{Casos de Usos Extendidos}{section.4.4}% 42
+\BOOKMARK [1][-]{section.4.5}{Modelo Conceptual}{chapter.4}% 43
+\BOOKMARK [0][-]{chapter.5}{Dise\361o}{}% 44
+\BOOKMARK [1][-]{section.5.1}{Dise\361o Arquitect\363nico}{chapter.5}% 45
+\BOOKMARK [2][-]{subsection.5.1.1}{Modelo de Capas}{section.5.1}% 46
+\BOOKMARK [2][-]{subsection.5.1.2}{Vista de M\363dulos}{section.5.1}% 47
+\BOOKMARK [2][-]{subsection.5.1.3}{Vista de Componentes}{section.5.1}% 48
+\BOOKMARK [1][-]{section.5.2}{Dise\361o Interfaz}{chapter.5}% 49
+\BOOKMARK [2][-]{subsection.5.2.1}{Interfaces de Usuario}{section.5.2}% 50
+\BOOKMARK [2][-]{subsection.5.2.2}{Esquema de Navegaci\363n}{section.5.2}% 51
+\BOOKMARK [1][-]{section.5.3}{Dise\361o L\363gico}{chapter.5}% 52
+\BOOKMARK [2][-]{subsection.5.3.1}{Casos de Usos Reales}{section.5.3}% 53
+\BOOKMARK [2][-]{subsection.5.3.2}{Diagrama de Clases}{section.5.3}% 54
+\BOOKMARK [1][-]{section.5.4}{Dise\361o de Datos}{chapter.5}% 55
+\BOOKMARK [2][-]{subsection.5.4.1}{Modelo Entidad/Relaci\363n}{section.5.4}% 56
+\BOOKMARK [2][-]{subsection.5.4.2}{Modelo de Datos}{section.5.4}% 57
+\BOOKMARK [2][-]{subsection.5.4.3}{Diccionario de Datos}{section.5.4}% 58
+\BOOKMARK [1][-]{section.5.5}{Dise\361o de Pruebas}{chapter.5}% 59
+\BOOKMARK [2][-]{subsection.5.5.1}{Usuarios de Pruebas}{section.5.5}% 60
+\BOOKMARK [2][-]{subsection.5.5.2}{Pruebas Unitarias}{section.5.5}% 61
+\BOOKMARK [2][-]{subsection.5.5.3}{Pruebas de Integraci\363n}{section.5.5}% 62
+\BOOKMARK [2][-]{subsection.5.5.4}{Pruebas de Sistema}{section.5.5}% 63
+\BOOKMARK [2][-]{subsection.5.5.5}{Pruebas de Aceptaci\363n}{section.5.5}% 64
+\BOOKMARK [2][-]{subsection.5.5.6}{Pruebas de Usabilidad}{section.5.5}% 65
+\BOOKMARK [2][-]{subsection.5.5.7}{Pruebas de Estr\351s}{section.5.5}% 66
+\BOOKMARK [2][-]{subsection.5.5.8}{Pruebas de Seguridad}{section.5.5}% 67
+\BOOKMARK [0][-]{chapter.6}{Implementaci\363n}{}% 68
+\BOOKMARK [1][-]{section.6.1}{Herramientas de Desarrollo}{chapter.6}% 69
+\BOOKMARK [2][-]{subsection.6.1.1}{Hardware de Desarrollo}{section.6.1}% 70
+\BOOKMARK [2][-]{subsection.6.1.2}{Lenguajes de Programaci\363n}{section.6.1}% 71
+\BOOKMARK [2][-]{subsection.6.1.3}{Gram\341tica del Lenguaje de \301lgebra Relacional}{section.6.1}% 72
+\BOOKMARK [2][-]{subsection.6.1.4}{Interfaz y Presentaci\363n}{section.6.1}% 73
+\BOOKMARK [2][-]{subsection.6.1.5}{Almacenamiento de Datos}{section.6.1}% 74
+\BOOKMARK [1][-]{section.6.2}{Herramientas}{chapter.6}% 75
+\BOOKMARK [1][-]{section.6.3}{Interfaz del Sistema}{chapter.6}% 76
+\BOOKMARK [0][-]{chapter.7}{Pruebas}{}% 77
+\BOOKMARK [1][-]{section.7.1}{Pruebas Unitarias}{chapter.7}% 78
+\BOOKMARK [2][-]{subsection.7.1.1}{An\341lisis de Resultados}{section.7.1}% 79
+\BOOKMARK [1][-]{section.7.2}{Pruebas Integraci\363n}{chapter.7}% 80
+\BOOKMARK [2][-]{subsection.7.2.1}{An\341lisis de Resultados}{section.7.2}% 81
+\BOOKMARK [1][-]{section.7.3}{Pruebas de Sistema}{chapter.7}% 82
+\BOOKMARK [2][-]{subsection.7.3.1}{An\341lisis de Resultados}{section.7.3}% 83
+\BOOKMARK [1][-]{section.7.4}{Pruebas de Aceptaci\363n}{chapter.7}% 84
+\BOOKMARK [2][-]{subsection.7.4.1}{An\341lisis de Resultados}{section.7.4}% 85
+\BOOKMARK [1][-]{section.7.5}{Pruebas de Usabilidad}{chapter.7}% 86
+\BOOKMARK [2][-]{subsection.7.5.1}{An\341lisis de Resultados}{section.7.5}% 87
+\BOOKMARK [1][-]{section.7.6}{Pruebas de Estr\351s}{chapter.7}% 88
+\BOOKMARK [2][-]{subsection.7.6.1}{An\341lisis de Resultados}{section.7.6}% 89
+\BOOKMARK [1][-]{section.7.7}{Pruebas de Seguridad}{chapter.7}% 90
+\BOOKMARK [2][-]{subsection.7.7.1}{SQL Inyection}{section.7.7}% 91
+\BOOKMARK [2][-]{subsection.7.7.2}{Acceso por URL}{section.7.7}% 92
+\BOOKMARK [0][-]{chapter.8}{Implantaci\363n}{}% 93
+\BOOKMARK [1][-]{section.8.1}{Infraestructura}{chapter.8}% 94
+\BOOKMARK [1][-]{section.8.2}{Actividades Previas a la Implantaci\363n}{chapter.8}% 95
+\BOOKMARK [2][-]{subsection.8.2.1}{Configuraci\363n del Motor de Base de Datos}{section.8.2}% 96
+\BOOKMARK [1][-]{section.8.3}{Actividades para la Implantaci\363n}{chapter.8}% 97
+\BOOKMARK [2][-]{subsection.8.3.1}{Instalaci\363n del Sistema en el Servidor de Aplicaciones}{section.8.3}% 98
+\BOOKMARK [1][-]{section.8.4}{Actividades Posteriores a la Implantaci\363n}{chapter.8}% 99
+\BOOKMARK [0][-]{chapter.9}{Conclusiones}{}% 100
+\BOOKMARK [1][-]{section.9.1}{Trabajos Futuros}{chapter.9}% 101
+\BOOKMARK [0][-]{appendix.Alph1}{Casos de Usos Extendidos}{}% 102
+\BOOKMARK [0][-]{appendix.Alph2}{Interfaces de Usuario}{}% 103
+\BOOKMARK [0][-]{appendix.Alph3}{Casos de Usos Reales}{}% 104
+\BOOKMARK [0][-]{appendix.Alph4}{Diccionario de Datos}{}% 105
+\BOOKMARK [0][-]{appendix.Alph5}{Interfaz del Sistema}{}% 106
+\BOOKMARK [0][-]{appendix.Alph6}{Pruebas}{}% 107
+\BOOKMARK [1][-]{section.Alph6.1}{Pruebas Unitarias}{appendix.Alph6}% 108
+\BOOKMARK [1][-]{section.Alph6.2}{Pruebas de Integraci\363n}{appendix.Alph6}% 109
+\BOOKMARK [1][-]{section.Alph6.3}{Pruebas de Sistemas}{appendix.Alph6}% 110
+\BOOKMARK [1][-]{section.Alph6.4}{Pruebas de Aceptaci\363n}{appendix.Alph6}% 111
+\BOOKMARK [1][-]{section.Alph6.5}{Pruebas de Usabilidad}{appendix.Alph6}% 112
+\BOOKMARK [1][-]{section.Alph6.6}{Pruebas de Estr\351s}{appendix.Alph6}% 113
+\BOOKMARK [0][-]{appendix.Alph7}{Manual de Usuario}{}% 114
+\BOOKMARK [1][-]{section.Alph7.1}{P\341gina de Inicio}{appendix.Alph7}% 115
+\BOOKMARK [2][-]{subsection.Alph7.1.1}{Registrarse}{section.Alph7.1}% 116
+\BOOKMARK [2][-]{subsection.Alph7.1.2}{Login}{section.Alph7.1}% 117
+\BOOKMARK [1][-]{section.Alph7.2}{Home}{appendix.Alph7}% 118
+\BOOKMARK [2][-]{subsection.Alph7.2.1}{Vista Profesor}{section.Alph7.2}% 119
+\BOOKMARK [2][-]{subsection.Alph7.2.2}{Vista Alumno}{section.Alph7.2}% 120
+\BOOKMARK [1][-]{section.Alph7.3}{Gestionar Usuarios}{appendix.Alph7}% 121
+\BOOKMARK [2][-]{subsection.Alph7.3.1}{Crear Cuenta}{section.Alph7.3}% 122
+\BOOKMARK [2][-]{subsection.Alph7.3.2}{Eliminar Cuenta}{section.Alph7.3}% 123
+\BOOKMARK [2][-]{subsection.Alph7.3.3}{Modificar Cuenta}{section.Alph7.3}% 124
+\BOOKMARK [1][-]{section.Alph7.4}{Gestionar Bases de Datos}{appendix.Alph7}% 125
+\BOOKMARK [2][-]{subsection.Alph7.4.1}{Crear Base de Datos}{section.Alph7.4}% 126
+\BOOKMARK [2][-]{subsection.Alph7.4.2}{Eliminar Base de Datos}{section.Alph7.4}% 127
+\BOOKMARK [2][-]{subsection.Alph7.4.3}{Modificar Base de Datos}{section.Alph7.4}% 128
+\BOOKMARK [2][-]{subsection.Alph7.4.4}{Cargar Base de Datos}{section.Alph7.4}% 129
+\BOOKMARK [1][-]{section.Alph7.5}{Gestionar Relaciones}{appendix.Alph7}% 130
+\BOOKMARK [2][-]{subsection.Alph7.5.1}{Agregar Relaci\363n}{section.Alph7.5}% 131
+\BOOKMARK [2][-]{subsection.Alph7.5.2}{Eliminar Relaci\363n}{section.Alph7.5}% 132
+\BOOKMARK [2][-]{subsection.Alph7.5.3}{Modificar Relaci\363n}{section.Alph7.5}% 133
+\BOOKMARK [1][-]{section.Alph7.6}{Gestionar Tuplas}{appendix.Alph7}% 134
+\BOOKMARK [2][-]{subsection.Alph7.6.1}{Ver Relaci\363n}{section.Alph7.6}% 135
+\BOOKMARK [2][-]{subsection.Alph7.6.2}{Agregar Tupla}{section.Alph7.6}% 136
+\BOOKMARK [2][-]{subsection.Alph7.6.3}{Eliminar Tupla}{section.Alph7.6}% 137
+\BOOKMARK [2][-]{subsection.Alph7.6.4}{Modificar Tupla}{section.Alph7.6}% 138
+\BOOKMARK [1][-]{section.Alph7.7}{Gestionar Ejercicios}{appendix.Alph7}% 139
+\BOOKMARK [2][-]{subsection.Alph7.7.1}{Gesti\363n de Ejercicios}{section.Alph7.7}% 140
+\BOOKMARK [2][-]{subsection.Alph7.7.2}{Responder Ejercicios}{section.Alph7.7}% 141
+\BOOKMARK [2][-]{subsection.Alph7.7.3}{Obtener Calificaci\363n}{section.Alph7.7}% 142
+\BOOKMARK [1][-]{section.Alph7.8}{Hacer Consulta}{appendix.Alph7}% 143
+\BOOKMARK [1][-]{section.Alph7.9}{Ver Estad\355sticas}{appendix.Alph7}% 144
+\BOOKMARK [1][-]{section.Alph7.10}{Modificar Cuenta Propia}{appendix.Alph7}% 145
+\BOOKMARK [0][-]{appendix*.11}{Bibliograf\355a}{}% 146
