@@ -206,113 +206,8 @@ Dentro de las operaciones del \textit{Álgebra Relacional} existen dos grupos rec
 
 \end{enumerate}
 
-En las siguientes secciones, se explicarán cada una de las operaciones que respectan al Álgebra Relacional. En primera instancia se explicará las operaciones \textit{seleccionar} y \textit{proyectar} ya que son las más sencillas de entender\cite{elmasri2002fundamentos}, luego se explicarán las operaciones de conjuntos, finalizando con la \textit{reunión} y otro tipo de operaciones un poco más complejas \cite{elmasri2002fundamentos}. \\
+En las siguientes secciones, se explicarán cada una de las operaciones que respectan al Álgebra Relacional. En primera instancia se explicará las operaciones \textit{seleccionar} y \textit{proyectar} ya que son las más sencillas de entender\cite{elmasri2002fundamentos}, luego se explicarán las operaciones de conjuntos, finalizando con la \textit{reunión} y otro tipo de operaciones un poco más complejas \cite{elmasri2002fundamentos}. Además, en el Apéndice ref{app-algebrarelacional} se agregan ejemplos gráficos para una mayor comprensión de cada operación de Álgebra Relacional. \\
 
-Para un mayor entendimiento del lector, se presenta un ejemplo para ilustrar las operaciones del \textit{Álgebra Relacional} \cite{campus2006}, el cual será ampliamente utilizado en las secciones posteriores. \\
-
-\begin{enumerate}
-
-\item La relación $\emph{EDIFICIOS\_EMP}$ contiene los distintos edificios de una empresa para desarrollar sus actividades. \\
-
-\item La relación $\emph{DESPACHOS}$ contiene los datos de los despachos de cada uno de los edificios anteriores. \\
-
-\item La relación $\emph{EMPLEADOS\_ADM}$ contiene los datos de los empleados de la empresa que llevan a cabo tareas administrativas. \\
-
-\item La relación $\emph{EMPLEADOS\_PROD}$ almacena los datos de los empleados de la empresa que se ocupan de las tarea de producción. \\
-
-\end{enumerate}
-
-La descripción y esquema de las relaciones anteriores se muestran en las Tablas \ref{tab:01}, \ref{tab:02}, \ref{tab:03} y \ref{tab:04}. \\
-
-%\begin{figure}[h!]
-%\centering
-%\includegraphics[width=4cm]{imagenes/05_edificioemp.png}
-%\caption{Esquema y extensión de $EDIFICIOS\_EMP$.}
-%\label{fig:edificioemp}
-%\end{figure}
-
-\clearpage
-\begin{table}[h!]
-\footnotesize
-\centering
-\begin{tabular}{|c|c|}
-\hline
-\multicolumn{2}{|c|}{\textbf{EDIFICIOS\_EMP}} \\ \hline
-\textit{\underline{edificio}}   & \textit{supmediadesp}   \\ \hline
-Marina              & 15                      \\ \hline
-Diagonal            & 10                      \\ \hline
-\end{tabular}
-\caption{Esquema y extensión de \textit{EDIFICIOS\_EMP}.}
-\label{tab:01}
-\end{table}
-
-%\begin{figure}[h!]
-%\centering
-%\includegraphics[width=7.5cm]{imagenes/06_despachos.png}
-%\caption{Esquema y extensión de $DESPACHOS$.}
-%\label{fig:despachos}
-%\end{figure}
-
-\begin{table}[h!]
-\footnotesize
-\centering
-\begin{tabular}{|c|c|c|}
-\hline
-\multicolumn{3}{|c|}{\textbf{DESPACHOS}}                  \\ \hline
-\textit{\underline{edificio}} & \textit{\underline{numero}} & \textit{superficie} \\ \hline
-Marina            & 120             & 10                  \\ \hline
-Marina            & 230             & 20                  \\ \hline
-Diagonal          & 120             & 10                  \\ \hline
-Diagonal          & 440             & 10                  \\ \hline
-\end{tabular}
-\caption{Esquema y extensión de \textit{DESPACHOS}.}
-\label{tab:02}
-\end{table}
-
-%\begin{figure}[h!]
-%\centering
-%\includegraphics[width=8.5cm]{imagenes/07_empleadosadm.png}
-%\caption{Esquema y extensión de $EMPLEADOS\_ADM$.}
-%\label{fig:empleadosadm}
-%\end{figure}
-
-\begin{table}[h!]
-\footnotesize
-\centering
-\begin{tabular}{|c|c|c|c|c|}
-\hline
-\multicolumn{5}{|c|}{\textbf{EMPLEADOS\_ADM}}                                                    \\ \hline
-\textit{\underline{ID}} & \textit{nombre} & \textit{apellido} & \textit{edificiodesp} & \textit{numerodesp} \\ \hline
-40.444.255   & Juan            & García            & Marina                & 120                 \\ \hline
-33.567.711   & Marta           & Roca              & Marina                & 120                 \\ \hline
-\end{tabular}
-\caption{Esquema y extensión de \textit{EMPLEADOS\_ADM}.}
-\label{tab:03}
-\end{table}
-
-%\begin{figure}[h!]
-%\centering
-%\includegraphics[width=9cm]{imagenes/08_empleadosprod.png}
-%\caption{Esquema y extensión de $EMPLEADOS\_PROD$.}
-%\label{fig:empleadosprod}
-%\end{figure}
-
-\begin{table}[h!]
-\footnotesize
-\centering
-\begin{tabular}{|c|c|c|c|c|}
-\hline
-\multicolumn{5}{|c|}{\textbf{EMPLEADOS\_PROD}}                                                         \\ \hline
-\textit{\underline{ID}} & \textit{nombreemp} & \textit{apellidoemp} & \textit{edificiodesp} & \textit{numerodesp} \\ \hline
-33.567.711   & Marta              & Roca                 & Marina                & 120                 \\ \hline
-55.898.425   & Carlos             & Buendía              & Diagonal              & 120                 \\ \hline
-77.232.144   & Elena              & Pla                  & Marina                & 230                 \\ \hline
-21.335.245   & Jorge              & Soler                & NULO                  & NULO                \\ \hline
-88.999.210   & Pedro              & Ginzález             & NULO                  & NULO                \\ \hline
-\end{tabular}
-\caption{Esquema y extensión de \textit{EMPLEADOS\_PROD}.}
-\label{tab:04}
-\end{table}
 
 \subsection{Selección}
 \label{selec}
@@ -358,38 +253,10 @@ Además, siempre se puede combinar una serie de operaciones \textbf{selección} en
 \end{equation}
 \\
 
-Por ejemplo, si se desea obtener una relación $R$ con los despachos en el edificio Marina y que tienen una superficie de más de 12 metros cuadrados, la operación queda como se muestra en la Consulta \ref{eq:06}. \\
-
-\begin{equation}
-\sigma_{edificio = Marina \wedge superficie > 12}(\emph{DESPACHOS})
-\label{eq:06}
-\end{equation}
-\\
-
-El resultado gráfico de la Consulta \ref{eq:06} se aprecia en la Tabla \ref{tab:ejemplo1}. \\
-
-%\begin{figure}[h!]
-%\centering
-%\includegraphics[width=9cm]{imagenes/09_ejemplo1.png}
-%\caption{Restultado gráfico de una selección}
-%\label{fig:ejemplo1}
-%\end{figure}
-
-\begin{table}[h!]
-\footnotesize
-\centering
-\begin{tabular}{|c|c|c|}
-\hline
-\multicolumn{3}{|c|}{\textbf{R}}                          \\ \hline
-\textit{edificio} & \textit{numero} & \textit{superficie} \\ \hline
-Marina            & 230             & 20                  \\ \hline
-\end{tabular}
-\caption{Restultado gráfico de una selección}
-\label{tab:ejemplo1}
-\end{table}
+Para el apoyo del lector, el Apéndice \ref{app-seleccion} contiene un ejemplo básico de \textbf{selección}. \\
 
 \subsection{Proyección}
-\label{selec}
+\label{proyec}
 
 Si se desea extraer ciertos atributos de una relación, entonces se usa la operación \textbf{proyección} para seleccionar esos atributos y desechar los otros. Esta operación se muestra en la Consulta \ref{eq:07}. \\
 
@@ -411,36 +278,7 @@ El número de tuplas de la relación resultante de la operación \textbf{proyección
 
 Ésto, siempre que $lista1$ sea un subconjunto de los atributos de $lista2$, sino el lado izquierdo será incorrecto. A su vez, la \textbf{proyección} no es una operación conmutativa \cite{elmasri2002fundamentos}. \\
 
-Por ejemplo, se desea obtener una relación $R$ con el nombre y apellido de todos los empleados de la relación $\emph{EMPLEADOS\_ADM}$, entonces la operación se hace como se muestra en la Consulta \ref{eq:09}. \\
-
-\begin{equation}
-\pi_{nombre,apellido}(\emph{EMPLEADOS\_ADM})
-\label{eq:09}
-\end{equation}
-\\
-
-El resultado gráfico de la Consulta \ref{eq:09} se muestra en la Tabla \ref{tab:ejemplo2} \\.
-
-%\begin{figure}[h!]
-%\centering
-%\includegraphics[width=6cm]{imagenes/10_ejemplo2.png}
-%\caption{Restultado gráfico de una proyección}
-%\label{fig:ejemplo2}
-%\end{figure}
-
-\begin{table}[h!]
-\footnotesize
-\centering
-\begin{tabular}{|c|c|}
-\hline
-\multicolumn{2}{|c|}{\textbf{R}}    \\ \hline
-\textit{nombre} & \textit{apellidp} \\ \hline
-Juan            & García            \\ \hline
-Marta           & Roca              \\ \hline
-\end{tabular}
-\caption{Restultado gráfico de una proyección.}
-\label{tab:ejemplo2}
-\end{table}
+Para el apoyo del lector, el Apéndice \ref{app-seleccion} contiene un ejemplo de \textbf{proyección}. \\
 
 \subsection{Renombrar y Asignación de Relaciones}
 \label{renomb}
@@ -467,60 +305,15 @@ El símbolo $\rho$ se refiere a la operación \textbf{renombrar}, $S$ es el nuevo 
 
 En algunos casos, resulta cómodo \textbf{asignar} relaciones resultantes de alguna consulta cuando se desea hacer muchas operaciones anidadas. Para esto se utiliza la operación \textbf{asignar}, como se denota en la Consulta \ref{eq:14}. \\
 
-%Para mayor comodidad y para evitar el excesivo uso de paréntesis, la operación \textbf{renombrar} se denota como se muestra en la consulta \ref{eq:13} ó \ref{eq:14} ó \ref{eq:15}. \\
-
-%\begin{equation}
-%S(B_{1}, B_{2}, ..., B_{n}) \leftarrow R
-%\label{eq:13}
-%\end{equation}
-%\\
 \begin{equation}
 S \leftarrow R
 \label{eq:14}
 \end{equation}
 \\
-%\begin{equation}
-%B_{1}, B_{2}, ..., B_{n}) \leftarrow R
-%\label{eq:15}
-%\end{equation}
-%\\
 
 Donde $\leftarrow$ indica la acción \textbf{renombrar}, $S$ el nuevo nombre de la relación y $R$ la relación antes de ser renombrada. \\
 
-Por ejemplo, si se desea obtener una relación $R$ con los despachos que están en el edificio Marina y tienen una superficie de más de 12 metros cuadrados, y además extraer únicamente el número de ese departamento, la operación se formula como se muestra en la Consulta \ref{eq:16} y \ref{eq:17}. \\
-
-\begin{equation}
-AUX \leftarrow \sigma_{edificio = Marina \wedge superficie > 12}(\emph{DESPACHOS})
-\label{eq:16}
-\end{equation}
-\\
-\begin{equation}
-\pi_{numero}(AUX)
-\label{eq:17}
-\end{equation}
-\\
-
-El resultado gráfico de la Consulta \ref{eq:16} y la Consulta \ref{eq:17} se aprecia en la Tabla \ref{tab:ejemplo3}. Notar que se utilizó la operación \textbf{asignar} para generar una relación intermedia en la Consulta \ref{eq:16} y utilizarla en la Consulta \ref{eq:17} \\.
-
-%\begin{figure}[h!]
-%\centering
-%\includegraphics[width=3cm]{imagenes/11_ejemplo3.png}
-%\caption{Restultado gráfico de una selección y una proyección anidadas}
-%\label{fig:ejemplo3}
-%\end{figure}
-
-\begin{table}[h]
-\footnotesize
-\centering
-\begin{tabular}{|c|}
-\hline
-\textbf{R}      \\ \hline
-\textit{numero} \\ \hline
-230             \\ \hline
-\end{tabular}
-\caption{Resultado gráfico de una selección y una proyección anidadas.}
-\label{tab:ejemplo3}
-\end{table}
+Para el apoyo del lector, el Apéndice \ref{app-renombrar} contiene un ejemplo para \textbf{renombrar y asignar} una relación. \\
 
 \subsection{Operaciones de la Teoría de Conjuntos}
 \label{opteoriaconj}
@@ -591,104 +384,7 @@ R - S \neq S - R
 \end{equation}
 \\
 
-Por ejemplo, si necesita obtener una relación $R$ que tenga a todos los empleados de la empresa, entonces utilizamos la \textbf{unión} de las relaciones \textit{EMPLEADOS\_ADM} y \textit{EMPLEADOS\_PROD} como se muestra en la Consulta \ref{eq:26}. \\
-
-\begin{equation}
-\emph{EMPLEADOS\_ADM} \cup \emph{EMPLEADOS\_PROD}
-\label{eq:26}
-\end{equation}
-\\
-
-El resultado gráfico de la Consulta \ref{eq:26} se muestra en la Tabla \ref{tab:ejemplo4}.
-
-%\begin{figure}[h!]
-%\centering
-%\includegraphics[width=10cm]{imagenes/12_ejemplo4.png}
-%\caption{Restultado gráfico de una unión}
-%\label{fig:ejemplo4}
-%\end{figure}
-
-\begin{table}[h!]
-\footnotesize
-\centering
-\begin{tabular}{|c|c|c|c|c|}
-\hline
-\multicolumn{5}{|c|}{\textbf{R}}                                                                 \\ \hline
-\textit{\underline{ID}} & \textit{nombre} & \textit{apellido} & \textit{edificiodesp} & \textit{numerodesp} \\ \hline
-40.444.255   & Juan            & García            & Marina                & 120                 \\ \hline
-33.567.711   & Marta           & Roca              & Marina                & 120                 \\ \hline
-55.898.425   & Carlos          & Buendía           & Diagonal              & 120                 \\ \hline
-77.232.144   & Elena           & Pla               & Marina                & 230                 \\ \hline
-21.355.245   & Jorge           & Soler             & NULO                  & NULO                \\ \hline
-88.999.210   & Pedro           & González          & NULO                  & NULO                \\ \hline
-\end{tabular}
-\caption{Resultado gráfico de una unión.}
-\label{tab:ejemplo4}
-\end{table}
-
-Si se necesita obtener una relación $R$ que tenga a todos los empleados de la empresa que trabajen tanto en administración como en producción, entonces se realiza una \textbf{intersección} de las relaciones $\emph{EMPLEADOS\_ADM}$ y $\emph{EMPLEADOS\_PROD}$ como se muestra en la Consulta \ref{eq:27}. \\
-
-\begin{equation}
-\emph{EMPLEADOS\_ADM} \cap \emph{EMPLEADOS\_PROD}
-\label{eq:27}
-\end{equation}
-\\
-
-El resultado gráfico de la Consulta \ref{eq:27} se muestra en la Tabla \ref{tab:ejemplo5}.
-
-%\begin{figure}[h!]
-%\centering
-%\includegraphics[width=10cm]{imagenes/13_ejemplo5.png}
-%\caption{Restultado gráfico de una intersección}
-%\label{fig:ejemplo5}
-%\end{figure}
-
-\begin{table}[h!]
-\footnotesize
-\centering
-\begin{tabular}{|c|c|c|c|c|}
-\hline
-\multicolumn{5}{|c|}{\textbf{R}}                                                                 \\ \hline
-\textit{ID} & \textit{nombre} & \textit{apellido} & \textit{edificiodesp} & \textit{numerodesp} \\ \hline
-33.597.711   & Marta           & Roca              & Marina                & 120                 \\ \hline
-\end{tabular}
-\caption{Resultado gráfico de una intersección.}
-\label{tab:ejemplo5}
-\end{table}
-
-Si se quiere obtener una relación $R$ con todos los empleados de la empresa que trabajan en administración, pero no en producción, se hace una \textbf{diferencia} entre las relaciones $\emph{EMPLEADOS\_ADM}$ y $\emph{EMPLEADOS\_PROD}$ como se muestra en la Consulta \ref{eq:28}. \\
-
-\begin{equation}
-\emph{EMPLEADOS\_ADM} \- \emph{EMPLEADOS\_PROD}
-\label{eq:28}
-\end{equation}
-\\
-
-El resultado gráfico de la Consulta \ref{eq:25} se muestra en la Tabla \ref{tab:ejemplo6}.
-
-%\begin{figure}[h!]
-%\centering
-%\includegraphics[width=10cm]{imagenes/14_ejemplo6.png}
-%\caption{Restultado gráfico de una diferencia}
-%\label{fig:ejemplo6}
-%\end{figure}
-
-\begin{table}[h!]
-\footnotesize
-\centering
-\begin{tabular}{|c|c|c|c|c|}
-\hline
-\multicolumn{5}{|c|}{\textbf{R}}                                                                 \\ \hline
-\textit{ID} & \textit{nombre} & \textit{apellido} & \textit{edificiodesp} & \textit{numerodesp} \\ \hline
-40.444.255   & Juan            & García            & Marina                & 120                 \\ \hline
-\end{tabular}
-\caption{Resultado gráfico de una diferencia.}
-\label{tab:ejemplo6}
-\end{table}
-
-A continuación se explica la operación \textbf{producto cartesiano}. Ésta es una operación binaria de conjuntos, pero las relaciones implicadas no necesariamente deben ser compatibles con la unión \cite{elmasri2002fundamentos}. \\
-
-Se define \textbf{producto cartesiano} como una operación que sirve para combinar tuplas de dos relaciones de forma combinatorial y se denota como se muestra en la Consulta \ref{eq:29}. \\
+La operación \textbf{producto cartesiano} es una operación binaria de conjuntos, pero las relaciones implicadas no necesariamente deben ser compatibles con la unión, intersección o diferencia \cite{elmasri2002fundamentos}. Se define \textbf{producto cartesiano} como una operación que sirve para combinar tuplas de dos relaciones de forma combinatorial y se denota como se muestra en la Consulta \ref{eq:29}. \\
 
 \begin{equation}
 R \times S
@@ -698,45 +394,9 @@ R \times S
 
 En general, el resultado de $R(A_{1}, A_{2}, ..., A_{n}) \times S(B_{1}, B_{2}, ..., B_{m})$ es una relación $Q$ con $n + m$ atributos $Q(A_{1}, A_{2}, ..., A_{n}, B_{1}, B_{2}, ..., B_{m})$ en ese orden. $Q$ tiene una tupla por cada combinación de tuplas entre $R$ y $S$. Por ende, si $R$ tiene $n_{r}$ tuplas y $S$ tiene $n_{s}$ tuplas, $R \times S$ tendrá $n_{r} \cdot n_{s}$ tuplas \cite{elmasri2002fundamentos}. \\
 
-Por ejemplo, el \textbf{producto cartesiano} entre las relaciones $\emph{DESPACHOS}$ y $\emph{EDIFICOS\_EMP}$ se escribe como se muestra en la Consulta \ref{eq:30}. \\
-
-\begin{equation}
-\rho_{nombreedificio,supmediadesp}\emph{EDIFICIOS\_EMP} \times \emph{DESPACHOS}
-\label{eq:30}
-\end{equation}
-\\
-
-El resultado gráfico de la Consulta \ref{eq:30} se aprecia en la Tabla \ref{tab:ejemplo7}. Para realizar esta operación, fue necesario cambiar el nombre del atributo $edificio$ de la relación $\emph{EDIFICOS\_EMP}$ por $nombreedificio$, para que no haya problema con el atributo $edificio$ de la relación $\emph{DESPACHO}S$. \\
-
-%\begin{figure}[h!]
-%\centering
-%\includegraphics[width=10cm]{imagenes/15_ejemplo7.png}
-%\caption{Restultado gráfico de un producto cartesiano}
-%\label{fig:ejemplo7}
-%\end{figure}
-
-\begin{table}[h!]
-\footnotesize
-\centering
-\begin{tabular}{|c|c|c|c|c|}
-\hline
-\multicolumn{5}{|c|}{\textbf{R}}                                                                            \\ \hline
-\textit{nombreedificio} & \textit{supmediadesp} & \textit{edificio} & \textit{numero} & \textit{superficie} \\ \hline
-Marina                  & 15                    & Marina            & 120             & 10                  \\ \hline
-Marina                  & 15                    & Marina            & 230             & 20                  \\ \hline
-Marina                  & 15                    & Diagonal          & 120             & 10                  \\ \hline
-Marina                  & 15                    & Diagonal          & 440             & 10                  \\ \hline
-Diagonal                & 10                    & Marina            & 120             & 10                  \\ \hline
-Diagonal                & 10                    & Marina            & 230             & 20                  \\ \hline
-Diagonal                & 10                    & Diagonal          & 120             & 10                  \\ \hline
-Diagonal                & 10                    & Diagonal          & 440             & 10                  \\ \hline
-\end{tabular}
-\caption{Restultado gráfico de un producto cartesiano.}
-\label{tab:ejemplo7}
-\end{table}
-
-
 Se debe señalar que el \textbf{producto cartesiano} es un operación que raramente se utiliza de forma explícita, ya que el resultado carece de significado. A pesar de esto, se incluye en el \textit{Álgebra Relacional} porque es una operación primitiva; a partir de la cual se define otra operación que se utiliza con frecuencia llamada \textbf{reunión} \cite{campus2006,elmasri2002fundamentos}. \\
+
+En el Apéndice \ref{app-teoriadeconjuntos} contiene un ejemplo para cada operación de teoría de conjuntos explicado en la presente sección. \\
 
 \subsection{Reunión}
 \label{reunion}
@@ -755,44 +415,7 @@ El resultado de la \textbf{reunión} es una relación $Q$ con $n + m$ atributos $Q
 
 El tratamiento de la condición de reunión es idéntico a la condición de selección explicada en la Sección \ref{selec}, con la diferencia que la comparación se hace entre atributos de $R$ y $S$. \textit{``Una \textbf{reunión} con una condición de reunión general cómo ésta se denomina \textbf{reunión theta}''} \cite{elmasri2002fundamentos}. \\
 
-Por ejemplo, si se desea encontrar los datos de los despachos que tienen una superficie mayor o igual que la superficie de los despachos del edificio donde están situados, entonces se utiliza la operación \textbf{reunión} como se muestra en la Consulta \ref{eq:32.1} y \ref{eq:32.2}. \\
-
-\begin{equation}
-\rho_{nombreedificio,supmediadesp}\emph{EDIFICIOS\_EMP}
-\label{eq:32.1}
-\end{equation}
-\\
-\begin{equation}
-\emph{EDIFICIOS\_EMP} \bowtie_{nombreedificio = edificio \wedge supmediadesp \leq superficie}\emph{DESPACHOS}
-\label{eq:32.2}
-\end{equation}
-\\
-
-El resultado gráfico de la Consulta \ref{eq:32.1} y \ref{eq:32.2} se aprecia en la Tabla \ref{tab:ejemplo8}. Para realizar esta operación, fue necesario cambiar el nombre del atributo $edificio$ de la relación $\emph{EDIFICOS\_EMP}$ por $nombreedificio$, para que no haya problema con el atributo $edificio$ de la relación $\emph{DESPACHOS}$. \\
-
-%\begin{figure}[h!]
-%\centering
-%\includegraphics[width=10cm]{imagenes/16_ejemplo8.png}
-%\caption{Restultado gráfico de una reunión}
-%\label{fig:ejemplo8}
-%\end{figure}
-
-\begin{table}[h!]
-\footnotesize
-\centering
-\begin{tabular}{|c|c|c|c|c|}
-\hline
-\multicolumn{5}{|c|}{\textbf{R}}                                                                            \\ \hline
-\textit{nombreedificio} & \textit{supmediadesp} & \textit{edificio} & \textit{numero} & \textit{superficie} \\ \hline
-Marina                  & 15                    & Marina            & 120             & 10                  \\ \hline
-Diagonal                & 10                    & Diagonal          & 120             & 10                  \\ \hline
-Diagonal                & 10                    & Diagonal          & 440             & 10                  \\ \hline
-\end{tabular}
-\caption{Restultado gráfico de una reunión.}
-\label{tab:ejemplo8}
-\end{table}
-
-La \textbf{reunión} más utilizada contiene condiciones de comparación de igualdad exclusivamente. A este tipo de reunión se le denomina \textbf{equirreunión}. Los resultados de una \textbf{equirreunión} siempre tiene uno o más pares de atributos con valores idénticos en todas las tuplas, como se aprecia en la tabla \ref{tab:ejemplo8}, donde los valores de $nombreedificio$ y $edificio$ son iguales para cada tupla. Para evitar esto, se ha especificado otro tipo de operación llamada \textbf{reunión natural} \cite{elmasri2002fundamentos}. \\
+La \textbf{reunión} más utilizada contiene condiciones de comparación de igualdad exclusivamente. A este tipo de reunión se le denomina \textbf{equirreunión}. Los resultados de una \textbf{equirreunión} siempre tiene uno o más pares de atributos con valores idénticos en todas las tuplas. Para evitar esto, se ha especificado otro tipo de operación llamada \textbf{reunión natural} \cite{elmasri2002fundamentos}. \\
 
 Una \textbf{reunión natural}, se denota como se muestra en la Consulta \ref{eq:33}. \\
 
@@ -804,40 +427,7 @@ R \ast S
 
 Donde $\ast$ es el operador de \textbf{reunión natural}, y $S$ y $R$ son relaciones que contengan al menos un atributo con el mismo nombre que se deseen reunir; sirve para deshacerse del segundo atributo que se repite en una condición de \textbf{equirreunión} \cite{elmasri2002fundamentos}. \\
 
-Como los atributos sobre los cuales se especifica la \textbf{reunión natural} tienen los mismos nombre en ambas relaciones, no hace falta renombrarlos. Ésto evita el trabajo hecho en los ejemplos de las Tablas \ref{tab:ejemplo7} y \ref{tab:ejemplo8}, donde se debió cambiar el nombre del atributo $edificio$ de la relación $\emph{EDIFICIOS\_EMP}$ para que no genere un problema con el atributo $edificio$ de la relación $\emph{DESPACHOS}$ \cite{elmasri2002fundamentos}. \\
-
-Por ejemplo, si se hace una \textbf{reunión natural} entre $\emph{EDIFICIOS\_EMP}$ y $\emph{DESPACHOS}$, sin la necesidad de renombrar los atributos, se escribe como se muestra en la Consulta \ref{eq:34}. \\
-
-\begin{equation}
-\emph{EDIFICIOS\_EMP} \ast \emph{DESPACHOS}
-\label{eq:34}
-\end{equation}
-\\
-
-El resultado gráfico de la Consulta \ref{eq:34} se aprecia en la Tabla \ref{tab:ejemplo9}. \\
-
-%\begin{figure}[h!]
-%\centering
-%\includegraphics[width=9cm]{imagenes/17_ejemplo9.png}
-%\caption{Restultado gráfico de una reunión natural}
-%\label{fig:ejemplo9}
-%\end{figure}
-
-\begin{table}[h!]
-\footnotesize
-\centering
-\begin{tabular}{|c|c|c|c|}
-\hline
-\multicolumn{4}{|c|}{\textbf{R}}                                                  \\ \hline
-\textit{edificio} & \textit{supmediadesp} & \textit{numero} & \textit{superficie} \\ \hline
-Marina            & 15                    & 120             & 10                  \\ \hline
-Marina            & 15                    & 230             & 20                  \\ \hline
-Diagonal          & 10                    & 120             & 10                  \\ \hline
-Diagonal          & 10                    & 440             & 10                  \\ \hline
-\end{tabular}
-\caption{Restultado gráfico de una reunión natural.}
-\label{tab:ejemplo9}
-\end{table}
+Para el apoyo del lector, el Apéndice \ref{app-reunion} contiene un ejemplo para todas las  \textbf{reuniones} explicadas en esta sección. \\
 
 \subsection{División}
 \label{div}
@@ -852,45 +442,7 @@ R \div S
 
 Donde $\div$ es el operador de la \textbf{división}. Ésta se aplica a dos relaciones $R(Z)$ y $S(X)$, dónde $Z$ es el conjunto de atributos de $R$, $X$ es el conjunto de atributos de $S$ y $X \subseteq Z$. Sea $Y$ el conjunto de atributos de $R$ que no son atributos de $S$, es decir $Y = Z - X$. Para que cada tupla $t$ aparezca en el resultado de $T$ de la \textbf{división}, los valores de $t$ deben aparecer en $R$ en combinación con todas las tuplas de $S$ \cite{elmasri2002fundamentos}. \\
 
-Si se tiene una relación llamada $\emph{EDIFICIOS\_EMP}$ que contiene sólo los nombres de los edificios y otra llamada $\emph{EDIFICIOS\_EMPLEADOS}$ que tiene un historial de los edificios en los cuales han trabajado los empleados, ambas se muestran en la Tabla \ref{tab:ejemplo10}. Si se quiere saber cuáles empleados han trabajado en todos los edificios, se hace una \textbf{división} entre las relaciones $\emph{EDIFICIOS\_EMP}$ y $\emph{EDIFICIOS\_EMPLEADOS}$. El resultado de esta \textbf{división} se muestra en la Tabla \ref{tab:ejemplo10.1}. Como se aprecia, tanto \textit{Marta} y \textit{Jorge} son valores de $\emph{EDIFICIOS\_EMPLEADOS}(nombre)$ que aparecen en combinación con todas las tuplas de $\emph{EDIFICIOS}(edificio)$. \\
-
-\begin{table}[h!]
-\footnotesize
-\centering
-\begin{tabular}{|c|c|cc}
-\cline{1-2}
-\multicolumn{2}{|c|}{\textbf{EDIFICIOS\_EMPLEADOS}} &  &                                  \\ \cline{1-2}
-\textit{edificio}      & \textit{nombre}     &  &                                  \\ \cline{1-2}
-Marina              & Marta             &  &                                  \\ \cline{1-2}
-Diagonal              & Marta             &  &                                  \\ \cline{1-2}
-Rosales              & Marta             &  &                                  \\ \cline{1-2} \cline{4-4} 
-Almodovar              & Marta             &  & \multicolumn{1}{|c|}{\textbf{EDIFICIOS\_EMP}} \\ \cline{1-2} \cline{4-4} 
-Marina              & Carlos             &  & \multicolumn{1}{|c|}{\textit{edificio}} \\ \cline{1-2} \cline{4-4} 
-Rosales              & Carlos             &  & \multicolumn{1}{|c|}{Marina}         \\ \cline{1-2} \cline{4-4} 
-Diagonal              & Elena             &  & \multicolumn{1}{|c|}{Diagonal}         \\ \cline{1-2} \cline{4-4} 
-Rosales              & Elena             &  & \multicolumn{1}{|c|}{Rosales}         \\ \cline{1-2} \cline{4-4} 
-Almodovar              & Elena             &  &                                  \\ \cline{1-2}
-Marina              & Jorge             &  &                                  \\ \cline{1-2}
-Diagonal              & Jorge             &  &                                  \\ \cline{1-2}
-Rosales              & Jorge             &  &                                  \\ \cline{1-2}
-\end{tabular}
-\caption{Relaciones $\emph{EDIFICIOS\_EMPLEADOS}$ Y $\emph{EDIFICIOS\_EMP}$.}
-\label{tab:ejemplo10}
-\end{table}
-
-\begin{table}[h!]
-\footnotesize
-\centering
-\begin{tabular}{|c|}
-\hline
-\textbf{R} \\ \hline
-\textit{nombre} \\ \hline
-Marta         \\ \hline
-Jorge         \\ \hline
-\end{tabular}
-\caption{Resultado de una división.}
-\label{tab:ejemplo10.1}
-\end{table}
+Para ayudar a entender más la operación de \textbf{división}, el Apéndice \ref{app-division} contiene un ejemplo que explica gráficamente cómo funciona la \textbf{división} relacional. \\
 
 \subsection{Funciones Agregadas y de Agrupación}
 \label{funcagreg}
@@ -909,50 +461,7 @@ _{<atributos\_de\_agrupacion>}\mathfrak{F}_{<lista\_de\_funciones>}(R)
 
 Donde $atributos\_de\_agrupacion$ es la lista de atributos de $R$,  $lista\_de\_funciones$ es la lista de funciones expresadas de la forma $funcion(atributo)$, donde $funcion$ puede ser una \textbf{suma, promedio, máximo, mínimo} o \textbf{cuenta} y $atributo$ es un atributo de $R$. La relación resultante tiene los atributos de agrupación más un atributo por cada elemento de la lista de funciones \cite{elmasri2002fundamentos}. \\
 
-Por ejemplo, si deseamos saber la superficie total por cada edificio en la relación $\emph{DESPACHOS}$, entonces se debe agrupar las tuplas por el atributo $edificio$ y luego calcular la suma del atributo $superficie$ de cada tupla agrupada, como se muestra en la Consulta \ref{eq:37}. \\
-
-\begin{equation}
-_{edificio}\mathfrak{F}_{suma(superficie)}(\emph{DESPACHOS})
-\label{eq:37}
-\end{equation}
-\\ 
-
-El resultado gráfico de la Consulta \ref{eq:37} se muestra en la Tabla \ref{tab:ejemplo12}. \\
-
-\begin{table}[h!]
-\footnotesize
-\centering
-\begin{tabular}{|c|c|}
-\hline
-\multicolumn{2}{|c|}{\textbf{R}}  \\ \hline
-\textit{edificio} & \textit{suma} \\ \hline
-Marina            & 30            \\ \hline
-Diagonal          & 10            \\ \hline
-\end{tabular}
-\caption{Resultado de una suma con agrupación de atributos.}
-\label{tab:ejemplo12}
-\end{table}
-
-Si no se especifica el atributo de agrupación, como se muestra en la Consulta \ref{eq:38}, entonces el resultado será el que se muestra en la Tabla \ref{tab:ejemplo13}. \\
-
-\begin{equation}
-\mathfrak{F}_{suma(superficie)}(\emph{DESPACHOS})
-\label{eq:38}
-\end{equation}
-\\ 
-
-\begin{table}[h!]
-\footnotesize
-\centering
-\begin{tabular}{|c|}
-\hline
-\textbf{R}    \\ \hline
-\textit{suma} \\ \hline
-50            \\ \hline
-\end{tabular}
-\caption{Resultado de una suma sin agrupación de atributos.}
-\label{tab:ejemplo13}
-\end{table}
+Para el apoyo del lector, el Apéndice \ref{app-funcagreg} contiene un ejemplo que explica una función de \textbf{agregación} y \textbf{agrupación}
 
 \subsection{Reunión Externa}
 \label{reuexter}
@@ -967,36 +476,6 @@ R \leftouterjoin S
 \end{equation}
 \\
 
-Por ejemplo, para hacer una \textbf{reunión externa izquierda} entre $\emph{EMPLEADOS\_PROD}$ y $\emph{DESPACHOS}$, renombrando algunos atributos de $\emph{DESPACHO}$, se debe hacer la Consulta \ref{eq:39.1} y \ref{eq:39.2}. Su resultado se muestra en la Tabla \ref{tab:ejemplo14}. \\
-
-\begin{equation}
-D \leftarrow \rho_{edificiodesp,numerodesp,superficie}(\emph{DESPACHOS})
-\label{eq:39.1}
-\end{equation}
-\\
-\begin{equation}
-\emph{EMPLEADOS\_PROD} \leftouterjoin D
-\label{eq:39.2}
-\end{equation}
-\\
-
-\begin{table}[h!]
-\footnotesize
-\centering
-\begin{tabular}{|c|c|c|c|c|c|}
-\hline
-\multicolumn{6}{|c|}{\textbf{R}}                                                                                            \\ \hline
-\textit{ID} & \textit{nombreemp} & \textit{apellidoemp} & \textit{edificiodesp} & \textit{numerodesp} & \textit{superficie} \\ \hline
-33.567.711  & Marta              & Roca                 & Marina                & 120                 & 10                  \\ \hline
-55.898.425  & Carlos             & Buendia              & Diagonal              & 120                 & 10                  \\ \hline
-77.232.144  & Elena              & Pla                  & Marina                & 230                 & 20                  \\ \hline
-21.335.245  & Jorge              & Soler                & NULO                  & NULO                & NULO                \\ \hline
-88.999.210  & Pedro              & González             & NULO                  & NULO                & NULO                \\ \hline
-\end{tabular}
-\caption{Resultado de una reunión externa izquierda.}
-\label{tab:ejemplo14}
-\end{table}
-
 La \textbf{reunión externa derecha} entre las relaciones $R$ y $S$ denotada por $\rightouterjoin$ conserva todas las tuplas de la \textit{segunda relación}, o sea, de $S$. Si no se encuentra alguna tupla coincidente en $R$, los atributos de $R$ en el resultado se rellenan con valores nulos \cite{elmasri2002fundamentos}. Esta operación se muestra en la Fórmula \ref{eq:40}. \\
 
 \begin{equation}
@@ -1004,35 +483,6 @@ R \rightouterjoin S
 \label{eq:40}
 \end{equation}
 \\
-
-Por ejemplo, para hacer una \textbf{reunión externa izquierda} entre $\emph{EMPLEADOS\_PROD}$ y $\emph{DESPACHOS}$, renombrando algunos atributos de $\emph{DESPACHO}$, se debe hacer la Consulta \ref{eq:40.1} y \ref{eq:40.2}. Su resultado se muestra en la Tabla \ref{tab:ejemplo15}. \\
-
-\begin{equation}
-D \leftarrow \rho_{edificiodesp,numerodesp,superficie}(\emph{DESPACHOS})
-\label{eq:40.1}
-\end{equation}
-\\
-\begin{equation}
-\emph{EMPLEADOS\_PROD} \rightouterjoin D
-\label{eq:40.2}
-\end{equation}
-\\
-
-\begin{table}[h!]
-\footnotesize
-\centering
-\begin{tabular}{|c|c|c|c|c|c|}
-\hline
-\multicolumn{6}{|c|}{\textbf{R}}                                                                                            \\ \hline
-\textit{ID} & \textit{nombreemp} & \textit{apellidoemp} & \textit{edificiodesp} & \textit{numerodesp} & \textit{superficie} \\ \hline
-33.567.711  & Marta              & Roca                 & Marina                & 120                 & 10                  \\ \hline
-55.898.425  & Carlos             & Buendia              & Diagonal              & 120                 & 10                  \\ \hline
-77.232.144  & Elena              & Pla                  & Marina                & 230                 & 20                  \\ \hline
-NULO        & NULO               & NULO                 & Diagonal              & 440                 & 10                  \\ \hline
-\end{tabular}
-\caption{Resultado de una reunión externa derecha.}
-\label{tab:ejemplo15}
-\end{table}
 
 La \textbf{reunión externa completa} entre las relaciones $R$ y $S$ denotada por $\fullouterjoin$ conserva todas las tuplas de la \textit{primera relación} y de la \textit{segunda relación}, o sea, de $R$ y $S$. Si no se encuentran tuplas coincidentes, se rellenarán con valores nulos \cite{elmasri2002fundamentos}. Esta operación se muestra en la Fórmula \ref{eq:41}. \\
 
@@ -1042,36 +492,7 @@ R \fullouterjoin S
 \end{equation}
 \\
 
-Por ejemplo, para hacer una \textbf{reunión externa completa} entre $\emph{EMPLEADOS\_PROD}$ y $\emph{DESPACHOS}$, renombrando algunos atributos de $\emph{DESPACHO}$, se debe hacer la Consulta que se muestra en la Fórmula \ref{eq:41.1} y \ref{eq:41.2}. Su resultado se muestra en la Tabla \ref{tab:ejemplo16}. \\
-
-\begin{equation}
-D \leftarrow \rho_{edificiodesp,numerodesp,superficie}(\emph{DESPACHOS})
-\label{eq:41.1}
-\end{equation}
-\\
-\begin{equation}
-\emph{EMPLEADOS\_PROD} \fullouterjoin D
-\label{eq:41.2}
-\end{equation}
-\\
-
-\begin{table}[h!]
-\footnotesize
-\centering
-\begin{tabular}{|c|c|c|c|c|c|}
-\hline
-\multicolumn{6}{|c|}{\textbf{R}}                                                                                            \\ \hline
-\textit{ID} & \textit{nombreemp} & \textit{apellidoemp} & \textit{edificiodesp} & \textit{numerodesp} & \textit{superficie} \\ \hline
-33.567.711  & Marta              & Roca                 & Marina                & 120                 & 10                  \\ \hline
-55.898.425  & Carlos             & Buendia              & Diagonal              & 120                 & 10                  \\ \hline
-77.232.144  & Elena              & Pla                  & Marina                & 230                 & 20                  \\ \hline
-21.335.245  & Jorge              & Soler                & NULO                  & NULO                & NULO                \\ \hline
-88.999.210  & Pedro              & González             & NULO                  & NULO                & NULO                \\ \hline
-NULO        & NULO               & NULO                 & Diagonal              & 440                 & 10                  \\ \hline
-\end{tabular}
-\caption{Resultado de una reunión externa completa.}
-\label{tab:ejemplo16}
-\end{table}
+El Apéndice \ref{app-reunionexterna} contiene distintos ejemplos para cada tipo de \textbf{reunión externa} explicadas en la presente sección. \\ 
 
 \section{Traducción de Álgebra Relacional a SQL}
 \label{ar2sql}
@@ -1080,36 +501,7 @@ Las operaciones del Álgebra Relacional son muy importantes para entender el tipo
 
 Por un lado, las consultas en Álgebra Relacional se escriben secuencialmente, por ende se debe especificar en qué orden se deben ejecutar las operaciones de consulta. Mientras que SQL proporciona una interfaz de lenguaje declarativo de alto nivel, es decir, el usuario sólo se preocupa en especificar cuál es el resultado deseado, dejando que el Sistema Gestor de Base de Datos se preocupe de la optimización de la consulta y de las decisiones sobre cómo ejecutarla \cite{elmasri2002fundamentos}. \\
 
-Esta sección contiene las transformaciones de las operaciones en Álgebra Relacional a consultas SQL representadas en la Tabla \ref{tab:ar2sql}, donde cada operación tiene su nombre, su sintaxis en Álgebra Relacional y su sintaxis en SQL. \\
-
-\newpage
-
-\begin{table}[h!]
-\footnotesize
-\centering
-\begin{tabular}{|p{3.5cm}|p{4cm}|p{7.5cm}|}
-\hline
-\rowcolor[HTML]{9B9B9B} 
-\multicolumn{3}{|l|}{\cellcolor[HTML]{9B9B9B}\textbf{Álgebra Relacional a SQL}}                                                                                                                                   \\ \hline
-\rowcolor[HTML]{C0C0C0} 
-\textit{Operador}              & \textit{Álgebra Relacional} & \textit{SQL}                                                                                                                                       \\ \hline
-Selección                      & $\sigma_{<condicion>}(r)$                           & \begin{tabular}[c]{@{}l@{}}\texttt{SELECT * FROM \textbf{r}}\\ \texttt{\textbf{WHERE condicion}}\end{tabular}                                                                          \\ \hline
-Proyección                     & $\pi_{<lista\_atributos>}(r)$                           & \begin{tabular}[c]{@{}l@{}}\texttt{SELECT}\\ \texttt{\textbf{lista\_atributos}}\\ \texttt{FROM \textbf{r}}\end{tabular}                                                                \\ \hline
-Renombrar                      & $\rho_{s(<lista\_atributos>)}(r)$                           & \begin{tabular}[c]{@{}l@{}}\texttt{SELECT * FROM}\\ \texttt{\textbf{r AS s(lista\_atributos})}\end{tabular}                                                                   \\ \hline
-Unión                          & $r \cup s$                           & \begin{tabular}[c]{@{}l@{}}\texttt{SELECT * FROM \textbf{r}}\\ \texttt{\textbf{UNION}}\\ \texttt{SELECT * FROM \textbf{s}}\end{tabular}                                                                  \\ \hline
-Intersección                   & $r \cap s$                           & \begin{tabular}[c]{@{}l@{}}\texttt{SELECT * FROM \textbf{r}}\\ \texttt{\textbf{INTERSECT}}\\ \texttt{SELECT * FROM \textbf{s}}\end{tabular}                                                              \\ \hline
-Diferencia                     & $r - s$                           & \begin{tabular}[c]{@{}l@{}}\texttt{SELECT * FROM \textbf{r}}\\ \texttt{\textbf{EXCEPT}}\\ \texttt{SELECT * FROM \textbf{s}}\end{tabular}                                                                 \\ \hline
-Producto Cartesiano            & $r \times s$                           & \begin{tabular}[c]{@{}l@{}}\texttt{SELECT * FROM}\\ \texttt{\textbf{r, s}}\end{tabular}                                                                                       \\ \hline
-Reunión                        & $r \bowtie s$                           & \begin{tabular}[c]{@{}l@{}}\texttt{SELECT * FROM}\\ \texttt{\textbf{r INNER JOIN s}}\end{tabular}                                                                             \\ \hline
-Reunión Natural                & $r \ast s$                           & \begin{tabular}[c]{@{}l@{}}\texttt{SELECT * FROM} \\ \texttt{\textbf{r NATURAL JOIN s}}\end{tabular}                                                                          \\ \hline
-División                       & $r \div s$                           & \begin{tabular}[c]{@{}p{7.5cm}@{}}\texttt{SELECT a FROM r}\\ \texttt{WHERE b IN (SELECT b FROM s)}\\ \texttt{GROUP BY A}\\ \texttt{HAVING COUNT (*) = (SELECT COUNT (*) FROM s)}\end{tabular} \\ \hline
-Reunión Externa Izquierda      & $r \leftouterjoin s$                          & \begin{tabular}[c]{@{}l@{}}\texttt{SELECT * FROM}\\ \texttt{\textbf{r LEFT OUTER JOIN s}}\end{tabular}                                                                        \\ \hline
-Reunión Externa Derecha        & $r \rightouterjoin s$                           & \begin{tabular}[c]{@{}l@{}}\texttt{SELECT * FROM}\\ \texttt{\textbf{r RIGHT OUTER JOIN s}}\end{tabular}                                                                       \\ \hline
-Reunión Externa Completa       & $r \fullouterjoin s$                           & \begin{tabular}[c]{@{}l@{}}\texttt{SELECT * FROM}\\ \texttt{\textbf{r FULL OUTER JOIN s}}\end{tabular}                                                                        \\ \hline
-\end{tabular}
-\caption{Traducción de Álgebra Relacional a SQL.}
-\label{tab:ar2sql}
-\end{table}
+En el Apéndice \ref{app-ar2sql} se agrega una tabla la cual contiene la traducción de cada operador en Álgebra Relacional a su equivalente en SQL. \\
 
 \section{Aplicaciones Existentes}
 \label{appexist}

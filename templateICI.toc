@@ -15,139 +15,149 @@
 \contentsline {subsubsection}{Regla de Integridad de Dominio}{12}{section*.8}
 \contentsline {subsection}{\numberline {2.2.6}Operaciones de Actualizaci\'on}{12}{subsection.2.2.6}
 \contentsline {section}{\numberline {2.3}\'Algebra Relacional}{13}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Selecci\'on}{15}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Proyecci\'on}{17}{subsection.2.3.2}
-\contentsline {subsection}{\numberline {2.3.3}Renombrar y Asignaci\'on de Relaciones}{18}{subsection.2.3.3}
-\contentsline {subsection}{\numberline {2.3.4}Operaciones de la Teor\IeC {\'\i }a de Conjuntos}{20}{subsection.2.3.4}
-\contentsline {subsection}{\numberline {2.3.5}Reuni\'on}{24}{subsection.2.3.5}
-\contentsline {subsection}{\numberline {2.3.6}Divisi\'on}{26}{subsection.2.3.6}
-\contentsline {subsection}{\numberline {2.3.7}Funciones Agregadas y de Agrupaci\'on}{27}{subsection.2.3.7}
-\contentsline {subsection}{\numberline {2.3.8}Reuni\'on Externa}{29}{subsection.2.3.8}
-\contentsline {section}{\numberline {2.4}Traducci\'on de \'Algebra Relacional a SQL}{31}{section.2.4}
-\contentsline {section}{\numberline {2.5}Aplicaciones Existentes}{33}{section.2.5}
-\contentsline {subsection}{\numberline {2.5.1}Comparaci\'on entre Herramientas Existentes}{36}{subsection.2.5.1}
-\contentsline {section}{\numberline {2.6}Trabajos Existentes}{38}{section.2.6}
-\contentsline {section}{\numberline {2.7}\'Algebra Relacional en la Universidad de Valpara\IeC {\'\i }so}{42}{section.2.7}
-\contentsline {chapter}{\numberline {3}Problema}{44}{chapter.3}
-\contentsline {section}{\numberline {3.1}Definici\'on del Problema}{44}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Problema}{44}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}Soluci\'on Propuesta}{45}{subsection.3.1.2}
-\contentsline {subsection}{\numberline {3.1.3}Importancia del trabajo}{45}{subsection.3.1.3}
-\contentsline {section}{\numberline {3.2}Objetivos}{46}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Objetivo General}{46}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Objetivos Espec\IeC {\'\i }ficos}{46}{subsection.3.2.2}
-\contentsline {chapter}{\numberline {4}An\'alisis}{48}{chapter.4}
-\contentsline {section}{\numberline {4.1}Especificaci\'on de Requerimientos}{48}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Requerimientos Funcionales}{48}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Requerimientos No Funcionales}{48}{subsection.4.1.2}
-\contentsline {section}{\numberline {4.2}Actores del Sistema}{49}{section.4.2}
-\contentsline {section}{\numberline {4.3}Funciones del Sistema}{51}{section.4.3}
-\contentsline {section}{\numberline {4.4}Casos de Usos}{51}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}Modelo de Casos de Usos}{52}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}Casos de Usos Extendidos}{52}{subsection.4.4.2}
-\contentsline {section}{\numberline {4.5}Modelo Conceptual}{53}{section.4.5}
-\contentsline {chapter}{\numberline {5}Dise\~no}{54}{chapter.5}
-\contentsline {section}{\numberline {5.1}Dise\~no Arquitect\'onico}{54}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Modelo de Capas}{55}{subsection.5.1.1}
-\contentsline {subsection}{\numberline {5.1.2}Vista de M\'odulos}{55}{subsection.5.1.2}
-\contentsline {subsection}{\numberline {5.1.3}Vista de Componentes}{58}{subsection.5.1.3}
-\contentsline {section}{\numberline {5.2}Dise\~no Interfaz}{63}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}Interfaces de Usuario}{63}{subsection.5.2.1}
-\contentsline {subsection}{\numberline {5.2.2}Esquema de Navegaci\'on}{63}{subsection.5.2.2}
-\contentsline {section}{\numberline {5.3}Dise\~no L\'ogico}{65}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}Casos de Usos Reales}{65}{subsection.5.3.1}
-\contentsline {subsection}{\numberline {5.3.2}Diagrama de Clases}{65}{subsection.5.3.2}
-\contentsline {section}{\numberline {5.4}Dise\~no de Datos}{70}{section.5.4}
-\contentsline {subsection}{\numberline {5.4.1}Modelo Entidad/Relaci\'on}{70}{subsection.5.4.1}
-\contentsline {subsection}{\numberline {5.4.2}Modelo de Datos}{72}{subsection.5.4.2}
-\contentsline {subsection}{\numberline {5.4.3}Diccionario de Datos}{73}{subsection.5.4.3}
-\contentsline {section}{\numberline {5.5}Dise\~no de Pruebas}{73}{section.5.5}
-\contentsline {subsection}{\numberline {5.5.1}Usuarios de Pruebas}{73}{subsection.5.5.1}
-\contentsline {subsection}{\numberline {5.5.2}Pruebas Unitarias}{74}{subsection.5.5.2}
-\contentsline {subsection}{\numberline {5.5.3}Pruebas de Integraci\'on}{77}{subsection.5.5.3}
-\contentsline {subsection}{\numberline {5.5.4}Pruebas de Sistema}{79}{subsection.5.5.4}
-\contentsline {subsection}{\numberline {5.5.5}Pruebas de Aceptaci\'on}{80}{subsection.5.5.5}
-\contentsline {subsection}{\numberline {5.5.6}Pruebas de Usabilidad}{82}{subsection.5.5.6}
-\contentsline {subsection}{\numberline {5.5.7}Pruebas de Estr\'es}{84}{subsection.5.5.7}
-\contentsline {subsection}{\numberline {5.5.8}Pruebas de Seguridad}{84}{subsection.5.5.8}
-\contentsline {chapter}{\numberline {6}Implementaci\'on}{85}{chapter.6}
-\contentsline {section}{\numberline {6.1}Herramientas de Desarrollo}{85}{section.6.1}
-\contentsline {subsection}{\numberline {6.1.1}Hardware de Desarrollo}{85}{subsection.6.1.1}
-\contentsline {subsection}{\numberline {6.1.2}Lenguajes de Programaci\'on}{86}{subsection.6.1.2}
-\contentsline {subsection}{\numberline {6.1.3}Gram\'atica del Lenguaje de \'Algebra Relacional}{86}{subsection.6.1.3}
-\contentsline {subsection}{\numberline {6.1.4}Interfaz y Presentaci\'on}{87}{subsection.6.1.4}
-\contentsline {subsection}{\numberline {6.1.5}Almacenamiento de Datos}{88}{subsection.6.1.5}
-\contentsline {section}{\numberline {6.2}Herramientas}{89}{section.6.2}
-\contentsline {section}{\numberline {6.3}Interfaz del Sistema}{89}{section.6.3}
-\contentsline {chapter}{\numberline {7}Pruebas}{90}{chapter.7}
-\contentsline {section}{\numberline {7.1}Pruebas Unitarias}{91}{section.7.1}
-\contentsline {subsection}{\numberline {7.1.1}An\'alisis de Resultados}{91}{subsection.7.1.1}
-\contentsline {section}{\numberline {7.2}Pruebas Integraci\'on}{91}{section.7.2}
-\contentsline {subsection}{\numberline {7.2.1}An\'alisis de Resultados}{92}{subsection.7.2.1}
-\contentsline {section}{\numberline {7.3}Pruebas de Sistema}{92}{section.7.3}
-\contentsline {subsection}{\numberline {7.3.1}An\'alisis de Resultados}{92}{subsection.7.3.1}
-\contentsline {section}{\numberline {7.4}Pruebas de Aceptaci\'on}{93}{section.7.4}
-\contentsline {subsection}{\numberline {7.4.1}An\'alisis de Resultados}{93}{subsection.7.4.1}
-\contentsline {section}{\numberline {7.5}Pruebas de Usabilidad}{95}{section.7.5}
-\contentsline {subsection}{\numberline {7.5.1}An\'alisis de Resultados}{95}{subsection.7.5.1}
-\contentsline {section}{\numberline {7.6}Pruebas de Estr\'es}{96}{section.7.6}
-\contentsline {subsection}{\numberline {7.6.1}An\'alisis de Resultados}{97}{subsection.7.6.1}
-\contentsline {section}{\numberline {7.7}Pruebas de Seguridad}{98}{section.7.7}
-\contentsline {subsection}{\numberline {7.7.1}SQL Inyection}{98}{subsection.7.7.1}
-\contentsline {subsubsection}{Resultados SQL Inyection}{98}{section*.9}
-\contentsline {subsection}{\numberline {7.7.2}Acceso por URL}{98}{subsection.7.7.2}
-\contentsline {subsubsection}{Resultados Acceso por URL}{99}{section*.10}
-\contentsline {chapter}{\numberline {8}Implantaci\'on}{100}{chapter.8}
-\contentsline {section}{\numberline {8.1}Infraestructura}{100}{section.8.1}
-\contentsline {section}{\numberline {8.2}Actividades Previas a la Implantaci\'on}{101}{section.8.2}
-\contentsline {subsection}{\numberline {8.2.1}Configuraci\'on del Motor de Base de Datos}{101}{subsection.8.2.1}
-\contentsline {section}{\numberline {8.3}Actividades para la Implantaci\'on}{101}{section.8.3}
-\contentsline {subsection}{\numberline {8.3.1}Instalaci\'on del Sistema en el Servidor de Aplicaciones}{101}{subsection.8.3.1}
-\contentsline {section}{\numberline {8.4}Actividades Posteriores a la Implantaci\'on}{102}{section.8.4}
-\contentsline {chapter}{\numberline {9}Conclusiones}{103}{chapter.9}
-\contentsline {section}{\numberline {9.1}Trabajos Futuros}{104}{section.9.1}
-\contentsline {chapter}{\numberline {A}Casos de Usos Extendidos}{105}{appendix.Alph1}
-\contentsline {chapter}{\numberline {B}Interfaces de Usuario}{165}{appendix.Alph2}
-\contentsline {chapter}{\numberline {C}Casos de Usos Reales}{171}{appendix.Alph3}
-\contentsline {chapter}{\numberline {D}Diccionario de Datos}{217}{appendix.Alph4}
-\contentsline {chapter}{\numberline {E}Interfaz del Sistema}{221}{appendix.Alph5}
-\contentsline {chapter}{\numberline {F}Pruebas}{231}{appendix.Alph6}
-\contentsline {section}{\numberline {F.1}Pruebas Unitarias}{231}{section.Alph6.1}
-\contentsline {section}{\numberline {F.2}Pruebas de Integraci\'on}{242}{section.Alph6.2}
-\contentsline {section}{\numberline {F.3}Pruebas de Sistemas}{248}{section.Alph6.3}
-\contentsline {section}{\numberline {F.4}Pruebas de Aceptaci\'on}{250}{section.Alph6.4}
-\contentsline {section}{\numberline {F.5}Pruebas de Usabilidad}{260}{section.Alph6.5}
-\contentsline {section}{\numberline {F.6}Pruebas de Estr\'es}{264}{section.Alph6.6}
-\contentsline {chapter}{\numberline {G}Manual de Usuario}{266}{appendix.Alph7}
-\contentsline {section}{\numberline {G.1}P\'agina de Inicio}{266}{section.Alph7.1}
-\contentsline {subsection}{\numberline {G.1.1}Registrarse}{267}{subsection.Alph7.1.1}
-\contentsline {subsection}{\numberline {G.1.2}Login}{271}{subsection.Alph7.1.2}
-\contentsline {section}{\numberline {G.2}Home}{272}{section.Alph7.2}
-\contentsline {subsection}{\numberline {G.2.1}Vista Profesor}{272}{subsection.Alph7.2.1}
-\contentsline {subsection}{\numberline {G.2.2}Vista Alumno}{274}{subsection.Alph7.2.2}
-\contentsline {section}{\numberline {G.3}Gestionar Usuarios}{277}{section.Alph7.3}
-\contentsline {subsection}{\numberline {G.3.1}Crear Cuenta}{277}{subsection.Alph7.3.1}
-\contentsline {subsection}{\numberline {G.3.2}Eliminar Cuenta}{281}{subsection.Alph7.3.2}
-\contentsline {subsection}{\numberline {G.3.3}Modificar Cuenta}{285}{subsection.Alph7.3.3}
-\contentsline {section}{\numberline {G.4}Gestionar Bases de Datos}{289}{section.Alph7.4}
-\contentsline {subsection}{\numberline {G.4.1}Crear Base de Datos}{289}{subsection.Alph7.4.1}
-\contentsline {subsection}{\numberline {G.4.2}Eliminar Base de Datos}{292}{subsection.Alph7.4.2}
-\contentsline {subsection}{\numberline {G.4.3}Modificar Base de Datos}{295}{subsection.Alph7.4.3}
-\contentsline {subsection}{\numberline {G.4.4}Cargar Base de Datos}{298}{subsection.Alph7.4.4}
-\contentsline {section}{\numberline {G.5}Gestionar Relaciones}{303}{section.Alph7.5}
-\contentsline {subsection}{\numberline {G.5.1}Agregar Relaci\'on}{303}{subsection.Alph7.5.1}
-\contentsline {subsection}{\numberline {G.5.2}Eliminar Relaci\'on}{306}{subsection.Alph7.5.2}
-\contentsline {subsection}{\numberline {G.5.3}Modificar Relaci\'on}{310}{subsection.Alph7.5.3}
-\contentsline {section}{\numberline {G.6}Gestionar Tuplas}{316}{section.Alph7.6}
-\contentsline {subsection}{\numberline {G.6.1}Ver Relaci\'on}{316}{subsection.Alph7.6.1}
-\contentsline {subsection}{\numberline {G.6.2}Agregar Tupla}{320}{subsection.Alph7.6.2}
-\contentsline {subsection}{\numberline {G.6.3}Eliminar Tupla}{323}{subsection.Alph7.6.3}
-\contentsline {subsection}{\numberline {G.6.4}Modificar Tupla}{325}{subsection.Alph7.6.4}
-\contentsline {section}{\numberline {G.7}Gestionar Ejercicios}{328}{section.Alph7.7}
-\contentsline {subsection}{\numberline {G.7.1}Gesti\'on de Ejercicios}{329}{subsection.Alph7.7.1}
-\contentsline {subsection}{\numberline {G.7.2}Responder Ejercicios}{336}{subsection.Alph7.7.2}
-\contentsline {subsection}{\numberline {G.7.3}Obtener Calificaci\'on}{341}{subsection.Alph7.7.3}
-\contentsline {section}{\numberline {G.8}Hacer Consulta}{344}{section.Alph7.8}
-\contentsline {section}{\numberline {G.9}Ver Estad\IeC {\'\i }sticas}{349}{section.Alph7.9}
-\contentsline {section}{\numberline {G.10}Modificar Cuenta Propia}{354}{section.Alph7.10}
-\contentsline {chapter}{Bibliograf\'{\i }a}{360}{appendix*.11}
+\contentsline {subsection}{\numberline {2.3.1}Selecci\'on}{14}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Proyecci\'on}{15}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Renombrar y Asignaci\'on de Relaciones}{16}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.4}Operaciones de la Teor\IeC {\'\i }a de Conjuntos}{17}{subsection.2.3.4}
+\contentsline {subsection}{\numberline {2.3.5}Reuni\'on}{19}{subsection.2.3.5}
+\contentsline {subsection}{\numberline {2.3.6}Divisi\'on}{20}{subsection.2.3.6}
+\contentsline {subsection}{\numberline {2.3.7}Funciones Agregadas y de Agrupaci\'on}{21}{subsection.2.3.7}
+\contentsline {subsection}{\numberline {2.3.8}Reuni\'on Externa}{22}{subsection.2.3.8}
+\contentsline {section}{\numberline {2.4}Traducci\'on de \'Algebra Relacional a SQL}{23}{section.2.4}
+\contentsline {section}{\numberline {2.5}Aplicaciones Existentes}{23}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}Comparaci\'on entre Herramientas Existentes}{26}{subsection.2.5.1}
+\contentsline {section}{\numberline {2.6}Trabajos Existentes}{28}{section.2.6}
+\contentsline {section}{\numberline {2.7}\'Algebra Relacional en la Universidad de Valpara\IeC {\'\i }so}{32}{section.2.7}
+\contentsline {chapter}{\numberline {3}Problema}{34}{chapter.3}
+\contentsline {section}{\numberline {3.1}Definici\'on del Problema}{34}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Problema}{34}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Soluci\'on Propuesta}{35}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.3}Importancia del trabajo}{35}{subsection.3.1.3}
+\contentsline {section}{\numberline {3.2}Objetivos}{36}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Objetivo General}{36}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Objetivos Espec\IeC {\'\i }ficos}{36}{subsection.3.2.2}
+\contentsline {chapter}{\numberline {4}An\'alisis}{38}{chapter.4}
+\contentsline {section}{\numberline {4.1}Especificaci\'on de Requerimientos}{38}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Requerimientos Funcionales}{38}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Requerimientos No Funcionales}{38}{subsection.4.1.2}
+\contentsline {section}{\numberline {4.2}Actores del Sistema}{39}{section.4.2}
+\contentsline {section}{\numberline {4.3}Funciones del Sistema}{41}{section.4.3}
+\contentsline {section}{\numberline {4.4}Casos de Usos}{41}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Modelo de Casos de Usos}{42}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Casos de Usos Extendidos}{42}{subsection.4.4.2}
+\contentsline {section}{\numberline {4.5}Modelo Conceptual}{43}{section.4.5}
+\contentsline {chapter}{\numberline {5}Dise\~no}{44}{chapter.5}
+\contentsline {section}{\numberline {5.1}Dise\~no Arquitect\'onico}{44}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Modelo de Capas}{45}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}Vista de M\'odulos}{45}{subsection.5.1.2}
+\contentsline {subsection}{\numberline {5.1.3}Vista de Componentes}{48}{subsection.5.1.3}
+\contentsline {section}{\numberline {5.2}Dise\~no Interfaz}{53}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Interfaces de Usuario}{53}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Esquema de Navegaci\'on}{53}{subsection.5.2.2}
+\contentsline {section}{\numberline {5.3}Dise\~no L\'ogico}{55}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Casos de Usos Reales}{55}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}Diagrama de Clases}{55}{subsection.5.3.2}
+\contentsline {section}{\numberline {5.4}Dise\~no de Datos}{60}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}Modelo Entidad/Relaci\'on}{60}{subsection.5.4.1}
+\contentsline {subsection}{\numberline {5.4.2}Modelo de Datos}{62}{subsection.5.4.2}
+\contentsline {subsection}{\numberline {5.4.3}Diccionario de Datos}{63}{subsection.5.4.3}
+\contentsline {section}{\numberline {5.5}Dise\~no de Pruebas}{63}{section.5.5}
+\contentsline {subsection}{\numberline {5.5.1}Usuarios de Pruebas}{63}{subsection.5.5.1}
+\contentsline {subsection}{\numberline {5.5.2}Pruebas Unitarias}{64}{subsection.5.5.2}
+\contentsline {subsection}{\numberline {5.5.3}Pruebas de Integraci\'on}{67}{subsection.5.5.3}
+\contentsline {subsection}{\numberline {5.5.4}Pruebas de Sistema}{69}{subsection.5.5.4}
+\contentsline {subsection}{\numberline {5.5.5}Pruebas de Aceptaci\'on}{70}{subsection.5.5.5}
+\contentsline {subsection}{\numberline {5.5.6}Pruebas de Usabilidad}{72}{subsection.5.5.6}
+\contentsline {subsection}{\numberline {5.5.7}Pruebas de Estr\'es}{74}{subsection.5.5.7}
+\contentsline {subsection}{\numberline {5.5.8}Pruebas de Seguridad}{74}{subsection.5.5.8}
+\contentsline {chapter}{\numberline {6}Implementaci\'on}{75}{chapter.6}
+\contentsline {section}{\numberline {6.1}Herramientas de Desarrollo}{75}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Hardware de Desarrollo}{75}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}Lenguajes de Programaci\'on}{76}{subsection.6.1.2}
+\contentsline {subsection}{\numberline {6.1.3}Gram\'atica del Lenguaje de \'Algebra Relacional}{76}{subsection.6.1.3}
+\contentsline {subsection}{\numberline {6.1.4}Interfaz y Presentaci\'on}{77}{subsection.6.1.4}
+\contentsline {subsection}{\numberline {6.1.5}Almacenamiento de Datos}{78}{subsection.6.1.5}
+\contentsline {section}{\numberline {6.2}Herramientas}{79}{section.6.2}
+\contentsline {section}{\numberline {6.3}Interfaz del Sistema}{79}{section.6.3}
+\contentsline {chapter}{\numberline {7}Pruebas}{80}{chapter.7}
+\contentsline {section}{\numberline {7.1}Pruebas Unitarias}{81}{section.7.1}
+\contentsline {subsection}{\numberline {7.1.1}An\'alisis de Resultados}{81}{subsection.7.1.1}
+\contentsline {section}{\numberline {7.2}Pruebas Integraci\'on}{81}{section.7.2}
+\contentsline {subsection}{\numberline {7.2.1}An\'alisis de Resultados}{82}{subsection.7.2.1}
+\contentsline {section}{\numberline {7.3}Pruebas de Sistema}{82}{section.7.3}
+\contentsline {subsection}{\numberline {7.3.1}An\'alisis de Resultados}{82}{subsection.7.3.1}
+\contentsline {section}{\numberline {7.4}Pruebas de Aceptaci\'on}{83}{section.7.4}
+\contentsline {subsection}{\numberline {7.4.1}An\'alisis de Resultados}{83}{subsection.7.4.1}
+\contentsline {section}{\numberline {7.5}Pruebas de Usabilidad}{85}{section.7.5}
+\contentsline {subsection}{\numberline {7.5.1}An\'alisis de Resultados}{85}{subsection.7.5.1}
+\contentsline {section}{\numberline {7.6}Pruebas de Estr\'es}{86}{section.7.6}
+\contentsline {subsection}{\numberline {7.6.1}An\'alisis de Resultados}{87}{subsection.7.6.1}
+\contentsline {section}{\numberline {7.7}Pruebas de Seguridad}{88}{section.7.7}
+\contentsline {subsection}{\numberline {7.7.1}SQL Inyection}{88}{subsection.7.7.1}
+\contentsline {subsubsection}{Resultados SQL Inyection}{88}{section*.9}
+\contentsline {subsection}{\numberline {7.7.2}Acceso por URL}{88}{subsection.7.7.2}
+\contentsline {subsubsection}{Resultados Acceso por URL}{89}{section*.10}
+\contentsline {chapter}{\numberline {8}Implantaci\'on}{90}{chapter.8}
+\contentsline {section}{\numberline {8.1}Infraestructura}{90}{section.8.1}
+\contentsline {section}{\numberline {8.2}Actividades Previas a la Implantaci\'on}{91}{section.8.2}
+\contentsline {subsection}{\numberline {8.2.1}Configuraci\'on del Motor de Base de Datos}{91}{subsection.8.2.1}
+\contentsline {section}{\numberline {8.3}Actividades para la Implantaci\'on}{91}{section.8.3}
+\contentsline {subsection}{\numberline {8.3.1}Instalaci\'on del Sistema en el Servidor de Aplicaciones}{91}{subsection.8.3.1}
+\contentsline {section}{\numberline {8.4}Actividades Posteriores a la Implantaci\'on}{92}{section.8.4}
+\contentsline {chapter}{\numberline {9}Conclusiones}{93}{chapter.9}
+\contentsline {section}{\numberline {9.1}Trabajos Futuros}{94}{section.9.1}
+\contentsline {chapter}{\numberline {A}Algebra Relacional}{95}{appendix.Alph1}
+\contentsline {section}{\numberline {A.1}Selecci\'on}{96}{section.Alph1.1}
+\contentsline {section}{\numberline {A.2}Proyecci\'on}{97}{section.Alph1.2}
+\contentsline {section}{\numberline {A.3}Renombrar y Asignaci\'on de Relaciones}{98}{section.Alph1.3}
+\contentsline {section}{\numberline {A.4}Operaciones de Teor\IeC {\'\i }a de Conjuntos}{98}{section.Alph1.4}
+\contentsline {section}{\numberline {A.5}Reunion}{100}{section.Alph1.5}
+\contentsline {section}{\numberline {A.6}Divisi\'on}{102}{section.Alph1.6}
+\contentsline {section}{\numberline {A.7}Funciones Agregadas y de Agrupaci\'on}{102}{section.Alph1.7}
+\contentsline {section}{\numberline {A.8}Reuni\'on Externa}{104}{section.Alph1.8}
+\contentsline {section}{\numberline {A.9}Traducci\'on de \'Algebra Relacional a SQL}{105}{section.Alph1.9}
+\contentsline {chapter}{\numberline {B}Casos de Usos Extendidos}{107}{appendix.Alph2}
+\contentsline {chapter}{\numberline {C}Interfaces de Usuario}{167}{appendix.Alph3}
+\contentsline {chapter}{\numberline {D}Casos de Usos Reales}{173}{appendix.Alph4}
+\contentsline {chapter}{\numberline {E}Diccionario de Datos}{219}{appendix.Alph5}
+\contentsline {chapter}{\numberline {F}Interfaz del Sistema}{223}{appendix.Alph6}
+\contentsline {chapter}{\numberline {G}Pruebas}{233}{appendix.Alph7}
+\contentsline {section}{\numberline {G.1}Pruebas Unitarias}{233}{section.Alph7.1}
+\contentsline {section}{\numberline {G.2}Pruebas de Integraci\'on}{244}{section.Alph7.2}
+\contentsline {section}{\numberline {G.3}Pruebas de Sistemas}{250}{section.Alph7.3}
+\contentsline {section}{\numberline {G.4}Pruebas de Aceptaci\'on}{252}{section.Alph7.4}
+\contentsline {section}{\numberline {G.5}Pruebas de Usabilidad}{262}{section.Alph7.5}
+\contentsline {section}{\numberline {G.6}Pruebas de Estr\'es}{266}{section.Alph7.6}
+\contentsline {chapter}{\numberline {H}Manual de Usuario}{268}{appendix.Alph8}
+\contentsline {section}{\numberline {H.1}P\'agina de Inicio}{268}{section.Alph8.1}
+\contentsline {subsection}{\numberline {H.1.1}Registrarse}{269}{subsection.Alph8.1.1}
+\contentsline {subsection}{\numberline {H.1.2}Login}{273}{subsection.Alph8.1.2}
+\contentsline {section}{\numberline {H.2}Home}{274}{section.Alph8.2}
+\contentsline {subsection}{\numberline {H.2.1}Vista Profesor}{274}{subsection.Alph8.2.1}
+\contentsline {subsection}{\numberline {H.2.2}Vista Alumno}{276}{subsection.Alph8.2.2}
+\contentsline {section}{\numberline {H.3}Gestionar Usuarios}{279}{section.Alph8.3}
+\contentsline {subsection}{\numberline {H.3.1}Crear Cuenta}{279}{subsection.Alph8.3.1}
+\contentsline {subsection}{\numberline {H.3.2}Eliminar Cuenta}{283}{subsection.Alph8.3.2}
+\contentsline {subsection}{\numberline {H.3.3}Modificar Cuenta}{287}{subsection.Alph8.3.3}
+\contentsline {section}{\numberline {H.4}Gestionar Bases de Datos}{291}{section.Alph8.4}
+\contentsline {subsection}{\numberline {H.4.1}Crear Base de Datos}{291}{subsection.Alph8.4.1}
+\contentsline {subsection}{\numberline {H.4.2}Eliminar Base de Datos}{294}{subsection.Alph8.4.2}
+\contentsline {subsection}{\numberline {H.4.3}Modificar Base de Datos}{297}{subsection.Alph8.4.3}
+\contentsline {subsection}{\numberline {H.4.4}Cargar Base de Datos}{300}{subsection.Alph8.4.4}
+\contentsline {section}{\numberline {H.5}Gestionar Relaciones}{305}{section.Alph8.5}
+\contentsline {subsection}{\numberline {H.5.1}Agregar Relaci\'on}{305}{subsection.Alph8.5.1}
+\contentsline {subsection}{\numberline {H.5.2}Eliminar Relaci\'on}{308}{subsection.Alph8.5.2}
+\contentsline {subsection}{\numberline {H.5.3}Modificar Relaci\'on}{312}{subsection.Alph8.5.3}
+\contentsline {section}{\numberline {H.6}Gestionar Tuplas}{318}{section.Alph8.6}
+\contentsline {subsection}{\numberline {H.6.1}Ver Relaci\'on}{318}{subsection.Alph8.6.1}
+\contentsline {subsection}{\numberline {H.6.2}Agregar Tupla}{322}{subsection.Alph8.6.2}
+\contentsline {subsection}{\numberline {H.6.3}Eliminar Tupla}{325}{subsection.Alph8.6.3}
+\contentsline {subsection}{\numberline {H.6.4}Modificar Tupla}{327}{subsection.Alph8.6.4}
+\contentsline {section}{\numberline {H.7}Gestionar Ejercicios}{330}{section.Alph8.7}
+\contentsline {subsection}{\numberline {H.7.1}Gesti\'on de Ejercicios}{331}{subsection.Alph8.7.1}
+\contentsline {subsection}{\numberline {H.7.2}Responder Ejercicios}{338}{subsection.Alph8.7.2}
+\contentsline {subsection}{\numberline {H.7.3}Obtener Calificaci\'on}{343}{subsection.Alph8.7.3}
+\contentsline {section}{\numberline {H.8}Hacer Consulta}{346}{section.Alph8.8}
+\contentsline {section}{\numberline {H.9}Ver Estad\IeC {\'\i }sticas}{351}{section.Alph8.9}
+\contentsline {section}{\numberline {H.10}Modificar Cuenta Propia}{356}{section.Alph8.10}
+\contentsline {chapter}{Bibliograf\'{\i }a}{362}{appendix*.11}

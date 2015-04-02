@@ -1,156 +1,157 @@
 \select@language {spanish}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {2.1}{\ignorespaces Esquema y extensi\'on de \textit {EDIFICIOS\_EMP}.}}{15}{table.2.1}
-\contentsline {table}{\numberline {2.2}{\ignorespaces Esquema y extensi\'on de \textit {DESPACHOS}.}}{15}{table.2.2}
-\contentsline {table}{\numberline {2.3}{\ignorespaces Esquema y extensi\'on de \textit {EMPLEADOS\_ADM}.}}{15}{table.2.3}
-\contentsline {table}{\numberline {2.4}{\ignorespaces Esquema y extensi\'on de \textit {EMPLEADOS\_PROD}.}}{15}{table.2.4}
-\contentsline {table}{\numberline {2.5}{\ignorespaces Restultado gr\'afico de una selecci\'on}}{17}{table.2.5}
-\contentsline {table}{\numberline {2.6}{\ignorespaces Restultado gr\'afico de una proyecci\'on.}}{18}{table.2.6}
-\contentsline {table}{\numberline {2.7}{\ignorespaces Resultado gr\'afico de una selecci\'on y una proyecci\'on anidadas.}}{20}{table.2.7}
-\contentsline {table}{\numberline {2.8}{\ignorespaces Resultado gr\'afico de una uni\'on.}}{22}{table.2.8}
-\contentsline {table}{\numberline {2.9}{\ignorespaces Resultado gr\'afico de una intersecci\'on.}}{22}{table.2.9}
-\contentsline {table}{\numberline {2.10}{\ignorespaces Resultado gr\'afico de una diferencia.}}{23}{table.2.10}
-\contentsline {table}{\numberline {2.11}{\ignorespaces Restultado gr\'afico de un producto cartesiano.}}{24}{table.2.11}
-\contentsline {table}{\numberline {2.12}{\ignorespaces Restultado gr\'afico de una reuni\'on.}}{25}{table.2.12}
-\contentsline {table}{\numberline {2.13}{\ignorespaces Restultado gr\'afico de una reuni\'on natural.}}{26}{table.2.13}
-\contentsline {table}{\numberline {2.14}{\ignorespaces Relaciones $\emph {EDIFICIOS\_EMPLEADOS}$ Y $\emph {EDIFICIOS\_EMP}$.}}{27}{table.2.14}
-\contentsline {table}{\numberline {2.15}{\ignorespaces Resultado de una divisi\'on.}}{27}{table.2.15}
-\contentsline {table}{\numberline {2.16}{\ignorespaces Resultado de una suma con agrupaci\'on de atributos.}}{28}{table.2.16}
-\contentsline {table}{\numberline {2.17}{\ignorespaces Resultado de una suma sin agrupaci\'on de atributos.}}{29}{table.2.17}
-\contentsline {table}{\numberline {2.18}{\ignorespaces Resultado de una reuni\'on externa izquierda.}}{30}{table.2.18}
-\contentsline {table}{\numberline {2.19}{\ignorespaces Resultado de una reuni\'on externa derecha.}}{30}{table.2.19}
-\contentsline {table}{\numberline {2.20}{\ignorespaces Resultado de una reuni\'on externa completa.}}{31}{table.2.20}
-\contentsline {table}{\numberline {2.21}{\ignorespaces Traducci\'on de \'Algebra Relacional a SQL.}}{33}{table.2.21}
-\contentsline {table}{\numberline {2.22}{\ignorespaces Tabla Comparativa entre Aplicaciones.}}{38}{table.2.22}
+\contentsline {table}{\numberline {2.1}{\ignorespaces Tabla Comparativa entre Aplicaciones.}}{28}{table.2.1}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces Requerimientos funcionales del sistema.}}{49}{table.4.1}
-\contentsline {table}{\numberline {4.2}{\ignorespaces Requerimientos no funcionales del sistema.}}{49}{table.4.2}
-\contentsline {table}{\numberline {4.3}{\ignorespaces Nivel de conocimiento de los usuarios.}}{50}{table.4.3}
-\contentsline {table}{\numberline {4.4}{\ignorespaces Usuarios del sistema.}}{50}{table.4.4}
-\contentsline {table}{\numberline {4.5}{\ignorespaces Funciones del Sistema.}}{51}{table.4.5}
+\contentsline {table}{\numberline {4.1}{\ignorespaces Requerimientos funcionales del sistema.}}{39}{table.4.1}
+\contentsline {table}{\numberline {4.2}{\ignorespaces Requerimientos no funcionales del sistema.}}{39}{table.4.2}
+\contentsline {table}{\numberline {4.3}{\ignorespaces Nivel de conocimiento de los usuarios.}}{40}{table.4.3}
+\contentsline {table}{\numberline {4.4}{\ignorespaces Usuarios del sistema.}}{40}{table.4.4}
+\contentsline {table}{\numberline {4.5}{\ignorespaces Funciones del Sistema.}}{41}{table.4.5}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces Pruebas Unitarias (1/3).}}{75}{table.5.1}
-\contentsline {table}{\numberline {5.2}{\ignorespaces Pruebas Unitarias (2/3).}}{76}{table.5.2}
-\contentsline {table}{\numberline {5.3}{\ignorespaces Pruebas Unitarias (3/3).}}{77}{table.5.3}
-\contentsline {table}{\numberline {5.4}{\ignorespaces Plantilla Pruebas Unitarias.}}{77}{table.5.4}
-\contentsline {table}{\numberline {5.5}{\ignorespaces Plantilla Pruebas de Integraci\'on.}}{78}{table.5.5}
-\contentsline {table}{\numberline {5.6}{\ignorespaces Plantilla Pruebas de Sistema.}}{79}{table.5.6}
-\contentsline {table}{\numberline {5.7}{\ignorespaces Tareas Perfil Alumno}}{80}{table.5.7}
-\contentsline {table}{\numberline {5.8}{\ignorespaces Tareas Perfil Profesor}}{81}{table.5.8}
-\contentsline {table}{\numberline {5.9}{\ignorespaces Par\'ametros de Evaluaci\'on.}}{82}{table.5.9}
-\contentsline {table}{\numberline {5.10}{\ignorespaces Formulario de Aceptaci\'on.}}{82}{table.5.10}
-\contentsline {table}{\numberline {5.11}{\ignorespaces Formulario de Usabilidad.}}{83}{table.5.11}
+\contentsline {table}{\numberline {5.1}{\ignorespaces Pruebas Unitarias (1/3).}}{65}{table.5.1}
+\contentsline {table}{\numberline {5.2}{\ignorespaces Pruebas Unitarias (2/3).}}{66}{table.5.2}
+\contentsline {table}{\numberline {5.3}{\ignorespaces Pruebas Unitarias (3/3).}}{67}{table.5.3}
+\contentsline {table}{\numberline {5.4}{\ignorespaces Plantilla Pruebas Unitarias.}}{67}{table.5.4}
+\contentsline {table}{\numberline {5.5}{\ignorespaces Plantilla Pruebas de Integraci\'on.}}{68}{table.5.5}
+\contentsline {table}{\numberline {5.6}{\ignorespaces Plantilla Pruebas de Sistema.}}{69}{table.5.6}
+\contentsline {table}{\numberline {5.7}{\ignorespaces Tareas Perfil Alumno}}{70}{table.5.7}
+\contentsline {table}{\numberline {5.8}{\ignorespaces Tareas Perfil Profesor}}{71}{table.5.8}
+\contentsline {table}{\numberline {5.9}{\ignorespaces Par\'ametros de Evaluaci\'on.}}{72}{table.5.9}
+\contentsline {table}{\numberline {5.10}{\ignorespaces Formulario de Aceptaci\'on.}}{72}{table.5.10}
+\contentsline {table}{\numberline {5.11}{\ignorespaces Formulario de Usabilidad.}}{73}{table.5.11}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {6.1}{\ignorespaces Tabla comparativa entre Sistemas Gestores de Base de Datos.}}{88}{table.6.1}
+\contentsline {table}{\numberline {6.1}{\ignorespaces Tabla comparativa entre Sistemas Gestores de Base de Datos.}}{78}{table.6.1}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {A.1}{\ignorespaces Lista de Casos de Usos.}}{106}{table.Alph1.1}
-\contentsline {table}{\numberline {A.2}{\ignorespaces Caso de Uso Extendido - Ir Inicio.}}{107}{table.Alph1.2}
-\contentsline {table}{\numberline {A.3}{\ignorespaces Caso de Uso Extendido - Iniciar Sesi\'on.}}{109}{table.Alph1.3}
-\contentsline {table}{\numberline {A.4}{\ignorespaces Caso de Uso Extendido - Sesi\'on Profesor.}}{111}{table.Alph1.4}
-\contentsline {table}{\numberline {A.5}{\ignorespaces Caso de Uso Extendido - Gestionar Cuentas.}}{113}{table.Alph1.5}
-\contentsline {table}{\numberline {A.6}{\ignorespaces Caso de Uso Extendido - Crear Cuenta Alumno.}}{115}{table.Alph1.6}
-\contentsline {table}{\numberline {A.7}{\ignorespaces Caso de Uso Extendido - Eliminar Cuenta.}}{117}{table.Alph1.7}
-\contentsline {table}{\numberline {A.8}{\ignorespaces Caso de Uso Extendido - Modificar Cuenta.}}{119}{table.Alph1.8}
-\contentsline {table}{\numberline {A.9}{\ignorespaces Caso de Uso Extendido - Gestionar BD.}}{121}{table.Alph1.9}
-\contentsline {table}{\numberline {A.10}{\ignorespaces Caso de Uso Extendido - Crear BD.}}{123}{table.Alph1.10}
-\contentsline {table}{\numberline {A.11}{\ignorespaces Caso de Uso Extendido - Eliminar BD.}}{125}{table.Alph1.11}
-\contentsline {table}{\numberline {A.12}{\ignorespaces Caso de Uso Extendido - Modificar BD.}}{127}{table.Alph1.12}
-\contentsline {table}{\numberline {A.13}{\ignorespaces Caso de Uso Extendido - Cargar BD.}}{129}{table.Alph1.13}
-\contentsline {table}{\numberline {A.14}{\ignorespaces Caso de Uso Extendido - Gestionar Ejercicios.}}{131}{table.Alph1.14}
-\contentsline {table}{\numberline {A.15}{\ignorespaces Caso de Uso Extendido - Crear Ejercicios.}}{133}{table.Alph1.15}
-\contentsline {table}{\numberline {A.16}{\ignorespaces Caso de Uso Extendido - Eliminar Ejercicios.}}{135}{table.Alph1.16}
-\contentsline {table}{\numberline {A.17}{\ignorespaces Caso de Uso Extendido - Modificar Ejercicios.}}{137}{table.Alph1.17}
-\contentsline {table}{\numberline {A.18}{\ignorespaces Caso de Uso Extendido - Responder Ejercicios.}}{139}{table.Alph1.18}
-\contentsline {table}{\numberline {A.19}{\ignorespaces Caso de Uso Extendido - Gestionar Relaci\'on.}}{141}{table.Alph1.19}
-\contentsline {table}{\numberline {A.20}{\ignorespaces Caso de Uso Extendido - Agregar Relaci\'on.}}{143}{table.Alph1.20}
-\contentsline {table}{\numberline {A.21}{\ignorespaces Caso de Uso Extendido - Eliminar Relaci\'on.}}{145}{table.Alph1.21}
-\contentsline {table}{\numberline {A.22}{\ignorespaces Caso de Uso Extendido - Modificar Relaci\'on}}{147}{table.Alph1.22}
-\contentsline {table}{\numberline {A.23}{\ignorespaces Caso de Uso Extendido - Ver Relaci\'on.}}{149}{table.Alph1.23}
-\contentsline {table}{\numberline {A.24}{\ignorespaces Caso de Uso Extendido - Gestionar Tupla.}}{151}{table.Alph1.24}
-\contentsline {table}{\numberline {A.25}{\ignorespaces Caso de Uso Extendido - Ingresar Tupla.}}{153}{table.Alph1.25}
-\contentsline {table}{\numberline {A.26}{\ignorespaces Caso de Uso Extendido - Eliminar Tupla.}}{155}{table.Alph1.26}
-\contentsline {table}{\numberline {A.27}{\ignorespaces Caso de Uso Extendido - Modificar Tupla.}}{157}{table.Alph1.27}
-\contentsline {table}{\numberline {A.28}{\ignorespaces Caso de Uso Extendido - Sesi\'on Alumno.}}{159}{table.Alph1.28}
-\contentsline {table}{\numberline {A.29}{\ignorespaces Caso de Uso Extendido - Hacer Consulta.}}{161}{table.Alph1.29}
-\contentsline {table}{\numberline {A.30}{\ignorespaces Caso de Uso Extendido - Ver Estad\IeC {\'\i }sticas}}{163}{table.Alph1.30}
+\contentsline {table}{\numberline {A.1}{\ignorespaces Esquema y extensi\'on de \textit {EDIFICIOS\_EMP}.}}{96}{table.Alph1.1}
+\contentsline {table}{\numberline {A.2}{\ignorespaces Esquema y extensi\'on de \textit {DESPACHOS}.}}{96}{table.Alph1.2}
+\contentsline {table}{\numberline {A.3}{\ignorespaces Esquema y extensi\'on de \textit {EMPLEADOS\_ADM}.}}{96}{table.Alph1.3}
+\contentsline {table}{\numberline {A.4}{\ignorespaces Esquema y extensi\'on de \textit {EMPLEADOS\_PROD}.}}{96}{table.Alph1.4}
+\contentsline {table}{\numberline {A.5}{\ignorespaces Resultado gr\'afico de una selecci\'on}}{97}{table.Alph1.5}
+\contentsline {table}{\numberline {A.6}{\ignorespaces Resultado gr\'afico de una proyecci\'on.}}{97}{table.Alph1.6}
+\contentsline {table}{\numberline {A.7}{\ignorespaces Resultado gr\'afico de una selecci\'on y una proyecci\'on anidadas.}}{98}{table.Alph1.7}
+\contentsline {table}{\numberline {A.8}{\ignorespaces Resultado gr\'afico de una uni\'on.}}{99}{table.Alph1.8}
+\contentsline {table}{\numberline {A.9}{\ignorespaces Resultado gr\'afico de una intersecci\'on.}}{99}{table.Alph1.9}
+\contentsline {table}{\numberline {A.10}{\ignorespaces Resultado gr\'afico de una diferencia.}}{100}{table.Alph1.10}
+\contentsline {table}{\numberline {A.11}{\ignorespaces Restultado gr\'afico de un producto cartesiano.}}{100}{table.Alph1.11}
+\contentsline {table}{\numberline {A.12}{\ignorespaces Restultado gr\'afico de una reuni\'on.}}{101}{table.Alph1.12}
+\contentsline {table}{\numberline {A.13}{\ignorespaces Restultado gr\'afico de una reuni\'on natural.}}{102}{table.Alph1.13}
+\contentsline {table}{\numberline {A.14}{\ignorespaces Relaciones $\emph {EDIFICIOS\_EMPLEADOS}$ Y $\emph {EDIFICIOS\_EMP}$.}}{103}{table.Alph1.14}
+\contentsline {table}{\numberline {A.15}{\ignorespaces Resultado de una divisi\'on.}}{103}{table.Alph1.15}
+\contentsline {table}{\numberline {A.16}{\ignorespaces Resultado de una suma con agrupaci\'on de atributos.}}{103}{table.Alph1.16}
+\contentsline {table}{\numberline {A.17}{\ignorespaces Resultado de una suma sin agrupaci\'on de atributos.}}{104}{table.Alph1.17}
+\contentsline {table}{\numberline {A.18}{\ignorespaces Resultado de una reuni\'on externa izquierda.}}{104}{table.Alph1.18}
+\contentsline {table}{\numberline {A.19}{\ignorespaces Resultado de una reuni\'on externa derecha.}}{105}{table.Alph1.19}
+\contentsline {table}{\numberline {A.20}{\ignorespaces Resultado de una reuni\'on externa completa.}}{105}{table.Alph1.20}
+\contentsline {table}{\numberline {A.21}{\ignorespaces Traducci\'on de \'Algebra Relacional a SQL.}}{106}{table.Alph1.21}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {B.1}{\ignorespaces Lista de Casos de Usos.}}{108}{table.Alph2.1}
+\contentsline {table}{\numberline {B.2}{\ignorespaces Caso de Uso Extendido - Ir Inicio.}}{109}{table.Alph2.2}
+\contentsline {table}{\numberline {B.3}{\ignorespaces Caso de Uso Extendido - Iniciar Sesi\'on.}}{111}{table.Alph2.3}
+\contentsline {table}{\numberline {B.4}{\ignorespaces Caso de Uso Extendido - Sesi\'on Profesor.}}{113}{table.Alph2.4}
+\contentsline {table}{\numberline {B.5}{\ignorespaces Caso de Uso Extendido - Gestionar Cuentas.}}{115}{table.Alph2.5}
+\contentsline {table}{\numberline {B.6}{\ignorespaces Caso de Uso Extendido - Crear Cuenta Alumno.}}{117}{table.Alph2.6}
+\contentsline {table}{\numberline {B.7}{\ignorespaces Caso de Uso Extendido - Eliminar Cuenta.}}{119}{table.Alph2.7}
+\contentsline {table}{\numberline {B.8}{\ignorespaces Caso de Uso Extendido - Modificar Cuenta.}}{121}{table.Alph2.8}
+\contentsline {table}{\numberline {B.9}{\ignorespaces Caso de Uso Extendido - Gestionar BD.}}{123}{table.Alph2.9}
+\contentsline {table}{\numberline {B.10}{\ignorespaces Caso de Uso Extendido - Crear BD.}}{125}{table.Alph2.10}
+\contentsline {table}{\numberline {B.11}{\ignorespaces Caso de Uso Extendido - Eliminar BD.}}{127}{table.Alph2.11}
+\contentsline {table}{\numberline {B.12}{\ignorespaces Caso de Uso Extendido - Modificar BD.}}{129}{table.Alph2.12}
+\contentsline {table}{\numberline {B.13}{\ignorespaces Caso de Uso Extendido - Cargar BD.}}{131}{table.Alph2.13}
+\contentsline {table}{\numberline {B.14}{\ignorespaces Caso de Uso Extendido - Gestionar Ejercicios.}}{133}{table.Alph2.14}
+\contentsline {table}{\numberline {B.15}{\ignorespaces Caso de Uso Extendido - Crear Ejercicios.}}{135}{table.Alph2.15}
+\contentsline {table}{\numberline {B.16}{\ignorespaces Caso de Uso Extendido - Eliminar Ejercicios.}}{137}{table.Alph2.16}
+\contentsline {table}{\numberline {B.17}{\ignorespaces Caso de Uso Extendido - Modificar Ejercicios.}}{139}{table.Alph2.17}
+\contentsline {table}{\numberline {B.18}{\ignorespaces Caso de Uso Extendido - Responder Ejercicios.}}{141}{table.Alph2.18}
+\contentsline {table}{\numberline {B.19}{\ignorespaces Caso de Uso Extendido - Gestionar Relaci\'on.}}{143}{table.Alph2.19}
+\contentsline {table}{\numberline {B.20}{\ignorespaces Caso de Uso Extendido - Agregar Relaci\'on.}}{145}{table.Alph2.20}
+\contentsline {table}{\numberline {B.21}{\ignorespaces Caso de Uso Extendido - Eliminar Relaci\'on.}}{147}{table.Alph2.21}
+\contentsline {table}{\numberline {B.22}{\ignorespaces Caso de Uso Extendido - Modificar Relaci\'on}}{149}{table.Alph2.22}
+\contentsline {table}{\numberline {B.23}{\ignorespaces Caso de Uso Extendido - Ver Relaci\'on.}}{151}{table.Alph2.23}
+\contentsline {table}{\numberline {B.24}{\ignorespaces Caso de Uso Extendido - Gestionar Tupla.}}{153}{table.Alph2.24}
+\contentsline {table}{\numberline {B.25}{\ignorespaces Caso de Uso Extendido - Ingresar Tupla.}}{155}{table.Alph2.25}
+\contentsline {table}{\numberline {B.26}{\ignorespaces Caso de Uso Extendido - Eliminar Tupla.}}{157}{table.Alph2.26}
+\contentsline {table}{\numberline {B.27}{\ignorespaces Caso de Uso Extendido - Modificar Tupla.}}{159}{table.Alph2.27}
+\contentsline {table}{\numberline {B.28}{\ignorespaces Caso de Uso Extendido - Sesi\'on Alumno.}}{161}{table.Alph2.28}
+\contentsline {table}{\numberline {B.29}{\ignorespaces Caso de Uso Extendido - Hacer Consulta.}}{163}{table.Alph2.29}
+\contentsline {table}{\numberline {B.30}{\ignorespaces Caso de Uso Extendido - Ver Estad\IeC {\'\i }sticas}}{165}{table.Alph2.30}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {C.1}{\ignorespaces Lista de Casos de Usos Reales}}{172}{table.Alph3.1}
-\contentsline {table}{\numberline {C.2}{\ignorespaces Caso de Uso Real - Ir Inicio.}}{173}{table.Alph3.2}
-\contentsline {table}{\numberline {C.3}{\ignorespaces Caso de Uso Real - Iniciar Sesi\'on.}}{173}{table.Alph3.3}
-\contentsline {table}{\numberline {C.4}{\ignorespaces Caso de Uso Real - Crear Cuenta desde Inicio.}}{174}{table.Alph3.4}
-\contentsline {table}{\numberline {C.5}{\ignorespaces Caso de Uso Real - Sesi\'on Profesor.}}{175}{table.Alph3.5}
-\contentsline {table}{\numberline {C.6}{\ignorespaces Caso de Uso Real - Gestionar Cuentas.}}{177}{table.Alph3.6}
-\contentsline {table}{\numberline {C.7}{\ignorespaces Caso de Uso Real - Crear Cuenta.}}{178}{table.Alph3.7}
-\contentsline {table}{\numberline {C.8}{\ignorespaces Caso de Uso Real - Eliminar Cuenta.}}{180}{table.Alph3.8}
-\contentsline {table}{\numberline {C.9}{\ignorespaces Caso de Uso Real - Modificar Cuenta.}}{182}{table.Alph3.9}
-\contentsline {table}{\numberline {C.10}{\ignorespaces Caso de Uso Real - Gestionar BD.}}{184}{table.Alph3.10}
-\contentsline {table}{\numberline {C.11}{\ignorespaces Caso de Uso Real - Crear BD.}}{185}{table.Alph3.11}
-\contentsline {table}{\numberline {C.12}{\ignorespaces Caso de Uso Real - Eliminar BD.}}{187}{table.Alph3.12}
-\contentsline {table}{\numberline {C.13}{\ignorespaces Caso de Uso Real - Modificar BD.}}{189}{table.Alph3.13}
-\contentsline {table}{\numberline {C.14}{\ignorespaces Caso de Uso Real - Cargar BD.}}{191}{table.Alph3.14}
-\contentsline {table}{\numberline {C.15}{\ignorespaces Caso de Uso Real - Gestionar Ejercicios.}}{192}{table.Alph3.15}
-\contentsline {table}{\numberline {C.16}{\ignorespaces Caso de Uso Real - Gesti\'on de Ejercicios.}}{193}{table.Alph3.16}
-\contentsline {table}{\numberline {C.17}{\ignorespaces Caso de Uso Real - Responder Ejercicios.}}{195}{table.Alph3.17}
-\contentsline {table}{\numberline {C.18}{\ignorespaces Caso de Uso Real - Gestionar Relaci\'on.}}{197}{table.Alph3.18}
-\contentsline {table}{\numberline {C.19}{\ignorespaces Caso de Uso Real - Agregar Relaci\'on.}}{198}{table.Alph3.19}
-\contentsline {table}{\numberline {C.20}{\ignorespaces Caso de Uso Real - Eliminar Relaci\'on.}}{199}{table.Alph3.20}
-\contentsline {table}{\numberline {C.21}{\ignorespaces Caso de Uso Real - Modificar Relaci\'on}}{201}{table.Alph3.21}
-\contentsline {table}{\numberline {C.22}{\ignorespaces Caso de Uso Real - Ver Relaci\'on.}}{203}{table.Alph3.22}
-\contentsline {table}{\numberline {C.23}{\ignorespaces Caso de Uso Real - Gestionar Tupla.}}{204}{table.Alph3.23}
-\contentsline {table}{\numberline {C.24}{\ignorespaces Caso de Uso Real - Ingresar Tupla.}}{205}{table.Alph3.24}
-\contentsline {table}{\numberline {C.25}{\ignorespaces Caso de Uso Real - Eliminar Tupla.}}{206}{table.Alph3.25}
-\contentsline {table}{\numberline {C.26}{\ignorespaces Caso de Uso Real - Modificar Tupla.}}{208}{table.Alph3.26}
-\contentsline {table}{\numberline {C.27}{\ignorespaces Caso de Uso Real - Sesi\'on Alumno.}}{210}{table.Alph3.27}
-\contentsline {table}{\numberline {C.28}{\ignorespaces Caso de Uso Real - Hacer Consulta.}}{212}{table.Alph3.28}
-\contentsline {table}{\numberline {C.29}{\ignorespaces Caso de Uso Real - Modificar Cuenta Usuario.}}{214}{table.Alph3.29}
-\contentsline {table}{\numberline {C.30}{\ignorespaces Caso de Uso Real - Ver Estad\IeC {\'\i }sticas.}}{216}{table.Alph3.30}
+\contentsline {table}{\numberline {D.1}{\ignorespaces Lista de Casos de Usos Reales}}{174}{table.Alph4.1}
+\contentsline {table}{\numberline {D.2}{\ignorespaces Caso de Uso Real - Ir Inicio.}}{175}{table.Alph4.2}
+\contentsline {table}{\numberline {D.3}{\ignorespaces Caso de Uso Real - Iniciar Sesi\'on.}}{175}{table.Alph4.3}
+\contentsline {table}{\numberline {D.4}{\ignorespaces Caso de Uso Real - Crear Cuenta desde Inicio.}}{176}{table.Alph4.4}
+\contentsline {table}{\numberline {D.5}{\ignorespaces Caso de Uso Real - Sesi\'on Profesor.}}{177}{table.Alph4.5}
+\contentsline {table}{\numberline {D.6}{\ignorespaces Caso de Uso Real - Gestionar Cuentas.}}{179}{table.Alph4.6}
+\contentsline {table}{\numberline {D.7}{\ignorespaces Caso de Uso Real - Crear Cuenta.}}{180}{table.Alph4.7}
+\contentsline {table}{\numberline {D.8}{\ignorespaces Caso de Uso Real - Eliminar Cuenta.}}{182}{table.Alph4.8}
+\contentsline {table}{\numberline {D.9}{\ignorespaces Caso de Uso Real - Modificar Cuenta.}}{184}{table.Alph4.9}
+\contentsline {table}{\numberline {D.10}{\ignorespaces Caso de Uso Real - Gestionar BD.}}{186}{table.Alph4.10}
+\contentsline {table}{\numberline {D.11}{\ignorespaces Caso de Uso Real - Crear BD.}}{187}{table.Alph4.11}
+\contentsline {table}{\numberline {D.12}{\ignorespaces Caso de Uso Real - Eliminar BD.}}{189}{table.Alph4.12}
+\contentsline {table}{\numberline {D.13}{\ignorespaces Caso de Uso Real - Modificar BD.}}{191}{table.Alph4.13}
+\contentsline {table}{\numberline {D.14}{\ignorespaces Caso de Uso Real - Cargar BD.}}{193}{table.Alph4.14}
+\contentsline {table}{\numberline {D.15}{\ignorespaces Caso de Uso Real - Gestionar Ejercicios.}}{194}{table.Alph4.15}
+\contentsline {table}{\numberline {D.16}{\ignorespaces Caso de Uso Real - Gesti\'on de Ejercicios.}}{195}{table.Alph4.16}
+\contentsline {table}{\numberline {D.17}{\ignorespaces Caso de Uso Real - Responder Ejercicios.}}{197}{table.Alph4.17}
+\contentsline {table}{\numberline {D.18}{\ignorespaces Caso de Uso Real - Gestionar Relaci\'on.}}{199}{table.Alph4.18}
+\contentsline {table}{\numberline {D.19}{\ignorespaces Caso de Uso Real - Agregar Relaci\'on.}}{200}{table.Alph4.19}
+\contentsline {table}{\numberline {D.20}{\ignorespaces Caso de Uso Real - Eliminar Relaci\'on.}}{201}{table.Alph4.20}
+\contentsline {table}{\numberline {D.21}{\ignorespaces Caso de Uso Real - Modificar Relaci\'on}}{203}{table.Alph4.21}
+\contentsline {table}{\numberline {D.22}{\ignorespaces Caso de Uso Real - Ver Relaci\'on.}}{205}{table.Alph4.22}
+\contentsline {table}{\numberline {D.23}{\ignorespaces Caso de Uso Real - Gestionar Tupla.}}{206}{table.Alph4.23}
+\contentsline {table}{\numberline {D.24}{\ignorespaces Caso de Uso Real - Ingresar Tupla.}}{207}{table.Alph4.24}
+\contentsline {table}{\numberline {D.25}{\ignorespaces Caso de Uso Real - Eliminar Tupla.}}{208}{table.Alph4.25}
+\contentsline {table}{\numberline {D.26}{\ignorespaces Caso de Uso Real - Modificar Tupla.}}{210}{table.Alph4.26}
+\contentsline {table}{\numberline {D.27}{\ignorespaces Caso de Uso Real - Sesi\'on Alumno.}}{212}{table.Alph4.27}
+\contentsline {table}{\numberline {D.28}{\ignorespaces Caso de Uso Real - Hacer Consulta.}}{214}{table.Alph4.28}
+\contentsline {table}{\numberline {D.29}{\ignorespaces Caso de Uso Real - Modificar Cuenta Usuario.}}{216}{table.Alph4.29}
+\contentsline {table}{\numberline {D.30}{\ignorespaces Caso de Uso Real - Ver Estad\IeC {\'\i }sticas.}}{218}{table.Alph4.30}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {D.1}{\ignorespaces Diccionario de Datos - Usuario.}}{217}{table.Alph4.1}
-\contentsline {table}{\numberline {D.2}{\ignorespaces Diccionario de Datos - Alumnos.}}{218}{table.Alph4.2}
-\contentsline {table}{\numberline {D.3}{\ignorespaces Diccionario de Datos - Profesores.}}{219}{table.Alph4.3}
-\contentsline {table}{\numberline {D.4}{\ignorespaces Diccionario de Datos - Esquemas.}}{219}{table.Alph4.4}
-\contentsline {table}{\numberline {D.5}{\ignorespaces Diccionario de Datos - Resultados.}}{219}{table.Alph4.5}
-\contentsline {table}{\numberline {D.6}{\ignorespaces Diccionario de Datos - Respuestas.}}{220}{table.Alph4.6}
-\contentsline {table}{\numberline {D.7}{\ignorespaces Diccionario de Datos - Consultas.}}{220}{table.Alph4.7}
+\contentsline {table}{\numberline {E.1}{\ignorespaces Diccionario de Datos - Usuario.}}{219}{table.Alph5.1}
+\contentsline {table}{\numberline {E.2}{\ignorespaces Diccionario de Datos - Alumnos.}}{220}{table.Alph5.2}
+\contentsline {table}{\numberline {E.3}{\ignorespaces Diccionario de Datos - Profesores.}}{221}{table.Alph5.3}
+\contentsline {table}{\numberline {E.4}{\ignorespaces Diccionario de Datos - Esquemas.}}{221}{table.Alph5.4}
+\contentsline {table}{\numberline {E.5}{\ignorespaces Diccionario de Datos - Resultados.}}{221}{table.Alph5.5}
+\contentsline {table}{\numberline {E.6}{\ignorespaces Diccionario de Datos - Respuestas.}}{222}{table.Alph5.6}
+\contentsline {table}{\numberline {E.7}{\ignorespaces Diccionario de Datos - Consultas.}}{222}{table.Alph5.7}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {F.1}{\ignorespaces Pruebas Unitarias - Crear Alumno desde Inicio}}{232}{table.Alph6.1}
-\contentsline {table}{\numberline {F.2}{\ignorespaces Pruebas Unitarias - Iniciar Sesi\'on}}{232}{table.Alph6.2}
-\contentsline {table}{\numberline {F.3}{\ignorespaces Pruebas Unitarias - Eliminar Cuenta}}{233}{table.Alph6.3}
-\contentsline {table}{\numberline {F.4}{\ignorespaces Pruebas Unitarias - Modificar Cuenta}}{233}{table.Alph6.4}
-\contentsline {table}{\numberline {F.5}{\ignorespaces Pruebas Unitarias - Crear BD}}{234}{table.Alph6.5}
-\contentsline {table}{\numberline {F.6}{\ignorespaces Pruebas Unitarias - Eliminar BD}}{234}{table.Alph6.6}
-\contentsline {table}{\numberline {F.7}{\ignorespaces Pruebas Unitarias - Modificar BD}}{235}{table.Alph6.7}
-\contentsline {table}{\numberline {F.8}{\ignorespaces Pruebas Unitarias - cargar BD}}{235}{table.Alph6.8}
-\contentsline {table}{\numberline {F.9}{\ignorespaces Pruebas Unitarias - Gestionar Ejercicios (Eliminar Ejercicio)}}{236}{table.Alph6.9}
-\contentsline {table}{\numberline {F.10}{\ignorespaces Pruebas Unitarias - Gestionar Ejercicios (Modificar Ejercicio)}}{236}{table.Alph6.10}
-\contentsline {table}{\numberline {F.11}{\ignorespaces Pruebas Unitarias - Gestionar Ejercicios (Crear Ejercicio)}}{237}{table.Alph6.11}
-\contentsline {table}{\numberline {F.12}{\ignorespaces Pruebas Unitarias - Responder Ejercicio}}{237}{table.Alph6.12}
-\contentsline {table}{\numberline {F.13}{\ignorespaces Pruebas Unitarias - Agregar Relaci\'on}}{238}{table.Alph6.13}
-\contentsline {table}{\numberline {F.14}{\ignorespaces Pruebas Unitarias - Eliminar Relaci\'on }}{238}{table.Alph6.14}
-\contentsline {table}{\numberline {F.15}{\ignorespaces Pruebas Unitarias - Modificar Relaci\'on}}{239}{table.Alph6.15}
-\contentsline {table}{\numberline {F.16}{\ignorespaces Pruebas Unitarias - Ver Relaci\'on}}{239}{table.Alph6.16}
-\contentsline {table}{\numberline {F.17}{\ignorespaces Pruebas Unitarias - Ingresar Tupla}}{240}{table.Alph6.17}
-\contentsline {table}{\numberline {F.18}{\ignorespaces Pruebas Unitarias - Eliminar Tupla}}{240}{table.Alph6.18}
-\contentsline {table}{\numberline {F.19}{\ignorespaces Pruebas Unitarias - Modificar Tupla}}{241}{table.Alph6.19}
-\contentsline {table}{\numberline {F.20}{\ignorespaces Pruebas Unitarias - Hacer Consulta}}{241}{table.Alph6.20}
-\contentsline {table}{\numberline {F.21}{\ignorespaces Pruebas Unitarias - Ver Estad\IeC {\'\i }sticas}}{242}{table.Alph6.21}
-\contentsline {table}{\numberline {F.22}{\ignorespaces Pruebas de Integraci\'on - Primera Iteraci\'on}}{243}{table.Alph6.22}
-\contentsline {table}{\numberline {F.23}{\ignorespaces Pruebas de Integraci\'on - Segunda Iteraci\'on}}{244}{table.Alph6.23}
-\contentsline {table}{\numberline {F.24}{\ignorespaces Pruebas de Integraci\'on - Tercera Iteraci\'on}}{245}{table.Alph6.24}
-\contentsline {table}{\numberline {F.25}{\ignorespaces Prueba de Integraci\'on - Cuarta Iteraci\'on}}{246}{table.Alph6.25}
-\contentsline {table}{\numberline {F.26}{\ignorespaces Prueba de Integraci\'on - Quinta Iteraci\'on}}{247}{table.Alph6.26}
-\contentsline {table}{\numberline {F.27}{\ignorespaces Pruebas de Integraci\'on - Sexta Iteraci\'on}}{248}{table.Alph6.27}
-\contentsline {table}{\numberline {F.28}{\ignorespaces Resultado Pruebas de Sistemas.}}{250}{table.Alph6.28}
-\contentsline {table}{\numberline {F.29}{\ignorespaces Resultados Tareas Alumnos.}}{251}{table.Alph6.29}
-\contentsline {table}{\numberline {F.30}{\ignorespaces Resultados Tareas Profesor.}}{252}{table.Alph6.30}
-\contentsline {table}{\numberline {F.31}{\ignorespaces Resultados Formulario de Aceptaci\'on.}}{254}{table.Alph6.31}
-\contentsline {table}{\numberline {F.32}{\ignorespaces Resultado Formulario de Usabilidad.}}{260}{table.Alph6.32}
-\contentsline {table}{\numberline {F.33}{\ignorespaces Resultado Pruebas de Estr\'es.}}{265}{table.Alph6.33}
+\contentsline {table}{\numberline {G.1}{\ignorespaces Pruebas Unitarias - Crear Alumno desde Inicio}}{234}{table.Alph7.1}
+\contentsline {table}{\numberline {G.2}{\ignorespaces Pruebas Unitarias - Iniciar Sesi\'on}}{234}{table.Alph7.2}
+\contentsline {table}{\numberline {G.3}{\ignorespaces Pruebas Unitarias - Eliminar Cuenta}}{235}{table.Alph7.3}
+\contentsline {table}{\numberline {G.4}{\ignorespaces Pruebas Unitarias - Modificar Cuenta}}{235}{table.Alph7.4}
+\contentsline {table}{\numberline {G.5}{\ignorespaces Pruebas Unitarias - Crear BD}}{236}{table.Alph7.5}
+\contentsline {table}{\numberline {G.6}{\ignorespaces Pruebas Unitarias - Eliminar BD}}{236}{table.Alph7.6}
+\contentsline {table}{\numberline {G.7}{\ignorespaces Pruebas Unitarias - Modificar BD}}{237}{table.Alph7.7}
+\contentsline {table}{\numberline {G.8}{\ignorespaces Pruebas Unitarias - cargar BD}}{237}{table.Alph7.8}
+\contentsline {table}{\numberline {G.9}{\ignorespaces Pruebas Unitarias - Gestionar Ejercicios (Eliminar Ejercicio)}}{238}{table.Alph7.9}
+\contentsline {table}{\numberline {G.10}{\ignorespaces Pruebas Unitarias - Gestionar Ejercicios (Modificar Ejercicio)}}{238}{table.Alph7.10}
+\contentsline {table}{\numberline {G.11}{\ignorespaces Pruebas Unitarias - Gestionar Ejercicios (Crear Ejercicio)}}{239}{table.Alph7.11}
+\contentsline {table}{\numberline {G.12}{\ignorespaces Pruebas Unitarias - Responder Ejercicio}}{239}{table.Alph7.12}
+\contentsline {table}{\numberline {G.13}{\ignorespaces Pruebas Unitarias - Agregar Relaci\'on}}{240}{table.Alph7.13}
+\contentsline {table}{\numberline {G.14}{\ignorespaces Pruebas Unitarias - Eliminar Relaci\'on }}{240}{table.Alph7.14}
+\contentsline {table}{\numberline {G.15}{\ignorespaces Pruebas Unitarias - Modificar Relaci\'on}}{241}{table.Alph7.15}
+\contentsline {table}{\numberline {G.16}{\ignorespaces Pruebas Unitarias - Ver Relaci\'on}}{241}{table.Alph7.16}
+\contentsline {table}{\numberline {G.17}{\ignorespaces Pruebas Unitarias - Ingresar Tupla}}{242}{table.Alph7.17}
+\contentsline {table}{\numberline {G.18}{\ignorespaces Pruebas Unitarias - Eliminar Tupla}}{242}{table.Alph7.18}
+\contentsline {table}{\numberline {G.19}{\ignorespaces Pruebas Unitarias - Modificar Tupla}}{243}{table.Alph7.19}
+\contentsline {table}{\numberline {G.20}{\ignorespaces Pruebas Unitarias - Hacer Consulta}}{243}{table.Alph7.20}
+\contentsline {table}{\numberline {G.21}{\ignorespaces Pruebas Unitarias - Ver Estad\IeC {\'\i }sticas}}{244}{table.Alph7.21}
+\contentsline {table}{\numberline {G.22}{\ignorespaces Pruebas de Integraci\'on - Primera Iteraci\'on}}{245}{table.Alph7.22}
+\contentsline {table}{\numberline {G.23}{\ignorespaces Pruebas de Integraci\'on - Segunda Iteraci\'on}}{246}{table.Alph7.23}
+\contentsline {table}{\numberline {G.24}{\ignorespaces Pruebas de Integraci\'on - Tercera Iteraci\'on}}{247}{table.Alph7.24}
+\contentsline {table}{\numberline {G.25}{\ignorespaces Prueba de Integraci\'on - Cuarta Iteraci\'on}}{248}{table.Alph7.25}
+\contentsline {table}{\numberline {G.26}{\ignorespaces Prueba de Integraci\'on - Quinta Iteraci\'on}}{249}{table.Alph7.26}
+\contentsline {table}{\numberline {G.27}{\ignorespaces Pruebas de Integraci\'on - Sexta Iteraci\'on}}{250}{table.Alph7.27}
+\contentsline {table}{\numberline {G.28}{\ignorespaces Resultado Pruebas de Sistemas.}}{252}{table.Alph7.28}
+\contentsline {table}{\numberline {G.29}{\ignorespaces Resultados Tareas Alumnos.}}{253}{table.Alph7.29}
+\contentsline {table}{\numberline {G.30}{\ignorespaces Resultados Tareas Profesor.}}{254}{table.Alph7.30}
+\contentsline {table}{\numberline {G.31}{\ignorespaces Resultados Formulario de Aceptaci\'on.}}{256}{table.Alph7.31}
+\contentsline {table}{\numberline {G.32}{\ignorespaces Resultado Formulario de Usabilidad.}}{262}{table.Alph7.32}
+\contentsline {table}{\numberline {G.33}{\ignorespaces Resultado Pruebas de Estr\'es.}}{267}{table.Alph7.33}
 \addvspace {10\p@ }

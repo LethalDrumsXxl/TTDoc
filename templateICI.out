@@ -99,48 +99,58 @@
 \BOOKMARK [1][-]{section.8.4}{Actividades Posteriores a la Implantaci\363n}{chapter.8}% 99
 \BOOKMARK [0][-]{chapter.9}{Conclusiones}{}% 100
 \BOOKMARK [1][-]{section.9.1}{Trabajos Futuros}{chapter.9}% 101
-\BOOKMARK [0][-]{appendix.Alph1}{Casos de Usos Extendidos}{}% 102
-\BOOKMARK [0][-]{appendix.Alph2}{Interfaces de Usuario}{}% 103
-\BOOKMARK [0][-]{appendix.Alph3}{Casos de Usos Reales}{}% 104
-\BOOKMARK [0][-]{appendix.Alph4}{Diccionario de Datos}{}% 105
-\BOOKMARK [0][-]{appendix.Alph5}{Interfaz del Sistema}{}% 106
-\BOOKMARK [0][-]{appendix.Alph6}{Pruebas}{}% 107
-\BOOKMARK [1][-]{section.Alph6.1}{Pruebas Unitarias}{appendix.Alph6}% 108
-\BOOKMARK [1][-]{section.Alph6.2}{Pruebas de Integraci\363n}{appendix.Alph6}% 109
-\BOOKMARK [1][-]{section.Alph6.3}{Pruebas de Sistemas}{appendix.Alph6}% 110
-\BOOKMARK [1][-]{section.Alph6.4}{Pruebas de Aceptaci\363n}{appendix.Alph6}% 111
-\BOOKMARK [1][-]{section.Alph6.5}{Pruebas de Usabilidad}{appendix.Alph6}% 112
-\BOOKMARK [1][-]{section.Alph6.6}{Pruebas de Estr\351s}{appendix.Alph6}% 113
-\BOOKMARK [0][-]{appendix.Alph7}{Manual de Usuario}{}% 114
-\BOOKMARK [1][-]{section.Alph7.1}{P\341gina de Inicio}{appendix.Alph7}% 115
-\BOOKMARK [2][-]{subsection.Alph7.1.1}{Registrarse}{section.Alph7.1}% 116
-\BOOKMARK [2][-]{subsection.Alph7.1.2}{Login}{section.Alph7.1}% 117
-\BOOKMARK [1][-]{section.Alph7.2}{Home}{appendix.Alph7}% 118
-\BOOKMARK [2][-]{subsection.Alph7.2.1}{Vista Profesor}{section.Alph7.2}% 119
-\BOOKMARK [2][-]{subsection.Alph7.2.2}{Vista Alumno}{section.Alph7.2}% 120
-\BOOKMARK [1][-]{section.Alph7.3}{Gestionar Usuarios}{appendix.Alph7}% 121
-\BOOKMARK [2][-]{subsection.Alph7.3.1}{Crear Cuenta}{section.Alph7.3}% 122
-\BOOKMARK [2][-]{subsection.Alph7.3.2}{Eliminar Cuenta}{section.Alph7.3}% 123
-\BOOKMARK [2][-]{subsection.Alph7.3.3}{Modificar Cuenta}{section.Alph7.3}% 124
-\BOOKMARK [1][-]{section.Alph7.4}{Gestionar Bases de Datos}{appendix.Alph7}% 125
-\BOOKMARK [2][-]{subsection.Alph7.4.1}{Crear Base de Datos}{section.Alph7.4}% 126
-\BOOKMARK [2][-]{subsection.Alph7.4.2}{Eliminar Base de Datos}{section.Alph7.4}% 127
-\BOOKMARK [2][-]{subsection.Alph7.4.3}{Modificar Base de Datos}{section.Alph7.4}% 128
-\BOOKMARK [2][-]{subsection.Alph7.4.4}{Cargar Base de Datos}{section.Alph7.4}% 129
-\BOOKMARK [1][-]{section.Alph7.5}{Gestionar Relaciones}{appendix.Alph7}% 130
-\BOOKMARK [2][-]{subsection.Alph7.5.1}{Agregar Relaci\363n}{section.Alph7.5}% 131
-\BOOKMARK [2][-]{subsection.Alph7.5.2}{Eliminar Relaci\363n}{section.Alph7.5}% 132
-\BOOKMARK [2][-]{subsection.Alph7.5.3}{Modificar Relaci\363n}{section.Alph7.5}% 133
-\BOOKMARK [1][-]{section.Alph7.6}{Gestionar Tuplas}{appendix.Alph7}% 134
-\BOOKMARK [2][-]{subsection.Alph7.6.1}{Ver Relaci\363n}{section.Alph7.6}% 135
-\BOOKMARK [2][-]{subsection.Alph7.6.2}{Agregar Tupla}{section.Alph7.6}% 136
-\BOOKMARK [2][-]{subsection.Alph7.6.3}{Eliminar Tupla}{section.Alph7.6}% 137
-\BOOKMARK [2][-]{subsection.Alph7.6.4}{Modificar Tupla}{section.Alph7.6}% 138
-\BOOKMARK [1][-]{section.Alph7.7}{Gestionar Ejercicios}{appendix.Alph7}% 139
-\BOOKMARK [2][-]{subsection.Alph7.7.1}{Gesti\363n de Ejercicios}{section.Alph7.7}% 140
-\BOOKMARK [2][-]{subsection.Alph7.7.2}{Responder Ejercicios}{section.Alph7.7}% 141
-\BOOKMARK [2][-]{subsection.Alph7.7.3}{Obtener Calificaci\363n}{section.Alph7.7}% 142
-\BOOKMARK [1][-]{section.Alph7.8}{Hacer Consulta}{appendix.Alph7}% 143
-\BOOKMARK [1][-]{section.Alph7.9}{Ver Estad\355sticas}{appendix.Alph7}% 144
-\BOOKMARK [1][-]{section.Alph7.10}{Modificar Cuenta Propia}{appendix.Alph7}% 145
-\BOOKMARK [0][-]{appendix*.11}{Bibliograf\355a}{}% 146
+\BOOKMARK [0][-]{appendix.Alph1}{Algebra Relacional}{}% 102
+\BOOKMARK [1][-]{section.Alph1.1}{Selecci\363n}{appendix.Alph1}% 103
+\BOOKMARK [1][-]{section.Alph1.2}{Proyecci\363n}{appendix.Alph1}% 104
+\BOOKMARK [1][-]{section.Alph1.3}{Renombrar y Asignaci\363n de Relaciones}{appendix.Alph1}% 105
+\BOOKMARK [1][-]{section.Alph1.4}{Operaciones de Teor\355a de Conjuntos}{appendix.Alph1}% 106
+\BOOKMARK [1][-]{section.Alph1.5}{Reunion}{appendix.Alph1}% 107
+\BOOKMARK [1][-]{section.Alph1.6}{Divisi\363n}{appendix.Alph1}% 108
+\BOOKMARK [1][-]{section.Alph1.7}{Funciones Agregadas y de Agrupaci\363n}{appendix.Alph1}% 109
+\BOOKMARK [1][-]{section.Alph1.8}{Reuni\363n Externa}{appendix.Alph1}% 110
+\BOOKMARK [1][-]{section.Alph1.9}{Traducci\363n de \301lgebra Relacional a SQL}{appendix.Alph1}% 111
+\BOOKMARK [0][-]{appendix.Alph2}{Casos de Usos Extendidos}{}% 112
+\BOOKMARK [0][-]{appendix.Alph3}{Interfaces de Usuario}{}% 113
+\BOOKMARK [0][-]{appendix.Alph4}{Casos de Usos Reales}{}% 114
+\BOOKMARK [0][-]{appendix.Alph5}{Diccionario de Datos}{}% 115
+\BOOKMARK [0][-]{appendix.Alph6}{Interfaz del Sistema}{}% 116
+\BOOKMARK [0][-]{appendix.Alph7}{Pruebas}{}% 117
+\BOOKMARK [1][-]{section.Alph7.1}{Pruebas Unitarias}{appendix.Alph7}% 118
+\BOOKMARK [1][-]{section.Alph7.2}{Pruebas de Integraci\363n}{appendix.Alph7}% 119
+\BOOKMARK [1][-]{section.Alph7.3}{Pruebas de Sistemas}{appendix.Alph7}% 120
+\BOOKMARK [1][-]{section.Alph7.4}{Pruebas de Aceptaci\363n}{appendix.Alph7}% 121
+\BOOKMARK [1][-]{section.Alph7.5}{Pruebas de Usabilidad}{appendix.Alph7}% 122
+\BOOKMARK [1][-]{section.Alph7.6}{Pruebas de Estr\351s}{appendix.Alph7}% 123
+\BOOKMARK [0][-]{appendix.Alph8}{Manual de Usuario}{}% 124
+\BOOKMARK [1][-]{section.Alph8.1}{P\341gina de Inicio}{appendix.Alph8}% 125
+\BOOKMARK [2][-]{subsection.Alph8.1.1}{Registrarse}{section.Alph8.1}% 126
+\BOOKMARK [2][-]{subsection.Alph8.1.2}{Login}{section.Alph8.1}% 127
+\BOOKMARK [1][-]{section.Alph8.2}{Home}{appendix.Alph8}% 128
+\BOOKMARK [2][-]{subsection.Alph8.2.1}{Vista Profesor}{section.Alph8.2}% 129
+\BOOKMARK [2][-]{subsection.Alph8.2.2}{Vista Alumno}{section.Alph8.2}% 130
+\BOOKMARK [1][-]{section.Alph8.3}{Gestionar Usuarios}{appendix.Alph8}% 131
+\BOOKMARK [2][-]{subsection.Alph8.3.1}{Crear Cuenta}{section.Alph8.3}% 132
+\BOOKMARK [2][-]{subsection.Alph8.3.2}{Eliminar Cuenta}{section.Alph8.3}% 133
+\BOOKMARK [2][-]{subsection.Alph8.3.3}{Modificar Cuenta}{section.Alph8.3}% 134
+\BOOKMARK [1][-]{section.Alph8.4}{Gestionar Bases de Datos}{appendix.Alph8}% 135
+\BOOKMARK [2][-]{subsection.Alph8.4.1}{Crear Base de Datos}{section.Alph8.4}% 136
+\BOOKMARK [2][-]{subsection.Alph8.4.2}{Eliminar Base de Datos}{section.Alph8.4}% 137
+\BOOKMARK [2][-]{subsection.Alph8.4.3}{Modificar Base de Datos}{section.Alph8.4}% 138
+\BOOKMARK [2][-]{subsection.Alph8.4.4}{Cargar Base de Datos}{section.Alph8.4}% 139
+\BOOKMARK [1][-]{section.Alph8.5}{Gestionar Relaciones}{appendix.Alph8}% 140
+\BOOKMARK [2][-]{subsection.Alph8.5.1}{Agregar Relaci\363n}{section.Alph8.5}% 141
+\BOOKMARK [2][-]{subsection.Alph8.5.2}{Eliminar Relaci\363n}{section.Alph8.5}% 142
+\BOOKMARK [2][-]{subsection.Alph8.5.3}{Modificar Relaci\363n}{section.Alph8.5}% 143
+\BOOKMARK [1][-]{section.Alph8.6}{Gestionar Tuplas}{appendix.Alph8}% 144
+\BOOKMARK [2][-]{subsection.Alph8.6.1}{Ver Relaci\363n}{section.Alph8.6}% 145
+\BOOKMARK [2][-]{subsection.Alph8.6.2}{Agregar Tupla}{section.Alph8.6}% 146
+\BOOKMARK [2][-]{subsection.Alph8.6.3}{Eliminar Tupla}{section.Alph8.6}% 147
+\BOOKMARK [2][-]{subsection.Alph8.6.4}{Modificar Tupla}{section.Alph8.6}% 148
+\BOOKMARK [1][-]{section.Alph8.7}{Gestionar Ejercicios}{appendix.Alph8}% 149
+\BOOKMARK [2][-]{subsection.Alph8.7.1}{Gesti\363n de Ejercicios}{section.Alph8.7}% 150
+\BOOKMARK [2][-]{subsection.Alph8.7.2}{Responder Ejercicios}{section.Alph8.7}% 151
+\BOOKMARK [2][-]{subsection.Alph8.7.3}{Obtener Calificaci\363n}{section.Alph8.7}% 152
+\BOOKMARK [1][-]{section.Alph8.8}{Hacer Consulta}{appendix.Alph8}% 153
+\BOOKMARK [1][-]{section.Alph8.9}{Ver Estad\355sticas}{appendix.Alph8}% 154
+\BOOKMARK [1][-]{section.Alph8.10}{Modificar Cuenta Propia}{appendix.Alph8}% 155
+\BOOKMARK [0][-]{appendix*.11}{Bibliograf\355a}{}% 156
